@@ -1,0 +1,10 @@
+.practice-hero { display: flex; flex-direction: column; gap: 4px; padding: 16px; margin-bottom: 12px; border-radius: var(--radius); color: #fff; box-shadow: var(--shadow); }
+.practice-hero.pond { background: linear-gradient(135deg, #4fc0f0, #2a85c9); }
+.practice-hero.mine { background: linear-gradient(135deg, #8a7d70, #4b4038); }
+.practice-hero b { font-size: 17px; }
+.field-actions { margin: 10px 0 14px; }
+.topic-list { list-style: none; margin: 0 0 12px; padding: 0; }
+.topic-row { display: flex; align-items: center; gap: 10px; padding: 10px; margin-bottom: 8px; border-radius: 14px; background: var(--paper); border: 2px solid var(--line); }
+.topic-icon { flex: 0 0 44px; border-radius: 12px; background: #f5ead6; }
+.topic-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.topic-score { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }

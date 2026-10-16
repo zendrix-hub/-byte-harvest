@@ -1,0 +1,22 @@
+.hud {
+  position: absolute; top: 0; left: 0; right: 0; z-index: 5;
+  height: calc(var(--hud-h) + var(--safe-top)); padding: var(--safe-top) 10px 0;
+  display: flex; align-items: center; gap: 8px;
+  background: linear-gradient(rgba(255, 250, 240, 0.97), rgba(255, 250, 240, 0.9));
+  border-bottom: 2px solid var(--line);
+}
+.hud-date {
+  display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+  min-height: 44px; padding: 2px 6px; border: 0; background: none; cursor: pointer; line-height: 1.15;
+}
+.hud-day { font-weight: 900; font-size: 15px; }
+.hud-count { font-size: 12px; font-weight: 800; color: var(--red-d); }
+.hud-spacer { flex: 1; }
+.hud-chip {
+  display: inline-flex; align-items: center; gap: 4px; min-height: 44px; padding: 4px 10px;
+  border-radius: 12px; border: 2px solid var(--line); background: #fff; font-weight: 900; font-size: 15px;
+}
+button.hud-chip { cursor: pointer; }
+button.hud-chip:disabled { opacity: 0.5; cursor: default; }
+.hud-chip.water { color: var(--blue-d); }
+.hud-chip.gold { color: #8a5c08; }

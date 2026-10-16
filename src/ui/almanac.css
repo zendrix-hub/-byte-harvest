@@ -1,0 +1,15 @@
+.almanac-hero { border-radius: var(--radius); padding: 18px 16px; margin-bottom: 12px; color: #fff; background: linear-gradient(135deg, #4cb36b, #2f8a52); box-shadow: var(--shadow); }
+.almanac-hero.mood-mock { background: linear-gradient(135deg, #3d9be9, #2a6fbd); }
+.almanac-hero.mood-rest { background: linear-gradient(135deg, #8c7ae6, #5b4bc4); }
+.almanac-hero.mood-exam { background: linear-gradient(135deg, #f4b63d, #e07a2e); color: #2b1a00; }
+.almanac-date { font-size: 26px; font-weight: 900; }
+.almanac-count { font-weight: 800; opacity: 0.95; }
+.cal-strip { display: flex; gap: 6px; overflow-x: auto; padding: 2px 2px 10px; margin-bottom: 4px; }
+.cal-day { flex: 0 0 auto; width: 46px; padding: 6px 0; border-radius: 12px; text-align: center; background: var(--paper); border: 2px solid var(--line); }
+.cal-day .wd { display: block; font-size: 11px; font-weight: 800; color: var(--mute); }
+.cal-day .dn { display: block; font-size: 18px; font-weight: 900; }
+.cal-day.past { opacity: 0.45; }
+.cal-day.today { border-color: var(--green); background: #e7f6ec; }
+.cal-day.mood-exam { border-color: var(--gold); background: #fff3d1; }
+.tasks { margin: 8px 0 12px; padding-left: 20px; }
+.tasks li { margin: 4px 0; }

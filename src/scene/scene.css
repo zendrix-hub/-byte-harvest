@@ -1,0 +1,36 @@
+.farm-svg { display: block; width: 100%; height: 100%; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+.farm-svg text { font-family: var(--font); pointer-events: none; }
+.tap { cursor: pointer; outline: none; }
+.tap:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+
+/* Walk cycle: legs swing, body bobs. */
+.leg { transform-box: fill-box; transform-origin: 50% 0%; }
+.farmer.walking .leg-l { animation: swing 0.3s ease-in-out infinite alternate; }
+.farmer.walking .leg-r { animation: swing 0.3s ease-in-out infinite alternate-reverse; }
+.farmer.walking .farmer-body { animation: bob 0.3s ease-in-out infinite alternate; }
+@keyframes swing { from { transform: rotate(-22deg); } to { transform: rotate(22deg); } }
+@keyframes bob { to { transform: translateY(-2px); } }
+
+/* Ready crops sway; badges twinkle. (Animated classes sit on children without a transform attribute.) */
+.crop.ready .crop-art { transform-box: fill-box; transform-origin: 50% 100%; animation: sway 2.6s ease-in-out infinite; }
+@keyframes sway { 0%, 100% { transform: rotate(-2.5deg); } 50% { transform: rotate(2.5deg); } }
+.sparkle { transform-box: fill-box; transform-origin: center; animation: twinkle 1.6s ease-in-out infinite; }
+@keyframes twinkle { 0%, 100% { opacity: 0.35; transform: scale(0.75); } 50% { opacity: 1; transform: scale(1.1); } }
+
+/* Ambient life */
+.ripple { transform-box: fill-box; transform-origin: center; animation: ripple 3s ease-out infinite; }
+@keyframes ripple { from { transform: scale(0.6); opacity: 0.8; } to { transform: scale(1.6); opacity: 0; } }
+.smoke { transform-box: fill-box; transform-origin: center; animation: smoke 4s ease-out infinite; }
+.smoke-late { animation-delay: 2s; }
+@keyframes smoke { from { transform: translate(0, 0) scale(0.6); opacity: 0.7; } to { transform: translate(8px, -40px) scale(1.4); opacity: 0; } }
+.leaf-fall { animation: fall 9s linear infinite; }
+@keyframes fall {
+  from { transform: translate(0, -40px) rotate(0deg); opacity: 0; }
+  10% { opacity: 1; }
+  to { transform: translate(-80px, 1300px) rotate(540deg); opacity: 0.9; }
+}
+
+/* Calm the scene while a panel is open, in battery saver, or with reduced motion. */
+.farm-svg.paused *, .app.calm .farm-svg * { animation-play-state: paused !important; }
+.app.calm .ambient { display: none; }
+.night-veil { transition: opacity 1s; }

@@ -1,0 +1,14 @@
+.house-hero { background: linear-gradient(135deg, #fff6e3, #fde9c8); }
+.file-btn { position: relative; overflow: hidden; }
+.file-btn input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.toggle { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); cursor: pointer; }
+.toggle input { width: 22px; height: 22px; margin-top: 2px; accent-color: var(--green); }
+.toggle span { display: flex; flex-direction: column; }
+.toggle small { color: var(--mute); }
+.import-msg { font-weight: 800; }
+.danger-zone { border-color: #f0c9bf; }
+.sleeping .stage::after {
+  content: ''; position: absolute; inset: 0; z-index: 4; pointer-events: none;
+  background: #141a3c; animation: sleep-fade 1.6s ease-in-out forwards;
+}
+@keyframes sleep-fade { 0% { opacity: 0; } 40%, 60% { opacity: 0.85; } 100% { opacity: 0; } }
