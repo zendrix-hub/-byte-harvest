@@ -27,6 +27,6 @@ describe('question bank', () => {
   });
 
   it('builds image urls under the app base path', () => {
-    expect(imageUrl('2025S_A_Q01')).toBe('/byte-harvest/papers/2025S_A_Q01.webp');
+    expect(imageUrl('2025S_A_Q01')).toBe('/-byte-harvest/papers/2025S_A_Q01.webp');
   });
 });

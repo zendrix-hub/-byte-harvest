@@ -7,12 +7,12 @@ A cozy farm game for reviewing the **PhilNITS / ITPEC FE exam (Sun Oct 25, 2026)
 - **Golden crops** (sure but wrong) come first. **Pests** (K/C/N/M/T) tag why you missed.
 - The **almanac** follows the Oct 16–25 plan. In the **House**, sleep copies the diary for the reviewer chat.
 
-Play: https://zendrix-hub.github.io/byte-harvest/. On Android, open it in Chrome, then tap ⋮ → **Install app**. Open it once while online, then go to House → **Download all questions** to play offline.
+Play: https://zendrix-hub.github.io/-byte-harvest/. On Android, open it in Chrome, then tap ⋮ → **Install app**. Open it once while online, then go to House → **Download all questions** to play offline.
 
 ## Develop
 
     npm install
-    npm run dev        # http://localhost:5173/byte-harvest/
+    npm run dev        # http://localhost:5173/-byte-harvest/
     npm test           # unit + component tests
     npm run e2e        # Playwright: 360×800 phone + 1366×768 PC
     npm run build && npm run budget && npm run check:pwa

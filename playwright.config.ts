@@ -7,12 +7,12 @@ const proxy = remote && process.env.HTTPS_PROXY ? { server: process.env.HTTPS_PR
 export default defineConfig({
   testDir: './e2e',
   timeout: 30_000,
-  use: { baseURL: remote ?? 'http://127.0.0.1:4173/byte-harvest/', trace: 'retain-on-failure', proxy },
+  use: { baseURL: remote ?? 'http://127.0.0.1:4173/-byte-harvest/', trace: 'retain-on-failure', proxy },
   webServer: remote
     ? undefined
     : {
         command: 'npm run build && npx vite preview --host 127.0.0.1 --port 4173 --strictPort',
-        url: 'http://127.0.0.1:4173/byte-harvest/',
+        url: 'http://127.0.0.1:4173/-byte-harvest/',
         reuseExistingServer: !process.env.CI,
         timeout: 180_000,
       },

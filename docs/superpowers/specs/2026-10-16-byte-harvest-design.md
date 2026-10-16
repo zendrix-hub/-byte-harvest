@@ -16,7 +16,7 @@ Success means the player wants to open it every day, all 240 questions and all 2
 |---|---|
 | Devices | Samsung Galaxy A21s (Exynos 850, Mali-G52, 3–4 GB RAM, 720×1600 → 360×800 CSS px, Chrome) and a Windows PC browser |
 | Offline | Works offline after the first load; installable to the home screen (PWA) |
-| Hosting | GitHub Pages: repo `zendrix-hub/byte-harvest`, URL `https://zendrix-hub.github.io/byte-harvest/`, base path `/byte-harvest/`, deployed by GitHub Actions on push to `main` |
+| Hosting | GitHub Pages: repo `zendrix-hub/-byte-harvest`, URL `https://zendrix-hub.github.io/-byte-harvest/`, base path `/-byte-harvest/`, deployed by GitHub Actions on push to `main` |
 | Local repo | `~/byte-harvest` (Linux filesystem: `/mnt/c` is ~100× slower for `node_modules`) |
 | Source data | `/mnt/c/Users/riva.zn/Documents/philnits reviewer/dojo_question_bank.json` (240 items) and the 240 WebP question images embedded in `FE_PastPaper_Dojo.html` (identical data, verified) |
 | Stack | Vite 7, TypeScript (strict), Preact 10 + @preact/signals 2, plain CSS, SVG scene, vite-plugin-pwa 1, Vitest 3 + Testing Library, Playwright |

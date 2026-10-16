@@ -15,7 +15,7 @@
 - Exam (Harvest Festival): **Sun 2026-10-25**. Last review day: **2026-10-24**. Real local dates drive everything.
 - Repo: `~/byte-harvest` (`/home/rivazn/byte-harvest`, Linux filesystem). Every command below runs from that folder.
 - Source data (read-only): `/mnt/c/Users/riva.zn/Documents/philnits reviewer/FE_PastPaper_Dojo.html` and `.../dojo_question_bank.json`.
-- Vite `base` is always `/byte-harvest/`. Pages URL: `https://zendrix-hub.github.io/byte-harvest/`. GitHub repo: `zendrix-hub/byte-harvest`.
+- Vite `base` is always `/-byte-harvest/`. Pages URL: `https://zendrix-hub.github.io/-byte-harvest/`. GitHub repo: `zendrix-hub/-byte-harvest`.
 - Stack: Vite 7, TypeScript strict (`noUnusedLocals`, `noUnusedParameters`), Preact 10 + @preact/signals 2, plain CSS, vite-plugin-pwa 1, Vitest 3, Playwright.
 - In Preact SVG, write attributes in kebab-case (`stroke-width`, `text-anchor`, `stop-color`). Make tappable SVG items `<a href="#" role="button" aria-label=…>` and call `preventDefault()` in their click handlers. Preact does not convert camelCase attributes, and `tabIndex` does not work on SVG.
 - Budgets: JS ≤ 120 KB gzip, CSS ≤ 20 KB gzip. No `backdrop-filter`, no SVG filters. Animate only `transform`/`opacity`. Ambient animation pauses while a panel is open or battery saver is on.
@@ -178,7 +178,7 @@ import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
 
 export default defineConfig({
-  base: '/byte-harvest/',
+  base: '/-byte-harvest/',
   plugins: [preact({ prefreshEnabled: !process.env.VITEST })],
   test: {
     environment: 'jsdom',
@@ -326,7 +326,7 @@ describe('question bank', () => {
   });
 
   it('builds image urls under the app base path', () => {
-    expect(imageUrl('2025S_A_Q01')).toBe('/byte-harvest/papers/2025S_A_Q01.webp');
+    expect(imageUrl('2025S_A_Q01')).toBe('/-byte-harvest/papers/2025S_A_Q01.webp');
   });
 });
 ```
@@ -3917,8 +3917,8 @@ npx playwright install chromium
 ./node_modules/.bin/vite --host 127.0.0.1 --port 5173 --strictPort > /tmp/bh-dev.log 2>&1 &
 SERVER=$!
 sleep 4
-npx playwright screenshot --viewport-size=360,800 http://127.0.0.1:5173/byte-harvest/ /tmp/farm-mobile.png
-npx playwright screenshot --viewport-size=1366,768 http://127.0.0.1:5173/byte-harvest/ /tmp/farm-desktop.png
+npx playwright screenshot --viewport-size=360,800 http://127.0.0.1:5173/-byte-harvest/ /tmp/farm-mobile.png
+npx playwright screenshot --viewport-size=1366,768 http://127.0.0.1:5173/-byte-harvest/ /tmp/farm-desktop.png
 kill $SERVER
 ```
 (Stop the server by its PID. Never use `pkill -f` with a pattern that appears in your own command line, because it kills the shell running it.)
@@ -5925,7 +5925,7 @@ Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
 
 **Interfaces:**
 - Consumes: the built app.
-- Produces: `dist/sw.js` that precaches the app shell, icons, and the latin Nunito font, plus a runtime `CacheFirst` cache named `papers` for `/papers/*.webp`; `dist/manifest.webmanifest` (`start_url` and `scope` `/byte-harvest/`, standalone); `npm run check:pwa`.
+- Produces: `dist/sw.js` that precaches the app shell, icons, and the latin Nunito font, plus a runtime `CacheFirst` cache named `papers` for `/papers/*.webp`; `dist/manifest.webmanifest` (`start_url` and `scope` `/-byte-harvest/`, standalone); `npm run check:pwa`.
 
 - [ ] **Step 1: Write the failing check**
 
@@ -5952,7 +5952,7 @@ const sw = readFileSync('dist/sw.js', 'utf8');
 if (sw.includes('.webp')) fail('question images must not be precached (they are cached on demand)');
 if (!sw.includes('papers')) fail('the "papers" runtime cache is missing');
 const manifest = JSON.parse(readFileSync('dist/manifest.webmanifest', 'utf8'));
-if (manifest.start_url !== '/byte-harvest/') fail(`start_url is ${manifest.start_url}`);
+if (manifest.start_url !== '/-byte-harvest/') fail(`start_url is ${manifest.start_url}`);
 if (manifest.display !== 'standalone') fail('display must be standalone');
 console.log('PWA check passed');
 ```
@@ -6030,7 +6030,7 @@ import preact from '@preact/preset-vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  base: '/byte-harvest/',
+  base: '/-byte-harvest/',
   plugins: [
     preact({ prefreshEnabled: !process.env.VITEST }),
     VitePWA({
@@ -6045,8 +6045,8 @@ export default defineConfig({
         background_color: '#fdf8ec',
         display: 'standalone',
         orientation: 'any',
-        start_url: '/byte-harvest/',
-        scope: '/byte-harvest/',
+        start_url: '/-byte-harvest/',
+        scope: '/-byte-harvest/',
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
@@ -6153,12 +6153,12 @@ const proxy = remote && process.env.HTTPS_PROXY ? { server: process.env.HTTPS_PR
 export default defineConfig({
   testDir: './e2e',
   timeout: 30_000,
-  use: { baseURL: remote ?? 'http://127.0.0.1:4173/byte-harvest/', trace: 'retain-on-failure', proxy },
+  use: { baseURL: remote ?? 'http://127.0.0.1:4173/-byte-harvest/', trace: 'retain-on-failure', proxy },
   webServer: remote
     ? undefined
     : {
         command: 'npm run build && npx vite preview --host 127.0.0.1 --port 4173 --strictPort',
-        url: 'http://127.0.0.1:4173/byte-harvest/',
+        url: 'http://127.0.0.1:4173/-byte-harvest/',
         reuseExistingServer: !process.env.CI,
         timeout: 180_000,
       },
@@ -6273,8 +6273,8 @@ npm run build && npm run budget
 ./node_modules/.bin/vite preview --host 127.0.0.1 --port 4173 --strictPort > /tmp/bh-preview.log 2>&1 &
 SERVER=$!
 sleep 3
-npx playwright screenshot --viewport-size=360,800 http://127.0.0.1:4173/byte-harvest/ /tmp/byte-harvest-mobile.png
-npx playwright screenshot --viewport-size=1366,768 http://127.0.0.1:4173/byte-harvest/ /tmp/byte-harvest-desktop.png
+npx playwright screenshot --viewport-size=360,800 http://127.0.0.1:4173/-byte-harvest/ /tmp/byte-harvest-mobile.png
+npx playwright screenshot --viewport-size=1366,768 http://127.0.0.1:4173/-byte-harvest/ /tmp/byte-harvest-desktop.png
 kill $SERVER
 ```
 Expected: `JS … KB gz (limit 120.0) · CSS … KB gz (limit 20.0)` with no "exceeded" line. Then open both PNGs with the Read tool. The farm should look polished, with no overlapping labels and the almanac panel open. Fix any visual problem before committing.
@@ -6298,7 +6298,7 @@ Co-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>"
 
 **Interfaces:**
 - Consumes: everything above; GitHub account `zendrix-hub`.
-- Produces: public repo `zendrix-hub/byte-harvest`; live site `https://zendrix-hub.github.io/byte-harvest/`; every push to `main` re-deploys after the tests pass.
+- Produces: public repo `zendrix-hub/-byte-harvest`; live site `https://zendrix-hub.github.io/-byte-harvest/`; every push to `main` re-deploys after the tests pass.
 
 - [ ] **Step 1: Write the workflow**
 
@@ -6360,12 +6360,12 @@ A cozy farm game for reviewing the **PhilNITS / ITPEC FE exam (Sun Oct 25, 2026)
 - **Golden crops** (sure but wrong) come first. **Pests** (K/C/N/M/T) tag why you missed.
 - The **almanac** follows the Oct 16–25 plan. In the **House**, sleep copies the diary for the reviewer chat.
 
-Play: https://zendrix-hub.github.io/byte-harvest/. On Android, open it in Chrome, then tap ⋮ → **Install app**. Open it once while online, then go to House → **Download all questions** to play offline.
+Play: https://zendrix-hub.github.io/-byte-harvest/. On Android, open it in Chrome, then tap ⋮ → **Install app**. Open it once while online, then go to House → **Download all questions** to play offline.
 
 ## Develop
 
     npm install
-    npm run dev        # http://localhost:5173/byte-harvest/
+    npm run dev        # http://localhost:5173/-byte-harvest/
     npm test           # unit + component tests
     npm run e2e        # Playwright: 360×800 phone + 1366×768 PC
     npm run build && npm run budget && npm run check:pwa
@@ -6398,17 +6398,17 @@ Expected: `Logged in to github.com account zendrix-hub` with `workflow` among th
 This publishes the code and the question images in a **public** repo. Ask the user to confirm before running:
 ```bash
 cd ~/byte-harvest
-gh repo create zendrix-hub/byte-harvest --public --source . --remote origin --push --description "Cozy farm game for PhilNITS FE review"
+gh repo create zendrix-hub/-byte-harvest --public --source . --remote origin --push --description "Cozy farm game for PhilNITS FE review"
 ```
-Expected: `✓ Created repository zendrix-hub/byte-harvest` and `✓ Pushed commits`.
+Expected: `✓ Created repository zendrix-hub/-byte-harvest` and `✓ Pushed commits`.
 
 - [ ] **Step 6: Turn on Pages (GitHub Actions source) and run the deploy**
 
 ```bash
-gh api -X POST repos/zendrix-hub/byte-harvest/pages -f build_type=workflow || gh api -X PUT repos/zendrix-hub/byte-harvest/pages -f build_type=workflow
-gh workflow run deploy.yml --repo zendrix-hub/byte-harvest
+gh api -X POST repos/zendrix-hub/-byte-harvest/pages -f build_type=workflow || gh api -X PUT repos/zendrix-hub/-byte-harvest/pages -f build_type=workflow
+gh workflow run deploy.yml --repo zendrix-hub/-byte-harvest
 sleep 5
-gh run watch --repo zendrix-hub/byte-harvest --exit-status "$(gh run list --repo zendrix-hub/byte-harvest --workflow deploy.yml --limit 1 --json databaseId -q '.[0].databaseId')"
+gh run watch --repo zendrix-hub/-byte-harvest --exit-status "$(gh run list --repo zendrix-hub/-byte-harvest --workflow deploy.yml --limit 1 --json databaseId -q '.[0].databaseId')"
 ```
 Expected: the build and deploy jobs both finish with ✓. (The run started by the first push may have failed at deploy because Pages wasn't enabled yet. The manual run supersedes it.)
 
@@ -6416,16 +6416,16 @@ Expected: the build and deploy jobs both finish with ✓. (The run started by th
 
 Run:
 ```bash
-curl -sI https://zendrix-hub.github.io/byte-harvest/ | head -1
-curl -s https://zendrix-hub.github.io/byte-harvest/manifest.webmanifest | head -c 120; echo
-cd ~/byte-harvest && BASE_URL=https://zendrix-hub.github.io/byte-harvest/ npx playwright test --project=mobile -g "opens to the farm|golden crop"
+curl -sI https://zendrix-hub.github.io/-byte-harvest/ | head -1
+curl -s https://zendrix-hub.github.io/-byte-harvest/manifest.webmanifest | head -c 120; echo
+cd ~/byte-harvest && BASE_URL=https://zendrix-hub.github.io/-byte-harvest/ npx playwright test --project=mobile -g "opens to the farm|golden crop"
 ```
 Expected: `HTTP/2 200`, a manifest starting `{"name":"Byte Harvest — FE Farm"`, and `2 passed`.
 
 - [ ] **Step 8: Hand the phone steps to the user**
 
 Tell the user:
-1. On the Samsung A21s, open **https://zendrix-hub.github.io/byte-harvest/** in Chrome, then tap ⋮ → **Install app** (or **Add to Home screen**).
+1. On the Samsung A21s, open **https://zendrix-hub.github.io/-byte-harvest/** in Chrome, then tap ⋮ → **Install app** (or **Add to Home screen**).
 2. Open it from the home screen while online, then go to **House → Download all questions** (about 7 MB) so it works offline.
 3. To bring Dojo history in, open the Dojo, go to Progress → **Export backup**, then in the game go to House → **Import file**. Misses become crops.
 4. To move progress between PC and phone, use House → **Copy save as text** on one device and **Paste backup text → Import** on the other.

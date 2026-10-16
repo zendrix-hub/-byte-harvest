@@ -19,6 +19,6 @@ const sw = readFileSync('dist/sw.js', 'utf8');
 if (sw.includes('.webp')) fail('question images must not be precached (they are cached on demand)');
 if (!sw.includes('papers')) fail('the "papers" runtime cache is missing');
 const manifest = JSON.parse(readFileSync('dist/manifest.webmanifest', 'utf8'));
-if (manifest.start_url !== '/byte-harvest/') fail(`start_url is ${manifest.start_url}`);
+if (manifest.start_url !== '/-byte-harvest/') fail(`start_url is ${manifest.start_url}`);
 if (manifest.display !== 'standalone') fail('display must be standalone');
 console.log('PWA check passed');
