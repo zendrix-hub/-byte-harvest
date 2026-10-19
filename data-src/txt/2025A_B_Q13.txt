@@ -1,0 +1,58 @@
+           Q13.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  through  ___C___  in the program.
+             Binary Search Trees (BST) are a fundamental data structure where each node has at most
+             two children: a left child and a right child. The key property of a BST is that each value of
+             all nodes in its left subtree are less than the value of the node, and each value of all nodes in
+             its right subtree are greater than the value of the node. The table shows the member variables
+             of the class  Node.  Node-type variable holds a reference to an instance of the class  Node. Each
+             node in a BST has a different value.
+                                    Table Member variables of class  Node
+              Member variable    Type    Description
+⟦code⟧      key    integer    Integer to be stored in the node.
+             left    Node    Reference to the instance that holds the left child of a
+                                          binary tree. If no left child exists, it is  undefined.
+             right    Node    Reference to the instance that holds the right child of a
+                                          binary tree. If no right child exists, it is  undefined.
+             The function  remove  removes a node with the same  key  value as the argument  key  from the
+             BST specified by the argument  node  and returns the resulting BST. The function searches
+             for a node with the same  key  value, and if the found node (call it X here) does not have a
+             right subtree, the function returns its left subtree. If X has a right subtree, the function locates
+             the node (call it Y here) with the smallest key value in the right subtree, replaces the  key
+             value of X with that of Y, and then removes Y. If there is no node with the same  key  value
+             in the BST, the function performs no operations. The procedure  test  demonstrates this
+             behavior by removing 1 node from a BST containing 7 nodes. The figure shows the BST
+             before and after node removal.
+                                    Figure BST before and after node removal
+             [Program]
+                ○  Node: remove(Node: node, integer: key)
+⟦code⟧           Node: node2
+⟦code⟧           if (node  is  undefined)
+⟦code⟧             return undefined
+⟦code⟧           elseif (key < node.key)
+⟦code⟧             node.left  ←  remove(node.left, key)
+⟦code⟧           elseif (key > node.key)
+⟦code⟧             node.right  ←  remove(node.right, key)
+⟦code⟧           elseif (node.right  is  undefined)
+⟦code⟧             return node.left
+⟦code⟧           else
+⟦code⟧             node2  ←  ___A___
+⟦code⟧             while (  ___B___  )
+⟦code⟧                node2  ←  node2.left
+⟦code⟧             endwhile
+⟦code⟧             node.key  ←  node2.key
+⟦code⟧             node.right  ←  remove(node.right,  ___C___  )
+⟦code⟧           endif
+⟦code⟧           return node
+                ○  test()
+                  Node: root  ←  the root node of BST on the left side of the figure
+⟦code⟧           root  ←  remove(root, 2)
+             Answer group
+                           A    B    C
+⟦code⟧          a)    node.left    node2.key < key    key
+⟦code⟧          b)    node.left    node2.key < key    node2.key
+⟦code⟧          c)    node.left    node2.left  is not  undefined    key
+⟦code⟧          d)    node.left    node2.left  is not  undefined    node2.key
+⟦code⟧          e)    node.right    node2.key < key    key
+⟦code⟧          f)    node.right    node2.key < key    node2.key
+⟦code⟧          g)    node.right    node2.left  is not  undefined    key
+⟦code⟧          h)    node.right    node2.left  is not  undefined    node2.key

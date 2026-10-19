@@ -1,0 +1,6 @@
+          Q60.    For a shrink-wrap license, which of the following is the point in time when a software
+             license agreement is concluded?
+             a)  At the time the purchased software is paid for
+             b)  At the time the CD-ROM containing the software is received
+             c)  At the time the DVD-ROM package containing the software is opened
+             d)  At the time the software is installed on a PC

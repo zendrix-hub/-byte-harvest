@@ -1,0 +1,37 @@
+           Q7.  From the answer group below, select the correct combination of answers to be inserted
+                into ____A____ and ____B____ in the program.
+             A singly linked list can be reversed using the following recursive procedure.
+             Let  head  be the first element of the list, and let  elm  be undefined.
+             (a) Reverse the order of the elements in the list starting from  head, and set the next element
+             of the last element in the reversed list—that is, the next element of  head—to  elm.
+             To “reverse the order of the elements in the list starting from  head,” reverse the list starting
+             from the next element of  head, and then connect  head  to the end of the reversed list. In other
+             words, execute (a) by setting  head  as  elm, and the next element of  head  as  head.
+             The recursive function  reverseList  reverses a singly linked list and returns the head of the
+             reversed  list.  Initially,  the  function  reverseList  is  called  as  reverseList(head,
+             undefined). Here,  head  is the head of the singly linked list before reversal and is of type
+             ListElement. The table provides an explanation of the member variables of the class
+             ListElement.  ListElement-type variables store references to instances of the class
+             ListElement.
+                      Table Explanation of the member variables of the class  ListElement
+                Member variable    Type    Description
+⟦code⟧         val    integer    The value of the element.
+⟦code⟧         next    ListElement    Reference to the next element, if there is no
+                                                 next element, the status is undefined.
+             [Program]
+                ○  ListElement: reverseList(ListElement: head, ListElement: elm)
+⟦code⟧           ListElement: listHead
+⟦code⟧           if (head.next  is not undefined)
+⟦code⟧             listHead  ←  reverseList(  ___A___  , head)
+⟦code⟧           else
+⟦code⟧             listHead  ←  head
+⟦code⟧           endif
+⟦code⟧           head.next  ←  ___B___
+⟦code⟧           return listHead
+             Answer group
+                            A    B
+⟦code⟧          a)    head.next    elm
+⟦code⟧          b)    head.next    elm.next
+⟦code⟧          c)    elm.next    head.next.next
+⟦code⟧          d)    elm.next    elm
+⟦code⟧          e)    elm.next    elm.next

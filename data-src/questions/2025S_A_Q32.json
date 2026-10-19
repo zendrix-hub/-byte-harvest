@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q32",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the function of a WAF?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Encrypting data and controlling access on web server"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Inspecting and filtering HTTP requests"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Managing user authentication and authorization"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Scanning malware on a web server"
+        }
+      ]
+    }
+  ]
+}

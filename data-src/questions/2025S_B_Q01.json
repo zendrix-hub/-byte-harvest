@@ -1,0 +1,98 @@
+{
+  "id": "2025S_B_Q01",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] through [[C]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "Centurial years refer to the years that are divisible by 100. The centurial years are not leap years except for years that are exactly divisible by 400. The non-centurial years, that is, years that are not divisible by 100, refer to leap years that are divisible by 4. The function `isLeapYear` receives an integer number `year` and returns `true` if a given year is a leap year or `false` otherwise."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ boolean: isLeapYear(integer: year) // returns true if the variable year\n                                     // is a leap year; otherwise, returns false\n  if ([[A]])\n    return [[B]]\n  elseif ([[C]])\n    return false\n  elseif (year mod 4 = 0)\n    return true\n  else\n    return false\n  endif"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B",
+      "C"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`year mod 100 = 0`",
+          "`false`",
+          "`year mod 400 = 0`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`year mod 100 = 0`",
+          "`true`",
+          "`year mod 400 = 0`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`year mod 100 ≠ 0`",
+          "`false`",
+          "`year mod 400 ≠ 0`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`year mod 100 ≠ 0`",
+          "`true`",
+          "`year mod 400 ≠ 0`"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "`year mod 400 = 0`",
+          "`false`",
+          "`year mod 100 = 0`"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "`year mod 400 = 0`",
+          "`true`",
+          "`year mod 100 = 0`"
+        ]
+      },
+      {
+        "k": "g",
+        "c": [
+          "`year mod 400 ≠ 0`",
+          "`false`",
+          "`year mod 100 ≠ 0`"
+        ]
+      },
+      {
+        "k": "h",
+        "c": [
+          "`year mod 400 ≠ 0`",
+          "`true`",
+          "`year mod 100 ≠ 0`"
+        ]
+      }
+    ]
+  }
+}

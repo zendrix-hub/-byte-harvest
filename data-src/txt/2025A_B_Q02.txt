@@ -1,0 +1,34 @@
+           Q2.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the program. Here, the array index starts at 1.
+             In statistics, the mode is the value that occurs most frequently in a dataset. For example, the
+             mode of the integer array {2, 1, 1, 9, 6, 6, 2, 5, 6} is 6, as it occurs most often. The function
+⟦code⟧      findMode  receives an integer array  arr  as a dataset and returns the mode for it.
+             [Program]
+                ○  integer: findMode(integer []: arr)
+                  integer: n  ←  the number of elements in  arr
+⟦code⟧           integer: m  ←  arr[1]  /*  Current mode value  */
+⟦code⟧           integer: m_c  ←  1    /*  Frequency count of mode  */
+⟦code⟧           integer: c, i, j
+                  for (increase  i  from  1  to  n - 1  by  1)
+⟦code⟧             c  ←  1
+                    for (increase  j  from  i + 1  to  n  by  1)
+⟦code⟧                if (  ___A___  )
+⟦code⟧                  c  ←  c + 1
+⟦code⟧                endif
+⟦code⟧             endfor
+⟦code⟧             if (  ___B___  )
+⟦code⟧                m_c  ←  c
+⟦code⟧                m  ←  arr[i]
+⟦code⟧             endif
+⟦code⟧           endfor
+⟦code⟧           return m
+             Answer group
+                                A    B
+⟦code⟧          a)    arr[i] = arr[j]    m < arr[i]
+⟦code⟧          b)    arr[i] = arr[j]    m  ≠  arr[i]
+⟦code⟧          c)    arr[i] = arr[j]    m_c < c
+⟦code⟧          d)    arr[i] = arr[j]    m_c > c
+⟦code⟧          e)    m = arr[j]    m < arr[i]
+⟦code⟧          f)    m = arr[j]    m  ≠  arr[i]
+⟦code⟧          g)    m = arr[j]    m_c < c
+⟦code⟧          h)    m = arr[j]    m_c > c

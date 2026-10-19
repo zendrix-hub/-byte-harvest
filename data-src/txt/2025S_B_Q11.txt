@@ -1,0 +1,35 @@
+           Q11.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  in the description and  ___B___  in the program. Here, the array index
+                starts at 0.
+             The procedure  sort  receives an integer array  arr  and prints all the integers in  arr  in
+             ascending order, separated by commas. The number of elements in  arr  is  ≥  1.  The values
+             of all array elements are in the range of 0–10.
+⟦code⟧      If  arr  is  {9,  3,  2,  0,  9,  3,  0,  1,  5,  3,  8}, at the end of the procedure, it outputs
+             "0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9,  " and the values of the elements of array  s  will
+⟦code⟧      be  {  ___A___  }
+             [Program]
+                ○  sort(integer []: arr) //  prints all the elements in  arr  in ascending order
+⟦code⟧           integer []: s  ←  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+⟦code⟧           integer: i, j
+                  for (increase  i  from  0  to  (the number of elements in  arr) - 1  by  1)
+⟦code⟧             s[arr[i]]  ←  s[arr[i]] + 1
+⟦code⟧           endfor
+                  for (increase  i  from  0  to  10  by  1)
+⟦code⟧             if (s[i] > 0)
+                       for (increase  j  from  0  to  s[i] - 1  by  1)
+⟦code⟧                  output  ___B___  and ", "
+⟦code⟧                endfor
+⟦code⟧             endif
+⟦code⟧           endfor
+⟦code⟧           return
+             Answer group
+                                         A    B
+⟦code⟧          a)    0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9    arr[i]
+⟦code⟧          b)    0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9    i
+⟦code⟧          c)    0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9    s[i]
+⟦code⟧          d)    0, 1, 2, 3, 5, 8, 9    arr[j]
+⟦code⟧          e)    0, 1, 2, 3, 5, 8, 9    i
+⟦code⟧          f)    0, 1, 2, 3, 5, 8, 9    j
+⟦code⟧          g)    2, 1, 1, 3, 0, 1, 0, 0, 1, 2, 0    i
+⟦code⟧          h)    2, 1, 1, 3, 0, 1, 0, 0, 1, 2, 0    j
+⟦code⟧          i)    2, 1, 1, 3, 0, 1, 0, 0, 1, 2, 0    s[j]

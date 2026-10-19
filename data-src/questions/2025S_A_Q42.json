@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q42",
+  "stem": [
+    { "t": "p", "x": "Which of the following is the method of estimation in the COCOMO model in software estimation?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "The effort and duration of the project are estimated based on the size of the software." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "The effort of the project is estimated based on the duration of the project." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "The size of the software and duration of the project are estimated based on the effort of the project." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "The size of the software and effort of the project are estimated based on the duration of the project." } ] }
+  ]
+}

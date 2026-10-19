@@ -1,0 +1,147 @@
+{
+ "id": "2025S_B_Q12",
+ "stem": [
+  {
+   "t": "p",
+   "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the program. Here, the array index starts at 1."
+  },
+  {
+   "t": "p",
+   "x": "The function `hammingDistance` compares the two-character arrays `s1` and `s2` that are given as arguments. `s1` and `s2` have one or more elements. If `s1` and `s2` do not have the same number of elements, the function returns -1. Otherwise, it returns the number of indices where two arrays have different element values at the same index. The figure shows an example of two character arrays. APPLE and APRIE have different element values at two indices."
+  },
+  {
+   "t": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 80\" font-family=\"serif\" font-size=\"16\"><rect x=\"75.0\" y=\"8\" width=\"50\" height=\"32\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"100.0\" y=\"29.5\" text-anchor=\"middle\" fill=\"#222\">A</text><rect x=\"125.0\" y=\"8\" width=\"50\" height=\"32\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"150.0\" y=\"29.5\" text-anchor=\"middle\" fill=\"#222\">P</text><rect x=\"175.0\" y=\"8\" width=\"50\" height=\"32\" fill=\"#e6e6e6\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"200.0\" y=\"29.5\" text-anchor=\"middle\" fill=\"#222\">P</text><rect x=\"225.0\" y=\"8\" width=\"50\" height=\"32\" fill=\"#e6e6e6\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"250.0\" y=\"29.5\" text-anchor=\"middle\" fill=\"#222\">L</text><rect x=\"275.0\" y=\"8\" width=\"50\" height=\"32\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"300.0\" y=\"29.5\" text-anchor=\"middle\" fill=\"#222\">E</text><rect x=\"75.0\" y=\"40\" width=\"50\" height=\"32\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"100.0\" y=\"61.5\" text-anchor=\"middle\" fill=\"#222\">A</text><rect x=\"125.0\" y=\"40\" width=\"50\" height=\"32\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"150.0\" y=\"61.5\" text-anchor=\"middle\" fill=\"#222\">P</text><rect x=\"175.0\" y=\"40\" width=\"50\" height=\"32\" fill=\"#e6e6e6\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"200.0\" y=\"61.5\" text-anchor=\"middle\" fill=\"#222\">R</text><rect x=\"225.0\" y=\"40\" width=\"50\" height=\"32\" fill=\"#e6e6e6\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"250.0\" y=\"61.5\" text-anchor=\"middle\" fill=\"#222\">I</text><rect x=\"275.0\" y=\"40\" width=\"50\" height=\"32\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1\"/><text x=\"300.0\" y=\"61.5\" text-anchor=\"middle\" fill=\"#222\">E</text></svg>",
+   "alt": "Two rows of five boxed characters. Top row: A, P, P, L, E. Bottom row: A, P, R, I, E. The third and fourth columns (P/R and L/I) are shaded in both rows."
+  },
+  {
+   "t": "p",
+   "x": "Figure  Example of two-character arrays"
+  },
+  {
+   "t": "p",
+   "x": "The table lists examples of `s1` and `s2` given to the function `hammingDistance` and the return values. In the program, areas outside of the arrays must not be referenced."
+  },
+  {
+   "t": "p",
+   "x": "Table  Examples of `s1` and `s2` given to the function `hammingDistance` and the return values"
+  },
+  {
+   "t": "table",
+   "head": 1,
+   "rows": [
+    [
+     "`s1`",
+     "`s2`",
+     "Return value"
+    ],
+    [
+     "`{\"a\", \"p\", \"p\", \"l\", \"e\"}`",
+     "`{\"a\", \"p\", \"p\", \"l\", \"e\"}`",
+     "`0`"
+    ],
+    [
+     "`{\"a\", \"p\", \"p\", \"l\", \"e\"}`",
+     "`{\"a\", \"p\", \"r\", \"i\", \"l\"}`",
+     "`3`"
+    ],
+    [
+     "`{\"a\", \"p\", \"p\", \"l\", \"e\"}`",
+     "`{\"m\", \"e\", \"l\", \"o\", \"n\"}`",
+     "`5`"
+    ],
+    [
+     "`{\"a\", \"p\", \"p\", \"l\", \"e\"}`",
+     "`{\"p\", \"i\", \"e\"}`",
+     "`-1`"
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "x": "[Program]"
+  },
+  {
+   "t": "code",
+   "x": "○ integer: hammingDistance(character []: s1, character []: s2)\n  integer: i, cnt ← 0\n  if (the number of elements in s1 ≠ the number of elements in s2)\n    return −1\n  endif\n  for (increase i from 1 to the number of elements in s1 by 1)\n    if ([[ ]])\n      cnt ← cnt + 1\n    endif\n  endfor\n  return cnt"
+  },
+  {
+   "t": "p",
+   "x": "Answer group"
+  }
+ ],
+ "opts": [
+  {
+   "k": "a",
+   "b": [
+    {
+     "t": "p",
+     "x": "`s1[cnt] = s2[cnt]`"
+    }
+   ]
+  },
+  {
+   "k": "b",
+   "b": [
+    {
+     "t": "p",
+     "x": "`s1[cnt] ≠ s2[cnt]`"
+    }
+   ]
+  },
+  {
+   "k": "c",
+   "b": [
+    {
+     "t": "p",
+     "x": "`s1[cnt] = s2[i]`"
+    }
+   ]
+  },
+  {
+   "k": "d",
+   "b": [
+    {
+     "t": "p",
+     "x": "`s1[cnt] ≠ s2[i]`"
+    }
+   ]
+  },
+  {
+   "k": "e",
+   "b": [
+    {
+     "t": "p",
+     "x": "`s1[i] = s2[cnt]`"
+    }
+   ]
+  },
+  {
+   "k": "f",
+   "b": [
+    {
+     "t": "p",
+     "x": "`s1[i] ≠ s2[cnt]`"
+    }
+   ]
+  },
+  {
+   "k": "g",
+   "b": [
+    {
+     "t": "p",
+     "x": "`s1[i] = s2[i]`"
+    }
+   ]
+  },
+  {
+   "k": "h",
+   "b": [
+    {
+     "t": "p",
+     "x": "`s1[i] ≠ s2[i]`"
+    }
+   ]
+  }
+ ]
+}

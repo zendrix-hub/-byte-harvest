@@ -1,0 +1,4 @@
+          Q9.  When a CPU has a special register used in push and pop instructions, which of the
+             following is an appropriate term for this register?
+             a)  Instruction register    b)  Program counter
+             c)  Stack pointer    d)  Status register

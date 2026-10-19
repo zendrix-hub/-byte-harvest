@@ -1,0 +1,51 @@
+{
+  "id": "2025S_A_Q35",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the UML class diagram that shows a generalization relation?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "svg",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 280\" font-family=\"sans-serif\" font-size=\"15\" fill=\"#222\"><rect x=\"110\" y=\"10\" width=\"140\" height=\"74\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"60\" x2=\"250\" y2=\"60\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"180.0\" y=\"28.0\" text-anchor=\"middle\">Automobile</text><line x1=\"180\" y1=\"84\" x2=\"180\" y2=\"150\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"172\" y=\"104\" text-anchor=\"end\">1</text><text x=\"172\" y=\"146\" text-anchor=\"end\">1</text><rect x=\"110\" y=\"150\" width=\"140\" height=\"120\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"222\" x2=\"250\" y2=\"222\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"246\" x2=\"250\" y2=\"246\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"180.0\" y=\"172.0\" text-anchor=\"middle\">Automobile</text><text x=\"180.0\" y=\"191.0\" text-anchor=\"middle\">inspection</text><text x=\"180.0\" y=\"210.0\" text-anchor=\"middle\">certificate</text></svg>",
+          "alt": "UML class diagram: class Automobile connected by a plain solid line to class Automobile inspection certificate below it, with multiplicity 1 at the Automobile end and 1 at the Automobile inspection certificate end. Each class box has a name compartment and two empty compartments."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "svg",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 234\" font-family=\"sans-serif\" font-size=\"15\" fill=\"#222\"><rect x=\"110\" y=\"10\" width=\"140\" height=\"74\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"60\" x2=\"250\" y2=\"60\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"180.0\" y=\"28.0\" text-anchor=\"middle\">Automobile</text><line x1=\"180\" y1=\"150\" x2=\"180\" y2=\"86\" stroke=\"#222\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><polyline points=\"173,98 180,85 187,98\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"150\" width=\"140\" height=\"74\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"176\" x2=\"250\" y2=\"176\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"200\" x2=\"250\" y2=\"200\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"180.0\" y=\"168.0\" text-anchor=\"middle\">Driver</text></svg>",
+          "alt": "UML class diagram: class Driver below class Automobile, connected by a dashed line from Driver to Automobile with an open arrowhead pointing at Automobile. Each class box has a name compartment and two empty compartments."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "svg",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 254\" font-family=\"sans-serif\" font-size=\"15\" fill=\"#222\"><rect x=\"110\" y=\"10\" width=\"140\" height=\"74\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"60\" x2=\"250\" y2=\"60\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"180.0\" y=\"28.0\" text-anchor=\"middle\">Automobile</text><polygon points=\"180,84 170,102 190,102\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"102\" x2=\"180\" y2=\"170\" stroke=\"#222\" stroke-width=\"1.5\"/><rect x=\"110\" y=\"170\" width=\"140\" height=\"74\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"196\" x2=\"250\" y2=\"196\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"220\" x2=\"250\" y2=\"220\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"180.0\" y=\"188.0\" text-anchor=\"middle\">Sports car</text></svg>",
+          "alt": "UML class diagram: class Sports car below class Automobile, connected by a solid line from Sports car to Automobile with a hollow triangle arrowhead at the Automobile end. Each class box has a name compartment and two empty compartments."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "svg",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 244\" font-family=\"sans-serif\" font-size=\"15\" fill=\"#222\"><rect x=\"110\" y=\"10\" width=\"140\" height=\"74\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"36\" x2=\"250\" y2=\"36\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"60\" x2=\"250\" y2=\"60\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"180.0\" y=\"28.0\" text-anchor=\"middle\">Automobile</text><polygon points=\"150,84 158,95 150,106 142,95\" fill=\"#222\" stroke=\"#222\" stroke-width=\"1.5\"/><polygon points=\"210,84 218,95 210,106 202,95\" fill=\"#222\" stroke=\"#222\" stroke-width=\"1.5\"/><polyline points=\"150,106 150,126 60,126 60,160\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"/><polyline points=\"210,106 210,126 300,126 300,160\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"164\" y=\"120\">1</text><text x=\"196\" y=\"120\" text-anchor=\"end\">1</text><text x=\"50\" y=\"156\" text-anchor=\"end\">*</text><text x=\"290\" y=\"156\" text-anchor=\"end\">*</text><rect x=\"10\" y=\"160\" width=\"100\" height=\"74\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"10\" y1=\"186\" x2=\"110\" y2=\"186\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"10\" y1=\"210\" x2=\"110\" y2=\"210\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"60.0\" y=\"178.0\" text-anchor=\"middle\">Tire</text><rect x=\"250\" y=\"160\" width=\"100\" height=\"74\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"250\" y1=\"186\" x2=\"350\" y2=\"186\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"250\" y1=\"210\" x2=\"350\" y2=\"210\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"300.0\" y=\"178.0\" text-anchor=\"middle\">Engine</text></svg>",
+          "alt": "UML class diagram: class Automobile at top with two filled diamonds on its bottom edge. From the left diamond a solid line runs to class Tire (bottom left), multiplicity 1 at the Automobile end and * at the Tire end. From the right diamond a solid line runs to class Engine (bottom right), multiplicity 1 at the Automobile end and * at the Engine end. Each class box has a name compartment and two empty compartments."
+        }
+      ]
+    }
+  ]
+}

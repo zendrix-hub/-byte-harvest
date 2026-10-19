@@ -1,0 +1,12 @@
+          Q21.    Which of the following is the clause that should be inserted into blank  ___A___  of
+             the SQL statement below in order to display the total sales data for each product that sold
+             for at least $5,000 from the table OrderDetails?
+              OrderDetails (OrderID, ProductID, UnitPrice, Quantity)
+              [SQL statement]
+⟦code⟧                SELECT ProductID,  SUM(UnitPrice  *  Quantity)
+⟦code⟧                FROM  OrderDetails
+⟦code⟧                ___A___
+⟦code⟧      a)  GROUP  BY  ProductID  HAVING  SUM(UnitPrice *  Quantity)  >=  5000;
+⟦code⟧      b)  HAVING SUM(UnitPrice  *  Quantity)  >=  5000;
+⟦code⟧      c)  HAVING SUM(UnitPrice  *  Quantity)  >=  5000  GROUP BY ProductI;
+⟦code⟧      d)  WHERE  SUM(UnitPrice *  Quantity)  >=  5000;

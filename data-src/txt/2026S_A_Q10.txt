@@ -1,0 +1,6 @@
+          Q10.    Which of the following is an appropriate CPU operation associated with cache
+             memory?
+             a)  When a cache hit occurs, the CPU fetches data from ROM.
+             b)  When a cache hit occurs, the CPU fetches data from the main memory.
+             c)  When a cache miss occurs, the CPU fetches data from the cache memory.
+             d)  When a cache miss occurs, the CPU fetches data from the main memory.

@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q09",
+  "stem": [
+    { "t": "p", "x": "When a CPU has a special register used in push and pop instructions, which of the following is an appropriate term for this register?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "Instruction register" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "Program counter" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "Stack pointer" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Status register" } ] }
+  ]
+}

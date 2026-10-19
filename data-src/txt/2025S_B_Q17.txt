@@ -1,0 +1,49 @@
+           Q17.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the description.
+             Recently, an e-commerce company X was cyber-attacked by an attacker. Mr. Y, the security
+             team  leader  at  the  company,  is  investigating  the  incident  and  considering  future
+             countermeasures. The following is the summary of the incident:
+                   The first half of the attack: An attacker visited company X's website to collect valuable
+                   information and knew the name of a senior worker of the IT department who was only
+                   responsible for system administration. One day, a receptionist for Company X received
+                   a phone call from a man with a fantastic voice. He asked some personal questions
+                   about the senior IT guy, Mr. Z. The caller skillfully manipulated the receptionist into
+                   giving him personal information about the IT guy. The caller was the attacker who got
+                   helpful information for further attacks on the company's server.
+                   The second half of the attack: After that, the attacker dug into social sites and other
+                   resources to get additional information about Mr. Z and the servers of Company X,
+                   and then he created a password file based on Mr. Z's information and a file with the
+                   company server's IP address list. Then, the attacker remotely attacked a server of the
+                   company using the password list and an IP address of the server.
+             Mr. Y implemented two measures as future countermeasures for a similar attack. The
+             measure for the first half of the attack is  ___A___  . The other for the second half is
+⟦code⟧       ___B___  .
+             Answer group
+                                    A    B
+                     abolition of company-wide   encrypting access to websites using
+                 a)
+                     telephone use   HTTPS
+                     abolition of company-wide   implement account lock for consecutive
+                 b)
+                     telephone use   incorrect password attempts on the server
+                     abolition of company-wide   prohibit employees from using social
+                 c)
+                     telephone use   networking services
+                     education for the employees   encrypting access to websites using
+                 d)
+                     against social engineering   HTTPS
+                     education for the employees   implement account lock for consecutive
+                 e)
+                     against social engineering   incorrect password attempts on the server
+                     education for the employees   prohibit employees from using social
+                 f)
+                     against social engineering   networking services
+                     restricting access to the websites   encrypting access to websites using
+                 g)
+                     using IP address-based block lists   HTTPS
+                     restricting access to the websites   implement account lock for consecutive
+                 h)
+                     using IP address-based block lists   incorrect password attempts on the server
+                     restricting access to the websites   prohibit employees from using social
+                 i)
+                     using IP address-based block lists   networking services

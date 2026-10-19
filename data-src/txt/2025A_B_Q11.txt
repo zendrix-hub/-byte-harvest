@@ -1,0 +1,32 @@
+           Q11.  From the answer group below, select the correct combination of answers to be inserted
+                into ____A____ and ____B____ in the program. Here, the array index starts at 1.
+             The bubble sort compares adjacent elements in an array and swaps them if they are out of
+             order. It makes multiple passes through an array. The bubble sort can be modified to stop
+             early if it finds that the array has become sorted. The function  quickBubble  is modified
+             from conventional bubble sort, which sorts the elements in ascending order, to recognize a
+             sorted array and stop early. For example, the sorting of the unordered array  {18, 1, 8, 6,
+⟦code⟧      2, 9, 12, 14, 7, 11}  is completed in six passes.
+             [Program]
+                ○  integer []: quickBubble(integer []: array)
+⟦code⟧           integer []: arraySorted  ←  array
+⟦code⟧           boolean: exchange
+⟦code⟧           integer: maxIdx, i
+⟦code⟧           exchange  ←  true
+                  maxIdx  ←  (the number of elements in  arraySorted) - 1
+⟦code⟧           while (  ___A___  and  ___B___  )
+⟦code⟧             exchange  ←  false
+                    for (increase  i  from  1  to  maxIdx  by  1)
+⟦code⟧                if (arraySorted[i] > arraySorted[i + 1])
+⟦code⟧                  exchange  ←  true
+                         swap the values of  arraySorted[i]  and  arraySorted[i + 1]
+⟦code⟧                endif
+⟦code⟧             endfor
+⟦code⟧             maxIdx  ←  maxIdx - 1
+⟦code⟧           endwhile
+⟦code⟧           return arraySorted
+             Answer group
+                             A    B
+⟦code⟧          a)    maxIdx > 0    exchange = true
+⟦code⟧          b)    maxIdx > 0    exchange = false
+⟦code⟧          c)    maxIdx > 1    exchange = true
+⟦code⟧          d)    maxIdx > 1    exchange = false

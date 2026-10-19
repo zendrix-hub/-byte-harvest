@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q52",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an explanation of Supply Chain Management (SCM)?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Customer information that are collected through various channels is consolidated and utilized to establish closer relationships with customers."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Employees’ skills and behavior characteristics are grasped, and management such as appropriate personnel assignment and evaluation from the perspective of human resources strategy is performed."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Intellectual assets of individuals, such as know-how and experience, are shared across the organization to be used for creative work."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "The entire series of business operations, from purchasing and production to sales and distribution, is reexamined both within the company and among companies in view of total optimization in order to shorten delivery times and minimize inventory."
+        }
+      ]
+    }
+  ]
+}

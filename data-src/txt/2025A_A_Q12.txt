@@ -1,0 +1,18 @@
+          Q12.    One (1) server, three (3) clients, and two (2) printers are connected via a LAN as shown
+             in the figure below. This system prints data that is located on the server in response to
+             instructions from the clients. When the availability of each device is as shown in the table
+             below, which of the following is the expression that represents the availability for the system?
+             Here, the system is considered available if one (1) of the three (3) clients and one (1) of the
+             two (2) printers are running.
+                                                         Server
+                                                                Printer   Printer
+                         Client   Client   Client
+                                          Device    Availability
+                                        Server    a
+                                        Client    b
+                                        Printer    c
+                                        LAN    1
+                   3  2    3    2
+             a)  ab c   b)  a  (1−b ) (1−c )
+                       3    2    3    2
+             c)  a  (1−b) (1−c)   d)  a  (1−(1−b) ) (1−(1−c) )

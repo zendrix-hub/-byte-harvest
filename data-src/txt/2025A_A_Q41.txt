@@ -1,0 +1,14 @@
+          Q41.    Eight (8) activities and milestones of a project are shown in the arrow diagram below.
+             Which of the following is the critical path of this project?
+                     A   D   E
+                    15    10   15
+                                                        H
+                       B   C  15
+                                    F   G 10
+                                   15   5
+                                                            Legend:
+                                                                     Activity name
+                                                                    Number of days
+                                                                       required
+                                                                       Dummy
+             a)  A,  C,  E,  H    b)  A,  C,  F,  G    c)  B,  E,  H    d)  B,  F,  G

@@ -1,0 +1,13 @@
+          Q30.    When a fraud occurs, all three (3) elements of the “fraud triangle” are believed to exist.
+             Which of the following is the appropriate explanation of an element of the “fraud triangle”?
+             a)  “Information and communication” refers to the identification, understanding, and
+                processing of the required information, and its proper communication both within and
+                outside the organization, and among the concerned persons.
+             b)  “Opportunity” refers to the existence of an environment, such as technologies like the
+                information system, physical environment, organizational rules, etc., that makes fraud
+                possible or easy to commit.
+             c)  “Pressure,” also known as incentive or motivation, refers to the selfish reasoning to
+                justify committing fraud, such as interpreting things in a way that overcomes guilt or
+                shifts blame.
+             d)  “Rationalization” refers to the feeling of being forced caused by unrealistic performance
+                targets.

@@ -1,0 +1,15 @@
+          Q21.    Which of the following is the clause that is inserted into blank  A  of the SQL statement in
+             order to display the names of employees who work in the same department as any employee
+             located in "New York"?
+              Employees (employee_id, employee_name, salary, department_id)
+              Departments (department_id, department_name, location)
+              [SQL command]
+              SELECT employee_name FROM Employees WHERE   A
+              a)  department_id IN (SELECT department_id FROM Departments WHERE location =
+⟦code⟧           'New York');
+              b)  department_id NOT IN (SELECT department_id FROM Departments WHERE location
+⟦code⟧           = 'New York');
+              c)  department_id IN (SELECT department_id FROM Employees WHERE location =
+⟦code⟧           'New York');
+              d)  department_id = ALL (SELECT department_id FROM Employees WHERE location =
+⟦code⟧           'New York');

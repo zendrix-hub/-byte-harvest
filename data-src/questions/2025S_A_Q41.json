@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q41",
+  "stem": [
+    { "t": "p", "x": "Which of the following is an appropriate explanation of earned value in project management?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "A measure of work completed in terms of budget authorized for that work" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "A time-phased budget that estimates the total cost of a project" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "An authorized budget for the planned work" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Realized cost incurred for the work performed on an activity during a specific time period" } ] }
+  ]
+}

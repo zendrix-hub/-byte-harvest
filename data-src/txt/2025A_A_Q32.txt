@@ -1,0 +1,10 @@
+          Q32.  Which of the following is an appropriate description concerning the timing and purpose
+             of port scanning when an attacker intrudes into a system?
+             a)  It is conducted at the post-processing stage in order to look for any evidence of attack
+                that may remain in the system log.
+             b)  It is conducted at the preliminary investigation stage in order to look for any service that
+                can be attacked.
+             c)  It is conducted at the privilege escalation stage in order to look for any account whose
+                privileges can be obtained.
+             d)  It is conducted at the unauthorized action stage in order to look for any user information
+                that may be beneficial to the attacker.

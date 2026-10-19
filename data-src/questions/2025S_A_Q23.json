@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q23",
+  "stem": [
+    { "t": "p", "x": "Which of the following is the most appropriate information for a router to determine the destination of an incoming packet?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "Destination IP address" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "Destination MAC address" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "Source IP address" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Source MAC address" } ] }
+  ]
+}

@@ -1,0 +1,26 @@
+           Q3.  From the answer group below, select the correct answer to be inserted into  _______  in
+                the description.
+             The greatest common divisor (GCD) of two numbers is the largest number that divides both
+             of them. The function  GCD  receives two positive integer numbers and returns their GCD.
+             When the function  GCD  is called as  GCD(98, 56), the output is  _______  in (1)–(4) below.
+⟦code⟧      Here, the  output  statement “output  m,  n” outputs the values of variables  m  and  n, and
+             subsequently starts a new line.
+                   (1)    98 56   (2)  42 56   (3)  42 56   (4)  56 42
+⟦code⟧                 42 14   42 14   42 28   42 14
+⟦code⟧                 28 14   28 14   14 28   14 28
+⟦code⟧                 14 7   14 14   14 14   14 14
+             [Program]
+                ○  integer: GCD(integer: x, integer: y)
+⟦code⟧           integer: m  ←  x
+⟦code⟧           integer: n  ←  y
+⟦code⟧           while (m  ≠  n)
+⟦code⟧             if (m > n)
+⟦code⟧                m  ←  m - n
+⟦code⟧             else
+⟦code⟧                n  ←  n - m
+⟦code⟧             endif
+⟦code⟧             output m, n
+⟦code⟧           endwhile
+⟦code⟧           return m
+             Answer group
+                a)  (1)    b)  (2)    c)  (3)    d)  (4)

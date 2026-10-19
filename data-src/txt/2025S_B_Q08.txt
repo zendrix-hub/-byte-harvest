@@ -1,0 +1,55 @@
+           Q8.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the program. Here, the array index starts at 1.
+             The function  reverse  takes a string  inputStr  as a parameter and returns the reversed string.
+             Here, the length of the string given to  inputStr  is 100 or less. In the program, areas outside
+             of the arrays must not be referenced and the undefined value must not be appended to a string.
+             [Program]
+⟦code⟧         global: character []: stack  ←  {100 undefined}
+⟦code⟧         global: integer: sp  ←  0
+                ○  string: reverse(string: inputStr)
+                  integer: n  ←  length of  inputStr
+⟦code⟧           integer: i
+⟦code⟧           character: x, v
+⟦code⟧           string: outputStr  ←  ""
+                  for (increase  i  from  1  to  n  by  1)
+                    x  ←  the  i-th  character  of  string  inputStr
+⟦code⟧             push(x)
+⟦code⟧           endfor
+⟦code⟧           while (sp  ≠  ___A___  )
+⟦code⟧             v  ←  pop()
+                    append  v  to  outputStr
+⟦code⟧           endwhile
+⟦code⟧           return outputStr
+                ○  push(character: x)
+⟦code⟧            sp  ←  sp + 1
+⟦code⟧            stack[sp]  ←  x
+                ○  character: pop()
+⟦code⟧           character: retvar
+⟦code⟧           ___B___
+⟦code⟧           return retvar
+            Answer group
+                         A    B
+⟦code⟧                         retvar  ←  stack[sp]
+                 a)    −1
+⟦code⟧                         sp  ←  sp + 1
+⟦code⟧                         retvar  ←  stack[sp]
+                 b)    −1
+⟦code⟧                         sp  ←  sp  −  1
+⟦code⟧                         sp  ←  sp + 1
+                 c)    −1
+⟦code⟧                         retvar  ←  stack[sp]
+⟦code⟧                         sp  ←  sp  −  1
+                 d)    −1
+⟦code⟧                         retvar  ←  stack[sp]
+⟦code⟧                         retvar  ←  stack[sp]
+                 e)    0
+⟦code⟧                         sp  ←  sp + 1
+⟦code⟧                         retvar  ←  stack[sp]
+                 f)    0
+⟦code⟧                         sp  ←  sp  −  1
+⟦code⟧                         sp  ←  sp + 1
+                 g)    0
+⟦code⟧                         retvar  ←  stack[sp]
+⟦code⟧                         sp  ←  sp  −  1
+                 h)    0
+⟦code⟧                         retvar  ←  stack[sp]

@@ -1,0 +1,23 @@
+          Q4.  A vehicle travels along a circular path as shown in the figure below. Two sensors,  L  and
+             R,  whose revolution speeds are independently controlled, are attached to the left and right
+             rear wheels. Sensors  L  and  R  are photo-reflective sensors, and their values change according
+             to the ratio of black and white regions they pass over. If the ratio increases, the sensor value
+             decreases, and if the ratio decreases, the sensor value increases. Which of the following is
+             an appropriate control to ensure that the vehicle travels along the black outline of the circle?
+             Here, if the values of the two sensors are equal, the motor revolution speeds return to the
+             initial values.
+                                                                      Moving
+                                                                      direction
+                                                Sensor  L    Sensor  R
+                                                                       Front wheel
+                                                            Control
+                                                              unit   Rear wheels
+                                                  Motor  L    Motor  R
+                                                   Circle
+                     Sensor  L  value > Sensor  R  value    Sensor  L  value < Sensor  R  value
+                       Motor  L   Motor  R   Motor  L   Motor  R
+                   Revolution speed   Revolution speed   Revolution speed   Revolution speed
+               a)    Decrease    Increase    Decrease    Increase
+               b)    Decrease    Increase    Increase    Decrease
+               c)    Increase    Decrease    Decrease    Increase
+               d)    Increase    Decrease    Increase    Decrease

@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q02",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the binary fraction that is the nearest equivalent to the decimal fraction 23.375?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "10111.011"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "10111.110"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "11101.011"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "11101.110"
+        }
+      ]
+    }
+  ]
+}

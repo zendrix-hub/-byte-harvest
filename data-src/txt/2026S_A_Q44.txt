@@ -1,0 +1,10 @@
+          Q44.    As for the activities in capacity management to estimate a service’s capacity, capability,
+             and performance, which of the following is trend analysis?
+             a)  Creating a model that accurately reflects the current performance, as the first phase of
+                modeling
+             b)  Generating simulated transactions and predicting the response time and throughput of a
+                service
+             c)  Understanding the chronological usage of a specific resource and predicting usage
+                changes in the future
+             d)  Using mathematical techniques, such as queueing theory, and predicting the response
+                time and throughput of a service

@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q50",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is a characteristic of the growth stage in a product life cycle?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Demand decreases, and the withdrawal of some companies is observed. A decision needs to be made regarding whether it is possible to gain a strong foothold at this stage. Migration into an alternative market is also considered."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Demand is occasional, and exploiting new demand is key to success. Conviction for succeeding in a specific target market is necessary."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Demand reaches a peak, and the differentiation of the product and segmentation of the market become clear. The competition between competitors also intensifies, and it becomes important to add new product types and reduce costs."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "The market starts to understand the value of the product. Both the product line and distribution channels need to be expanded. This stage sees an increase in sales and also requires investment."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+          Q5.  Among the four tree traversal techniques—breadth-first, in-order, post-order, and pre-
+             order—which of the following is the appropriate combination to ensure that the last two
+             nodes visited are the same in the tree shown below, when the left child is explored first?
+                            5    20
+                        3    22
+               a)    Breadth-First    Post-order
+               b)    Breadth-First    Pre-order
+               c)    In-order    Post-order
+               d)    In-order    Pre-order

@@ -1,0 +1,34 @@
+               Q4.  From the answer group below, select the correct combination of answers to be inserted
+                    into ____A____ through  ___C___  in the program.
+                 The function  isHarshad  checks whether the given integer  n  is a Harshad number. The
+                 function returns  true  if the given number is a Harshad number, or  false  otherwise. A
+                 Harshad number, also known as a Niven number, is a positive integer that is divisible by the
+                 sum of its digits. For instance, 156 is a Harshad number because the sum of its digits (1 + 5
+                 + 6 = 12) divides it evenly without a remainder (156 ÷ 12 = 13).
+                 [Program]
+                    ○  boolean: isHarshad(integer: n)
+⟦code⟧               integer: num  ←  n
+⟦code⟧               integer: sum  ←  0
+⟦code⟧               if (num < 1)
+⟦code⟧                 return false
+⟦code⟧               endif
+⟦code⟧               while (num > 0)
+                        sum  ←  sum + (  ____A____  )
+                        num  ←  (  ____B____ )
+⟦code⟧               endwhile
+⟦code⟧               return (  ____C____  )  // Return true if n is a Harshad number,
+⟦code⟧                                    // or false otherwise.
+                 Answer group
+                                    A    B    C
+⟦code⟧              a)    integer part of (num ÷   num mod 10    sum = n
+⟦code⟧                  10)
+⟦code⟧              b)    integer part of (num ÷   num mod 10    num mod sum = 0
+⟦code⟧                  10)
+⟦code⟧              c)    integer part of (num ÷   num mod 10    n mod sum = 0
+⟦code⟧                  10)
+⟦code⟧              d)    num mod 10    integer part of (num ÷ sum = n
+⟦code⟧                                           10)
+⟦code⟧              e)    num mod 10    integer part of (num ÷ num mod sum = 0
+⟦code⟧                                           10)
+⟦code⟧              f)    num mod 10    integer part of (num ÷ n mod sum = 0
+⟦code⟧                                           10)

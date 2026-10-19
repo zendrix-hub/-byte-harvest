@@ -1,0 +1,22 @@
+               Q5.  From the answer group below, select the correct answer to be inserted into _________ in
+                    the description.
+                 When the procedure  proc1  is called, the output is “  _______  ” in turn.
+                 [Program]
+                    ○  proc1()
+⟦code⟧               proc2()
+⟦code⟧               proc3()
+⟦code⟧               output "A, "
+                    ○  proc2()
+⟦code⟧               output "B, "
+⟦code⟧               proc3()
+                    ○  proc3()
+⟦code⟧               output "C, "
+                 Answer group
+                  a)  A, B, B, C,
+                  b)  A, B, C, C,
+                  c)  B, A, C, C,
+                  d)  B, C, B, A,
+                  e)  B, C, C, A,
+                  f)  C, B, A, C,
+                  g)  C, B, B, A,
+                  h)  C, B, C, A,

@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q40",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate explanation of a Sprint in the Scrum methodology?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "A daily meeting where team members review progress and plan the day's work"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "A fixed-length period dedicated to developing a product increment"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "A self-organizing team responsible for product development"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "List of tasks and features the Scrum team has yet to complete"
+        }
+      ]
+    }
+  ]
+}

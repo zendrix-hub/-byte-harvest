@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q60",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Company A purchased a machine for an original cost of $126,000. The salvage value after 6 years is $6,000. What is the annual depreciation expense (in dollars) by using the straight-line method?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "12,000"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "20,000"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "21,000"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "36,000"
+        }
+      ]
+    }
+  ]
+}

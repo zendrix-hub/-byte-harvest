@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q34",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the software architecture that decomposes applications into small, loosely coupled services that communicate over APIs?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Event-Driven Architecture"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Microservices Architecture"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Serverless Architecture"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Service-Oriented Architecture (SOA)"
+        }
+      ]
+    }
+  ]
+}

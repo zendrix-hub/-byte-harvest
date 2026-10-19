@@ -1,0 +1,48 @@
+           Q10.  From the answer group below, select the correct combination of answers to be inserted
+                into ____A____ and ____B____ in the program.
+             The procedure  insertAfter  inserts an element into a singly linked list at the position after
+             an existing element with a specific data value. The argument  targetData  is a string type
+             data that represents the value of the existing element in the list, after which a new element
+             is to be inserted. If no corresponding element exists, no action is taken. The argument
+⟦code⟧      newData  is also a string type data represents the value of the new element to be inserted.
+             The class  Element  represents each element of the linked list. The figure explains the
+             constructor and the member variables of the class  Element.  Element-type variables store
+             references to instances of the class  Element. A reference to the first element in the list is pre-
+             stored in the global variable  head.
+                      Constructor    Description
+              Element(string: data)    Initialize  the  element  with  the  data  passed  as  an
+                                         argument, which stored in the member variable  data,
+                                         with the member variable  next  set to undefined.
+             Member variable    Type    Description
+⟦code⟧     data    string    Data associated with the element.
+                                           This  attribute  represents  the  reference  to  the  next
+⟦code⟧     next    Element
+                                           element.
+                                           Figure Class  Element
+             [Program]
+⟦code⟧         global: Element: head    // stores first element in the list
+                ○  insertAfter(string: targetData, string: newData)
+⟦code⟧           Element: x, y
+⟦code⟧           x  ←  head
+                  while(x  is  ____A____  )
+⟦code⟧             if (x.data = targetData)
+⟦code⟧                y  ←  Element(newData)
+                       y.next  ←  ____B____
+⟦code⟧                x.next  ←  y
+                       exit the  while  block
+⟦code⟧             else
+⟦code⟧                x  ←  x.next
+⟦code⟧             endif
+⟦code⟧           endwhile
+             Answer group
+                             A    B
+                 a)    not  undefined    head
+                 b)    not  undefined    x
+                 c)    not  undefined    x.data
+                 d)    not  undefined    x.next
+                 e)    not  undefined    x.next.next
+⟦code⟧          f)    undefined    head
+⟦code⟧          g)    undefined    x
+⟦code⟧          h)    undefined    x.data
+⟦code⟧          i)    undefined    x.next
+⟦code⟧          j)    undefined    x.next.next

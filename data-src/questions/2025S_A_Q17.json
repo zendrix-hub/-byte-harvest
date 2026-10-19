@@ -1,0 +1,16 @@
+{
+  "id": "2025S_A_Q17",
+  "stem": [
+    { "t": "p", "x": "When ordering data is entered in the format shown below, which of the following is the appropriate method for checking whether the order date is a business day that is the same as or prior to the entering date?" },
+    { "t": "p", "x": "Ordering data" },
+    { "t": "table", "head": 0, "rows": [
+      ["Form number\n(Characters)", "Order date\n(Characters)", "Product code\n(Characters)", "Quantity\n(Number)", "Customer code\n(Characters)"]
+    ] }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "Duplication check" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "Format check" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "Logical check" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Sequence check" } ] }
+  ]
+}

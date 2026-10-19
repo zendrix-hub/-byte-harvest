@@ -1,0 +1,46 @@
+           Q18.  From the answer group below, select the most appropriate combination of answers to be
+                inserted into ____A____ and ____B____ in the description.
+             Company Z wants to provide secure file transfer service especially for very large files for
+             their customers. Mr. K, the system architect of the company, designed the sequence of
+             uploading, storing, and downloading customer files on the web service. In this system,
+             customers register their email addresses and their public keys during sign up. The associated
+             private keys reside on the customers’ computers and the email address is used as the user id.
+             The requirements for the file transfer service are as follows:
+              -    Customers transfer files between each other by uploading files to or downloading them
+                 from the web service provided by Company Z.
+              -    When uploading a file, the sender supplies the recipient’s email address and the
+                 password that will be used with the particular file (Upload function).
+              -    The file uploaded by the sender is encrypted with the supplied password and then stored
+                 in the database of the web service. (StoreFile function).
+              -    The web service assigns a file id to the uploaded file and notifies the sender of it upon
+                 uploading.
+              -    The encrypted file can only be decrypted by the sender and the recipient of the file using
+                 the password supplied by the sender.
+              -    The password is encrypted and sent to the recipient as an email message along with the
+                 file id (Message function).
+              -    When downloading the file, the recipient supplies the file id and the password. The web
+                 service then decrypts the stored file and provides it for the recipient.
+              -    Even if the database is leaked, it will be difficult to decrypt the uploaded files stored in
+                 the database.
+              Figure 1 shows the sequence of uploading file by customer P for customer Q.
+              P    Server    Database    Q
+⟦code⟧        Upload(Q’s email, file, password)
+⟦code⟧                                  LoadPublicKeys(Q’s email)
+⟦code⟧                                  Q’s public key
+⟦code⟧                                  StoreFile(  A   (file,  KDF(password)))
+⟦code⟧                                  file id
+⟦code⟧                                  Message(file id,  B   (password,  Q’s public key))
+⟦code⟧         file  id
+                                    Figure 1 Sequence on file uploading
+             In this system, Mr.K uses KDF (Key Derivation Function) to improve the strength of the
+             supplied password and uses  ____A____  and  ____B____  algorithms to accomplish above
+             requirements. Note that the format of encryption algorithms used here is algorithm(data,
+             key).
+             Answer group
+                                   A    B
+                 a)    asymmetric key encryption    cryptographically secure hash
+                 b)    asymmetric key encryption    symmetric key encryption
+                 c)    cryptographically secure hash    asymmetric key encryption
+                 d)    cryptographically secure hash    symmetric key encryption
+                 e)    symmetric key encryption    asymmetric key encryption
+                 f)    symmetric key encryption    cryptographically secure hash

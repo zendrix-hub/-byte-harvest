@@ -1,0 +1,71 @@
+           Q18.  From the answer group below, select the most appropriate combination of answers to be
+                inserted into ____A____ and ____B____ in the description.
+             Company Q is a mid-sized online retailer selling a wide range of daily necessities to a large
+             number of general consumers. Customers are required to create an account and log in to the
+             company’s e-commerce website to make purchases. The e-commerce website is constructed
+             using an open-source content management system (CMS) with various plugins. It is hosted
+             on the company’s on-premise web servers located in the Demilitarized Zone (DMZ).
+             Customer data is stored in the database installed on the web server as well. Since the e-
+             commerce site received orders from many customers, availability of the e-commerce website
+             is critical, and the maximum tolerable downtime (MTD) is limited to one hour per week.
+             The server is protected by a packet filtering firewall that permits access only through ports
+             80 and 443. Mr. K is an administrator responsible for both the operations and security of the
+             company’s e-commerce website. He maintains the configuration of the firewall and other
+             security measures as well as patch management. For patching the company’s e-commerce
+             website, compatibility testing is important to maintain website stability. It takes at least three
+             days to complete compatibility testing for one component. Due to limited human resource,
+             it is unrealistic to perform compatibility tests in parallel and finish them quickly. Therefore,
+             the patch management rule is to apply patches for the web server’s OS and the core CMS
+             components within a week of their release, while updates for other components including
+             plugins are scheduled to be applied within six months. Patches for the web server’s OS and
+             the core CMS components are released on a monthly basis, while updates for other
+             components including plugins are released each month as well.
+             One day, Company Q’s e-commerce website was compromised and the database on the
+             webserver was accessed by an unauthorized third party. The investigation revealed that this
+             was caused by an unpatched vulnerability in a plugin enabled on the CMS. This plug-in was
+             critical to the functioning of the e-commerce website. The latest version of the plugin, which
+             includes a fix for this vulnerability, was released by the vendor three months ago. The
+             exploitation of this vulnerability has been reported publicly since last month. Company Q
+             was still conducting compatibility testing, and the update to the latest version was scheduled
+             for a later time.
+             To prevent similar incidents from occurring, Mr. K is required to revise the patch
+             management rules for Q’s e-commerce website. In consideration of the workload associated
+             with compatibility testing, Mr. K proposed updating the patch management rule for the e-
+             commerce website to  ____A____ . Furthermore, as a protective measure to prevent the
+             servers from exploitation during the interim period before patches are applied, Mr. K
+             proposed ____B____ .
+             Answer group
+                                       A    B
+                      apply  patches  to  all  components   disabling  the  affected  components
+                      including plugins within three days of
+                 a)   until the patches can be applied
+                      their release
+                      apply  patches  to  all  components   implementing    web    application
+                      including plugins within three days of   firewall (WAF) on the webserver
+                 b)
+                      their release
+                      prioritize    applying    patches    for   disabling  the  affected  components
+                      vulnerabilities for which exploitation
+                                                           until the patches can be applied
+                      methods have been identified, within
+                 c)
+                      one week from the date such methods
+                      are publicly confirmed
+                      prioritize    applying    patches    for   implementing    web    application
+                      vulnerabilities for which exploitation
+                                                           firewall (WAF) on the webserver
+                      methods have been identified, within
+                 d)
+                      one week from the date such methods
+                      are publicly confirmed
+                      run a vulnerability scanner to verify that   disabling  the  affected  components
+                      no  vulnerabilities  with  confirmed   until the patches can be applied
+                 e)
+                      exploits  are  detected  after  applying
+                      patches
+                      run a vulnerability scanner to verify that   implementing    web    application
+                      no  vulnerabilities  with  confirmed
+                                                           firewall (WAF) on the webserver
+                 f)
+                      exploits  are  detected  after  applying
+                      patches

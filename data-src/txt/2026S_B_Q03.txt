@@ -1,0 +1,21 @@
+               Q3.  From the answer group below, select the correct answer to be inserted into _________ in
+                    the program. Here, the array indexes start at 1.
+                 The function  distance  receives integer arrays  S  and  T  of size  n  as arguments and returns
+                                                                          ௡
+                 the Manhattan distance of the two vectors that can be computed as  σ    ܵȁ  ܶെ  ȁ. Function
+                                                                          ௜ୀଵ  ௜    ௜
+                 abs, which is used by the function  distance, returns the absolute value of an integer.
+                 Assume that  n  is 1 or greater.
+                 [Program]
+⟦code⟧             ○  integer: distance(integer  []: S, integer  []: T, integer: n)
+⟦code⟧               integer: p  ←  0
+⟦code⟧               integer: i
+                      for (increase  i  from  1  to  n  by  1)
+                        _________
+⟦code⟧               endfor
+⟦code⟧               return p
+                 Answer group
+                    a)  p  ←  p + abs(S[i] + T[i])
+                    b)  p  ←  p + abs(S[i]  −  T[i])
+                    c)  p  ←  p  −  abs(S[i] + T[i])
+                    d)  p  ←  p  −  abs(S[i]  −  T[i])

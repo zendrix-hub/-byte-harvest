@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q15",
+  "stem": [
+    {
+      "t": "p",
+      "x": "When it takes 10 ns to copy a byte, which of the following is the approximate time (in ms) to copy the data for a 1024 × 768-pixel graphics screen with 24-bit color? Here, any overhead time for copying can be ignored."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "22"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "23"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "24"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "25"
+        }
+      ]
+    }
+  ]
+}

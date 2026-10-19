@@ -1,0 +1,109 @@
+{
+  "id": "2025S_B_Q10",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "The procedure `deleteLast` removes an element at the end of a doubly linked list. Each element of the doubly linked list is represented by the class `ListElement`. The table shows the description of the class `ListElement`. The `ListElement`-type variable holds a reference to an instance of the class `ListElement`. The global variable `listHead` holds a reference to the head element of the doubly linked list. Remember that each element in the doubly linked list has a reference to its previous element and its next element. Here, if the list is empty, `listHead` is set to `undefined`."
+    },
+    {
+      "t": "p",
+      "x": "The procedure handles three main cases: if the list is empty, it outputs \"`empty`.\" If the list contains only one element, it becomes empty after deletion. If multiple elements are present, it only removes the last element."
+    },
+    {
+      "t": "p",
+      "x": "Table  Class ListElement"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Member Variable",
+          "Type",
+          "Description"
+        ],
+        [
+          "`data`",
+          "`integer`",
+          "The value of an element."
+        ],
+        [
+          "`next`",
+          "`ListElement`",
+          "Reference to the instance that holds the next element in the list."
+        ],
+        [
+          "`prev`",
+          "`ListElement`",
+          "Reference to the instance that holds the previous element in the list."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "global: ListElement: listHead   /* A reference to the first element of\n                                   the list is stored.               */\n\n○ deleteLast()\n  ListElement: current\n  if (listHead is undefined)\n    output \"empty\"\n  else\n    current ← listHead\n    while ([[A]] is not undefined)\n      current ← current.next\n    endwhile\n    if (current.prev is not undefined)  // multiple elements are present\n      [[B]] ← undefined\n    else                                // only one element is present\n      listHead ← undefined              // empty list\n    endif\n  endif"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`current.prev`",
+          "`current.prev.next`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`current.prev`",
+          "`current.next`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`current`",
+          "`current.prev.next`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`current`",
+          "`current.next`"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "`current.next`",
+          "`current.prev.next`"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "`current.next`",
+          "`current.next`"
+        ]
+      }
+    ]
+  }
+}

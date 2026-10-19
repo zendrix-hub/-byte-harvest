@@ -1,0 +1,18 @@
+{
+  "id": "2025S_B_Q05",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the program." },
+    { "t": "p", "x": "The function `calc` receives the positive real numbers `x` and `y`, and returns the result of the calculation of (√x + √y)^{2}. For instance, when the function `calc` is called as `calc(4, 9)`, the return value is 25. Here, the function `pow(a, b)` returns `a` raised to the power of `b`." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ real: calc(real: x, real: y)\n  return [[ ]]" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "`pow(pow(x, 0.5) + pow(y, 0.5), 2)`" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "`pow(pow(x, 0.5), 2) + pow(pow(y, 0.5), 2)`" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "`pow(pow(x, 2) + pow(y, 2), 0.5)`" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "`pow(x, 0.5) + pow(y, 0.5)`" } ] },
+    { "k": "e", "b": [ { "t": "p", "x": "`pow(x, 0.5) + pow(y, 0.5) ÷ pow(2, 0.5)`" } ] },
+    { "k": "f", "b": [ { "t": "p", "x": "`pow(x, 2) + pow(y, 2) ÷ pow(2, 0.5)`" } ] }
+  ]
+}

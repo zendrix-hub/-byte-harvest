@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q54",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is a characteristic of MRP?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "The development, designing, and production preparation of a product are performed simultaneously in parallel."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "The number of required components is calculated on the basis of the standard production plan of a product."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "The production of a product is initiated after an order from a customer is received."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Work instructions and transport instructions are provided by using a worksheet."
+        }
+      ]
+    }
+  ]
+}

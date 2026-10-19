@@ -1,0 +1,9 @@
+          Q36.    Which of the following is an appropriate description concerning a state transition test in
+             a system integration test?
+             a)  A method for black box tests that does not focus on a system’s internal state.
+             b)  A method that checks whether a system behaves according to the designed combinations
+                of events and internal states.
+             c)  A method that is suitable for tests of calculations and processing systems whose internal
+                state does not change depending on the occurrence of an event.
+             d)  A method that uses a data flow diagram and a decision table to analyze the internal state
+                of a system.

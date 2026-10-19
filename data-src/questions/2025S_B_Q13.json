@@ -1,0 +1,21 @@
+{
+  "id": "2025S_B_Q13",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array index starts at 1." },
+    { "t": "p", "x": "The procedure `maximumSubarray` calculates the maximum sum of the subarray of the array `T` (the number of elements ≥ 1). A subarray is a contiguous portion of the array, for instance, from `T[1]` to `T[3]`. It can be as short as one element or as long as the entire array. The procedure finds one of the subarrays with the largest sum of values, and outputs the sum, the first, and the last indices of the subarray. For instance, if the content of the array is `{-2, 1, -3, 4, -1, 2, 1, -5, 4}`, the output will be 6, 4, and 7 representing the sum, first index, and last index, respectively. Here, the subarray from `T[4]` to `T[7]` is `{4, -1, 2, 1}`." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ maximumSubarray(integer []: T)\n  integer: n ← the number of elements in T\n  integer: i, j\n  integer: first, last  /* the first and last indices of the subarray */\n  integer: sum\n  integer: max ← T[1] - 1\n\n  for (increase i from 1 to n by 1)\n    sum ← 0\n    for (increase j from [[A]] to n by 1)\n      sum ← sum + T[j]\n      if (sum > max)\n        first ← i\n        last ← [[B]]\n        max ← sum\n      endif\n    endfor\n  endfor\n\n  output max, first, last" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["`1`", "`j`"] },
+      { "k": "b", "c": ["`1`", "`j - 1`"] },
+      { "k": "c", "c": ["`i`", "`j`"] },
+      { "k": "d", "c": ["`i`", "`j - 1`"] },
+      { "k": "e", "c": ["`i + 1`", "`j`"] },
+      { "k": "f", "c": ["`i + 1`", "`j - 1`"] }
+    ]
+  }
+}

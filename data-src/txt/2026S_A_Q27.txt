@@ -1,0 +1,3 @@
+          Q27.    In telecommunication, which of the following is a standard for wireless broadband
+             communication for mobile devices and data terminals?
+             a)  IEEE 802.11    b)  LTE    c)  NFC    d)  UWB

@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q03",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the most appropriate description of machine learning in AI?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is a technology that enters specialized knowledge in a particular field into a computer, and has the computer infer by using the knowledge entered."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is a technology that gives computers the ability to learn in the same way humans naturally learn, such as finding specific patterns from memorized data."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is a technology that reproduces vital phenomena or evolutionary processes by using computers and machines."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is a technology to give computers the ability to manage learning materials and learning by using a web system or other information technology so that people can learn interactively."
+        }
+      ]
+    }
+  ]
+}

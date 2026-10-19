@@ -1,0 +1,3 @@
+          Q24.    In the OSI model, which of the following is the layer that is responsible for routing
+             datagrams between hosts utilizing IP addresses across one or more networks?
+             a)  Data link    b)  Network    c)  Physical    d)  Transport

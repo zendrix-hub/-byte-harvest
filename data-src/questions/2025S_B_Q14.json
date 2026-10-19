@@ -1,0 +1,22 @@
+{
+  "id": "2025S_B_Q14",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program." },
+    { "t": "p", "x": "The function `cosine(z)` returns an approximate value of the cosine value of `z` degrees. The function uses Maclaurin series expansion for the cosine shown below and can be used to determine cos(y) for values of y radians." },
+    { "t": "p", "x": "cos(y) = 1 − y^{2}/2! + y^{4}/4! − y^{6}/6! + ⋯" },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ real: cosine(real: z)\n  real: y ← z × π ÷ 180 // convert from degrees to radians\n  real: term ← 1\n  real: cosy ← term\n  integer: n ← 0\n  while (absolute value of [[A]] > 0.000000001)\n    n ← n + 1\n    term ← term × (-1 × (y [[B]]) ÷ (2 × n × (2 × n - 1)))\n    cosy ← cosy + term\n  endwhile\n  return cosy" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["`cosy`", "raised to the power of `(2 × n)`"] },
+      { "k": "b", "c": ["`cosy`", "raised to the power of 4"] },
+      { "k": "c", "c": ["`cosy`", "squared"] },
+      { "k": "d", "c": ["`term`", "raised to the power of `(2 × n)`"] },
+      { "k": "e", "c": ["`term`", "raised to the power of 4"] },
+      { "k": "f", "c": ["`term`", "squared"] }
+    ]
+  }
+}

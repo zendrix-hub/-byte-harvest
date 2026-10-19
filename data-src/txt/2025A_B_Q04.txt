@@ -1,0 +1,29 @@
+           Q4.  From the answer group below, select the correct combination of answers to be inserted
+                into ____A____ through ____C____ in the program.
+             The procedure  reverse_digits  receives one positive integer argument named  num  and
+             outputs both the original integer and the integer with its digits reversed. Assume that the ones
+             digit of  num  is not 0.
+             Example:
+⟦code⟧      Number is 456, output 654
+⟦code⟧      Number is 23407, output 70432
+             [Program]
+                ○  reverse_digits(integer: num)
+⟦code⟧           integer: rev  ←  0
+⟦code⟧           integer: rm  ←  0
+⟦code⟧           integer: temp  ←  num
+                  while (  ____A____  )
+⟦code⟧             rm  ←  temp mod 10
+                    rev  ←  ____B____
+                    temp  ←  ____C____
+⟦code⟧           endwhile
+⟦code⟧           output "Number is ", num, ", output ", rev
+             Answer group
+                          A    B    C
+⟦code⟧          a)    num > 0    rm × 10 + rev    integer part of  (temp  ÷  10)
+⟦code⟧          b)    num > 0    rm × 10 + rev    temp  −  rm
+⟦code⟧          c)    num > 0    rev × 10 + rm    integer part of  (temp  ÷  10)
+⟦code⟧          d)    num > 0    rev × 10 + rm    temp – rm
+⟦code⟧          e)    temp > 0    rm × 10 + rev    integer part of  (temp  ÷  10)
+⟦code⟧          f)    temp > 0    rm × 10 + rev    temp – rm
+⟦code⟧          g)    temp > 0    rev × 10 + rm    integer part of  (temp  ÷  10)
+⟦code⟧          h)    temp > 0    rev × 10 + rm    temp – rm

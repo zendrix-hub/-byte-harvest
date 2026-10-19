@@ -1,0 +1,9 @@
+          Q14.    In indirect addressing of direct file organization, which of the following is an appropriate
+             method for calculating the record address from a record key in the superposition addressing
+             method, or folding and adding method? Here, the record key is 123456 in decimal. The total
+             number of records is 1,000, and the closest prime number to 1,000 is 997. The decimal number
+             123456 is equivalent to 361100 in octal.
+             a)  Converting the record key into 361100 and using it as the address
+             b)  Dividing the record key by 997 and using the remainder of 825 as the address
+             c)  Splitting the record key into 123 and 456 and using their sum, 579, as the address
+             d)  Using the record key 123456 as the address

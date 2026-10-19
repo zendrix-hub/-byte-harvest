@@ -1,0 +1,9 @@
+          Q39.    Which of the following is refactoring in software development activities?
+             a)  In order to improve the maintainability of a program, its internal structure is modified
+                without any change to the external specifications.
+             b)  In order to improve the quality of a program, two programmers cooperate to perform the
+                coding of a single program.
+             c)  In order to obtain feedback from users, the prototype of a program to be provided is
+                created at an early stage.
+             d)  In order to promptly develop a program to be operated, test cases are set in advance, and
+                the program is then coded.

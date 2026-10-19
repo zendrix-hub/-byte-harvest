@@ -1,0 +1,68 @@
+               Q9.  From the answer group below, select the correct combination of answers to be inserted
+                    into ____A____ and ____B____ in the program.
+                 The function  isPerfectBinaryTree  checks whether the binary tree with a given root node
+                 is perfect. In a perfect binary tree, all the internal nodes have exactly two children, and all
+                 leaf nodes are at the same level. The function returns  true  if the tree is perfect, or  false
+                 otherwise.
+                 The class  Node  models a node of a binary tree as described in Table 1. A  Node-type variable
+                 holds a reference to an instance of the class  Node.
+                                             Table 1  Class  Node
+                Member variable    Type    Description
+⟦code⟧         Key    integer    Integer value stored in a node of a binary tree.
+                                           A reference to the left child of the node. If the left child
+⟦code⟧         Left    Node
+                                           does not exist, it is set to  undefined.
+                                           A reference to the right child of the node. If the right child
+⟦code⟧         Right    Node
+                                           does not exist, it is set to  undefined.
+                 Table 2 describes the functions used in the program.
+                                              Table 2 Functions
+                     Function    Return value    Description
+⟦code⟧         pow(integer a,   integer    Returns the result of raising  a  to the power of  b
+                                                      b
+                    integerb)   (i.e., a ).
+⟦code⟧         max(integer a,   integer    Returns the maximum of the two integers  a  and  b.
+⟦code⟧             integer b)
+                 [Program]
+                    ○  boolean: isPerfectBinaryTree(Node: root)
+⟦code⟧                        //  The argument  root  holds a reference to the root node
+⟦code⟧                        //  of a binary tree.
+⟦code⟧               integer: height, size
+⟦code⟧               height  ←  getHeight(root)
+⟦code⟧               size  ←  getSize(root)
+                      return  ____A____
+                    ○  integer: getHeight(Node: root)
+⟦code⟧               integer: leftHeight, rightHeight
+⟦code⟧               if (root  is  undefined)
+⟦code⟧                 return 0
+⟦code⟧               endif
+⟦code⟧               leftHeight  ←  getHeight(root.left)
+⟦code⟧               rightHeight  ←  getHeight(root.right)
+⟦code⟧               return 1 + max(leftHeight, rightHeight)
+                    ○  integer: getSize(Node: root)
+⟦code⟧               if (root  is  undefined)
+⟦code⟧                 return 0
+⟦code⟧               endif
+                      return  ____B____
+                 Answer Group
+                                 A    B
+⟦code⟧         a)    size + 1 = pow(2, height)    getSize(root.left) + getSize(root.right)
+⟦code⟧                                          getSize(root.left) + getSize(root.right)
+⟦code⟧         b)    size + 1 = pow(2, height)
+⟦code⟧                                          + 1
+⟦code⟧                                          getSize(root.left) + getSize(root.right)
+⟦code⟧         c)    size + 1 = pow(2, height)
+                                                 −  1
+⟦code⟧         d)    size = pow(2, height  −  1)    getSize(root.left) + getSize(root.right)
+⟦code⟧                                          getSize(root.left) + getSize(root.right)
+⟦code⟧         e)    size = pow(2, height  −  1)
+⟦code⟧                                          + 1
+⟦code⟧                                          getSize(root.left) + getSize(root.right)
+⟦code⟧         f)    size = pow(2, height  −  1)
+                                                 −  1
+⟦code⟧         g)    size = pow(2, height)    getSize(root.left) + getSize(root.right)
+⟦code⟧                                          getSize(root.left) + getSize(root.right)
+⟦code⟧         h)    size = pow(2, height)
+⟦code⟧                                          + 1
+⟦code⟧                                          getSize(root.left) + getSize(root.right)
+⟦code⟧         i)    size = pow(2, height)

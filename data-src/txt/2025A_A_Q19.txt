@@ -1,0 +1,13 @@
+          Q19.    When the functional dependencies shown below are satisfied, which of the following is
+             the transitive functional dependency that holds? Here, “A→B” indicates that  B  is functionally
+             dependent on  A, and “A→{B,  C}” indicates that “A→B” and “A→C  ” both hold.
+            [Functional dependencies]
+                {OrderCode, ProductCode}  →  {CustomerOrderQuantity, OrderAmount}
+                OrderCode  →  {OrderDate, CustomerCode, OrderManagerCode}
+                ProductCode  →  {ProductName, SupplierCode, ProductSalePrice}
+                SupplierCode  →  {SupplierName, SupplierAddress, SupplierManagerCode}
+                CustomerCode  →  {CustomerName, CustomerAddress}
+             a)  OrderCode  →  CustomerCode  →  CustomerAddress
+             b)  OrderCode  →  ProductCode  →  CustomerOrderQuantity
+             c)  ProductCode  →  SupplierCode  →  ProductSalePrice
+             d)  SupplierCode  →  SupplierManagerCode  →  SupplierAddress

@@ -1,0 +1,26 @@
+           Q17.  From the answer group below, select the most appropriate combination of answers to be
+                inserted into ____A____ and ____B____ in the description.
+             Company P is a small business that recently formed a data analytics team to perform business
+             data analytics using internal business data. This data is stored on a database system
+             configured with a synchronous (real-time) mirror. The database is backed up regularly. The
+             database servers and IT infrastructure are maintained by a third-party IT support provider.
+             A junior data analyst was mistakenly granted database superuser privileges to the production
+             database. This decision was made due to a lack of security understanding in the company.
+             The data analyst, unfamiliar with the sensitivity of their access level, was tasked with
+             executing a series of routine database queries and migrations. However, due to an error in a
+             script, the data analyst accidentally ran a command that dropped critical tables, resulting in
+             a significant loss of data. This caused the company’s internal applications to stop working.
+             The company engaged their IT support provider, and the database system was quickly put
+             back in service by ____A____ . To prevent this incident from happening again, their IT
+             support provider recommended that the company implement ____B____ .
+             Answer group
+                                     A    B
+                 a)    restarting the database server    database encryption
+                 b)    restarting the database server    multi-factor authentication
+                 c)    restarting the database server    principle of least privilege
+                 d)    restoring from backups    database encryption
+                 e)    restoring from backups    multi-factor authentication
+                 f)    restoring from backups    principle of least privilege
+                 g)    switching to the database mirror    database encryption
+                 h)    switching to the database mirror    multi-factor authentication
+                 i)    switching to the database mirror    principle of least privilege

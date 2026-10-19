@@ -1,0 +1,48 @@
+           Q9.  From the answer group below, select the correct answer to be inserted into _________ in
+                the description. Here, the array index starts at 1.
+             The procedure  traverse  traces through a vertex of the graph in Figure 1, and outputs all
+             vertex numbers in the graph. One of the vertex numbers of the graph is specified with the
+             argument  k. The global 2-dimensional array  graph  represents the graph in Figure 1. Each
+             element  graph[i,j]  is equal to 1 if there is an edge between vertices  i  and  j, and 0
+             otherwise. The array  visited  stores boolean values, where  visited[i]  indicates whether
+             vertex  i  of the graph has been visited or not during the procedure. When the procedure is
+             called as  traverse(1), the output is in the order  _______  .
+                                 Figure 1 Graph that is handled by the program
+             Here, the procedure  traverse  uses a queue represented by the class  Queue. Figure 2
+             provides an explanation of the class  Queue.
+                                  Constructor    Description
+⟦code⟧                           Queue()    Creates an empty queue.
+                        Method    Return value    Description
+                enqueue(integer: elm)    None    Adds the integer  elm  as an element
+                                                        to the queue.
+⟦code⟧         dequeue()    integer    Extracts the element from the queue
+                                                        and returns it.
+⟦code⟧         isEmpty()    boolean    Returns  true  if the queue is empty;
+                                                        otherwise, returns  false.
+                                  Figure 2 Explanation of the class  Queue
+             [Program]
+⟦code⟧         global: integer [,]: graph  ←  {{0, 1, 0, 1, 0},
+⟦code⟧                                           {1, 0, 1, 0, 1},
+⟦code⟧                                           {0, 1, 0, 0, 0},
+⟦code⟧                                           {1, 0, 0, 0, 1},
+⟦code⟧                                           {0, 1, 0, 1, 0}}
+                ○  traverse(integer: k)
+⟦code⟧           Queue: queue  ←  Queue()
+⟦code⟧           boolean []: visited  ←  {false, false, false, false, false}
+⟦code⟧           integer: v, i
+⟦code⟧           queue.enqueue(k)
+⟦code⟧           visited[k]  ←  true
+⟦code⟧           while (not queue.isEmpty())
+⟦code⟧             v  ←  queue.dequeue()
+⟦code⟧             output v
+                    for (increase  i  from  1  to  5  by  1)
+⟦code⟧                if (graph[v,i] = 1 and visited[i] = false)
+⟦code⟧                  queue.enqueue(i)
+⟦code⟧                  visited[i]  ←  true
+⟦code⟧                endif
+⟦code⟧             endfor
+⟦code⟧           endwhile
+             Answer group
+⟦code⟧         a)  “1”,  “2”,  “3”,  “4”,  “5”    b)  “1”,  “2”,  “3”,  “5”,  “4”
+⟦code⟧         c)  “1”,  “2”,  “4”,  “3”,  “5”    d)  “1”,  “2”,  “4”,  “5”,  “3”
+⟦code⟧         e)  “1”,  “2”,  “5”,  “4”,  “3”    f)  “1”,  “4”,  “5”,  “2”,  “3”

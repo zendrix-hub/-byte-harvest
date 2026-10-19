@@ -1,0 +1,6 @@
+          Q25.    Which of the following is an appropriate explanation regarding Address Resolution
+             Protocol (ARP)?
+             a)  It converts MAC addresses into IP addresses.
+             b)  It resolves domain names into its IP addresses.
+             c)  It resolves IP addresses into the corresponding MAC addresses.
+             d)  It translates IPv4 addresses into IPv6 addresses.

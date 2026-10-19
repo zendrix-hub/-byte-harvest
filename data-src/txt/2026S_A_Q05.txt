@@ -1,0 +1,2 @@
+          Q5.  Which of the following is the postfix notation for the expression  a  + (  b  ×  c  ) + (  d  ×  e  ) ?
+             a)  a  +  bc  ×  de  + ×    b)  abc  × +  de  + ×    c)  abc  × +  de  × +    d)  abc  + ×  de  × +

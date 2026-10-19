@@ -1,0 +1,3 @@
+          Q16.    Which of the following is a program that combines the separately compiled modules of
+             a program into a form suitable for execution in C language?
+             a)  Assembler    b)  Compiler    c)  Interpreter    d)  Linker

@@ -1,0 +1,3 @@
+          Q12.    Which of the following is the RAID level that can maximize reliability and fault
+             tolerance for a NAS device equipped with two hard disk drives of identical capacity?
+             a)  RAID 0    b)  RAID 1    c)  RAID 5    d)  RAID 6

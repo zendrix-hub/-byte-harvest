@@ -1,0 +1,3 @@
+          Q26.    Which of the following is an Internet standard that extends the format of email header
+             fields to handle not only text messages but also audio and image files?
+             a)  HTML    b)  MHS    c)  MIME    d)  SMTP

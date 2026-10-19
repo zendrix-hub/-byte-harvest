@@ -1,0 +1,107 @@
+{
+  "id": "2025S_B_Q09",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] through [[C]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "Given the root of two binary trees, the aim of the following program is to check whether these two trees are identical. Two binary trees are defined as identical if they satisfy the following formal conditions:"
+    },
+    {
+      "t": "list",
+      "items": [
+        "Structure: Both trees have the same structure, implying that for every corresponding node in the two trees, the arrangement of the left and right children is the same.",
+        "Node Values: Each corresponding node in the two trees must contain the same value. Specifically, if tree T_{1} has a node N_{1} with value v_{1} and tree T_{2} has the corresponding node N_{2} with value v_{2}, then v_{1} = v_{2}."
+      ]
+    },
+    {
+      "t": "p",
+      "x": "The function `isSameTree` takes two instances of class `TreeNode` as the argument representing the root nodes of two binary trees, and returns `true` if the trees are identical, or `false` otherwise. The member variables of `TreeNode` are listed in the table below:"
+    },
+    {
+      "t": "p",
+      "x": "Table  Explanation of the member variables of the class `TreeNode`"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Member variable",
+          "Type",
+          "Description"
+        ],
+        [
+          "`val`",
+          "`integer`",
+          "The integer value of a current node"
+        ],
+        [
+          "`left`",
+          "`TreeNode`",
+          "Left child node"
+        ],
+        [
+          "`right`",
+          "`TreeNode`",
+          "Right child node"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ boolean: isSameTree(TreeNode: p, TreeNode: q)\n  boolean: checkLeft, checkRight\n\n  if (p = undefined [[A]] q = undefined)\n    return true\n  endif\n  if (p = undefined [[B]] q = undefined)\n    return false\n  endif\n  if (p.val ≠ q.val)\n    return false\n  endif\n\n  checkLeft ← isSameTree(p.left, q.left)\n  checkRight ← isSameTree(p.right, q.right)\n\n  return checkLeft [[C]] checkRight"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B",
+      "C"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`or`",
+          "`and`",
+          "`and`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`and`",
+          "`or`",
+          "`or`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`and`",
+          "`or`",
+          "`and`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`or`",
+          "`and`",
+          "`or`"
+        ]
+      }
+    ]
+  }
+}

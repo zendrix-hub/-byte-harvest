@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q16",
+  "stem": [
+    { "t": "p", "x": "Which of the following is an appropriate explanation of an actuator?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "It amplifies weak electrical signals sent from microphones, sensors, and similar devices." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "It compares a given target value with a controlled value obtained from a sensor, and outputs an operation amount to match the controlled value with the target value." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "It converts power from an energy source into rotation, translational motion, or other movements based on control signals." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "It detects position, angle, velocity, acceleration, force, temperature, and similar parameters, and converts them into electrical information." } ] }
+  ]
+}

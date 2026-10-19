@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q25",
+  "stem": [
+    { "t": "p", "x": "Which of the following is an appropriate explanation regarding Address Resolution Protocol (ARP)?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "It converts MAC addresses into IP addresses." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "It resolves domain names into its IP addresses." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "It resolves IP addresses into the corresponding MAC addresses." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "It translates IPv4 addresses into IPv6 addresses." } ] }
+  ]
+}

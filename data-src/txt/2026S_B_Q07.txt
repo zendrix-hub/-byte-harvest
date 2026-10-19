@@ -1,0 +1,30 @@
+               Q7.  From the answer group below, select the correct combination of answers to be inserted
+                    into ____A____ and ____B____ in the program. Here, the array index starts at 1.
+                 The function  linearSearch  linearly searches the global array  D  using the recursive function
+                 recursive, and if an element with the same value as the argument  searchKey  exists, it
+                 returns that element index, otherwise  -1  is returned. Assume that the array  D  has no duplicate
+                 elements.
+                 [Program]
+⟦code⟧             global: integer  []: D  ←  {3, 4, 2, 5, 9}
+                    global: integer: N  ←  the number of elements of  D
+                    ○  integer: linearSearch(integer: searchKey)
+⟦code⟧               return recursive(searchKey, N)
+                    ○  integer: recursive(integer: searchKey, integer: index)
+⟦code⟧               if (index < 1)
+⟦code⟧                 return  −1
+⟦code⟧               elseif (D[index] = searchKey)
+                        return  ____A____
+⟦code⟧               else
+                        return recursive(searchKey,  ____B____  )
+⟦code⟧               endif
+                 Answer group
+                                 A    B
+⟦code⟧              a)    1    index  −  1
+⟦code⟧              b)    1    N  −  1
+⟦code⟧              c)    1    N  −  index
+⟦code⟧              d)    Index    index  −  1
+⟦code⟧              e)    Index    N  −  1
+⟦code⟧              f)    Index    N  −  index
+⟦code⟧              g)    index – 1    index  −  1
+⟦code⟧              h)    index – 1    N  −  1
+⟦code⟧               i)    index – 1    N  −  index

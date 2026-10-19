@@ -1,0 +1,5 @@
+          Q28.    When  X  receives a message with a digital signature that uses public key cryptography
+             from  Y, which of the following is the key that  X  uses to verify that the message truly came
+             from  Y?
+             a)  X’s private key    b)  X’s public key
+             c)  Y’s private key    d)  Y’s public key

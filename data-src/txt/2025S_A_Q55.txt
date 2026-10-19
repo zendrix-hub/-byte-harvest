@@ -1,0 +1,17 @@
+          Q55.    Which of the following corresponds to (5) in the example of a model of an affiliate
+             program that is shown in the Internet advertising? Here, (1) to (5) indicate the order of
+             operations in the model, and (1), (2), (4), and (5) each correspond to one of the options a) to
+             d).
+                      Web site operator
+                                                      (2)
+                          Product advertising
+                       (1)   (3)   (5)   Web site viewer
+                                    Go to the
+                                    link.   (product buyer)
+                                                      (4)
+                           Product sales page
+                      Online mall EC site (advertiser)
+             a)  Agree to and participate in the affiliate program
+             b)  Click the advertisement on the website
+             c)  Pay a success fee on the basis of the sales of the product
+             d)  Purchase the desired product

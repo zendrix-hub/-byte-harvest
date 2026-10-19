@@ -1,0 +1,5 @@
+          Q1.  Which of the following is the prefix notation for the infix expression ( (  a  −  b  ) / (  c  +  d  ) ) ^  e  .
+             Here, the symbols “+,” “−,” “/,” and “^” represent addition, subtraction, division, and
+             exponentiation operators, respectively.
+             a)  ^  e  / +  dc  −  ba    b)  ^  −  ab  / +  cde
+             c)  ^ /  −  ab  +  cde    d)  ^  e  /  −  ab  +  cd

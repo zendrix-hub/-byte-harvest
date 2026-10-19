@@ -1,0 +1,17 @@
+               Q1.  From the answer group below, select the correct answer to be inserted into  _______  in
+                    the description. Here, the array index starts at 1.
+                 When the program is executed, the output is “  _______  ”.
+                 [Program]
+⟦code⟧             integer: x  ←  1
+⟦code⟧             integer: y  ←  2
+⟦code⟧             integer: z  ←  3
+⟦code⟧             integer []: ar  ←  {0, 0}
+⟦code⟧             y  ←  x
+⟦code⟧             ar[x]  ←  y
+⟦code⟧             z  ←  y
+⟦code⟧             x  ←  z
+⟦code⟧             ar[2]  ←  z + ar[1]
+⟦code⟧             output ar[1], ar[2]    //  the values are separated by  ", "
+                 Answer group
+                    a)  1, 0    b)  1, 1    c)  1, 2
+                    d)  2, 1    e)  2, 2    f)  2, 3

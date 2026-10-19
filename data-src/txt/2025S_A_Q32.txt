@@ -1,0 +1,5 @@
+          Q32.    Which of the following is the function of a WAF?
+             a)  Encrypting data and controlling access on web server
+             b)  Inspecting and filtering HTTP requests
+             c)  Managing user authentication and authorization
+             d)  Scanning malware on a web server

@@ -1,0 +1,14 @@
+          Q24.    PC5 has been newly added to the network. It wants to send data to PC4 using SSH
+             protocol. It must resolve the MAC address of PC4 from its IP address before sending the data.
+             Which of the following is the destination MAC address that PC5 will use in ARP request?
+                                             Network
+                                              Switch
+                       192.168.1.2 PC1    PC3 192.168.1.7
+                 78:E1:00:3C:A1:5D   78:E1:00:3C:A1:7A
+                        192.168.1.5 PC2    PC4 192.168.1.10
+                                               PC5
+                 78:E1:00:3C:A1:6E   78:E1:00:3C:A1:8B
+                                          192.168.1.11
+                                       78:E1:00:3C:A1:9F
+             a)  00:00:00:00:00:00    b)  78:E1:00:3C:A1:8B
+             c)  78:E1:00:3C:A1:9F    d)  FF:FF:FF:FF:FF:FF

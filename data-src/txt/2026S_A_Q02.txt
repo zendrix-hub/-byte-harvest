@@ -1,0 +1,2 @@
+          Q2.  What is the decimal equivalent value of the octal number 1234.2?
+             a)  27.0    b)  668.25    c)  1542.5    d)  5346.0

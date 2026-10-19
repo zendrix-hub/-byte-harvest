@@ -1,0 +1,7 @@
+          Q18.    Which of the following is the appropriate explanation of attributes in the relational
+             model?
+             a)  It is possible to define attributes that have no name.
+             b)  The domains of definition for attributes within a relation must not overlap.
+             c)  The same name can be given to two (2) or more attributes in a relation.
+             d)  There is no meaning in the order of attributes within a relation, and the relation remains
+                unchanged even if the order is changed.

@@ -1,0 +1,48 @@
+               Q19.  From the answer group below, select the most appropriate combination of answers to be
+                    inserted into  ____A____  and  ____B____  in the description.
+                 Company R is an e-commerce company that sells smartphone accessories through its website.
+                 In response to the increasing prevalence of SQL injection attacks in recent years, Company
+                 R decided to conduct a security training program for its security analysts, focusing
+                 specifically on SQL injection vulnerabilities.
+                 [Explanation of SQL Behavior]
+                 As part of the training, an explanation was provided to help the security analysts understand
+                 the working mechanism of SQL statements. In typical web applications, authentication is
+                 performed by  constructing an SQL statement based on a predefined template. The
+                 application inserts the user-provided username and the hashed value of the user-provided
+                 password into the template and submits the resulting SQL statement to the database to check
+                 whether a matching record exists. An example of such an SQL query template is shown in
+                 figure given below.
+⟦code⟧                 SELECT * FROM users
+⟦code⟧                 WHERE username = '<input_username>'
+⟦code⟧                   AND password = '<hashed_input_password>'
+                         Note: The SQL query constructed from this template is executed by the database
+                         engine as a single SQL statement. Line breaks in the figure are included solely
+                         for readability.
+                                Figure SQL Query Template for Authentication
+                 If user input is incorporated into an SQL statement without proper handling, the structure of
+                 the SQL query may be altered, enabling attacks such as SQL injection. For instance, SQL
+                 syntax elements included in the input may be interpreted by the database. One common
+                 element is “--”, which starts a comment; any text that follows “--” is ignored by the database
+                 engine, effectively disabling the remaining part of the SQL statement, including the
+                 password check.
+                 [Hands-on Verification]
+                 The security analysts participated in a hands-on lab using a dedicated training server. They
+                 submitted crafted input values through the application’s authentication form. The application
+                 processed these inputs, inserted the username and the hashed password value into the SQL
+                 template shown in the figure above, generated a complete SQL statement, and executed it
+                 against the database.
+                 The database contained a preregistered admin user with a hashed password that was not
+                 disclosed to the participants. They tested several input values for  <input_username>  while
+                 leaving the password input field empty in the authentication form to determine whether
+                 authentication could be bypassed, and summarized the results in table given below.
+                                           Table Evaluation Results
+                        Input Values for  <input_username>    Authentication Bypass Results
+⟦code⟧               Admin    Fail
+                      admin'--    ____A____
+                      admin' AND '1'='2' --    ____B____
+                 Answer Group
+                                A    B
+                      a)  Fail    Fail
+                      b)  Fail    Success
+                      c)  Success    Fail
+                      d)  Success    Success

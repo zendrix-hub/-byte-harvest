@@ -1,0 +1,20 @@
+{
+  "id": "2025S_B_Q04",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program." },
+    { "t": "p", "x": "The following function receives an integer number and returns the result of interpreting the decimal representation of the number as a binary number. Note that the number is non-negative, and its decimal representation comprises only the digits 0 and 1. For instance, if it receives 1100, it returns 12." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ integer: convert(integer: number)\n  integer: place, n, remainder, decimal\n  decimal ← 0\n  place ← 1\n  n ← number\n  while (n > 0)\n    remainder ← n mod 10\n    n ← integer part of (n ÷ 10)\n    decimal ← decimal + [[A]]\n    place ← [[B]]\n  endwhile\n  return decimal" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": { "head": ["A", "B"], "rows": [
+    { "k": "a", "c": ["`2 × place`", "`n × place`"] },
+    { "k": "b", "c": ["`2 × place`", "`remainder × place`"] },
+    { "k": "c", "c": ["`10 × place`", "`2 × place`"] },
+    { "k": "d", "c": ["`10 × place`", "`remainder × place`"] },
+    { "k": "e", "c": ["`n × place`", "`2 × place`"] },
+    { "k": "f", "c": ["`n × place`", "`remainder × place`"] },
+    { "k": "g", "c": ["`remainder × place`", "`2 × place`"] },
+    { "k": "h", "c": ["`remainder × place`", "`10 × place`"] }
+  ] }
+}

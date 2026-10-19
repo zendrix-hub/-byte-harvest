@@ -1,0 +1,60 @@
+           Q15.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the program. Here, the array index starts at 1.
+             Inverse document frequency (IDF) is a metric used to evaluate the importance of a word in
+             a document relative to a document collection. The function  calcIDF  receives a string  term
+             and an array of strings  corpus  as arguments, and calculates and returns the IDF score for
+             the term based on the given corpus. The corpus of documents  corpus  is given as a string
+             array. An example of  corpus  that indicates 3 documents is as follows:
+⟦code⟧      {"ITPEC includes members from 6 countries",
+⟦code⟧       "many students prepare for the exam",
+⟦code⟧       "The ITPEC exam is essential for IT professionals"}
+             The table shows the description of the functions used in the program.
+                                             Table Functions
+                   Function    Return   Description
+                                      value
+⟦code⟧     split(string: str)    string []    Returns words separated by a space in the text  str.
+⟦code⟧     log(real: x)    real    Returns natural logarithm (base e) of the value  x.
+             Traditionally, IDF is computed using the following formula:
+                                                         𝑁
+                                        𝐼𝐷𝐹(𝑡) = log (    )
+                                                      1 +  𝑑𝑓(𝑡)
+             Where  N  is the total number of documents,  t  refers to a specific term or word in a document,
+             and  df(t)  is the number of documents containing the term  t.
+             For example, the return value of  calcIDF("ITPEC", corpus)  is log(3  ÷  (1 + 2)) = 0 when
+             array  corpus  is assigned as shown in the above example.  Because the total number of
+             documents is 3, and the total number of documents that include the word “ITPEC” is 2.
+             [Program]
+                ○  real: calcIDF(string: term, string []: corpus)
+⟦code⟧           integer: i, j, numDocs, numWords, termCount
+⟦code⟧           boolean: isContainsTerm
+⟦code⟧           real: idf
+⟦code⟧           string []: words
+⟦code⟧           termCount  ←  0
+                  numDocs  ←  the number of elements in  corpus
+                  for (increase  i  from  1  to  numDocs  by  1)
+⟦code⟧             isContainsTerm  ←  false
+⟦code⟧             words  ←  split(corpus[i])
+                    numWords  ←  the number of elements in  words
+⟦code⟧             for (increase  j  from  1  to  numWords  by  1)  //  α
+⟦code⟧                if ( ___A___ )
+⟦code⟧                  isContainsTerm  ←  true
+                         exit the  for  block marked  α
+⟦code⟧                endif
+⟦code⟧             endfor
+⟦code⟧             if ( ___B___ )
+⟦code⟧                termCount  ←  termCount + 1
+⟦code⟧             endif
+⟦code⟧           endfor
+⟦code⟧           idf  ←  log(numDocs ÷ (1 + termCount)) /*  Division is performed
+                                                                 in data type  real */
+⟦code⟧           return idf
+           Answer group
+                                  A    B
+⟦code⟧          a)    corpus[j] = term    isContainsTerm = false
+⟦code⟧          b)    corpus[j] = term    isContainsTerm = true
+⟦code⟧          c)    corpus[j]  ≠  term    isContainsTerm = false
+⟦code⟧          d)    corpus[j]  ≠  term    isContainsTerm = true
+⟦code⟧          e)    words[j] = term    isContainsTerm = false
+⟦code⟧          f)    words[j] = term    isContainsTerm = true
+⟦code⟧          g)    words[j]  ≠  term    isContainsTerm = false
+⟦code⟧          h)    words[j]  ≠  term    isContainsTerm = true

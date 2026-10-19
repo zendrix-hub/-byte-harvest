@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q44",
+  "stem": [
+    { "t": "p", "x": "Which of the following should be accomplished in service management concerning Maximum Tolerable Downtime (MTD), Recovery Point Objective (RPO), and Recovery Time Objective (RTO)?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "MTD < RPO" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "MTD < RTO" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "RPO < MTD" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "RTO < MTD" } ] }
+  ]
+}

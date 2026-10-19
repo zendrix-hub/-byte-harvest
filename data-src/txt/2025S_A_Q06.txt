@@ -1,0 +1,6 @@
+          Q6.  In the graph shown below, which of the following is the output of a depth-first traversal
+             starting from vertex  A,  and visiting all vertices in ascending character order?
+                       A   D   E
+                       B   C   F
+             a)  A B C D E F    b)  A B C D F E
+             c)  A B D E F C    d)  A B D F E C

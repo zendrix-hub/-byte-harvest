@@ -1,0 +1,22 @@
+           Q1.  From the answer group below, select the correct combination of answers to be inserted
+                into ____A____ and ____B____ in the program. Here, the array index starts at 1.
+             The function  sum  receives an integer array  array  with at least two elements and two positive
+⟦code⟧      integers  k  and  m  (k  <  m  ≤  number of elements in  array). It calculates the sum of even
+             elements of the array  array  whose indices are from  k  to  m.
+             [Program]
+                ○  integer: sum(integer []: array, integer: k, integer: m)
+⟦code⟧           integer: s  ←  0
+⟦code⟧           integer: i  ←  k
+⟦code⟧           while (i  ≤  m)
+                    if (  ____A____  )
+⟦code⟧                s  ←  s + array[i]
+⟦code⟧             endif
+                     ____B____
+⟦code⟧           endwhile
+⟦code⟧           return s
+             Answer group
+                                A    B
+⟦code⟧          a)    array[i] mod 2 = 0    i  ←  i + 1
+⟦code⟧          b)    array[i] mod 2 = 0    i  ←  i - 1
+⟦code⟧          c)    array[i] mod 2  ≠  0    i  ←  i + 1
+⟦code⟧          d)    array[i] mod 2  ≠  0    i  ←  i - 1

@@ -1,0 +1,5 @@
+          Q38.    Which of the following is an appropriate category of system maintenance performed for
+             the purpose of modifying the system to cope with changes in the software environment (e.g.
+             DBMS, Operating system)?
+             a)  Adaptive maintenance    b)  Corrective maintenance
+             c)  Perfective maintenance    d)  Preventive maintenance

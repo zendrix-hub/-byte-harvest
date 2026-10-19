@@ -1,0 +1,3 @@
+          Q8.  For a CPU with a clock frequency of 800 MHz, where one instruction is executed in an
+             average time of 4 clock cycles, what is the CPU performance in MIPS?
+             a)  0.2    b)  20    c)  200    d)  3,200

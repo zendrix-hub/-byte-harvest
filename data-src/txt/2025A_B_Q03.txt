@@ -1,0 +1,40 @@
+           Q3.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the program. Here, the array index starts at 1.
+             Given an array of positive integers and a target sum, the problem is to find the subarray
+             whose sum is equal to the target sum. A subarray is a part of the given array composed of
+             contiguous elements. For example, when the target sum is 14, the shaded subarray in the
+             figure satisfies the given condition.
+                                6    3    2    5    1    1    7    3
+                                        Figure Example of an array
+             The procedure  subArraySum  receives an integer array  arr  and an integer value  targetSum
+             as arguments and finds the subarray whose sum is equal to the target sum. If a subarray that
+             satisfies this condition is found, it prints their starting and ending indices, and finishes the
+             task. Otherwise, it prints the message “No subarray found”.
+             [Program]
+                ○  subArraySum(integer []: arr, integer: targetSum)
+⟦code⟧           integer: sum, start, end
+                  integer: N  ←  the number of elements in  arr
+                  for (increase  start  from  1  to  N  by  1)
+⟦code⟧             sum  ←  0
+⟦code⟧             for (increase  end  from  start  to  ___A___  by  1)    //  α
+⟦code⟧                sum  ←  ___B___
+⟦code⟧                if (sum = targetSum)
+⟦code⟧                  output start, end
+⟦code⟧                  return
+⟦code⟧                elseif (sum > targetSum)
+                         exit the for block marked  α
+⟦code⟧                endif
+⟦code⟧             endfor
+⟦code⟧           endfor
+⟦code⟧           output "No subarray found"
+             Answer group
+                           A    B
+⟦code⟧          a)    N    arr[end]
+⟦code⟧          b)    N    sum + arr[end]
+⟦code⟧          c)    N    sum + arr[start]
+⟦code⟧          d)    N - 1    arr[end]
+⟦code⟧          e)    N - 1    sum + arr[end]
+⟦code⟧          f)    N - 1    sum + arr[start]
+⟦code⟧          g)    targetSum    arr[start]
+⟦code⟧          h)    targetSum    sum + arr[end]
+⟦code⟧          i)    targetSum    sum + arr[start]

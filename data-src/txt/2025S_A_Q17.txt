@@ -1,0 +1,8 @@
+          Q17.    When ordering data is entered in the format shown below, which of the following is the
+             appropriate method for checking whether the order date is a business day that is the same as
+             or prior to the entering date?
+                Ordering data
+                  Form number   Order date   Product code   Quantity   Customer code
+                  (Characters)   (Characters)   (Characters)   (Number)   (Characters)
+             a)  Duplication check    b)  Format check
+             c)  Logical check    d)  Sequence check

@@ -1,0 +1,31 @@
+           Q5.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the program.
+             Prime numbers are the positive integers that are only divisible by the number itself and 1.
+             Procedure  printPrime  receives the integer  N (N  ≥  1)  as an argument and prints the first  N
+             prime numbers. For example,  printPrime(6)  will print “2 3 5 7 11 13”.
+             [Program]
+                ○  printPrime(integer: N)
+⟦code⟧           integer: count, number, i
+⟦code⟧           boolean: isPrime
+⟦code⟧           count  ←  1
+⟦code⟧           number  ←  2
+⟦code⟧           while (count  ≤  N)
+⟦code⟧             isPrime  ←  true
+                    for (increase  i  from  2  to  integer part of the square root of  number  by  1)
+⟦code⟧                if (number mod i = 0)
+⟦code⟧                  ___A___
+                         exit the  for  block
+⟦code⟧                endif
+⟦code⟧             endfor
+⟦code⟧             if (isPrime = true)
+⟦code⟧                output " ", number
+⟦code⟧                ___B___
+⟦code⟧             endif
+⟦code⟧             number  ←  number + 1
+⟦code⟧           endwhile
+             Answer group
+                                 A    B
+⟦code⟧          a)    count  ←  count + 1    isPrime  ←  false
+⟦code⟧          b)    count  ←  count + i    isPrime  ←  false
+⟦code⟧          c)    isPrime  ←  false    count  ←  count + 1
+⟦code⟧          d)    isPrime  ←  false    count  ←  count + i

@@ -1,0 +1,41 @@
+               Q12.  From the answer group below, select the correct combination of answers to be inserted
+                    into ____A____ and ____B____ in the program. Here, the array indexes start at 1.
+                 The function  isIsomorphic  compares the two character arrays  s1  and  s2  that are given as
+                 arguments. Both  s1  and  s2  have one or more elements.
+                 Two character arrays are considered isomorphic if the characters in  s1  can be consistently
+                 replaced to obtain  s2  without changing the order of characters. Each character in  s1  must
+                 map to exactly one character in  s2, and no two characters in  s1  may map to the same
+                 character in  s2. A character may map to itself.
+                 If  s1  and  s2  do not have the same number of elements, the function returns  false. Otherwise,
+                 it returns  true  if  s1  and  s2  are isomorphic and  false  if they are not.
+                 The table lists examples of  s1  and  s2  given to the function  isIsomorphic  and the return
+                 values.
+                 Table Examples of  s1  and  s2  given to the function  isIsomorphic  and the return values
+⟦code⟧                        s1    s2    Return Value
+⟦code⟧           {"e", "g", "g"}    {"a", "d", "d"}    true
+⟦code⟧           {"f", "o", "o"}    {"b", "a", "r"}    false
+⟦code⟧           {"p", "a", "p", "e", "r"}    {"t", "i", "t", "l", "e"}    true
+⟦code⟧           {"a", "b"}    {"c", "c"}    false
+                 [Program]
+⟦code⟧             ○  boolean: isIsomorphic(character  []: s1, character  []: s2)
+⟦code⟧               integer: len, i, j
+                      len  ←  number of elements in  s1
+                      if (number of elements in  s2  ≠  len)
+⟦code⟧                 return false
+⟦code⟧               endif
+                      for (increase  i  from  1  to  (len  −  1)  by  1)
+                        for (increase  j  from  (i + 1)  to  len  by  1)
+                          if ((s1[i] = s1[j] and  ____A____  )
+⟦code⟧                        or (s1[i]  ≠  s1[j] and  ___B___ ))
+⟦code⟧                      return false
+⟦code⟧                   endif
+⟦code⟧                 endfor
+⟦code⟧               endfor
+⟦code⟧               return true
+                    
+                 Answer group
+                                A    B
+⟦code⟧              a)  s1[i] = s2[j]  s1[i]  ≠  s2[j]
+⟦code⟧              b)  s1[i]  ≠  s2[j]  s1[i] = s2[j]
+⟦code⟧              c)  s2[i] = s2[j]  s2[i]  ≠  s2[j]
+⟦code⟧              d)  s2[i]  ≠  s2[j]  s2[i] = s2[j]

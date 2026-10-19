@@ -1,0 +1,10 @@
+          Q53.    Basic elements and examples of devices and services when the IoT is used in a factory’s
+             equipment maintenance tasks are compiled as shown below. When a) through d) correspond
+             to one of  A  through  D, which of the following corresponds to  A?
+                             Basic element    Example of device and service
+                           Data collection    A
+                           Data transmission    B
+                           Data analysis    C
+                           Data utilization    D
+             a)  Abnormal value judgment tool    b)    Display for work instructions
+             c)  Temperature sensor for equipment    d)    Wireless communication within the factory

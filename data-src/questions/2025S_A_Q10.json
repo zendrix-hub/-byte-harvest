@@ -1,0 +1,17 @@
+{
+  "id": "2025S_A_Q10",
+  "stem": [
+    { "t": "p", "x": "The table below shows the access times for the cache memory and main memory in systems A and B. Which of the following is the approximate hit ratio of the cache memory, when the effective access time and the cache memory hit ratio are the same for systems A and B?" },
+    { "t": "table", "head": 1, "rows": [
+      ["", "System A", "System B"],
+      ["Cache memory", "14 ns", "12 ns"],
+      ["Main memory", "80 ns", "90 ns"]
+    ] }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "0.17" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "0.20" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "0.83" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "1.00" } ] }
+  ]
+}

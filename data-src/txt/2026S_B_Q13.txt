@@ -1,0 +1,65 @@
+               Q13.  From the answer group below, select the correct answer to be inserted into _________ in
+                    the program. Here, the array indexes start at 1.
+                 The function  extractEmails  receives text as an argument, extracts email addresses from
+                 the  text,  and  returns  all  collected  email  addresses.  Here,  a  string  in  the  format
+                 “name@domain” is considered to be an email address, where “name” and “domain”
+                 comprise only alphanumeric characters and the characters “.” (dot), “_” (underscore), and
+                 “-” (hyphen-minus). The table shows the description of the functions used in the function
+                 extractEmails.
+                                  Table Functions used in the  function  extractEmails
+                          Function    Return value    Description
+⟦code⟧            findSubstring(   integer    Returns the position of the first occurrence of
+                     string: str,   the  substring  substr  in  the  string  str,
+⟦code⟧              string: substr,
+                                                      starting  from  the  position  start.  If  the
+⟦code⟧              integer: start)
+                                                      substring is not found, it returns  0.
+⟦code⟧            getChar(string: str,   character    Returns the character at the position specified
+                     integer: index)   by  index  in the string  str.
+⟦code⟧            length(string: str)    integer    Returns the length of the string  str.
+⟦code⟧          extractEmails("Contact  us  at  john.doe@example.com  or  jane_smith@test.org
+⟦code⟧          for  support.")  returns  {"john.doe@example.com",  "jane_smith@test.org"}.  In
+                 addition,  extractEmails("a@b@c")  returns  {"a@b", "b@c"}.
+                 [Program]
+⟦code⟧            ○  string  []: extractEmails(string: txt)
+⟦code⟧              character  []: validChars  ←  {alphanumeric characters, ".", "_", "-"}
+⟦code⟧              string  []: results  ←  {}
+⟦code⟧              integer: index  ←  1
+⟦code⟧              integer: atIndex, i, count
+⟦code⟧              string: candidate
+⟦code⟧              while (true)
+⟦code⟧                 atIndex  ←  findSubstring(txt, "@", index)
+⟦code⟧                 if (atIndex = 0)
+                          exit the  while  block
+⟦code⟧                 endif
+⟦code⟧                 candidate  ←  ""
+                        for ( _________  by  1)
+⟦code⟧                   if (getChar(txt, i)  exists in  validChars)
+                            prepend  getChar(txt, i)  to  candidate
+⟦code⟧                   else
+                            exit the  for  block
+⟦code⟧                   endif
+⟦code⟧                 endfor
+⟦code⟧                 count  ←  0
+⟦code⟧                 if (length(candidate) > 0)
+                          append  "@"  to  candidate
+                          for (increase  i  from  atIndex + 1  to  length(txt)  by  1)
+⟦code⟧                     if (getChar(txt, i)  exists in  validChars)
+                              append  getChar(txt, i)  to  candidate
+⟦code⟧                       count  ←  count + 1
+⟦code⟧                     else
+                              exit the  for  block
+⟦code⟧                     endif
+⟦code⟧                   endfor
+⟦code⟧                   if (count > 0)
+                            append the value of  candidate  at the end of  results
+⟦code⟧                   endif
+⟦code⟧                 endif
+⟦code⟧                 index  ←  atIndex + 1
+⟦code⟧              endwhile
+⟦code⟧              return results
+                 Answer group
+                   a)    decrease  i  from  atIndex  −  1  to  index
+                   b)    decrease  i  from  atIndex  to  index
+                   c)    increase  i  from  index  to  atIndex
+                   d)    increase  i  from  index  to  atIndex  −  1

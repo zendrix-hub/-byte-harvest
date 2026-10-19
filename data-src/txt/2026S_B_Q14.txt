@@ -1,0 +1,41 @@
+               Q14.  From the answer group below, select the correct combination of answers to be inserted
+                    into ____A____ and ____B____ in the program. Here, the array indexes start at 1.
+                 Percentile is a statistical measure used to describe the position of a particular value in a
+                 dataset relative to the remainder of the values. In education, percentiles are commonly used
+                 to rank students’ performance. For instance, if a student is in the 90th percentile, it implies
+                 the score of the student is higher than 90% of the other students. To calculate percentile of a
+                 student, use the following formula:
+                               ǯ
+                     ൌ      ൈ ͳͲͲ
+                                              െ ͳ
+                 For instance, if the scores of five students are given as an array {30, 60, 80, 72, 15}, then the
+                 percentile array for each student will be {25, 50, 100, 75, 0}. This implies that the number
+                 of students with scores less than 30 is 1; thus, the percentile for the first student is (1 ÷ (5 -
+                 1) × 100) = 25, the number of students with scores less than 60 is 2, and the percentile for
+                 the second student is (2 ÷ (5 - 1) × 100) = 50. The same applies thereafter.
+                 The function  calculatePercentile  receives the scores of each student in the argument
+⟦code⟧          arr  and calculates and returns the percentile of each student. Assume that the argument  arr
+                 contains two or more numbers between 0 and 100.
+⟦code⟧          [Program]
+⟦code⟧             ○  real  []: calculatePercentile(integer  []: arr)
+                      integer: n  ←  the number of elements of  arr
+⟦code⟧               real  []: percentiles  ←  {n  zeros}
+⟦code⟧               integer: i, j, count
+                      for (increase  i  from  1  to  n  by  1)
+⟦code⟧                 count  ←  0
+                        for (increase  j  from  1  to  ____A____  by  1)
+⟦code⟧                   if (arr[i] > arr[j])
+⟦code⟧                     count  ←  count + 1
+⟦code⟧                   endif
+⟦code⟧                 endfor
+                        percentiles[i]  ←  ____B____
+⟦code⟧               endfor
+⟦code⟧               return percentiles
+                 Answer group
+                             A    B
+⟦code⟧              a)    i    ((count – 1)  y  (n  −  1)) × 100
+⟦code⟧              b)    i    (count  y  (n  −  1)) × 100
+⟦code⟧              c)    i  −  1    ((count – 1)  y  (n  −  1)) × 100
+⟦code⟧              d)    i  −  1    (count  y  (n  −  1)) × 100
+⟦code⟧              e)    n    ((count – 1)  y  (n  −  1)) × 100
+⟦code⟧               f)    n    (count  y  (n  −  1)) × 100

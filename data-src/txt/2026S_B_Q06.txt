@@ -1,0 +1,41 @@
+               Q6.  From the answer group below, select the correct combination of answers to be inserted
+                    into ____A____ and ____B____ in the program.
+                                         ଶ    ଶ
+                 The quadratic equation  ܽ  ݔ ܾ൅    ܿ൅ ݔ    ൌ Ͳ  can be formulated as  ݔ െ ʹሺെܾ  Τܽʹ    ሻ ൅
+                                       ଵ   ଵ   ଵ    ଵ    ଵ
+                 ܽଵ ܿሺΤ  ሻ ൌ Ͳ  ,  where  ܽ    Ͳ  .  If  we  replace  ܾሺെ  Τܽʹ    ሻ  and  ܽଵ ܿሺΤ  ሻ  by   and 
+                    ଵ   ଵ്    ଵ    ଵ     ଵ
+                                                       ଶ
+                 respectively,  it can be further formulated as  ݔ െ ʹݔܾ ൅ܿ ൌ Ͳ  , and the roots are as follows:
+                           ଶ
+                 Case 1: if  ܾ    െܿ ൌ Ͳ  , double root ,
+                           ଶ    ଶ
+                 Case 2: if  ܾ    െܿ ൐ Ͳ  , two real roots  ܾ  ܾേ ξ    ܿെ  ,
+                           ଶ    ଶ
+                 Case 3: if  ܾ    െܿ ൏ Ͳ  ,  two imaginary roots  ܾ  ܾെ ܿξ ݅േ    ,  where  ݅  ൌ  ξെͳ.
+                 The procedure  quadEquation  takes the coefficients of a quadratic equation in arguments  a1,
+                 b1, and  c1  and uses the above formula to determine and output the roots. Here,  a1  is not 0
+                 and function  sqrt  returns the principal square root of its non-negative argument.
+                 [Program]
+                    ○  quadEquation(real: a1, real: b1, real: c1)
+                      real: b  ←  −b1  y  (2 × a1)
+⟦code⟧               real: c  ←  c1  y  a1
+⟦code⟧               real: val  ←  b × b  −  c
+⟦code⟧               real: tmp
+⟦code⟧               if (val = 0)
+                        output "root1=root2=",  ____A____
+⟦code⟧               elseif (val > 0)
+⟦code⟧                 tmp  ←  sqrt(val)
+⟦code⟧                 output "root1=", b + tmp
+⟦code⟧                 output "root2=", b  −  tmp
+⟦code⟧               else
+                        tmp  ←  ____B____
+⟦code⟧                 output "root1=", b, "+", tmp, "i"
+⟦code⟧                 output "root2=", b, "−", tmp, "i"
+⟦code⟧               endif
+                 Answer group
+                               A    B
+                     a)    −b    −sqrt(val)
+                     b)    −b    sqrt(−val)
+                     c)    b    −sqrt(val)
+⟦code⟧              d)    b    sqrt(−val)

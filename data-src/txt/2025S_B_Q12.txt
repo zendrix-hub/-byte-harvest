@@ -1,0 +1,37 @@
+           Q12.  From the answer group below, select the correct answer to be inserted into  _______  in
+                the program. Here, the array index starts at 1.
+             The function  hammingDistance  compares the two-character arrays  s1  and  s2  that are given
+             as arguments.  s1  and  s2  have one or more elements. If  s1  and  s2  do not have the same
+             number of elements, the function returns -1. Otherwise, it returns the number of indices
+             where two arrays have different element values at the same index. The figure shows an
+             example of two character arrays. APPLE and APRIE have different element values at two
+             indices.
+                                        A    P    P    L    E
+                                        A    P    R    I    E
+                                  Figure Example of two-character arrays
+             The table lists examples of  s1  and  s2  given to the function  hammingDistance  and the return
+             values. In the program, areas outside of the arrays must not be referenced.
+                      Table Examples of  s1  and  s2  given to the function  hammingDistance
+                                            and the return values
+⟦code⟧                      s1    s2    Return value
+⟦code⟧         {"a", "p", "p", "l", "e"}    {"a", "p", "p", "l", "e"}    0
+⟦code⟧         {"a", "p", "p", "l", "e"}    {"a", "p", "r", "i", "l"}    3
+⟦code⟧         {"a", "p", "p", "l", "e"}    {"m", "e", "l", "o", "n"}    5
+⟦code⟧         {"a", "p", "p", "l", "e"}    {"p", "i", "e"}    -1
+             [Program]
+⟦code⟧         ○  integer: hammingDistance(character  []: s1, character  []: s2)
+⟦code⟧           integer: i, cnt  ←  0
+                  if (the number of elements in  s1  ≠  the number of elements in  s2)
+⟦code⟧             return  −1
+⟦code⟧           endif
+                  for (increase  i  from  1  to  the number of elements in  s1  by  1)
+⟦code⟧             if (  _______  )
+⟦code⟧                cnt  ←  cnt + 1
+⟦code⟧             endif
+⟦code⟧           endfor
+⟦code⟧           return cnt
+             Answer group
+                a)  s1[cnt] = s2[cnt]    b)  s1[cnt]  ≠  s2[cnt]
+                c)  s1[cnt] = s2[i]    d)  s1[cnt]  ≠  s2[i]
+                e)  s1[i] = s2[cnt]    f)  s1[i]  ≠  s2[cnt]
+                g)  s1[i] = s2[i]    h)  s1[i]  ≠  s2[i]

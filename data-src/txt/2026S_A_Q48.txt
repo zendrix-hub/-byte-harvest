@@ -1,0 +1,16 @@
+          Q48.    When an information system is procured through the steps shown in the figure below,
+             which of the following is a word or phrase that should be inserted in the blank B?
+                              The orderer indicates the purpose of the systemization and the details
+                      A
+                              of the business to a vendor, and requests provision of information.
+                              The orderer indicates the system that is the target of the procurement
+                      B   and conditions of the procurement to a vendor, and requests
+                              submission of a proposal document.
+                              The orderer determines a procurement source on the basis of the
+                      C
+                              proposal document and capabilities of the vendor.
+                              The orderer and the procurement source mutually confirm their roles
+                      D
+                              and the assignment of responsibilities on a document.
+             a)  Concluding a contract    b)  RFI
+             c)  RFP    d)  Selecting a provider

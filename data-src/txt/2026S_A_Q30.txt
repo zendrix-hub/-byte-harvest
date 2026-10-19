@@ -1,0 +1,5 @@
+          Q30.    Which of the following is an appropriate description of a Trojan horse?
+             a)  A brute force attack software tool
+             b)  A malicious computer program that presents itself as legitimate
+             c)  A malicious user that steals private information from a system
+             d)  A software tool to decrypt an encrypted password

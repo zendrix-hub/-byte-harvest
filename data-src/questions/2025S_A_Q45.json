@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q45",
+  "stem": [
+    { "t": "p", "x": "Which of the following is a checkpoint for auditing the control of risks related to information leakage and unauthorized use of documents concerning a system?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "Creating the necessary documents even in prototype development" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "Standardizing documents" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "Taking measures to ensure the confidentiality of documents" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Updating documents without delay as changes are made in the system" } ] }
+  ]
+}

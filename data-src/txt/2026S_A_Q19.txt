@@ -1,0 +1,6 @@
+          Q19.    Which of the following is an appropriate description of the mapping between a relational
+             model and relational database in implementation?
+             a)  A domain is mapped to a character type or a character string type.
+             b)  A relation is mapped to a table.
+             c)  Attributes and columns are ordered from left to right.
+             d)  Neither tuples nor rows have duplicates.

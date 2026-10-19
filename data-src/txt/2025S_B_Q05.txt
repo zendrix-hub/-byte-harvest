@@ -1,0 +1,15 @@
+           Q5.  From the answer group below, select the correct answer to be inserted into _________ in
+                the program.
+             The function  calc  receives the positive real numbers  x  and  y, and returns the result of the
+             calculation of (√x +  ඥy ) . For instance, when the function  calc  is called as  calc(4,  9),
+             the return value is 25. Here, the function  pow(a, b)  returns  a  raised to the power of  b.
+             [Program]
+                ○  real: calc(real: x, real: y)
+⟦code⟧           return  _______
+             Answer group
+                a)  pow(pow(x, 0.5) + pow(y, 0.5), 2)
+                b)  pow(pow(x, 0.5), 2) + pow(pow(y, 0.5), 2)
+                c)  pow(pow(x, 2) + pow(y, 2), 0.5)
+                d)  pow(x, 0.5) + pow(y, 0.5)
+                e)  pow(x, 0.5) + pow(y, 0.5)  ÷  pow(2, 0.5)
+                f)  pow(x, 2) + pow(y, 2)  ÷  pow(2, 0.5)

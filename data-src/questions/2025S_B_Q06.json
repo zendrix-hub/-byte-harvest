@@ -1,0 +1,31 @@
+{
+  "id": "2025S_B_Q06",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program." },
+    { "t": "p", "x": "Gray code is a sequence of binary numbers in which two successive values differ by only 1 bit. The function `GrayBiCon` converts the gray code to a binary code using bitwise operators. The bitwise operators operate on the individual bits of the variables. The function receives the 8-bit type argument `x` as a gray code, and returns a corresponding binary number of the given argument. The value of each bit after conversion is the exclusive OR of the most significant bit in the gray code up to the corresponding bit position and the converted value of the next higher bit position. For instance, when the function `GrayBiCon` is called as `GrayBiCon(00001100)`, the return value is a binary number `00001000`. The common bitwise operators are listed in the table below:" },
+    { "t": "p", "x": "Table  Operators" },
+    { "t": "table", "head": 1, "rows": [
+      ["**Operator**", "**Name**"],
+      ["`&`", "Bitwise AND"],
+      ["`|`", "Bitwise OR"],
+      ["`^`", "Bitwise XOR (exclusive OR)"],
+      ["`<<`", "Shift left"],
+      ["`>>`", "Shift right"]
+    ] },
+    { "t": "p", "x": "For instance, `v << n` performs a logical shift of the value of `v` by `n` bits to the left." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ 8-bit: GrayBiCon(8-bit: x)\n  8-bit: y ← x\n  8-bit: z ← x\n  while (z ≠ 00000000)\n    z ← z [[A]] 1\n    y ← [[B]]\n  endwhile\n  return y" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": { "head": ["A", "B"], "rows": [
+    { "k": "a", "c": ["`&`", "`y & z`"] },
+    { "k": "b", "c": ["`&`", "`y ^ z`"] },
+    { "k": "c", "c": ["`&`", "`y | z`"] },
+    { "k": "d", "c": ["`<<`", "`y & z`"] },
+    { "k": "e", "c": ["`<<`", "`y ^ z`"] },
+    { "k": "f", "c": ["`<<`", "`y | z`"] },
+    { "k": "g", "c": ["`>>`", "`y & z`"] },
+    { "k": "h", "c": ["`>>`", "`y ^ z`"] },
+    { "k": "i", "c": ["`>>`", "`y | z`"] }
+  ] }
+}

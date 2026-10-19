@@ -1,0 +1,47 @@
+               Q18.  From the answer group below, select the most appropriate combination of answers to be
+                    inserted into ____A____ and ____B____ in the description.
+                 A research laboratory at University Q plans to introduce a cloud-based database to centrally
+                 store and manage data for one of its research projects. This database will be used by
+                 professors, researchers, students, and administrative staff participating in the project. Table
+                 1 summarizes the data types, descriptions, and the roles and permitted operations for each
+                 user group.
+                               Table 1 Data Types and User Requirements (Excerpt)
+                  Data Type    Description    User Roles
+                  Research   Detailed research   -  Professors and Researchers create and edit project
+                  Proposals   plans and   proposals.
+                               objectives   -  Students can view the proposals to understand the
+                                                   project objectives.
+                                                  -  Administrative staff are not permitted to access this
+                                                   data.
+                  Experimental Raw and processed   -  To maintain data integrity, only Researchers are
+                  Data   experimental   allowed to create and modify data.
+                               results   -  Professors and Students review the data to
+                                                   understand experiment results and research progress.
+                                                  -  Administrative staff are not permitted to access this
+                                                   data.
+                 The system administrator at University Q, who is responsible for introducing the database,
+                 reviewed the data types and user roles with the information security officer of the university.
+                 According to the information security policy of University Q, users must be granted only the
+                 permissions necessary for their roles to minimize potential damage in the event of account
+                 compromise. Based on this policy, the system administrator created user groups and
+                 configured access permissions for each content type. Table 2 lists the resulting access right
+                 assignments for the database.
+                                   Table 2 Access Right Assignments (Excerpt)
+                                                                              Administrative
+                     Data Type    Professors    Researchers    Students
+                                                                                  Staff
+                 Research Proposals    A   (-)
+                 Experimental Data    B   (-)
+                 Note:
+                 R: Read-only (viewing allowed)
+                 RW: Read and Write (includes creating and modifying)
+                 (-): Not allowed (no access)
+               Answer group
+                                     A    B
+                       Professors    Researchers    Students    Professors    Researchers    Students
+                  a)    R    RW    R    R    RW    R
+                  b)    R    RW    R    RW    RW    (-)
+                  c)    RW    RW    R    R    RW    R
+                  d)    RW    RW    R    RW    RW    (-)
+                  e)    RW    RW    (-)    R    RW    R
+                  f)    RW    RW    (-)    RW    RW    (-)

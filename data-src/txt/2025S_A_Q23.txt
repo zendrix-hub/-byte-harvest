@@ -1,0 +1,4 @@
+          Q23.    Which of the following is the most appropriate information for a router to determine the
+             destination of an incoming packet?
+             a)  Destination IP address    b)  Destination MAC address
+             c)  Source IP address    d)  Source MAC address

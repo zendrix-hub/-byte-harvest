@@ -1,0 +1,89 @@
+{
+  "id": "2025S_B_Q08",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "The function `reverse` takes a string `inputStr` as a parameter and returns the reversed string. Here, the length of the string given to `inputStr` is 100 or less. In the program, areas outside of the arrays must not be referenced and the undefined value must not be appended to a string."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "global: character []: stack ← {100 undefined}\nglobal: integer: sp ← 0\n\n○ string: reverse(string: inputStr)\n  integer: n ← length of inputStr\n  integer: i\n  character: x, v\n  string: outputStr ← \"\"\n  for (increase i from 1 to n by 1)\n    x ← the i-th character of string inputStr\n    push(x)\n  endfor\n  while (sp ≠ [[A]])\n    v ← pop()\n    append v to outputStr\n  endwhile\n  return outputStr\n\n○ push(character: x)\n   sp ← sp + 1\n   stack[sp] ← x\n\n○ character: pop()\n  character: retvar\n  [[B]]\n  return retvar"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`−1`",
+          "`retvar ← stack[sp]`\n`sp ← sp + 1`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`−1`",
+          "`retvar ← stack[sp]`\n`sp ← sp − 1`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`−1`",
+          "`sp ← sp + 1`\n`retvar ← stack[sp]`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`−1`",
+          "`sp ← sp − 1`\n`retvar ← stack[sp]`"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "`0`",
+          "`retvar ← stack[sp]`\n`sp ← sp + 1`"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "`0`",
+          "`retvar ← stack[sp]`\n`sp ← sp − 1`"
+        ]
+      },
+      {
+        "k": "g",
+        "c": [
+          "`0`",
+          "`sp ← sp + 1`\n`retvar ← stack[sp]`"
+        ]
+      },
+      {
+        "k": "h",
+        "c": [
+          "`0`",
+          "`sp ← sp − 1`\n`retvar ← stack[sp]`"
+        ]
+      }
+    ]
+  }
+}

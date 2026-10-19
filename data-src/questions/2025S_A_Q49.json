@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q49",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an explanation of green procurement?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It refers not only to the fulfillment of the requirements of quality and price but to the preferential purchase of products and services with a lower environmental burden from companies that work toward a reduction in their environmental impact."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "It refers to a certificate that enables commercial trading of the green power that is generated from natural energy sources such as solar, biomass, wind power, and geothermal heat."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "It refers to international standards concerning environmental labels that are certified by a third party on the basis of certain criteria."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "It refers to mass promotion of the details of environmental protection activities and raising funds for environmental protection from investors."
+        }
+      ]
+    }
+  ]
+}

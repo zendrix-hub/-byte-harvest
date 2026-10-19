@@ -1,0 +1,4 @@
+          Q7.  In object-oriented programming, which of the following is the concept that refers to a class
+             that defines a method with the same name and type signature as a method in its superclass?
+             a)  Hiding    b)  Inheritance
+             c)  Overloading    d)  Overriding

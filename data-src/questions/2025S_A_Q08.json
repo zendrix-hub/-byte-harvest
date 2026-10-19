@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q08",
+  "stem": [
+    { "t": "p", "x": "For a CPU with a clock frequency of 800 MHz, where one instruction is executed in an average time of 4 clock cycles, what is the CPU performance in MIPS?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "0.2" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "20" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "200" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "3,200" } ] }
+  ]
+}

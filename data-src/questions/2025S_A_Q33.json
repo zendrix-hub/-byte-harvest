@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q33",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate description concerning SPF for email communication?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is a policy of the public relations department to designate a specific person to send emails."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is an email sent from a spoofed email address without authorization."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "It matches the sender mail server IP address with the information from the domain server and accepts or rejects email."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "It sends an email to the address of a specific person instead of sending them to multiple email addresses."
+        }
+      ]
+    }
+  ]
+}

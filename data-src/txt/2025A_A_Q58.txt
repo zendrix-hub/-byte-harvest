@@ -1,0 +1,23 @@
+          Q58.    The horizontal and vertical axes of an Operating Characteristic (OC) curve in quality
+             management generally represent the percent defective of a lot and the success rate of a lot,
+             respectively. Samples of size  n  are extracted from a lot of size  N. When the number of
+             defective samples is less than or equal to the pass quantity  C, the lot is considered to have
+             passed; otherwise, it is considered to have failed.
+                 Which of the following is a diagram that shows the trend of change in the OC curve when
+             N  and  n  are fixed and  C  takes the values 0, 1, and 2?
+                 a)   b)
+                                CC   CC
+                                =0=0   =2=2
+                            CC   CC
+                             =1=1   CC   =1=1
+                          CC   =0=0
+                          =2=2
+                      0   0
+                 c)   d)
+                                CC   CC
+                                 =2=2   =0=0
+                               CC   CC
+                                =1=1   =1=1
+                             CC   CC
+                              =0=0   =2=2
+                      0   0

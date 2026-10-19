@@ -1,0 +1,29 @@
+           Q1.  From the answer group below, select the correct combination of answers to be inserted
+                into ____A____ through ____C____ in the program.
+             Centurial years refer to the years that are divisible by 100. The centurial years are not leap
+             years except for years that are exactly divisible by 400. The non-centurial years, that is, years
+             that are not divisible by 100, refer to leap years that are divisible by 4. The function
+⟦code⟧      isLeapYear  receives an integer number  year  and returns  true  if a given year is a leap year
+             or  false  otherwise.
+             [Program]
+                ○  boolean: isLeapYear(integer: year) //  returns true if the variable year
+⟦code⟧                                               //  is a leap year; otherwise, returns false
+                  if (  ____A____  )
+                    return  ____B____
+                  elseif (  ____C____  )
+⟦code⟧             return false
+⟦code⟧           elseif (year mod 4 = 0)
+⟦code⟧             return true
+⟦code⟧           else
+⟦code⟧             return false
+⟦code⟧           endif
+             Answer group
+                               A    B    C
+⟦code⟧          a)    year mod 100 = 0    false    year mod 400 = 0
+⟦code⟧          b)    year mod 100 = 0    true    year mod 400 = 0
+⟦code⟧          c)    year mod 100  ≠  0    false    year mod 400  ≠  0
+⟦code⟧          d)    year mod 100  ≠  0    true    year mod 400  ≠  0
+⟦code⟧          e)    year mod 400 = 0    false    year mod 100 = 0
+⟦code⟧          f)    year mod 400 = 0    true    year mod 100 = 0
+⟦code⟧          g)    year mod 400  ≠  0    false    year mod 100  ≠  0
+⟦code⟧          h)    year mod 400  ≠  0    true    year mod 100  ≠  0

@@ -1,0 +1,29 @@
+           Q14.  From the answer group below, select the correct combination of answers to be inserted
+                into ____A____ and ____B____ in the program.
+             The function  cosine(z)  returns an approximate value of the cosine value of  z  degrees. The
+             function uses Maclaurin series expansion for the cosine shown below and can be used to
+             determine cos(y) for values of y radians.
+                                                     మ   ర   ల
+                                                    ௬   ௬   ௬
+                                        cos(y) =  1  −    +    −    +  ⋯
+                                                    ଶ!    ସ!    ଺!
+             [Program]
+                ○  real: cosine(real: z)
+                  real: y  ←  z ×  π  ÷  180 //  convert from degrees to radians
+⟦code⟧           real: term  ←  1
+⟦code⟧           real: cosy  ←  term
+⟦code⟧           integer: n  ←  0
+                  while (absolute value of  ____A____  > 0.000000001)
+⟦code⟧             n  ←  n + 1
+⟦code⟧             term  ←  term  ×  (-1  ×  (y  ____B____  )  ÷  (2  ×  n  ×  (2  ×  n  -  1)))
+⟦code⟧             cosy  ←  cosy + term
+⟦code⟧           endwhile
+⟦code⟧           return cosy
+             Answer group
+                          A    B
+⟦code⟧         a)    cosy    raised to the power of  (2  ×  n)
+                b)    cosy    raised to the power of  4
+                c)    cosy    squared
+⟦code⟧         d)    term    raised to the power of  (2  ×  n)
+                e)    term    raised to the power of  4
+                 f)    term    squared

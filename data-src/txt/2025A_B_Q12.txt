@@ -1,0 +1,39 @@
+           Q12.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the program. Here, the array index starts at 1.
+             The function  containsSubstring  receives two-character arrays  str  and  seq  as arguments,
+             and returns a boolean value indicating whether the character array  str  contains the sequence
+⟦code⟧      seq  as a substring. The character array  str  contains  seq  as a substring if every sequence of
+             consecutive characters in  seq  exists somewhere in the sequence of characters in  str, in the
+⟦code⟧      same order. For example,  containsSubstring({"a",  "p",  "p",  "l",  "e"},  {"p",
+             "l", "e"})  returns  true, and  containsSubstring({"a", "p", "p", "l", "e"}, {"a",
+             "e"})  returns  false. Assume that the number of elements in  str  and  seq  is one or more.
+             [Program]
+                ○  boolean: containsSubstring(character []: str, character []: seq)
+⟦code⟧           integer: strlen, seqlen, len, i, j
+                  strlen  ←  the number of elements in  str
+                  seqlen  ←  the number of elements in  seq
+⟦code⟧           if (seqlen > strlen)
+⟦code⟧             return false
+⟦code⟧           endif
+⟦code⟧           len  ←  strlen  −  seqlen + 1
+                  for (increase  i  from  1  to  len  by  1)
+⟦code⟧             j  ←  1
+⟦code⟧             while (j  ≤  seqlen)
+⟦code⟧                if ( ___A___  ≠  seq[j])
+                         exit the  while  block
+⟦code⟧                endif
+⟦code⟧                j  ←  j + 1
+⟦code⟧             endwhile
+⟦code⟧             if ( ___B___ )
+⟦code⟧                return true
+⟦code⟧             endif
+⟦code⟧           endfor
+⟦code⟧           return false
+             Answer group
+                              A    B
+⟦code⟧          a)    str[i + j]    j = seqlen
+⟦code⟧          b)    str[i + j]    j = seqlen + 1
+⟦code⟧          c)    str[i + j]    j = seqlen  −  1
+⟦code⟧          d)    str[i + j  −  1]    j = seqlen
+⟦code⟧          e)    str[i + j  −  1]    j = seqlen + 1
+⟦code⟧          f)    str[i + j  −  1]    j = seqlen  −  1

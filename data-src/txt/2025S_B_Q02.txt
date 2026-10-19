@@ -1,0 +1,27 @@
+           Q2.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the program.
+             The function  isPerfect  receives positive number  n, and returns whether  n  is a perfect
+             number. Here, a number is a “perfect number” if the sum of its positive divisors (excluding
+             the number itself) is equal to the number itself. For instance, 28 is a perfect number because
+             28 has divisors 1, 2, 4, 7, and 14, and 1 + 2 + 4 + 7 + 14 = 28.
+             [Program]
+                ○  boolean: isPerfect(integer: n)
+⟦code⟧           integer: k
+⟦code⟧           integer: sum  ←  0
+                  integer: half  ←  integer part of  (n  ÷  2)
+                  for (increase  k  from  1  to  half  by  1)
+⟦code⟧             if (  ___A___  )
+⟦code⟧                ___B___
+⟦code⟧             endif
+⟦code⟧           endfor
+⟦code⟧           if (sum = n)
+⟦code⟧             return true
+⟦code⟧           else
+⟦code⟧             return false
+⟦code⟧           endif
+             Answer group
+                            A    B
+⟦code⟧          a)    n mod k  ≠  0    sum  ←  sum + 1
+⟦code⟧          b)    n mod k  ≠  0    sum  ←  sum + k
+⟦code⟧          c)    n mod k = 0    sum  ←  sum + 1
+⟦code⟧          d)    n mod k = 0    sum  ←  sum + k

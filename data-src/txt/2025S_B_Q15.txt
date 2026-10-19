@@ -1,0 +1,29 @@
+           Q15.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the description. Here, the array index starts at 1.
+             The  calcDistance  returns a value based on array  p1,  p2  and positive integer  n. Assuming
+             that the number of elements in arrays  p1  and  p2  are the same. The function  abs(x)  returns
+             the absolute value of  x, and  pow(a, b)  returns  a  raised to the power of  b.
+             In the case of  p1  is  {3, 1,  5, 2}  and  p2  is  {4, 6, 2, 3}, the  calcDistance(p1, p2,
+⟦code⟧      1)  returns  ___A___  , whereas  calcDistance(p1,  p2,  2)  returns  ___B___  . As the
+             value of  n  increases, those of  calcDistance(p1, p2, n)  converges to 5.
+             [Program]
+                ○  real: calcDistance(real []: p1, real []: p2, integer: n)
+⟦code⟧           integer: i
+⟦code⟧           real: distance  ←  0
+⟦code⟧           real: ex
+                  for (increase  i  from  1  to number of elements in  p1  by  1)
+⟦code⟧             distance  ←  distance + pow(abs(p1[i] - p2[i]), n)
+⟦code⟧           endfor
+⟦code⟧           ex  ←  1  ÷  n /* Division is performed in data type real */
+⟦code⟧           distance  ←  pow(distance, ex)
+⟦code⟧           return distance
+           Answer group
+                          A    B
+⟦code⟧          a)    4    4
+⟦code⟧          b)    4    6
+⟦code⟧          c)    4    10
+⟦code⟧          d)    4    18
+⟦code⟧          e)    10    4
+⟦code⟧          f)    10    6
+⟦code⟧          g)    10    10
+⟦code⟧          h)    10    18

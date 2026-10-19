@@ -1,0 +1,11 @@
+          Q35.  Which of the following is the UML class diagram that shows a generalization relation?
+              a)   Automobile   b)   Automobile
+                      Automobile
+                                                         Driver
+                       inspection
+                       certificate
+              c)   Automobile   d)   Automobile
+                                                         1   1
+                                                   *    *
+                       Sports car
+                                                   Tire   Engine

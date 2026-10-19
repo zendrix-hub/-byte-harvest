@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q57",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the appropriate role of a facilitator in a meeting?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "To act as the chairperson and control the discussions in order to work out a conclusion that matches the intentions of the management"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "To encourage the meeting participants to express their opinions and organize the flow of discussions from a neutral and impartial position"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "To offer specialized support for meeting administration, such as adjusting the schedule, preparing materials, or taking minutes."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "To provide advice only on discussions related to specific areas in which the facilitator specializes, such as technical or legal fields"
+        }
+      ]
+    }
+  ]
+}

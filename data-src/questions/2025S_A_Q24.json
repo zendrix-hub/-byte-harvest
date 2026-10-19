@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q24",
+  "stem": [
+    { "t": "p", "x": "In the OSI model, which of the following is the layer that is responsible for routing datagrams between hosts utilizing IP addresses across one or more networks?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "Data link" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "Network" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "Physical" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Transport" } ] }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q53",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the appropriate explanation for product innovation in the management of technology?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Acquiring business profits through the achievements of technology development"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Developing new products or products that enable differentiation from other companies"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Making innovative reforms in business processes"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Strategically managing business with technology as the core"
+        }
+      ]
+    }
+  ]
+}

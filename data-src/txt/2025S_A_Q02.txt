@@ -1,0 +1,3 @@
+          Q2.  Which of the following is the binary fraction that is the nearest equivalent to the decimal
+             fraction 23.375?
+             a)  10111.011    b)  10111.110    c)  11101.011    d)  11101.110

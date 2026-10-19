@@ -1,0 +1,44 @@
+               Q10. From the answer group below, select the correct combination of answers to be inserted
+                    into ____A____ through ____C____ in the program.
+                 The function  mergeTwoSortedList  concatenates two linear sorted linked lists in a sorted
+                 order and returns one linear linked list of sorted order. Each element of the linear linked lists
+                 is represented by the class  ListElement. The table lists the description of the class
+                 ListElement.  ListElement-type variable holds a reference to an instance of the class
+                 ListElement. Here,  head1  and  head2  represent the headers of the two sorted linked lists,
+                 respectively and are of type  ListElement. After concatenation of two existing linear linked
+                 lists, the function returns a linear linked list headed with  result, which is of type
+                 ListElement. Both the input linked lists and returned linked list are sorted in ascending
+                 order of the member variable  val.
+                        Table Explanation of the member variables of the class  ListElement
+                      Member variable    Type    Description
+⟦code⟧               val    integer    The value of an element.
+⟦code⟧               next    ListElement    Reference to the instance that holds the
+                                                    next  element in the list. If no next
+                                                    element exists, the status is undefined.
+                 [Program]
+                    ○  ListElement: mergeTwoSortedList(ListElement: head1,
+⟦code⟧                                                ListElement: head2)
+⟦code⟧               ListElement: result
+⟦code⟧               if (head1  is  undefined)
+⟦code⟧                 return head2
+⟦code⟧               elseif (head2  is  undefined)
+⟦code⟧                 return head1
+⟦code⟧               endif
+                      if (  ____A____  )
+⟦code⟧                 result  ←  head1
+                        result.next  ←  mergeTwoSortedList(  ____B____  , head2)
+⟦code⟧               else
+⟦code⟧                 result  ←  head2
+                        result.next  ←  mergeTwoSortedList(head1,  ____C____ )
+⟦code⟧               endif
+⟦code⟧               return result
+                 Answer group
+                                    A    B    C
+⟦code⟧              a)    head1.next  is  undefined    head1.next    head2.next
+⟦code⟧              b)    head1.next  is  undefined    head2.next    head1.next
+⟦code⟧              c)    head1.val  ≤  head2.val    head1.next    head2.next
+⟦code⟧              d)    head1.val  ≤  head2.val    head2.next    head1.next
+⟦code⟧              e)    head1.val = head2.val    head1.next    head2.next
+⟦code⟧              f)    head1.val = head2.val    head2.next    head1.next
+⟦code⟧              g)    head1.val  ≥  head2.val    head1.next    head2.next
+⟦code⟧              h)    head1.val  ≥  head2.val    head2.next    head1.next

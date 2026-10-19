@@ -1,0 +1,46 @@
+           Q16.  From the answer group below, select the correct combination of answers to be inserted
+                into  _______  in the program. Here, the array index starts at 0.
+             The Jaccard similarity index, J, measures the similarity between two sets by computing the
+             ratio of the number of elements in their intersection to the number of elements in their union,
+             i.e., J(A, B) = |A∩B| / |A∪B|, where A and B represent sets,  ∩  and  ∪  represent the
+             intersection and the union set operations, respectively, and |…| is the operator to calculate
+             the number of elements in a set. The intersection operation builds a new set taking members
+             that are common to both sets; while the union operation builds a set taking all members of
+             both sets, where each member will appear only once. For instance, A = {3, 4, 6, 7} and B =
+             {2, 4, 5}, then A∩B = {4}, A  ∪  B = {2, 3, 4, 5, 6, 7}, |A| = 4, | B| = 3, |A∩B| = 1, and |A∪B|
+             = 6.
+             The function  jaccardSimilarity  calculates the Jaccard similarity stated above and returns
+             it. The definitions of variables used in the function are stated in the below table.
+                                         Table Variable definitions
+                    Variable    Explanation
+⟦code⟧           nA    Number of elements in set A.
+⟦code⟧           nB    Number of elements in set B.
+⟦code⟧           iCount    Variable for counting members of intersection set, i.e., for counting
+                                |A∩B|.
+                  uCount    Variable for counting members of union set, i.e., for counting |A∪B|.
+⟦code⟧           found    Variable used to indicate whether the member has already been
+                                considered for union set or not.
+             [Program]
+                ○  real: jaccardSimilarity(integer []: A, integer []: B)
+                  integer: nA  ←  number of elements in  A
+                  integer: nB  ←  number of elements in  B
+⟦code⟧           integer: iCount  ←  0
+⟦code⟧           integer: uCount  ←  ______
+⟦code⟧           boolean: found
+                  for (increase  i  from  0  to  nA - 1  by  1)
+⟦code⟧             found  ←  false
+⟦code⟧             for (increase  j  from  0  to  nB - 1  by  1)    //  α
+⟦code⟧                if (A[i] = B[j])
+⟦code⟧                  iCount  ←  iCount + 1
+⟦code⟧                  found  ←  true
+                         exit the  for  block marked  α
+⟦code⟧                endif
+⟦code⟧             endfor
+⟦code⟧             if (found = false)
+⟦code⟧                uCount  ←  uCount + 1
+⟦code⟧             endif
+⟦code⟧           endfor
+⟦code⟧           return iCount  ÷  uCount  /*  Division is done in data type  real */
+             Answer group
+                a)  0    b)  nA    c)  nB    d)  nA + nB
+                e)  nA - nB    f)  nA  ÷  nB    g)  nA × nB

@@ -1,0 +1,39 @@
+           Q6.  From the answer group below, select the correct combination of answers to be inserted
+                into ____A____ and ____B____ in the program.
+             Gray code is a sequence of binary numbers in which two successive values differ by only 1
+             bit. The function  GrayBiCon  converts the gray code to a binary code using bitwise operators.
+             The bitwise operators operate on the individual bits of the variables. The function receives
+             the 8-bit type argument  x  as a gray code, and returns a corresponding binary number of the
+             given argument. The value of each bit after conversion is the exclusive OR of the most
+             significant bit in the gray code up to the corresponding bit position and the converted value
+             of the next higher bit position. For instance, when the function  GrayBiCon  is called as
+             GrayBiCon(00001100), the return value is a binary number  00001000. The common bitwise
+             operators are listed in the table below:
+                                             Table Operators
+                                 Operator    Name
+⟦code⟧                             &    Bitwise AND
+⟦code⟧                             |    Bitwise OR
+⟦code⟧                             ^    Bitwise XOR (exclusive OR)
+⟦code⟧                            <<    Shift left
+⟦code⟧                            >>    Shift right
+             For instance,  v << n  performs a logical shift of the value of  v  by  n  bits to the left.
+             [Program]
+                ○  8-bit: GrayBiCon(8-bit: x)
+⟦code⟧           8-bit: y  ←  x
+⟦code⟧           8-bit: z  ←  x
+⟦code⟧           while (z  ≠  00000000)
+                    z  ←  z  ____A____  1
+                    y  ←  ____B____
+⟦code⟧           endwhile
+⟦code⟧           return y
+            Answer group
+                          A    B
+⟦code⟧          a)    &    y & z
+⟦code⟧          b)    &    y ^ z
+⟦code⟧          c)    &    y | z
+⟦code⟧          d)    <<    y & z
+⟦code⟧          e)    <<    y ^ z
+⟦code⟧          f)    <<    y | z
+⟦code⟧          g)    >>    y & z
+⟦code⟧          h)    >>    y ^ z
+⟦code⟧          i)    >>    y | z

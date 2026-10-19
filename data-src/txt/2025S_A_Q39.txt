@@ -1,0 +1,4 @@
+          Q39.    Which of the following is the term that represents the process of generating a UML
+             class diagram from a program?
+             a)  Backtracking    b)  Forward engineering
+             c)  Re-engineering    d)  Reverse engineering

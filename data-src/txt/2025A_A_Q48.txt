@@ -1,0 +1,6 @@
+          Q48.    In a business scenario where marketing managers analyze customer interests and sales
+              patterns, design promotional campaigns, and then send targeted emails to customers, which
+              of the following is a modeling technique used to represent how information flows between
+              internal processes, data stores, and external entities?
+             a)  Class Diagram    b)  Data Flow Diagram (DFD)
+             c)  Entity-Relationship Diagram (ERD)    d)  Use Case Diagram

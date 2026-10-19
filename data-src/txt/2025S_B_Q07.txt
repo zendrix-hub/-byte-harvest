@@ -1,0 +1,30 @@
+           Q7.  From the answer group below, select the correct answer to be inserted into _________ in
+                the description. Here, the array index starts at 1.
+             The function  binarySearch  receives four arguments: the first argument is an array specified
+             with the argument  arr  (the number of elements  ≥  1), the second argument is the value
+             specified with the argument  target, the third argument is the lower bound  low  of the array,
+             and the fourth argument is the upper bound  high  of the array. The array  arr  has no duplicate
+             elements and is sorted in ascending order. If  arr  has an element with the same value as
+             target, this function returns the index of that element, and -1 otherwise.
+             When the function  binarySearch  is called as  binarySearch({1, 2, 3, 4, 5, 6}, 5,
+             1, 6), the number of times the string “call” is output is _________ .
+             [Program]
+                ○  integer: binarySearch(integer []: arr, integer: target,
+⟦code⟧                                   integer: low, integer: high)
+⟦code⟧           integer: mid
+⟦code⟧           if (low > high)
+⟦code⟧             return  −1
+⟦code⟧           endif
+                  mid  ←  integer part of  ((low + high)  ÷  2)
+⟦code⟧           if (arr[mid] > target)
+⟦code⟧             output "call"
+⟦code⟧             return binarySearch(arr, target, low, mid  −  1)
+⟦code⟧           elseif (arr[mid] < target)
+⟦code⟧             output "call"
+⟦code⟧             return binarySearch(arr, target, mid + 1, high)
+⟦code⟧           else
+⟦code⟧             return mid
+⟦code⟧           endif
+             Answer group
+                a)  0    b)  1    c)  2    d)  3
+                e)  4    f)  5    g)  6

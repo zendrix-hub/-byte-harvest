@@ -1,0 +1,4 @@
+          Q34.    Which of the following is the software architecture that decomposes applications into
+             small, loosely coupled services that communicate over APIs?
+             a)  Event-Driven Architecture    b)  Microservices Architecture
+             c)  Serverless Architecture    d)  Service-Oriented Architecture (SOA)

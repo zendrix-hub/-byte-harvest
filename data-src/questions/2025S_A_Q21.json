@@ -1,0 +1,15 @@
+{
+  "id": "2025S_A_Q21",
+  "stem": [
+    { "t": "p", "x": "Which of the following is the clause that should be inserted into blank [[A]] of the SQL statement below in order to display the total sales data for each product that sold for at least $5,000 from the table OrderDetails?" },
+    { "t": "p", "x": "OrderDetails (OrderID, ProductID, UnitPrice, Quantity)" },
+    { "t": "p", "x": "[SQL statement]" },
+    { "t": "code", "x": "SELECT ProductID, SUM(UnitPrice * Quantity)\nFROM OrderDetails\n[[A]]" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "`GROUP BY ProductID HAVING SUM(UnitPrice * Quantity) >= 5000;`" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "`HAVING SUM(UnitPrice * Quantity) >= 5000;`" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "`HAVING SUM(UnitPrice * Quantity) >= 5000 GROUP BY ProductI;`" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "`WHERE SUM(UnitPrice * Quantity) >= 5000;`" } ] }
+  ]
+}

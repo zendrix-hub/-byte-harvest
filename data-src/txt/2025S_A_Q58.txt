@@ -1,0 +1,6 @@
+          Q58.    The figure below shows part of a cause and effect diagram (also known as a fishbone
+             diagram). Which of the following is the relationship between  A  and  B?
+                                                              A
+                                             B
+             a)  B  is an attribute of  A.    b)  B  is the cause of  A.
+             c)  B  is the means of  A.    d)  B  is the purpose of  A.

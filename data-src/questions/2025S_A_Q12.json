@@ -1,0 +1,51 @@
+{
+  "id": "2025S_A_Q12",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In a system that is composed of two processing devices, what is the difference in availability between the two conditions below? Here, the availability of each processing device is 0.9, and no other factors besides the processing devices are considered."
+    },
+    {
+      "t": "p",
+      "x": "[Conditions]\n(1) The system is available if at least one of the processing devices is running normally.\n(2) The system is available only if both of the processing devices are running normally."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "0.09"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "0.10"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "0.18"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "0.19"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+          Q47.    Which of the following is a measure for the risk of a decline in the system maintenance
+             and operation quality during the outsourcing of an IT service?
+             a)    Clearly stating the detailed fee structure by service in the contract or other documents,
+                  in order to validate the service costs
+             b)    Requesting a proposal for the human resource development plan of the company after
+                  outsourcing during the stage of subcontractor selection, and clearly stating it in the
+                  contract or other documents
+             c)    Securing human resources with capabilities to evaluate the appropriateness of service
+                  costs for system maintenance and operation within the company
+             d)    Using indexes that demonstrate the service quality in order to promote improvement
+                  activities after agreeing on the desired level of quality with the subcontractor

@@ -1,0 +1,27 @@
+               Q2.  From the answer group below, select the correct combination of answers to be inserted
+                    into ____A____ through ____C____ in the description.
+                 Function  f  receives an integer value as argument  argval  and returns the grade character.
+                 The return value of  f(92),  f(72), and  f(-10)  are  ͆   ___A___ ,͇͆    ____B____ ,͇    and
+                 “  ___C___  ,” respectively. Note that the function has a specification bug.
+                 [Program]
+                    ○  character: f(integer: argval)
+⟦code⟧               character: retvar  ←  "w"
+⟦code⟧               if (argval > 90)
+⟦code⟧                 retvar  Ǭ  "a"
+⟦code⟧               endif
+⟦code⟧               if (argval > 70)
+⟦code⟧                 retvar  Ǭ  "b"
+⟦code⟧               elseif (argval > 60)
+⟦code⟧                 retvar  Ǭ  "c"
+⟦code⟧               elseif (argval  ≤  60)
+⟦code⟧                 retvar  Ǭ  "d"
+⟦code⟧               endif
+⟦code⟧               return retvar
+                 Answer group
+                          A    B    C
+⟦code⟧              a)    a    b    d
+⟦code⟧              b)    a    c    d
+⟦code⟧              c)    a    c    w
+⟦code⟧              d)    b    b    d
+⟦code⟧              e)    b    c    d
+⟦code⟧              f)    b    c    w

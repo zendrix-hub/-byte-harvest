@@ -1,0 +1,49 @@
+{
+  "id": "2025S_A_Q26",
+  "stem": [
+    {
+      "t": "p",
+      "x": "An administrator of a small network is testing the new network. Which of the following is the correct combination of the network management tools to be inserted in the blanks below?"
+    },
+    {
+      "t": "p",
+      "x": "The administrator first tests reachability of a remote host using [[A]], and determines the path that packets take to the destination with [[B]]"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "netstat",
+          "ping"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "netstat",
+          "traceroute"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "ping",
+          "traceroute"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "traceroute",
+          "ping"
+        ]
+      }
+    ]
+  }
+}

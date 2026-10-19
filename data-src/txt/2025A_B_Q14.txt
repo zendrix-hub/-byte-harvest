@@ -1,0 +1,41 @@
+           Q14.  From the answer group below, select the correct answer to be inserted into _________ in
+                the program. Here, the array index starts at 1.
+             A 3 × 3 normal magic square is a 3 × 3 matrix where the sum of the elements for each row,
+             each column, and each diagonal is the same. The square contains the numbers 1 to 9, exactly
+             as shown in the figure.
+                                             4    9    2    15
+                                             3    5    7    15
+                                             8    1    6    15
+                                      15    15    15    15    15
+                                      Figure 3 × 3 normal magic square
+             The function  checkMagicSquare  receives a two-dimensional 3 × 3 integer array (matrix)  m
+             containing the numbers 1 to 9, and returns whether the given matrix is a magic square or not.
+             [Program]
+                ○  boolean: checkMagicSquare(integer [,]: m)
+⟦code⟧           integer: i, j, k
+⟦code⟧           integer: dia1Sum  ←  0
+⟦code⟧           integer: dia2Sum  ←  0
+⟦code⟧           integer []: rowSum  ←  {0, 0, 0}
+⟦code⟧           integer []: colSum  ←  {0, 0, 0}
+                  for (increase  i  from  1  to  3  by  1)
+                    for (increase  j  from  1  to  3  by  1)
+⟦code⟧                rowSum[i]  ←  rowSum[i] + m[i,j]
+⟦code⟧                colSum[i]  ←  colSum[i] + m[j,i]
+⟦code⟧             endfor
+⟦code⟧             dia1Sum  ←  dia1Sum + m[i,i]
+⟦code⟧             dia2Sum  ←  dia2Sum + m[i,3 - i + 1]
+⟦code⟧           endfor
+⟦code⟧           if (dia1Sum  ≠  dia2Sum)
+⟦code⟧             return false
+⟦code⟧           endif
+                  for (increase  k  from  1  to  3  by  1)
+⟦code⟧             if(  ______  )
+⟦code⟧                return false
+⟦code⟧             endif
+⟦code⟧           endfor
+⟦code⟧           return true
+             Answer group
+                a)    (rowSum[k] = colSum[k]) and (rowSum[k] = dia1Sum)
+                b)    (rowSum[k] = colSum[k]) or (rowSum[k] = dia1Sum)
+                c)    (rowSum[k]  ≠  colSum[k]) and (rowSum[k]  ≠  dia1Sum)
+                d)    (rowSum[k]  ≠  colSum[k]) or (rowSum[k]  ≠  dia1Sum)

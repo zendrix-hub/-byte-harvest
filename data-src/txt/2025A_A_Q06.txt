@@ -1,0 +1,15 @@
+          Q6.  The flowchart shown below expresses an algorithm that determines the greatest common
+             divisor between two integers a and b. How many times is  A  passed?
+                                           Start
+                                          a  ←  56
+                                          b  ←  48
+                                       r  ←  a  mod  b
+                              A
+                                          a  ←  b
+                                          b  ←  r
+                                    No
+                                           r = 0
+                                              Yes
+                                          print  a
+                                           End
+             a)  1    b)  2    c)  4    d)  8

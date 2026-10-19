@@ -1,0 +1,45 @@
+           Q10.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the program.
+             The procedure  deleteLast  removes an element at the end of a doubly linked list. Each
+             element of the doubly linked list is represented by the class  ListElement. The table shows
+             the description of the class  ListElement. The  ListElement-type variable holds a
+             reference to an instance of the class  ListElement. The global variable  listHead  holds a
+             reference to the head element of the doubly linked list. Remember that each element in the
+             doubly linked list has a reference to its previous element and its next element. Here, if the
+             list is empty,  listHead  is set to  undefined.
+             The procedure handles three main cases: if the list is empty, it outputs "empty." If the list
+             contains only one element, it becomes empty after deletion. If multiple elements are present,
+             it only removes the last element.
+                                         Table Class ListElement
+             Member Variable    Type    Description
+⟦code⟧     data    integer    The value of an element.
+⟦code⟧     next    ListElement    Reference to the instance that holds the next
+                                                element in the list.
+⟦code⟧     prev    ListElement    Reference to the instance that holds the previous
+                                                element in the list.
+             [Program]
+⟦code⟧         global: ListElement: listHead    /*  A reference to the first element of
+                                                      the list is stored.    */
+                ○  deleteLast()
+⟦code⟧           ListElement: current
+⟦code⟧           if (listHead  is  undefined)
+⟦code⟧             output "empty"
+⟦code⟧           else
+⟦code⟧             current  ←  listHead
+⟦code⟧             while (  ___A___  is  not undefined)
+⟦code⟧                current  ←  current.next
+⟦code⟧             endwhile
+⟦code⟧             if (current.prev  is  not undefined)  //  multiple elements are present
+⟦code⟧                ___B___  ←  undefined
+⟦code⟧             else    //  only one element is present
+⟦code⟧                listHead  ←  undefined    //  empty list
+⟦code⟧             endif
+⟦code⟧           endif
+             Answer group
+                               A    B
+⟦code⟧          a)    current.prev    current.prev.next
+⟦code⟧          b)    current.prev    current.next
+⟦code⟧          c)    current    current.prev.next
+⟦code⟧          d)    current    current.next
+⟦code⟧          e)    current.next    current.prev.next
+⟦code⟧          f)    current.next    current.next

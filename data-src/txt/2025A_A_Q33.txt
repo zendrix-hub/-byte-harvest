@@ -1,0 +1,17 @@
+          Q33.  In a system with the configuration and communication services shown in the figure below,
+             which of the following is the most appropriate location for the installation of a WAF as a
+             countermeasure for a vulnerability in a web application? Here, the WAF has no function to
+             encrypt or decrypt communications.
+                                               PC    PC   PC
+                                                    Internet
+                                                HTTPS A
+                                                    Firewall
+                                                HTTPS B
+                                                 SSL accelerator
+                                                 HTTP C
+                                                   Web server
+                                   Service for accessing
+                                                         D
+                                      the database
+                                                 Database server
+              a)    A    b)  B    c)  C    d)  D

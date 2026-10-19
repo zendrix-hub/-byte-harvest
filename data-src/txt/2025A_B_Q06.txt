@@ -1,0 +1,40 @@
+           Q6.  From the answer group below, select the correct answer to be inserted into ________ in
+                the description.
+             Class  Rectangle  represents a two-dimensional figure, and class  Cuboid  represents a three-
+             dimensional figure. The class  Cuboid  is a subclass of the class  Rectangle. Figures 1 and 2
+             explain the classes  Rectangle  and  Cuboid, respectively.
+                             Member variable    Type    Description
+⟦code⟧                     length    integer  Dimension of length.
+⟦code⟧                     width    integer  Dimension of width.
+                          Constructor    Description
+                 Rectangle(integer: _length,   Initialize  member  variable  length  with
+⟦code⟧                     integer: _width)   _length  and member variable  width  with
+                                                 _width.
+                       Method    Return value    Description
+                 enlarge(Rectangle:   None    To increase the size, add  shape.length
+                              shape)   to  length  and  shape.width  to  width.
+                 output()    None    Output in format “(length, width)”.
+                                         Figure 1 Class  Rectangle
+                             Member variable    Type    Description
+⟦code⟧                     height    integer  Dimension of height.
+                         Constructor    Description
+                 Cuboid(integer: _length,   Constructor of the super class is called with
+⟦code⟧                 integer: _width,   _length  and  _width  as arguments in that
+                        integer: _height)   order,  and  member  variable  height  is
+                                               initialized with the argument  _height.
+                      Method    Return value    Description
+                 enlarge(Cuboid:   None    To increase the size, add  shape.length
+                            shape)   to  length,  shape.width  to  width  and
+                                                   shape.height  to  height.
+                 output()    None    Output in format
+                                                   “(length, width, height)”.
+                                           Figure 2 Class  Cuboid
+             When the program is executed, it is expected to produce the output “ ________ ”.
+             [Program]
+⟦code⟧         Rectangle: f1  ←  Rectangle(5, 2)
+⟦code⟧         Cuboid: f2  ←  Cuboid(9, 4, 7)
+⟦code⟧         f1.enlarge(f2)
+⟦code⟧         f1.output()
+             Answer group
+                a)  (5, 2)    b)  (5, 2, 7)    c)  (9, 4)
+                d)  (9, 4, 7)    e)  (14, 6)    f)  (14, 6, 7)

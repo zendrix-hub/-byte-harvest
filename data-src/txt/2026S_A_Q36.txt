@@ -1,0 +1,3 @@
+          Q36.    Which of the following is a structural design pattern that allows classes with incompatible
+              interfaces to work together?
+             a)  Adapter    b)  Factory    c)  Iterator    d)  Singleton

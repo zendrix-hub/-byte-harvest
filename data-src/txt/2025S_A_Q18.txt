@@ -1,0 +1,6 @@
+          Q18.  Of the functions provided by a DBMS, which of the following is a means for achieving
+             protection for data confidentiality?
+             a)  Checking referential constraints when the data is updated
+             b)  Managing a transaction that combines a series of processes as a logical unit
+             c)  Managing the data access rights of users
+             d)  Placing an exclusive lock to data before updates

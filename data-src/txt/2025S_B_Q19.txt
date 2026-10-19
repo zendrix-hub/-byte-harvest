@@ -1,0 +1,68 @@
+           Q19.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the description.
+             Company V, a small-sized company specializing in manufacturing and selling home
+             appliances, has recently expanded its team of website administrators to five. In addition, they
+             have renovated their website to allow customers to download user manuals for their products.
+             One day, an external security researcher highlighted that files containing a watermark with
+             "For Internal Use" were publicly accessible in the public directory of the company’s website
+             and available for download. Company V has a system that ensures all documents stored in
+             the internal folder have this watermark by default, and a rule exists stating that the watermark
+             must be removed when files are published or shared external. The website administrator
+             immediately confirmed the issue and removed the document from the public directory. Then,
+             the  website  administrator  reported  this  issue  to  Company  V's  security  team.  The
+             investigation of the security team revealed that the issue was caused by a website
+             administrator accidentally uploading internal documents instead of the intended public
+             catalog files.  Those publicly accessible files were a draft version of the catalogs, and they
+             did not contain credential information such as API keys for website management. When
+             uploading files to the website's public directory, another website administrator, other than
+             the uploader, was supposed to verify the correctness of the files. However, they failed to
+             notice the mistake. To prevent similar issues in the future, the security team suggested
+             implementing  ___A___  to the website administrators. Additionally, to quickly detect
+             issues, the security team suggested implementing  ___B___  .
+             Answer group
+                                     A    B
+                     a system to check all file upload   a policy where all configuration
+                     destinations and ensure they are not   changes on Company V's website are
+                 a)
+                     public directories before allowing the   checked by at least two website
+                     uploads   administrators
+                     a system to check all file upload   monitoring tools that alert
+                     destinations and ensure they are not   administrators to any unauthorized
+                 b)
+                     public directories before allowing the   access to the public directory
+                     uploads
+                     a system to check all file upload   periodic checks of the files in the
+                     destinations and ensure they are not   public directory to identify any files
+                 c)
+                     public directories before allowing the   that may be mistakenly exposed
+                     uploads
+                     an automated credential scanner to   a policy where all configuration
+                     scan files for credentials and API keys   changes on Company V's website are
+                 d)
+                     before uploading them to the website   checked by at least two website
+                     public directory   administrators
+                     an automated credential scanner to   monitoring tools that alert
+                     scan files for credentials and API keys   administrators to any unauthorized
+                 e)
+                     before uploading them to the website   access to the public directory
+                     public directory
+                     an automated credential scanner to   periodic checks of the files in the
+                     scan files for credentials and API keys   public directory to identify any files
+                 f)
+                     before uploading them to the website   that may be mistakenly exposed
+                     public directory
+                     an automated tool to prevent the   a policy where all configuration
+                     upload of files containing a watermark   changes on Company V's website are
+                 g)
+                     with "For Internal Use" to the   checked by at least two website
+                     website’s public directory   administrators
+                     an automated tool to prevent the   monitoring tools that alert
+                     upload of files containing a watermark   administrators to any unauthorized
+                 h)
+                     with "For Internal Use" to the   access to the public directory
+                     website’s public directory
+                     an automated tool to prevent the   periodic checks of the files in the
+                     upload of files containing a watermark   public directory to identify any files
+                 i)
+                     with "For Internal Use" to the   that may be mistakenly exposed
+                     website’s public directory

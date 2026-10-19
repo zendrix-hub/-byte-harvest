@@ -1,0 +1,131 @@
+               Q20.  From the answer group below, select the most appropriate answer to be inserted into
+                    _________ in the description.
+                 Company S had recently released a photo editing application named Application Y for
+                 mobile platforms.
+                 As storage for users to upload the photos they wish to process, Application Y utilizes a cloud
+                 storage service. The cloud storage service exposes REST API endpoints that accept requests
+                 from REST client. Application Y makes direct REST API calls to the cloud storage service,
+                 and the access tokens required to invoke these APIs are embedded directly within the
+                 application logic. Figure 1 shows the portion of the Application Y architecture related to
+                 access to the cloud storage service. Other components are omitted for simplicity.
+                              User Interface
+                     Application Y
+                                                                         Cloud Storage
+                               Application   Service
+                           *
+                                 Logic   REST API CallREST API Call   (REST API
+                                                       (HTTPS)(HTTPS)   Endpoint)
+                           Storage Access Client
+                              (REST client)
+                    Note: * indicates the location where the access token used to invoke REST API calls is
+                          stored
+                    Figure 1 Application Y architecture related to access to the backend storage service
+                 A security researcher discovered that the access token embedded in Application Y could be
+                 extracted from Application Y. The researcher was able to invoke the REST API directly and
+                 access the storage service using the extracted token.
+                 The developer team of Company S proposed the following for architectures to prevent future
+                 exposure of storage access tokens.
+                  Architecture One: Use a Secure Vault to manage access tokens.
+                  In this architecture, access tokens are stored in a Secure Vault, which is a digital safe for
+                  protecting sensitive data such as API access tokens. When Application Y needs to access the
+                  storage service, it retrieves a temporary token from the Secure Vault and uses the token to
+                  make REST API calls directly to the cloud storage service over HTTPS.
+                                                                   Secure
+                                                                 *
+                            User Interface
+                                                                   Vault
+                                              Access Token
+                    Application Y
+                                                                               Cloud Storage
+                                              Request (HTTPS)
+                             Application   Service
+                                Logic    (REST API
+                                                Access Token ReplyAccess  Token Reply
+                                                                                Endpoint)
+                                                (HTTPS)(HTTPS)
+                         Storage Access Client
+                            (REST client)
+                                                              REST API Call
+                                                              (HTTPS)
+                    Note: * indicates the location where the access token used to invoke REST API calls is
+                         stored
+                                              Figure 2 Architecture One
+                  Architecture Two: Use a VPN to secure communication.
+                  In this architecture, Application Y establishes a VPN connection to the cloud environment.
+                  All REST API calls from Application Y to the cloud storage service are transmitted through
+                  the VPN. The client application continues to use an access token to invoke the REST APIs
+                  of the storage service.
+                                                       VPN
+                            User Interface
+                    Application Y
+                                                      Gateway
+                                                                               Cloud Storage
+                                                                 REST API Call
+                             Application   Service
+                          *   (HTTPS)
+                                Logic   (REST API
+                                                REST API Call   Endpoint)
+                          Storage Access Client
+                                                (HTTPS)
+                             (REST client)
+                    Note: * indicates the location where the access token used to invoke REST API calls is
+                        stored
+                                             Figure 3 Architecture Two
+                  Architecture Three: Use an API Server.
+                  In this architecture, an API server is introduced between Application Y and the cloud storage
+                  service. The API server securely stores the access tokens and performs REST API Calls.
+                  Application Y communicates only with the API server over HTTPS and does not possess
+                  access tokens for the cloud storage service. All authentication, authorization, and business
+                  logic are enforced on the API server, which performs REST API calls to the storage service
+                  on behalf of the client.
+                                                 * API Server
+                            User Interface
+                    Application Y
+                                                Storage Access Client
+                                                                               Cloud StorageCl
+                                                   (REST Client)   REST API
+                             Application   Service
+                                                                   Call
+                                Logic   (REST API(R
+                                                                   (HTTPS)
+                                                                                EEndpoint)
+                            Remote Service
+                                                   REST API Call
+                              Interface
+                                                   (HTTPS)
+                    Note: * indicates the location where the access token used to invoke REST API calls is
+                        stored
+                                            Figure 4 Architecture Three
+                  Architecture Four: Use a proxy server.
+                  In this architecture, a proxy server is deployed between Application Y and the cloud storage
+                  service. The proxy server stores the access credentials required to access the storage service.
+                  Application Y sends REST API requests to the proxy server over HTTPS, and the proxy
+                  server forwards these requests to the cloud storage service using the stored credentials. The
+                  proxy server does not perform application-specific authentication, authorization, or business
+                  logic enforcement, and simply relays REST API requests from the client to the storage
+                  service.
+                            User Interface
+                   Application Y   * Proxy Server
+                                                                               Cloud Storage
+                             Application   Service
+                                                                REST API Call
+                                Logic   (REST API
+                                                                (HTTPS)
+                                                                                Endpoint)
+                         Storage Access Client
+                            (REST Client)
+                                               REST API Call (HTTPS)
+                   Note: * indicates the location where the access token used to invoke REST API calls is
+                        stored
+                                             Figure 5 Architecture Four
+                 By comparing them, the security team of Company S suggested the application development
+                 team redesign the application architecture to Architecture _________ .
+                 Answer group
+                  a)  One
+                  b) Two
+                  c)  Three
+                  d) Four
+               _    _
+               Company names and product names appearing in the test questions are trademarks or registered
+               trademarks of their respective companies. Note that the ® and ™ symbols are not used within
+               the text.

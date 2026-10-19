@@ -1,0 +1,9 @@
+          Q9.  When an HDD has the specifications shown in the table below, what is the average access
+             time for the HDD to transfer 16 kB of data in milliseconds (ms)? The average access time is
+             calculated as the sum of the average seek time, controller overhead, rotational latency, and
+             transfer time. Other overheads can be ignored. Here, 1 MB = 1,024 kB.
+                              Average seek time    5 ms
+                              Rotation Speed    6,000 RPM
+                              Transfer rate    1 MB/s
+                              Controller overhead    0.1 ms
+             a)  20.1    b)  25.725    c    30.725    d) 74.1

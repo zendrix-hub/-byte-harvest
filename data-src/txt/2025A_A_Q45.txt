@@ -1,0 +1,9 @@
+          Q45.    In the system design phase, when an audit is performed on the control to reduce the risk
+              of user requirements not being met, which of the following is a point to be checked?
+             a)  Whether programming is performed in accordance with the specified conventions and
+                standards
+             b)  Whether the program specifications are created on the basis of the system design
+                documents
+             c)  Whether the test plan is created on the basis of the system test requirements, and the
+                manager’s approval of the system operations department is obtained
+             d)  Whether the user department participates in the review of the system design documents

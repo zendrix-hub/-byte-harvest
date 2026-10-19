@@ -1,0 +1,78 @@
+           Q16.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  through  ___C___  in the program.
+             Craps is a casino dice game in which players bet on the outcomes of the roll of a pair dice.
+             In the rules of the game, a player rolls two dice and finds their sum. There possible outcomes
+             could lead to a win or loss.
+                   1.  If the sum is 7 or 11, the player wins.
+                   2.  If the sum is 2, 3 or 12, the player loses.
+                   3.  Otherwise (the sum is 4, 5, 6, 8, 9 or 10), the player neither wins nor loses. However,
+                      the player continues rolling the dice until they either roll the same (initial) sum
+                      again (in which case they win the game) or roll a sum of 7 (in which case they lose
+                      the game).
+             The following program approximates the chance of winning a game of Craps using Monte
+             Carlo method and outputs it. The Monte Carlo method is a technique used to estimate the
+             probability of certain outcomes of an experiment by running multiple trial runs, using
+             random numbers. In the program, the playing Craps is illustrated simply by generating
+             random numbers rather than actually rolling a pair of dice. The function  random_int(1, 6)
+             generates a random integer number between 1 and 6, and returns it.
+             The program also calculates and outputs the relative error of the measured approximate
+             probability of winning Craps. In general, the relative error  Er  is calculated using the
+             following formula:
+                   Er  = | (Pm  –  Pt)  /  Pt  |
+             where  Pm  denotes the measured approximate probability and  Pt  denotes the theoretical
+             probability. The theoretical probability of winning Craps is known to be 244/495.
+             [Program]
+⟦code⟧         integer: wins_sum  ←  0
+⟦code⟧         integer: lose_sum  ←  0
+⟦code⟧         integer: n  ←  10000
+⟦code⟧         integer: i, dice1, dice2, sum, newsum
+⟦code⟧         real: result, pt  ←  (244  ÷  495)
+                for (increase  i  from  1  to  n  by  1)
+⟦code⟧           dice1  ←  random_int(1, 6)
+⟦code⟧           dice2  ←  random_int(1, 6)
+⟦code⟧           sum  ←  dice1 + dice2
+⟦code⟧           if (sum = 7 or sum = 11)
+⟦code⟧             wins_sum  ←  wins_sum + 1
+⟦code⟧           elseif (sum = 2 or sum = 3 or sum = 12)
+⟦code⟧             lose_sum  ←  lose_sum + 1
+⟦code⟧           else
+⟦code⟧             do
+⟦code⟧                dice1  ←  random_int(1, 6)
+⟦code⟧                dice2  ←  random_int(1, 6)
+⟦code⟧                newsum  ←  dice1 + dice2
+⟦code⟧                if (newsum = sum)
+⟦code⟧                  wins_sum  ←  wins_sum + 1
+⟦code⟧                elseif (newsum = 7)
+⟦code⟧                  lose_sum  ←  lose_sum + 1
+⟦code⟧                endif
+⟦code⟧             while (  ___A___  )
+⟦code⟧           endif
+⟦code⟧         endfor
+⟦code⟧         result  ←  ___B___
+⟦code⟧         output result,  absolute value of  (  ___C___  )
+             Answer group
+                               A    B    C
+⟦code⟧             newsum  ≠  sum and   wins_sum  ÷  lose_sum    (result  −  pt)  ÷  pt
+                 a)
+⟦code⟧             newsum  ≠  7
+⟦code⟧             newsum  ≠  sum and   wins_sum  ÷  lose_sum    result  ÷  pt
+                 b)
+⟦code⟧             newsum  ≠  7
+⟦code⟧             newsum  ≠  sum and   wins_sum  ÷  n    (result  −  pt)  ÷  pt
+                 c)
+⟦code⟧             newsum  ≠  7
+⟦code⟧             newsum  ≠  sum and   wins_sum  ÷  n    result  ÷  pt
+                 d)
+⟦code⟧             newsum  ≠  7
+⟦code⟧             newsum  ≠  sum or   wins_sum  ÷  lose_sum    (result  −  pt)  ÷  pt
+                 e)
+⟦code⟧             newsum  ≠  7
+⟦code⟧             newsum  ≠  sum or   wins_sum  ÷  lose_sum    result  ÷  pt
+                 f)
+⟦code⟧             newsum  ≠  7
+⟦code⟧             newsum  ≠  sum or   wins_sum  ÷  n    (result  −  pt)  ÷  pt
+                 g)
+⟦code⟧             newsum  ≠  7
+⟦code⟧             newsum  ≠  sum or   wins_sum  ÷  n    result  ÷  pt
+                 h)
+⟦code⟧             newsum  ≠  7

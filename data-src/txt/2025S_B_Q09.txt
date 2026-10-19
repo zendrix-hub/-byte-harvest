@@ -1,0 +1,39 @@
+           Q9.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  through ____C____ in the program.
+             Given the root of two binary trees, the aim of the following program is to check whether
+             these two trees are identical. Two binary trees are defined as identical if they satisfy the
+             following formal conditions:
+              •  Structure: Both trees have the same structure, implying that for every corresponding
+                 node in the two trees, the arrangement of the left and right children is the same.
+              •  Node Values: Each corresponding node in the two trees must contain the same value.
+                 Specifically, if tree  𝑇ଵ  has a node  𝑁ଵ  with value  𝑣ଵ  and tree  𝑇ଶ  has the corresponding
+                 node  𝑁ଶ  with value  𝑣ଶ, then  𝑣ଵ  =  𝑣ଶ.
+             The  function  isSameTree  takes  two  instances  of  class  TreeNode  as  the  argument
+             representing the root nodes of two binary trees, and returns  true  if the trees are identical, or
+⟦code⟧      false  otherwise. The member variables of  TreeNode  are listed in the table below:
+                       Table Explanation of the member variables of the class  TreeNode
+                    Member variable    Type    Description
+⟦code⟧             val    integer    The integer value of a current node
+⟦code⟧             left    TreeNode    Left child node
+⟦code⟧             right    TreeNode    Right child node
+             [Program]
+                ○  boolean: isSameTree(TreeNode: p, TreeNode: q)
+⟦code⟧           boolean: checkLeft, checkRight
+                  if (p = undefined  ____A____  q = undefined)
+⟦code⟧             return true
+⟦code⟧           endif
+                  if (p = undefined  ____B____  q = undefined)
+⟦code⟧             return false
+⟦code⟧           endif
+⟦code⟧           if (p.val  ≠  q.val)
+⟦code⟧             return false
+⟦code⟧           endif
+⟦code⟧           checkLeft  ←  isSameTree(p.left, q.left)
+⟦code⟧           checkRight  ←  isSameTree(p.right, q.right)
+                  return checkLeft  ____C____  checkRight
+             Answer group
+                         A    B    C
+⟦code⟧          a)    or    and    and
+⟦code⟧          b)    and    or    or
+⟦code⟧          c)    and    or    and
+⟦code⟧          d)    or    and    or

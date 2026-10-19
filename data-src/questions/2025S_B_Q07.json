@@ -1,0 +1,94 @@
+{
+  "id": "2025S_B_Q07",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the description. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "The function `binarySearch` receives four arguments: the first argument is an array specified with the argument `arr` (the number of elements ≥ 1), the second argument is the value specified with the argument `target`, the third argument is the lower bound `low` of the array, and the fourth argument is the upper bound `high` of the array. The array `arr` has no duplicate elements and is sorted in ascending order. If `arr` has an element with the same value as `target`, this function returns the index of that element, and -1 otherwise."
+    },
+    {
+      "t": "p",
+      "x": "When the function `binarySearch` is called as `binarySearch({1, 2, 3, 4, 5, 6}, 5, 1, 6)`, the number of times the string “`call`” is output is [[ ]]."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ integer: binarySearch(integer []: arr, integer: target,\n                        integer: low, integer: high)\n  integer: mid\n  if (low > high)\n    return −1\n  endif\n  mid ← integer part of ((low + high) ÷ 2)\n\n  if (arr[mid] > target)\n    output \"call\"\n    return binarySearch(arr, target, low, mid − 1)\n  elseif (arr[mid] < target)\n    output \"call\"\n    return binarySearch(arr, target, mid + 1, high)\n  else\n    return mid\n  endif"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "0"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "1"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "2"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "3"
+        }
+      ]
+    },
+    {
+      "k": "e",
+      "b": [
+        {
+          "t": "p",
+          "x": "4"
+        }
+      ]
+    },
+    {
+      "k": "f",
+      "b": [
+        {
+          "t": "p",
+          "x": "5"
+        }
+      ]
+    },
+    {
+      "k": "g",
+      "b": [
+        {
+          "t": "p",
+          "x": "6"
+        }
+      ]
+    }
+  ]
+}

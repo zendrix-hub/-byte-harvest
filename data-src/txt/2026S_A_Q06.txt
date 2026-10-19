@@ -1,0 +1,7 @@
+          Q6.  In the binary search tree below, when a new node of value 11 is inserted, where will this
+             insertion be made?
+                                   7    16
+                            3    12    20
+                                  10    13    18    23
+             a)  Left child of 16    b)  Left child of 23
+             c)  Right child of 3    d)  Right child of 10

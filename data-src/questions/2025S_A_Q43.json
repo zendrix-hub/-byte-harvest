@@ -1,0 +1,17 @@
+{
+  "id": "2025S_A_Q43",
+  "stem": [
+    { "t": "p", "x": "An IT service is provided under the conditions below. What is the maximum downtime in hours that satisfies the SLA during a service period of one (1) month? Here, the number of business days in one (1) month is 30, and no maintenance or other scheduled downtime of the service is performed during the service period." },
+    { "t": "p", "x": "[Conditions of the SLA]" },
+    { "t": "list", "items": [
+      "The service period is from 8:00 AM to 10:00 PM on business days.",
+      "The availability should be 99.5% or more."
+    ] }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "0.3" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "2.1" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "3.0" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "3.6" } ] }
+  ]
+}

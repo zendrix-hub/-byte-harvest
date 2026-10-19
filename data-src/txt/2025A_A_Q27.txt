@@ -1,0 +1,5 @@
+          Q27.    An attacker left a USB stick labeled “Next ITPEC exam questions and answers” that
+             contains malware in front of an office, expecting someone to plug it into a PC. Once plugged
+             in, the attacker gains control of the PC. Which of the following types of attack is this?
+             a)  Baiting    b)  Identity theft
+             c)  Phishing    d)  Pretexting

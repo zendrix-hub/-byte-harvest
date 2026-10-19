@@ -1,0 +1,48 @@
+           Q20.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the description.
+             Company A recently experienced a security incident where confidential data were exfiltrated
+             by a compromised employee account. Ms. T, a security analyst at Company A, investigated
+             the compromised employee account and found that the password used by the employee's
+             account involved in this breach was a complex password that met the company's password
+             policy. However, the same password was used across several web services. Additionally, Ms.
+             T investigated the login logs of Company A’s system and discovered 1,000 failed login
+             attempts recorded within 3 hours before a successful login was recorded. These failed login
+             logs included attempts to log in with different account IDs and password sets. These login
+             attempts occurred from a county where Company A does not have an office. Company A has
+             no employees who travel abroad.
+             To prevent future account compromise by the same attack pattern, Ms. T suggested that the
+             system administrators of Company V implement  ___A___  . Additionally, to quickly detect
+             any account compromise, she suggested implementing a monitoring system to alert
+             administrators of  ___B___  .
+             Answer group
+                                     A    B
+                     a more complex password policy    login attempts from locations where
+                 a)
+                                                        the account is not usually logged in.
+                     a more complex password policy    overwhelmed network traffic in
+                 b)
+                                                        Company A's system
+                     a more complex password policy    unpatched servers in Company A's
+                 c)
+                                                        system
+                     encryption of all files stored on   login attempts from locations where
+                 d)
+                     employees' computers   the account is not usually logged in.
+                     encryption of all files stored on   overwhelmed network traffic in
+                 e)
+                     employees' computers   Company A's system
+                     encryption of all files stored on   unpatched servers in Company A's
+                 f)
+                     employees' computers   system
+                     Multi-Factor Authentication to all   login attempts from locations where
+                 g)
+                     employee accounts   the account is not usually logged in.
+                     Multi-Factor Authentication to all   overwhelmed network traffic in
+                 h)
+                     employee accounts   Company A's system
+                     Multi-Factor Authentication to all   unpatched servers in Company A's
+                 i)
+                     employee accounts   system
+           _    _
+           Company names and product names appearing in the test questions are trademarks or registered
+           trademarks of their respective companies. Note that the ® and ™ symbols are not used within the text.

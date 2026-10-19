@@ -1,0 +1,7 @@
+          Q17.    Which of the following is the appropriate circuit with two (2) inputs and one (1) output
+             where the output  X  is 0 only when the two (2) inputs  A  and  B  are both 1?
+                                            A
+                                                           X
+                                            B
+             a)  AND circuit    b)  NAND circuit
+             c)  OR circuit    d)  XOR circuit

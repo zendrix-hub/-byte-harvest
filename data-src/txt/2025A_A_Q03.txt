@@ -1,0 +1,5 @@
+          Q3.  Three friends and 4 other people are randomly seated in 7 seats arranged in a row. What is
+             the probability that the 3 friends sit next to one another?
+                  1    1    1    1
+             a)    b)    c)    d)
+                 168    42    35    7

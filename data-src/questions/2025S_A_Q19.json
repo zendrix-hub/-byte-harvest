@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q19",
+  "stem": [
+    { "t": "p", "x": "Which of the following is the primary goal of conceptual database design?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "To create a physical data model of the database" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "To define the logical structure of the database" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "To determine the exact data types for every database attribute" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "To implement database security measures" } ] }
+  ]
+}

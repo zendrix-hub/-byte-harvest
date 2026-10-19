@@ -1,0 +1,61 @@
+{
+  "id": "2025S_B_Q02",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "The function `isPerfect` receives positive number `n`, and returns whether `n` is a perfect number. Here, a number is a “perfect number” if the sum of its positive divisors (excluding the number itself) is equal to the number itself. For instance, 28 is a perfect number because 28 has divisors 1, 2, 4, 7, and 14, and 1 + 2 + 4 + 7 + 14 = 28."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ boolean: isPerfect(integer: n)\n  integer: k\n  integer: sum ← 0\n  integer: half ← integer part of (n ÷ 2)\n  for (increase k from 1 to half by 1)\n    if ([[A]])\n      [[B]]\n    endif\n  endfor\n  if (sum = n)\n    return true\n  else\n    return false\n  endif"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`n mod k ≠ 0`",
+          "`sum ← sum + 1`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`n mod k ≠ 0`",
+          "`sum ← sum + k`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`n mod k = 0`",
+          "`sum ← sum + 1`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`n mod k = 0`",
+          "`sum ← sum + k`"
+        ]
+      }
+    ]
+  }
+}

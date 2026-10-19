@@ -1,0 +1,8 @@
+          Q9.  The figure shows the storage sequence of instructions fetched by a processor. Which of the
+             following corresponds to  a?
+                                                Processor
+                      Main   Instruction
+                                           a
+                     memory    decoder
+             a)  Accumulator    b)  Data cache
+             c)  Instruction register    d)  Program register (program counter)

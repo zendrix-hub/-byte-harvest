@@ -1,0 +1,8 @@
+          Q21.    There is a relation schema  A = (P, Q, R, S, T, Y)  with functional dependencies below:
+⟦code⟧           •    P  →  Q
+⟦code⟧           •    QR  →  S
+⟦code⟧           •    T  →  R
+⟦code⟧           •    S  →  P
+            Which of the following is the candidate keys of  A?
+             a)  PT,  QT    b)  PT,  QT,  ST
+             c)  PTY,  QTY,  QRY    d)  PTY,  QTY,  STY

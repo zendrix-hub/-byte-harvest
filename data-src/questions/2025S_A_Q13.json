@@ -1,0 +1,52 @@
+{
+  "id": "2025S_A_Q13",
+  "stem": [
+    {
+      "t": "p",
+      "x": "The relation between virtual address and physical address is shown below. Each virtual page and page frame starts at a multiple of 4096 and ends 4095 addresses higher. Virtual address space 4K-8K corresponds to 4096-8191 and 8K to 12K corresponds to 8192-12287. Which of the following is the physical address corresponding to the virtual address numbered 8300?"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"0 0 600 490\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#222\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"10\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto-start-reverse\"><path d=\"M0,1 L10,5 L0,9 z\" fill=\"#222\"/></marker></defs><text x=\"118\" y=\"18\" text-anchor=\"middle\">Virtual</text><text x=\"118\" y=\"38\" text-anchor=\"middle\">address</text><rect x=\"140\" y=\"50\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"67\" text-anchor=\"end\">60K-64K</text><text x=\"165\" y=\"67\" text-anchor=\"middle\">X</text><rect x=\"140\" y=\"74\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"91\" text-anchor=\"end\">56K-60K</text><text x=\"165\" y=\"91\" text-anchor=\"middle\">X</text><rect x=\"140\" y=\"98\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"115\" text-anchor=\"end\">52K-56K</text><text x=\"165\" y=\"115\" text-anchor=\"middle\">X</text><rect x=\"140\" y=\"122\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"139\" text-anchor=\"end\">48K-52K</text><text x=\"165\" y=\"139\" text-anchor=\"middle\">X</text><rect x=\"140\" y=\"146\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"163\" text-anchor=\"end\">44K-48K</text><text x=\"165\" y=\"163\" text-anchor=\"middle\">7</text><rect x=\"140\" y=\"170\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"187\" text-anchor=\"end\">40K-44K</text><text x=\"165\" y=\"187\" text-anchor=\"middle\">X</text><rect x=\"140\" y=\"194\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"211\" text-anchor=\"end\">36K-40K</text><text x=\"165\" y=\"211\" text-anchor=\"middle\">5</text><rect x=\"140\" y=\"218\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"235\" text-anchor=\"end\">32K-36K</text><text x=\"165\" y=\"235\" text-anchor=\"middle\">X</text><rect x=\"140\" y=\"242\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"259\" text-anchor=\"end\">28K-32K</text><text x=\"165\" y=\"259\" text-anchor=\"middle\">X</text><rect x=\"140\" y=\"266\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"283\" text-anchor=\"end\">24K-28K</text><text x=\"165\" y=\"283\" text-anchor=\"middle\">X</text><rect x=\"140\" y=\"290\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"307\" text-anchor=\"end\">20K-24K</text><text x=\"165\" y=\"307\" text-anchor=\"middle\">3</text><rect x=\"140\" y=\"314\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"331\" text-anchor=\"end\">16K-20K</text><text x=\"165\" y=\"331\" text-anchor=\"middle\">4</text><rect x=\"140\" y=\"338\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"355\" text-anchor=\"end\">12K-16K</text><text x=\"165\" y=\"355\" text-anchor=\"middle\">0</text><rect x=\"140\" y=\"362\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"379\" text-anchor=\"end\">8K-12K</text><text x=\"165\" y=\"379\" text-anchor=\"middle\">6</text><rect x=\"140\" y=\"386\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"403\" text-anchor=\"end\">4K-8K</text><text x=\"165\" y=\"403\" text-anchor=\"middle\">1</text><rect x=\"140\" y=\"410\" width=\"50\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"136\" y=\"427\" text-anchor=\"end\">0K-4K</text><text x=\"165\" y=\"427\" text-anchor=\"middle\">2</text><path d=\"M198,77 q4,0 4,4 v3 q0,2 3,2 q-3,0 -3,2 v3 q0,4 -4,4\" fill=\"none\" stroke=\"#222\"/><text x=\"210\" y=\"91\">Virtual page</text><text x=\"384\" y=\"211\">Physical</text><text x=\"384\" y=\"235\">address</text><rect x=\"310\" y=\"242\" width=\"64\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"384\" y=\"259\">28K-32K</text><rect x=\"310\" y=\"266\" width=\"64\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"384\" y=\"283\">24K-28K</text><rect x=\"310\" y=\"290\" width=\"64\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"384\" y=\"307\">20K-24K</text><rect x=\"310\" y=\"314\" width=\"64\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"384\" y=\"331\">16K-20K</text><rect x=\"310\" y=\"338\" width=\"64\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"384\" y=\"355\">12K-16K</text><rect x=\"310\" y=\"362\" width=\"64\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"384\" y=\"379\">8K-12K</text><rect x=\"310\" y=\"386\" width=\"64\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"384\" y=\"403\">4K-8K</text><rect x=\"310\" y=\"410\" width=\"64\" height=\"24\" fill=\"#fff\" stroke=\"#222\"/><text x=\"396\" y=\"427\">0K-4K</text><path d=\"M378,413 q4,0 4,4 v3 q0,2 3,2 q-3,0 -3,2 v3 q0,4 -4,4\" fill=\"none\" stroke=\"#222\"/><line x1=\"380\" y1=\"456\" x2=\"387\" y2=\"426\" stroke=\"#222\" marker-end=\"url(#ah)\"/><text x=\"380\" y=\"474\" text-anchor=\"middle\">Page frame</text><line x1=\"190\" y1=\"158\" x2=\"310\" y2=\"254\" stroke=\"#222\" stroke-width=\"1.2\" marker-end=\"url(#ah)\"/><line x1=\"190\" y1=\"206\" x2=\"310\" y2=\"302\" stroke=\"#222\" stroke-width=\"1.2\" marker-end=\"url(#ah)\"/><line x1=\"190\" y1=\"302\" x2=\"310\" y2=\"350\" stroke=\"#222\" stroke-width=\"1.2\" marker-end=\"url(#ah)\"/><line x1=\"190\" y1=\"326\" x2=\"310\" y2=\"326\" stroke=\"#222\" stroke-width=\"1.2\" marker-end=\"url(#ah)\"/><line x1=\"190\" y1=\"350\" x2=\"310\" y2=\"422\" stroke=\"#222\" stroke-width=\"1.2\" marker-end=\"url(#ah)\"/><line x1=\"190\" y1=\"374\" x2=\"310\" y2=\"278\" stroke=\"#222\" stroke-width=\"1.2\" marker-end=\"url(#ah)\"/><line x1=\"190\" y1=\"398\" x2=\"310\" y2=\"398\" stroke=\"#222\" stroke-width=\"1.2\" marker-end=\"url(#ah)\"/><line x1=\"190\" y1=\"422\" x2=\"310\" y2=\"374\" stroke=\"#222\" stroke-width=\"1.2\" marker-end=\"url(#ah)\"/></svg>",
+      "alt": "Page table diagram. Left: a column of 16 virtual pages labelled Virtual address, from top 60K-64K down to 0K-4K, each marked with an entry: 60K-64K X, 56K-60K X (bracketed \"Virtual page\"), 52K-56K X, 48K-52K X, 44K-48K 7, 40K-44K X, 36K-40K 5, 32K-36K X, 28K-32K X, 24K-28K X, 20K-24K 3, 16K-20K 4, 12K-16K 0, 8K-12K 6, 4K-8K 1, 0K-4K 2. Right: a column of 8 page frames labelled Physical address, from top 28K-32K, 24K-28K, 20K-24K, 16K-20K, 12K-16K, 8K-12K, 4K-8K, 0K-4K (the 0K-4K frame bracketed \"Page frame\"). Arrows: 44K-48K (7) to 28K-32K; 36K-40K (5) to 20K-24K; 20K-24K (3) to 12K-16K; 16K-20K (4) to 16K-20K; 12K-16K (0) to 0K-4K; 8K-12K (6) to 24K-28K; 4K-8K (1) to 4K-8K; 0K-4K (2) to 8K-12K."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "8192"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "8300"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "24576"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "24684"
+        }
+      ]
+    }
+  ]
+}

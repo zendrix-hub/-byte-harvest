@@ -1,0 +1,4 @@
+          Q44.    Which of the following should be accomplished in service management concerning
+             Maximum Tolerable Downtime (MTD), Recovery Point Objective (RPO), and Recovery
+             Time Objective (RTO)?
+             a)  MTD < RPO    b)  MTD < RTO    c)  RPO < MTD    d)  RTO < MTD

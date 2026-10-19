@@ -1,0 +1,7 @@
+          Q42.    Based on the requirements gathered, the cost of a software project under normal
+             conditions is estimated at $70,000. In case of smooth project implementation, some activities
+             are not required and the estimated cost is reduced to $50,000; however, in the worst-case
+             scenario, additional tasks are required and the cost increases to $120,000. What is the
+             expected cost of the project (in dollars) that is calculated by using the three-point estimate in
+             the beta distribution, also known as PERT?
+             a)  70,000    b)  75,000    c)  80,000    d)  85,000

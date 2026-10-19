@@ -1,0 +1,52 @@
+{
+  "id": "2025S_A_Q58",
+  "stem": [
+    {
+      "t": "p",
+      "x": "The figure below shows part of a cause and effect diagram (also known as a fishbone diagram). Which of the following is the relationship between A and B?"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"0 0 400 170\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"10\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto-start-reverse\"><path d=\"M0,1 L10,5 L0,9\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"/></marker></defs><line x1=\"40\" y1=\"40\" x2=\"238\" y2=\"40\" stroke=\"#222\" stroke-width=\"1.5\" marker-end=\"url(#ah)\"/><rect x=\"240\" y=\"22\" width=\"88\" height=\"36\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"284\" y=\"46\" font-size=\"16\" font-style=\"italic\" text-anchor=\"middle\" fill=\"#222\">A</text><line x1=\"76\" y1=\"114\" x2=\"128\" y2=\"41\" stroke=\"#222\" stroke-width=\"1.5\" marker-end=\"url(#ah)\"/><rect x=\"40\" y=\"114\" width=\"88\" height=\"36\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"84\" y=\"138\" font-size=\"16\" font-style=\"italic\" text-anchor=\"middle\" fill=\"#222\">B</text></svg>",
+      "alt": "A horizontal arrow points right into a box labelled A. From a box labelled B below and to the left, a diagonal arrow points up and to the right, ending on the horizontal arrow (part of a fishbone diagram)."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "B is an attribute of A."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "B is the cause of A."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "B is the means of A."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "B is the purpose of A."
+        }
+      ]
+    }
+  ]
+}

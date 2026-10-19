@@ -1,0 +1,5 @@
+          Q59.    Which of the following is a financial statement that represents the assets, liabilities, and
+              net assets of a company at a certain point in time and indicates the financial situation of the
+              company?
+             a)  Balance sheet    b)  Income statement
+             c)  Statement of Cash Flows    d)  Statement of Changes in Equity

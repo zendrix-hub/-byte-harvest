@@ -1,0 +1,47 @@
+{
+  "id": "2025S_A_Q39",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the term that represents the process of generating a UML class diagram from a program?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Backtracking"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Forward engineering"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Re-engineering"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Reverse engineering"
+        }
+      ]
+    }
+  ]
+}

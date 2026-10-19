@@ -1,0 +1,12 @@
+{
+  "id": "2025S_A_Q18",
+  "stem": [
+    { "t": "p", "x": "Of the functions provided by a DBMS, which of the following is a means for achieving protection for data confidentiality?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "Checking referential constraints when the data is updated" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "Managing a transaction that combines a series of processes as a logical unit" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "Managing the data access rights of users" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Placing an exclusive lock to data before updates" } ] }
+  ]
+}

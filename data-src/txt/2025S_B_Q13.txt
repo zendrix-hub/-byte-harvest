@@ -1,0 +1,36 @@
+           Q13.  From the answer group below, select the correct combination of answers to be inserted
+                into ____A____ and ____B____ in the program. Here, the array index starts at 1.
+             The procedure  maximumSubarray  calculates the maximum sum of the subarray of the array
+             T  (the number of elements  ≥  1). A subarray is a contiguous portion of the array, for instance,
+             from  T[1]  to  T[3]. It can be as short as one element or as long as the entire array. The
+             procedure finds one of the subarrays with the largest sum of values, and outputs the sum, the
+             first, and the last indices of the subarray. For instance, if the content of the array is  {-2, 1,
+             -3, 4, -1, 2, 1, -5, 4}, the output will be 6, 4, and 7 representing the sum, first index,
+             and last index, respectively. Here, the subarray from  T[4]  to  T[7]  is  {4, -1, 2, 1}.
+             [Program]
+                ○  maximumSubarray(integer []: T)
+                  integer: n  ←  the number of elements in  T
+⟦code⟧           integer: i, j
+⟦code⟧           integer: first, last  /*  the first and last indices of the subarray  */
+⟦code⟧           integer: sum
+⟦code⟧           integer: max  ←  T[1] - 1
+                  for (increase  i  from  1  to  n  by  1)
+⟦code⟧             sum  ←  0
+                    for (increase  j  from  ____A____  to  n  by  1)
+⟦code⟧                sum  ←  sum + T[j]
+⟦code⟧                if (sum > max)
+⟦code⟧                  first  ←  i
+                         last  ←  ____B____
+⟦code⟧                  max  ←  sum
+⟦code⟧                endif
+⟦code⟧             endfor
+⟦code⟧           endfor
+⟦code⟧           output max, first, last
+             Answer group
+                          A    B
+⟦code⟧          a)    1    j
+⟦code⟧          b)    1    j - 1
+⟦code⟧          c)    i    j
+⟦code⟧          d)    i    j - 1
+⟦code⟧          e)    i + 1    j
+⟦code⟧          f)    i + 1    j - 1

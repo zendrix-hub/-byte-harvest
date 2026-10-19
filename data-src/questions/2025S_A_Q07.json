@@ -1,0 +1,16 @@
+{
+  "id": "2025S_A_Q07",
+  "stem": [
+    { "t": "p", "x": "A hash table of size 11 uses open addressing with hash function h(k)=k mod 11, and linear probing. The table shown below is created after inserting 4 values into an initially empty hash table. Which of the following is the sequence that represents a possible order in which the key values were inserted into the table?" },
+    { "t": "table", "head": 0, "rows": [
+      ["0", ""], ["1", ""], ["2", "79"], ["3", "14"], ["4", "35"], ["5", "92"],
+      ["6", ""], ["7", ""], ["8", ""], ["9", ""], ["10", ""]
+    ] }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "14, 79, 35, 92" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "79, 14, 92, 35" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "79, 92, 35, 14" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "92, 79, 14, 35" } ] }
+  ]
+}

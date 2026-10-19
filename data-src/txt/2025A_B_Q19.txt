@@ -1,0 +1,40 @@
+           Q19.  From the answer group below,  select the correct combination of answers to be inserted
+                into ____A____ and ____B____ in the description.
+             Company R is a software company that sells video editing software for consumers. The
+             company has branch offices in multiple countries, all managed by its head office. In
+             Company R’s customer support department, customer satisfaction surveys are sent to
+             selected customer who have received support. The survey results are aggregated at each
+             branch, and must be sent to the customer survey analysis team at the head office every day.
+             Ms. T at the customer survey analysis team at the head office is responsible for managing
+             and securing the survey data. The considerations for collecting survey data from each branch
+             office are as follows:
+              -    The employees responsible for sending the survey data at each branch office changes
+                 daily.
+              -    At the head office, Ms. T in the customer survey analysis team is responsible for
+                 receiving and analyzing the survey data from the branch offices.  After receiving the
+                 survey data from the branch offices, she saves the data to a shared folder that only the
+                 customer survey analysis team can access.
+              -    The file size of survey data is large, so using inefficient encryption methods would take
+                 too much time and is therefore not suitable.
+              -    Since the survey data contains confidential information, it must be ensured that no one
+                 other than the sender and the intended recipients can view the contents during
+                 transmission between the head office and branch offices.
+              -    The key used to encrypt the files must be transmitted in a way that prevents it from
+                 being stolen by a man-in-the-middle attacker.
+              -    There are many branch offices and it is not practical to visit each office in person to
+                 distribute keys.
+             Ms. T decided to adopt a new method in which the branch offices upload the survey data,
+             encrypted using file encryption, to a shared folder. She set up this shared folder with access
+             permissions granted to both the head office and branch office staff, and instructed the branch
+             office staff to upload the encrypted survey data to it. Taking into account the considerations
+             related to collecting information from the branches, Ms. T decided to use ____A____ as the
+             encryption method. In this method, the key used for encrypting the survey data is encrypted
+             using the public key of  ____B____ .
+             Answer group
+                                    A    B
+                 a)    hybrid encryption    Ms. T
+                 b)    hybrid encryption    the branch office staff
+                 c)    public key encryption only    Ms. T
+                 d)    public key encryption only    the branch office staff
+                 e)    symmetric key encryption only    Ms. T
+                 f)    symmetric key encryption only    the branch office staff

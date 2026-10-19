@@ -1,0 +1,2 @@
+          Q16.    Which of the following is equivalent to the logical circuit shown below?
+             a)  𝐴 ⋅ 𝐵    b)  𝐴̅ ⋅ 𝐵    c)  𝐴 ⋅ 𝐵ത    d)  𝐴̅ ⋅ 𝐵ത

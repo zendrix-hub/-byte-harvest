@@ -1,0 +1,23 @@
+{
+  "id": "2025S_B_Q03",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the description." },
+    { "t": "p", "x": "The greatest common divisor (GCD) of two numbers is the largest number that divides both of them. The function `GCD` receives two positive integer numbers and returns their GCD. When the function `GCD` is called as `GCD(98, 56)`, the output is [[ ]] in (1)–(4) below. Here, the `output` statement “`output  m, n`” outputs the values of variables `m` and `n`, and subsequently starts a new line." },
+    { "t": "table", "head": 1, "rows": [
+      ["(1)", "(2)", "(3)", "(4)"],
+      ["`98 56`", "`42 56`", "`42 56`", "`56 42`"],
+      ["`42 14`", "`42 14`", "`42 28`", "`42 14`"],
+      ["`28 14`", "`28 14`", "`14 28`", "`14 28`"],
+      ["`14 7`", "`14 14`", "`14 14`", "`14 14`"]
+    ] },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ integer: GCD(integer: x, integer: y)\n  integer: m ← x\n  integer: n ← y\n  while (m ≠ n)\n    if (m > n)\n      m ← m - n\n    else\n      n ← n - m\n    endif\n    output m, n\n  endwhile\n  return m" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "(1)" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "(2)" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "(3)" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "(4)" } ] }
+  ]
+}

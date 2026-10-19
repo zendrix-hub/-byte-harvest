@@ -1,0 +1,53 @@
+           Q8.  From the answer group below, select the correct combination of answers to be inserted
+                into  ___A___  and  ___B___  in the program. Here, the array index starts at 1.
+             Stack  stores data using first-in, last-out ordering. Here, the items stored in the stack are
+             integer values, and the stack is controlled by the procedure  push  and the function  pop. The
+             procedure  push  adds an item given as an argument to the top of the stack, and the function
+⟦code⟧      pop  removes the top item from the stack and returns it. The global variable  stck  is an array
+             of 10 integers that stores the stack items, and the global variable  tos  is the pointer that points
+             to the topmost item of the stack.
+             [Program]
+⟦code⟧         global: integer []: stck  ←  {10 undefined}
+⟦code⟧         global: integer: tos  ←  0
+                ○  push(integer: item)
+⟦code⟧           if (tos = 10)
+⟦code⟧             output "Stack is Full"
+⟦code⟧           else
+⟦code⟧              ___A___
+⟦code⟧             stck[tos]  ←  item
+⟦code⟧           endif
+                ○  integer: pop()
+⟦code⟧           integer: item
+⟦code⟧           if (tos < 1)
+⟦code⟧             output "Stack is Empty"
+⟦code⟧             return undefined
+⟦code⟧           else
+⟦code⟧              ___B___
+⟦code⟧           endif
+⟦code⟧           return item
+             Answer group
+                                A    B
+⟦code⟧                                         item  ←  stck[tos]
+                 a)    tos  ←  tos + 1
+⟦code⟧                                         tos  ←  tos + 1
+⟦code⟧                                         item  ←  stck[tos]
+                 b)    tos  ←  tos + 1
+⟦code⟧                                         tos  ←  tos  −  1
+⟦code⟧                                         tos  ←  tos + 1
+                 c)    tos  ←  tos + 1
+⟦code⟧                                         item  ←  stck[tos]
+⟦code⟧                                         tos  ←  tos  −  1
+                 d)    tos  ←  tos + 1
+⟦code⟧                                         item  ←  stck[tos]
+⟦code⟧                                         item  ←  stck[tos]
+                 e)    tos  ←  tos  −  1
+⟦code⟧                                         tos  ←  tos + 1
+⟦code⟧                                         item  ←  stck[tos]
+                 f)    tos  ←  tos  −  1
+⟦code⟧                                         tos  ←  tos  −  1
+⟦code⟧                                         tos  ←  tos + 1
+                 g)    tos  ←  tos  −  1
+⟦code⟧                                         item  ←  stck[tos]
+⟦code⟧                                         tos  ←  tos  −  1
+                 h)    tos  ←  tos  −  1
+⟦code⟧                                         item  ←  stck[tos]
