@@ -27,3 +27,6 @@ tr.q-opt td { background: #fff; }
 tr.q-opt td.q-k { background: none !important; }
 .q-card { margin: 10px 0; padding: 12px 14px; background: var(--paper); border: 2px solid var(--line); border-radius: 16px; }
 .q-loading { padding: 18px; text-align: center; color: var(--mute); font-weight: 700; }
+/* Keep expressions in tables intact; the table scrolls sideways instead of breaking "year mod 100 = 0". */
+.q-table th, .q-table td { overflow-wrap: normal; }
+.q-table code { white-space: nowrap; }
