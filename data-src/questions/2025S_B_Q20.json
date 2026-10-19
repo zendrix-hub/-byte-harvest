@@ -1,0 +1,23 @@
+{
+  "id": "2025S_B_Q20",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the description." },
+    { "t": "p", "x": "Company A recently experienced a security incident where confidential data were exfiltrated by a compromised employee account. Ms. T, a security analyst at Company A, investigated the compromised employee account and found that the password used by the employee's account involved in this breach was a complex password that met the company's password policy. However, the same password was used across several web services. Additionally, Ms. T investigated the login logs of Company A’s system and discovered 1,000 failed login attempts recorded within 3 hours before a successful login was recorded. These failed login logs included attempts to log in with different account IDs and password sets. These login attempts occurred from a county where Company A does not have an office. Company A has no employees who travel abroad." },
+    { "t": "p", "x": "To prevent future account compromise by the same attack pattern, Ms. T suggested that the system administrators of Company V implement [[A]]. Additionally, to quickly detect any account compromise, she suggested implementing a monitoring system to alert administrators of [[B]]." },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["a more complex password policy", "login attempts from locations where the account is not usually logged in."] },
+      { "k": "b", "c": ["a more complex password policy", "overwhelmed network traffic in Company A's system"] },
+      { "k": "c", "c": ["a more complex password policy", "unpatched servers in Company A's system"] },
+      { "k": "d", "c": ["encryption of all files stored on employees' computers", "login attempts from locations where the account is not usually logged in."] },
+      { "k": "e", "c": ["encryption of all files stored on employees' computers", "overwhelmed network traffic in Company A's system"] },
+      { "k": "f", "c": ["encryption of all files stored on employees' computers", "unpatched servers in Company A's system"] },
+      { "k": "g", "c": ["Multi-Factor Authentication to all employee accounts", "login attempts from locations where the account is not usually logged in."] },
+      { "k": "h", "c": ["Multi-Factor Authentication to all employee accounts", "overwhelmed network traffic in Company A's system"] },
+      { "k": "i", "c": ["Multi-Factor Authentication to all employee accounts", "unpatched servers in Company A's system"] }
+    ]
+  }
+}

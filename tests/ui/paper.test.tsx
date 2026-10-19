@@ -2,10 +2,33 @@ import { fireEvent, render, screen } from '@testing-library/preact';
 import { now, save } from '../../src/app/store';
 import { defaultSave } from '../../src/core/save';
 import { byId } from '../../src/data/bank';
+import type { QuestionText } from '../../src/data/qtext';
 import { PaperQuestion } from '../../src/ui/paper/PaperQuestion';
 import { Session } from '../../src/ui/paper/Session';
 
 const noop = () => {};
+
+const FIXTURES: Record<string, QuestionText> = {
+  '2025S_A_Q01': {
+    id: '2025S_A_Q01',
+    stem: [{ t: 'p', x: 'For an 8-bit binary integer, which of the following extracts the most significant 4-bits?' }],
+    opts: ['a', 'b', 'c', 'd'].map((k) => ({ k: k as 'a', b: [{ t: 'p' as const, x: `Option ${k}` }] })),
+  },
+  '2025S_A_Q02': {
+    id: '2025S_A_Q02',
+    stem: [{ t: 'p', x: 'Second question' }],
+    opts: ['a', 'b', 'c', 'd'].map((k) => ({ k: k as 'a', b: [{ t: 'p' as const, x: `Choice ${k}` }] })),
+  },
+};
+vi.mock('../../src/data/qtext', async () => {
+  const { signal } = await import('@preact/signals');
+  return {
+    textVersion: signal(0),
+    getQuestionText: (id: string) => FIXTURES[id] ?? null,
+    loadQuestionText: async (id: string) => FIXTURES[id] ?? null,
+    preloadQuestionText: async () => undefined,
+  };
+});
 
 beforeEach(() => {
   save.value = defaultSave();
@@ -45,10 +68,21 @@ describe('past-paper question', () => {
     expect(screen.getByRole('group', { name: 'Answer options' }).querySelectorAll('button.opt')).toHaveLength(10);
   });
 
-  it('shows a friendly message when the image is not cached offline', () => {
+  it('shows the question as built-in text, not an image', () => {
     render(<PaperQuestion qid="2025S_A_Q01" index={0} total={1} mode="practice" onNext={noop} />);
-    fireEvent.error(screen.getByRole('img'));
-    expect(screen.getByRole('alert')).toHaveTextContent("isn't on this device yet");
+    expect(screen.getByText(/extracts the most significant 4-bits/)).toBeInTheDocument();
+    expect(screen.queryByRole('img')).toBeNull();
+  });
+
+  it('lets you pick an answer by tapping the option text', () => {
+    render(<PaperQuestion qid="2025S_A_Q01" index={0} total={1} mode="practice" onNext={noop} />);
+    fireEvent.click(screen.getByText('Option c'));
+    expect(screen.getByRole('button', { name: 'c' })).toHaveAttribute('aria-pressed', 'true');
+  });
+
+  it('explains when a question has no text', async () => {
+    render(<PaperQuestion qid="2025A_B_Q10" index={0} total={1} mode="practice" onNext={noop} />);
+    expect(await screen.findByRole('alert')).toHaveTextContent("couldn't be loaded");
   });
 
   it('supports keyboard answering on a PC', () => {

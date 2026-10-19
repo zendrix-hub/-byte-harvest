@@ -1,0 +1,89 @@
+{
+  "id": "2025S_B_Q15",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the description. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "The `calcDistance` returns a value based on array `p1`, `p2` and positive integer `n`. Assuming that the number of elements in arrays `p1` and `p2` are the same. The function `abs(x)` returns the absolute value of `x`, and `pow(a, b)` returns `a` raised to the power of `b`.\nIn the case of `p1` is `{3, 1, 5, 2}` and `p2` is `{4, 6, 2, 3}`, the `calcDistance(p1, p2, 1)` returns [[A]], whereas `calcDistance(p1, p2, 2)` returns [[B]]. As the value of `n` increases, those of `calcDistance(p1, p2, n)` converges to 5."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ real: calcDistance(real []: p1, real []: p2, integer: n)\n  integer: i\n  real: distance ← 0\n  real: ex\n  for (increase i from 1 to number of elements in p1 by 1)\n    distance ← distance + pow(abs(p1[i] - p2[i]), n)\n  endfor\n  ex ← 1 ÷ n /* Division is performed in data type real */\n  distance ← pow(distance, ex)\n  return distance"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "4",
+          "4"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "4",
+          "6"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "4",
+          "10"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "4",
+          "18"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "10",
+          "4"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "10",
+          "6"
+        ]
+      },
+      {
+        "k": "g",
+        "c": [
+          "10",
+          "10"
+        ]
+      },
+      {
+        "k": "h",
+        "c": [
+          "10",
+          "18"
+        ]
+      }
+    ]
+  }
+}

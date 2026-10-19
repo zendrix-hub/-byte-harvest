@@ -40,7 +40,12 @@ test('no horizontal scrolling on a 360 px phone, even on a tall Subject B questi
   await page.getByRole('combobox', { name: 'Paper', exact: true }).selectOption('2025S');
   await page.getByRole('combobox', { name: 'Order', exact: true }).selectOption('paper');
   await page.getByRole('button', { name: 'Start mining' }).click();
-  const img = page.getByRole('img', { name: /2025S, FE, Subject-B, Q1\)/ });
+  const body = page.locator('.q-body');
+  await expect(body).toBeVisible();
+  await expect(page.getByText('(2025S, FE, Subject-B, Q1)')).toBeVisible();
+  await expect(page.locator('img[src*=".webp"]')).toHaveCount(0);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
+});
   await expect(img).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
   await img.click();

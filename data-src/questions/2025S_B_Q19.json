@@ -1,0 +1,22 @@
+{
+  "id": "2025S_B_Q19",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the description." },
+    { "t": "p", "x": "Company V, a small-sized company specializing in manufacturing and selling home appliances, has recently expanded its team of website administrators to five. In addition, they have renovated their website to allow customers to download user manuals for their products. One day, an external security researcher highlighted that files containing a watermark with \"For Internal Use\" were publicly accessible in the public directory of the company’s website and available for download. Company V has a system that ensures all documents stored in the internal folder have this watermark by default, and a rule exists stating that the watermark must be removed when files are published or shared external. The website administrator immediately confirmed the issue and removed the document from the public directory. Then, the website administrator reported this issue to Company V's security team. The investigation of the security team revealed that the issue was caused by a website administrator accidentally uploading internal documents instead of the intended public catalog files. Those publicly accessible files were a draft version of the catalogs, and they did not contain credential information such as API keys for website management. When uploading files to the website's public directory, another website administrator, other than the uploader, was supposed to verify the correctness of the files. However, they failed to notice the mistake. To prevent similar issues in the future, the security team suggested implementing [[A]] to the website administrators. Additionally, to quickly detect issues, the security team suggested implementing [[B]]." },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["a system to check all file upload destinations and ensure they are not public directories before allowing the uploads", "a policy where all configuration changes on Company V's website are checked by at least two website administrators"] },
+      { "k": "b", "c": ["a system to check all file upload destinations and ensure they are not public directories before allowing the uploads", "monitoring tools that alert administrators to any unauthorized access to the public directory"] },
+      { "k": "c", "c": ["a system to check all file upload destinations and ensure they are not public directories before allowing the uploads", "periodic checks of the files in the public directory to identify any files that may be mistakenly exposed"] },
+      { "k": "d", "c": ["an automated credential scanner to scan files for credentials and API keys before uploading them to the website public directory", "a policy where all configuration changes on Company V's website are checked by at least two website administrators"] },
+      { "k": "e", "c": ["an automated credential scanner to scan files for credentials and API keys before uploading them to the website public directory", "monitoring tools that alert administrators to any unauthorized access to the public directory"] },
+      { "k": "f", "c": ["an automated credential scanner to scan files for credentials and API keys before uploading them to the website public directory", "periodic checks of the files in the public directory to identify any files that may be mistakenly exposed"] },
+      { "k": "g", "c": ["an automated tool to prevent the upload of files containing a watermark with \"For Internal Use\" to the website’s public directory", "a policy where all configuration changes on Company V's website are checked by at least two website administrators"] },
+      { "k": "h", "c": ["an automated tool to prevent the upload of files containing a watermark with \"For Internal Use\" to the website’s public directory", "monitoring tools that alert administrators to any unauthorized access to the public directory"] },
+      { "k": "i", "c": ["an automated tool to prevent the upload of files containing a watermark with \"For Internal Use\" to the website’s public directory", "periodic checks of the files in the public directory to identify any files that may be mistakenly exposed"] }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "2025S_B_Q17",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the description." },
+    { "t": "p", "x": "Recently, an e-commerce company X was cyber-attacked by an attacker. Mr. Y, the security team leader at the company, is investigating the incident and considering future countermeasures. The following is the summary of the incident:" },
+    { "t": "p", "x": "The first half of the attack: An attacker visited company X's website to collect valuable information and knew the name of a senior worker of the IT department who was only responsible for system administration. One day, a receptionist for Company X received a phone call from a man with a fantastic voice. He asked some personal questions about the senior IT guy, Mr. Z. The caller skillfully manipulated the receptionist into giving him personal information about the IT guy. The caller was the attacker who got helpful information for further attacks on the company's server." },
+    { "t": "p", "x": "The second half of the attack: After that, the attacker dug into social sites and other resources to get additional information about Mr. Z and the servers of Company X, and then he created a password file based on Mr. Z's information and a file with the company server's IP address list. Then, the attacker remotely attacked a server of the company using the password list and an IP address of the server." },
+    { "t": "p", "x": "Mr. Y implemented two measures as future countermeasures for a similar attack. The measure for the first half of the attack is [[A]]. The other for the second half is [[B]]." },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["abolition of company-wide telephone use", "encrypting access to websites using HTTPS"] },
+      { "k": "b", "c": ["abolition of company-wide telephone use", "implement account lock for consecutive incorrect password attempts on the server"] },
+      { "k": "c", "c": ["abolition of company-wide telephone use", "prohibit employees from using social networking services"] },
+      { "k": "d", "c": ["education for the employees against social engineering", "encrypting access to websites using HTTPS"] },
+      { "k": "e", "c": ["education for the employees against social engineering", "implement account lock for consecutive incorrect password attempts on the server"] },
+      { "k": "f", "c": ["education for the employees against social engineering", "prohibit employees from using social networking services"] },
+      { "k": "g", "c": ["restricting access to the websites using IP address-based block lists", "encrypting access to websites using HTTPS"] },
+      { "k": "h", "c": ["restricting access to the websites using IP address-based block lists", "implement account lock for consecutive incorrect password attempts on the server"] },
+      { "k": "i", "c": ["restricting access to the websites using IP address-based block lists", "prohibit employees from using social networking services"] }
+    ]
+  }
+}
