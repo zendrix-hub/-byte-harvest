@@ -1,5 +1,4 @@
-import { existsSync } from 'node:fs';
-import { BANK, byId, imageUrl, numberOf, optionCount, paperOf, sourceLabel, subjectOf } from '../../src/data/bank';
+import { BANK, byId, numberOf, optionCount, paperOf, sourceLabel, subjectOf } from '../../src/data/bank';
 
 describe('question bank', () => {
   it('holds 240 questions: 60 A + 20 B per paper', () => {
@@ -10,9 +9,6 @@ describe('question bank', () => {
     }
   });
 
-  it('has an extracted image for every question', () => {
-    for (const q of BANK) expect(existsSync(`public/papers/${q.id}.webp`), q.id).toBe(true);
-  });
 
   it('parses ids into paper, subject, number and a source label', () => {
     expect(paperOf('2025A_B_Q07')).toBe('2025A');
@@ -26,7 +22,4 @@ describe('question bank', () => {
     for (const q of BANK) expect(optionCount(q)).toBeGreaterThanOrEqual('abcdefghij'.indexOf(q.key) + 1);
   });
 
-  it('builds image urls under the app base path', () => {
-    expect(imageUrl('2025S_A_Q01')).toBe('/-byte-harvest/papers/2025S_A_Q01.webp');
-  });
 });

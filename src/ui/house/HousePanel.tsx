@@ -1,11 +1,9 @@
 import { useState } from 'preact/hooks';
 import { copyText } from '../../app/clipboard';
-import { prefetchImages } from '../../app/offline';
 import { closePanel, flush, replaceSave, save, showToast, today, update } from '../../app/store';
 import { diaryReport } from '../../core/report';
 import { defaultSave, exportSave, importBackup } from '../../core/save';
 import type { Settings } from '../../core/state';
-import { BANK, imageUrl } from '../../data/bank';
 import { Button, Panel } from '../kit';
 import './house.css';
 
@@ -24,8 +22,6 @@ export function HousePanel() {
   const report = diaryReport(s, t);
   const [paste, setPaste] = useState('');
   const [importMsg, setImportMsg] = useState<string | null>(null);
-  const [dl, setDl] = useState<{ done: number; failed: number } | null>(null);
-  const downloading = !!dl && dl.done < BANK.length;
 
   const sleep = async () => {
     flush();
@@ -72,14 +68,6 @@ export function HousePanel() {
     showToast((await copyText(report)) ? 'Diary copied.' : 'Copy failed. Select the text and copy it.');
   };
 
-  const downloadAll = async () => {
-    setDl({ done: 0, failed: 0 });
-    const r = await prefetchImages(
-      BANK.map((q) => imageUrl(q.id)),
-      (done, failed) => setDl({ done, failed }),
-    );
-    showToast(r.failed ? `${r.failed} images failed. Try again while online.` : 'All 240 questions are saved for offline play.');
-  };
 
   const reset = () => {
     if (window.confirm('Erase all progress on this device? Export a backup first if unsure.')) replaceSave(defaultSave());
@@ -142,10 +130,7 @@ export function HousePanel() {
 
       <div class="card">
         <h3>Play offline</h3>
-        <p class="muted">Questions download as you play. Save all 240 now (about 7 MB) so the farm works without data.</p>
-        <Button small onClick={downloadAll} disabled={downloading}>
-          {dl && dl.done < BANK.length ? `Downloading… ${dl.done}/${BANK.length}` : dl ? 'Download again' : 'Download all questions'}
-        </Button>
+        <p class="muted">All 240 questions are built into the game, so once it has loaded it works without internet.</p>
       </div>
 
       <div class="card">

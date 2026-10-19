@@ -31,13 +31,6 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,png,svg}', '**/nunito-latin-wght-normal-*.woff2'],
         navigateFallback: 'index.html',
         cleanupOutdatedCaches: true,
-        runtimeCaching: [
-          {
-            urlPattern: ({ url }) => url.pathname.includes('/papers/'),
-            handler: 'CacheFirst',
-            options: { cacheName: 'papers', expiration: { maxEntries: 400 } },
-          },
-        ],
       },
     }),
   ],

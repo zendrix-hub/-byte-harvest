@@ -13,4 +13,3 @@ export const subjectOf = (id: string) => id.split('_')[1] as Subject;
 export const numberOf = (id: string) => parseInt(id.split('_')[2].slice(1), 10);
 export const sourceLabel = (id: string) => `(${paperOf(id)}, FE, Subject-${subjectOf(id)}, Q${numberOf(id)})`;
 export const optionCount = (q: BankQuestion) => Math.max(q.nopt, LETTERS.indexOf(q.key) + 1);
-export const imageUrl = (id: string) => `${import.meta.env.BASE_URL}papers/${id}.webp`;

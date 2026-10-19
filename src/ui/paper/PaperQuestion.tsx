@@ -5,12 +5,13 @@ import { fmtClock, formatDay } from '../../core/dates';
 import { recordPaperAnswer, setCue, tagMiss, type PaperAnswerResult } from '../../core/record';
 import type { CropEvent } from '../../core/srs';
 import type { AttemptMode } from '../../core/state';
-import { LETTERS, PACE_SECONDS, byId, imageUrl, optionCount, sourceLabel, subjectOf } from '../../data/bank';
+import { LETTERS, PACE_SECONDS, byId, optionCount, sourceLabel, subjectOf } from '../../data/bank';
+import { getQuestionText, loadQuestionText, textVersion } from '../../data/qtext';
 import { CROP_NAMES, fieldInfo, topicInfo } from '../../data/topics';
 import type { Confidence, ErrorTag } from '../../data/types';
 import { Button } from '../kit';
-import { ImageZoom } from './ImageZoom';
 import { PestPicker } from './PestPicker';
+import { QuestionBody } from './QuestionBody';
 import './paper.css';
 
 export interface SessionResult {
@@ -66,10 +67,15 @@ export function PaperQuestion({ qid, index, total, mode, onNext }: Props) {
   const [conf, setConf] = useState<Confidence | null>(null);
   const [done, setDone] = useState<Committed | null>(null);
   const [tag, setTag] = useState<ErrorTag | null>(null);
-  const [zoom, setZoom] = useState(false);
-  const [imgFailed, setImgFailed] = useState(false);
+  const [missing, setMissing] = useState(false);
   const [secs, setSecs] = useState(0);
   const t0 = useRef(Date.now());
+  textVersion.value; // re-render when a paper chunk finishes loading
+  const text = getQuestionText(qid);
+
+  useEffect(() => {
+    if (!getQuestionText(qid)) void loadQuestionText(qid).then((t) => setMissing(!t));
+  }, [qid]);
 
   useEffect(() => {
     if (done) return;
@@ -129,15 +135,24 @@ export function PaperQuestion({ qid, index, total, mode, onNext }: Props) {
       <div class="q-topic">
         {q.topic} · {q.sub}
       </div>
-      <div class="q-image">
-        {imgFailed ? (
-          <div class="img-missing" role="alert">
-            This question image isn't on this device yet. Go online once, or use House → Download all questions.
+      <div class="q-card">
+        {text ? (
+          <QuestionBody
+            q={text}
+            pick={pick}
+            answer={done ? q.key : null}
+            onPick={(k) => {
+              setPick(k);
+              sfx('tap');
+            }}
+          />
+        ) : missing ? (
+          <div class="q-loading" role="alert">
+            This question's text couldn't be loaded. Reload the page while online.
           </div>
         ) : (
-          <img src={imageUrl(qid)} alt={`Question ${sourceLabel(qid)}`} decoding="async" onClick={() => setZoom(true)} onError={() => setImgFailed(true)} />
+          <div class="q-loading">Loading question…</div>
         )}
-        {!imgFailed && <div class="q-hint">Tap the question to zoom</div>}
       </div>
       <div class="opts" role="group" aria-label="Answer options">
         {letters.map((c) => (
@@ -219,7 +234,6 @@ export function PaperQuestion({ qid, index, total, mode, onNext }: Props) {
           )}
         </div>
       )}
-      {zoom && <ImageZoom src={imageUrl(qid)} alt={sourceLabel(qid)} onClose={() => setZoom(false)} />}
     </div>
   );
 }

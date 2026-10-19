@@ -1,0 +1,29 @@
+.q-body { font-size: 16px; line-height: 1.55; color: var(--ink); overflow-wrap: anywhere; }
+.q-body p { margin: 8px 0; }
+.q-note { font-size: 13px; color: var(--mute); }
+.q-body code, .q-code { font-family: ui-monospace, 'Cascadia Mono', Consolas, 'DejaVu Sans Mono', monospace; }
+.q-body code { background: #f3ecdc; border-radius: 5px; padding: 0 4px; font-size: 0.92em; overflow-wrap: normal; }
+.q-scroll { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0; }
+.q-code { margin: 0; padding: 10px 12px; background: #f8f3e7; border: 2px solid var(--line); border-radius: 12px; font-size: 13.5px; line-height: 1.5; white-space: pre; width: max-content; min-width: 100%; }
+.q-blank { display: inline-block; min-width: 2.1em; margin: 0 2px; padding: 0 6px; border: 2px solid var(--ink); border-radius: 4px; text-align: center; font-family: var(--font); font-weight: 900; line-height: 1.25; background: #fff; }
+.q-ov { text-decoration: overline; }
+.q-list { margin: 6px 0; padding-left: 22px; }
+.q-table { border-collapse: collapse; font-size: 14.5px; }
+.q-table th, .q-table td { border: 1.5px solid #d9cfba; padding: 4px 9px; text-align: left; vertical-align: top; }
+.q-table th { background: #f3ecdc; font-weight: 800; }
+.q-fig { margin: 10px 0; padding: 8px; background: #fff; border: 2px solid var(--line); border-radius: 12px; }
+.q-fig svg { display: block; width: 100%; max-width: 640px; height: auto; margin: 0 auto; }
+.q-opts { list-style: none; margin: 12px 0 4px; padding: 0; display: grid; gap: 6px; }
+.q-opt { cursor: pointer; }
+li.q-opt { display: flex; gap: 8px; align-items: flex-start; padding: 8px 10px; border: 2px solid var(--line); border-radius: 12px; background: #fff; }
+li.q-opt .q-opt-body p:first-child { margin-top: 0; }
+li.q-opt .q-opt-body p:last-child { margin-bottom: 0; }
+.q-k { font-weight: 900; white-space: nowrap; }
+.q-optt td.q-k { border: none; background: none; padding-right: 4px; }
+tr.q-opt td { background: #fff; }
+.q-opt.sel, tr.q-opt.sel td { background: #e6f3fd; border-color: var(--blue); }
+.q-opt.right, tr.q-opt.right td { background: #dcf1e2; border-color: var(--green); }
+.q-opt.wrong, tr.q-opt.wrong td { background: #fde1da; border-color: var(--red); }
+tr.q-opt td.q-k { background: none !important; }
+.q-card { margin: 10px 0; padding: 12px 14px; background: var(--paper); border: 2px solid var(--line); border-radius: 16px; }
+.q-loading { padding: 18px; text-align: center; color: var(--mute); font-weight: 700; }
