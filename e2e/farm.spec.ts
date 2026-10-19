@@ -46,12 +46,6 @@ test('no horizontal scrolling on a 360 px phone, even on a tall Subject B questi
   await expect(page.locator('img[src*=".webp"]')).toHaveCount(0);
   expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
 });
-  await expect(img).toBeVisible();
-  expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
-  await img.click();
-  await expect(page.getByRole('dialog', { name: 'Zoomed question' })).toBeVisible();
-  await page.getByRole('button', { name: 'Close zoom' }).click();
-});
 
 test('keeps the farm visible beside panels on a PC', async ({ page }, info) => {
   test.skip(info.project.name !== 'desktop', 'desktop-only check');
