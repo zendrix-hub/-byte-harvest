@@ -1,0 +1,107 @@
+{
+  "id": "2026S_B_Q19",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the most appropriate combination of answers to be inserted into [[A]] and [[B]] in the description."
+    },
+    {
+      "t": "p",
+      "x": "Company R is an e-commerce company that sells smartphone accessories through its website. In response to the increasing prevalence of SQL injection attacks in recent years, Company R decided to conduct a security training program for its security analysts, focusing specifically on SQL injection vulnerabilities."
+    },
+    {
+      "t": "p",
+      "x": "[Explanation of SQL Behavior]\nAs part of the training, an explanation was provided to help the security analysts understand the working mechanism of SQL statements. In typical web applications, authentication is performed by constructing an SQL statement based on a predefined template. The application inserts the user-provided username and the hashed value of the user-provided password into the template and submits the resulting SQL statement to the database to check whether a matching record exists. An example of such an SQL query template is shown in figure given below."
+    },
+    {
+      "t": "code",
+      "x": "SELECT * FROM users\nWHERE username = '<input_username>'\n  AND password = '<hashed_input_password>'"
+    },
+    {
+      "t": "note",
+      "x": "Note: The SQL query constructed from this template is executed by the database engine as a single SQL statement. Line breaks in the figure are included solely for readability."
+    },
+    {
+      "t": "p",
+      "x": "Figure SQL Query Template for Authentication"
+    },
+    {
+      "t": "p",
+      "x": "If user input is incorporated into an SQL statement without proper handling, the structure of the SQL query may be altered, enabling attacks such as SQL injection. For instance, SQL syntax elements included in the input may be interpreted by the database. One common element is “--”, which starts a comment; any text that follows “--” is ignored by the database engine, effectively disabling the remaining part of the SQL statement, including the password check."
+    },
+    {
+      "t": "p",
+      "x": "[Hands-on Verification]\nThe security analysts participated in a hands-on lab using a dedicated training server. They submitted crafted input values through the application’s authentication form. The application processed these inputs, inserted the username and the hashed password value into the SQL template shown in the figure above, generated a complete SQL statement, and executed it against the database."
+    },
+    {
+      "t": "p",
+      "x": "The database contained a preregistered admin user with a hashed password that was not disclosed to the participants. They tested several input values for `<input_username>` while leaving the password input field empty in the authentication form to determine whether authentication could be bypassed, and summarized the results in table given below."
+    },
+    {
+      "t": "p",
+      "x": "Table Evaluation Results"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Input Values for `<input_username>`",
+          "Authentication Bypass Results"
+        ],
+        [
+          "`Admin`",
+          "Fail"
+        ],
+        [
+          "`admin' --`",
+          "[[A]]"
+        ],
+        [
+          "`admin' AND '1'='2' --`",
+          "[[B]]"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "Answer Group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "Fail",
+          "Fail"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "Fail",
+          "Success"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "Success",
+          "Fail"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "Success",
+          "Success"
+        ]
+      }
+    ]
+  }
+}

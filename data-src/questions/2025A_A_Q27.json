@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q27",
+  "stem": [
+    {
+      "t": "p",
+      "x": "An attacker left a USB stick labeled “Next ITPEC exam questions and answers” that contains malware in front of an office, expecting someone to plug it into a PC. Once plugged in, the attacker gains control of the PC. Which of the following types of attack is this?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Baiting"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Identity theft"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Phishing"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Pretexting"
+        }
+      ]
+    }
+  ]
+}

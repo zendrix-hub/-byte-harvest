@@ -1,0 +1,31 @@
+{
+  "id": "2026S_B_Q15",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the description." },
+    { "t": "p", "x": "Bag of Words is a representation of text that describes the occurrence of words in a document. It is a feature extraction method in text mining. From a document collection (or corpus), a feature vector for each document can be created by considering the count of each word in that document." },
+    { "t": "p", "x": "The following are two documents that construct a text corpus:" },
+    { "t": "p", "x": "**document-I**:  John likes to watch movies. Mary likes movies too.\n**document-II**: Mary also likes to watch football games." },
+    { "t": "p", "x": "Here, the word sequence, defined by the unique words (ignoring case and punctuation) in the documents, is as follows:" },
+    { "t": "p", "x": "{John, Mary, likes, to, watch, movies, too, also, football, games}" },
+    { "t": "p", "x": "Now, feature vectors for **document-I** and **document-II** can be created using the unique words." },
+    { "t": "p", "x": "**Feature Vector for document-I** = {1, 1, 2, 1, 1, 2, 1, 0, 0, 0}\n**Feature Vector for document-II** = {0, 1, 1, 1, 1, 0, 0, 1, 1, 1}" },
+    { "t": "p", "x": "Again, two new text documents and the corresponding word sequence are given below:" },
+    { "t": "p", "x": "**document-III**: He is a good boy. An honest boy is good.\n**document-IV**: He is an honest boy. The good boy is honest." },
+    { "t": "p", "x": "Here, the word sequence for those two documents is {He, is, a, an, good, boy, honest, the}. Then, the Feature Vectors for **document-III** and **document-IV** will be [[A]] and [[B]], respectively." },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["{1, 1, 1, 1, 2, 2, 1, 0}", "{1, 1, 0, 1, 1, 2, 2, 1}"] },
+      { "k": "b", "c": ["{1, 1, 1, 1, 2, 2, 1, 0}", "{1, 2, 0, 1, 1, 1, 1, 1}"] },
+      { "k": "c", "c": ["{1, 1, 1, 1, 2, 2, 1, 0}", "{1, 2, 0, 1, 1, 2, 2, 1}"] },
+      { "k": "d", "c": ["{1, 2, 1, 1, 1, 1, 1, 0}", "{1, 1, 0, 1, 1, 2, 2, 1}"] },
+      { "k": "e", "c": ["{1, 2, 1, 1, 1, 1, 1, 0}", "{1, 2, 0, 1, 1, 1, 1, 1}"] },
+      { "k": "f", "c": ["{1, 2, 1, 1, 1, 1, 1, 0}", "{1, 2, 0, 1, 1, 2, 2, 1}"] },
+      { "k": "g", "c": ["{1, 2, 1, 1, 2, 2, 1, 0}", "{1, 1, 0, 1, 1, 2, 2, 1}"] },
+      { "k": "h", "c": ["{1, 2, 1, 1, 2, 2, 1, 0}", "{1, 2, 0, 1, 1, 1, 1, 1}"] },
+      { "k": "i", "c": ["{1, 2, 1, 1, 2, 2, 1, 0}", "{1, 2, 0, 1, 1, 2, 2, 1}"] }
+    ]
+  }
+}

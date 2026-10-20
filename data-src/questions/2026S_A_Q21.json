@@ -1,0 +1,14 @@
+{
+  "id": "2026S_A_Q21",
+  "stem": [
+    { "t": "p", "x": "There is a relation schema **A = (P, Q, R, S, T, Y)** with functional dependencies below:" },
+    { "t": "list", "items": ["**P → Q**", "**QR → S**", "**T → R**", "**S → P**"] },
+    { "t": "p", "x": "Which of the following is the candidate keys of **A**?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "**PT, QT**" }] },
+    { "k": "b", "b": [{ "t": "p", "x": "**PT, QT, ST**" }] },
+    { "k": "c", "b": [{ "t": "p", "x": "**PTY, QTY, QRY**" }] },
+    { "k": "d", "b": [{ "t": "p", "x": "**PTY, QTY, STY**" }] }
+  ]
+}

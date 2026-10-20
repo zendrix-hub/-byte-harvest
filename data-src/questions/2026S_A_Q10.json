@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q10",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate CPU operation associated with cache memory?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "When a cache hit occurs, the CPU fetches data from ROM."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "When a cache hit occurs, the CPU fetches data from the main memory."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "When a cache miss occurs, the CPU fetches data from the cache memory."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "When a cache miss occurs, the CPU fetches data from the main memory."
+        }
+      ]
+    }
+  ]
+}

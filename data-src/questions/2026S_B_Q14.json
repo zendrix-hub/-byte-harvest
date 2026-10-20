@@ -1,0 +1,88 @@
+{
+ "id": "2026S_B_Q14",
+ "stem": [
+  {
+   "t": "p",
+   "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array indexes start at 1."
+  },
+  {
+   "t": "p",
+   "x": "Percentile is a statistical measure used to describe the position of a particular value in a dataset relative to the remainder of the values. In education, percentiles are commonly used to rank students’ performance. For instance, if a student is in the 90th percentile, it implies the score of the student is higher than 90% of the other students. To calculate percentile of a student, use the following formula:"
+  },
+  {
+   "t": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 74\" font-family=\"serif\" font-size=\"17\" fill=\"#222\"><text x=\"128\" y=\"43\" text-anchor=\"end\">percentile =</text><text x=\"420\" y=\"27\" text-anchor=\"middle\">number of students who scored below the target student’s score</text><line x1=\"136\" y1=\"36\" x2=\"704\" y2=\"36\" stroke=\"#222\" stroke-width=\"1.2\"/><text x=\"420\" y=\"60\" text-anchor=\"middle\">total number of students − 1</text><text x=\"714\" y=\"43\">× 100</text></svg>",
+   "alt": "Formula: percentile = (number of students who scored below the target student’s score) divided by (total number of students − 1), multiplied by 100. Written as a fraction with the numerator “number of students who scored below the target student’s score” over the denominator “total number of students − 1”, followed by “× 100”."
+  },
+  {
+   "t": "p",
+   "x": "For instance, if the scores of five students are given as an array {30, 60, 80, 72, 15}, then the percentile array for each student will be {25, 50, 100, 75, 0}. This implies that the number of students with scores less than 30 is 1; thus, the percentile for the first student is (1 ÷ (5 - 1) × 100) = 25, the number of students with scores less than 60 is 2, and the percentile for the second student is (2 ÷ (5 - 1) × 100) = 50. The same applies thereafter."
+  },
+  {
+   "t": "p",
+   "x": "The function `calculatePercentile` receives the scores of each student in the argument `arr` and calculates and returns the percentile of each student. Assume that the argument `arr` contains two or more numbers between 0 and 100."
+  },
+  {
+   "t": "p",
+   "x": "[Program]"
+  },
+  {
+   "t": "code",
+   "x": "○ real []: calculatePercentile(integer []: arr)\n  integer: n ← the number of elements of arr\n  real []: percentiles ← {n zeros}\n  integer: i, j, count\n  for (increase i from 1 to n by 1)\n    count ← 0\n    for (increase j from 1 to [[A]] by 1)\n      if (arr[i] > arr[j])\n        count ← count + 1\n      endif\n    endfor\n    percentiles[i] ← [[B]]\n  endfor\n  return percentiles"
+  },
+  {
+   "t": "p",
+   "x": "Answer group"
+  }
+ ],
+ "optTable": {
+  "head": [
+   "A",
+   "B"
+  ],
+  "rows": [
+   {
+    "k": "a",
+    "c": [
+     "`i`",
+     "`((count - 1) ÷ (n - 1)) × 100`"
+    ]
+   },
+   {
+    "k": "b",
+    "c": [
+     "`i`",
+     "`(count ÷ (n - 1)) × 100`"
+    ]
+   },
+   {
+    "k": "c",
+    "c": [
+     "`i - 1`",
+     "`((count - 1) ÷ (n - 1)) × 100`"
+    ]
+   },
+   {
+    "k": "d",
+    "c": [
+     "`i - 1`",
+     "`(count ÷ (n - 1)) × 100`"
+    ]
+   },
+   {
+    "k": "e",
+    "c": [
+     "`n`",
+     "`((count - 1) ÷ (n - 1)) × 100`"
+    ]
+   },
+   {
+    "k": "f",
+    "c": [
+     "`n`",
+     "`(count ÷ (n - 1)) × 100`"
+    ]
+   }
+  ]
+ }
+}

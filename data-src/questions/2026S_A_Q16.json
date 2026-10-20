@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q16",
+  "stem": [
+    { "t": "p", "x": "Which of the following is a program that combines the separately compiled modules of a program into a form suitable for execution in C language?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "Assembler" }] },
+    { "k": "b", "b": [{ "t": "p", "x": "Compiler" }] },
+    { "k": "c", "b": [{ "t": "p", "x": "Interpreter" }] },
+    { "k": "d", "b": [{ "t": "p", "x": "Linker" }] }
+  ]
+}

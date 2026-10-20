@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q13",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Five processes A, B, C, D and E arrive at almost the same time in the order of A, B, C, D and E. The processes have estimated running times of 10, 6, 2, 8, and 4 milliseconds, respectively. Which of the following is the average process turnaround time with the First-Come-First-Served (FCFS) scheduling algorithm?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "14"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "19.2"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "20"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "22"
+        }
+      ]
+    }
+  ]
+}

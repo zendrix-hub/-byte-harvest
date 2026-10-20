@@ -1,0 +1,128 @@
+{
+  "id": "2025A_B_Q16",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[ ]] in the program. Here, the array index starts at 0."
+    },
+    {
+      "t": "p",
+      "x": "The Jaccard similarity index, J, measures the similarity between two sets by computing the ratio of the number of elements in their intersection to the number of elements in their union, i.e., J(A, B) = |A∩B| / |A∪B|, where A and B represent sets, ∩ and ∪ represent the intersection and the union set operations, respectively, and |…| is the operator to calculate the number of elements in a set. The intersection operation builds a new set taking members that are common to both sets; while the union operation builds a set taking all members of both sets, where each member will appear only once. For instance, A = {3, 4, 6, 7} and B = {2, 4, 5}, then A∩B = {4}, A ∪ B = {2, 3, 4, 5, 6, 7}, |A| = 4, | B| = 3, |A∩B| = 1, and |A∪B| = 6."
+    },
+    {
+      "t": "p",
+      "x": "The function `jaccardSimilarity` calculates the Jaccard similarity stated above and returns it. The definitions of variables used in the function are stated in the below table."
+    },
+    {
+      "t": "p",
+      "x": "Table  Variable definitions"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Variable",
+          "Explanation"
+        ],
+        [
+          "`nA`",
+          "Number of elements in set A."
+        ],
+        [
+          "`nB`",
+          "Number of elements in set B."
+        ],
+        [
+          "`iCount`",
+          "Variable for counting members of intersection set, i.e., for counting |A∩B|."
+        ],
+        [
+          "`uCount`",
+          "Variable for counting members of union set, i.e., for counting |A∪B|."
+        ],
+        [
+          "`found`",
+          "Variable used to indicate whether the member has already been considered for union set or not."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ real: jaccardSimilarity(integer []: A, integer []: B)\n  integer: nA ← number of elements in A\n  integer: nB ← number of elements in B\n  integer: iCount ← 0\n  integer: uCount ← [[ ]]\n  boolean: found\n  for (increase i from 0 to nA - 1 by 1)\n    found ← false\n    for (increase j from 0 to nB - 1 by 1)    // α\n      if (A[i] = B[j])\n        iCount ← iCount + 1\n        found ← true\n        exit the for block marked α\n\n    endif\n  endfor\n  if (found = false)\n    uCount ← uCount + 1\n  endif\nendfor\nreturn iCount ÷ uCount  /* Division is done in data type real */"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "`0`"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "`nA`"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "`nB`"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "`nA + nB`"
+        }
+      ]
+    },
+    {
+      "k": "e",
+      "b": [
+        {
+          "t": "p",
+          "x": "`nA - nB`"
+        }
+      ]
+    },
+    {
+      "k": "f",
+      "b": [
+        {
+          "t": "p",
+          "x": "`nA ÷ nB`"
+        }
+      ]
+    },
+    {
+      "k": "g",
+      "b": [
+        {
+          "t": "p",
+          "x": "`nA × nB`"
+        }
+      ]
+    }
+  ]
+}

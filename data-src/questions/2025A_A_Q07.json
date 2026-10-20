@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q07",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In object-oriented programming, which of the following is the concept that refers to a class that defines a method with the same name and type signature as a method in its superclass?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Hiding"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Inheritance"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Overloading"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Overriding"
+        }
+      ]
+    }
+  ]
+}

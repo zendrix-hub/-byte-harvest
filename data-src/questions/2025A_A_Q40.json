@@ -1,0 +1,12 @@
+{
+  "id": "2025A_A_Q40",
+  "stem": [
+    { "t": "p", "x": "Which of the following is an appropriate explanation of comprehensive patent cross-licensing?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "An agreement to share the necessary costs for patent registration is concluded." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "The source code is published free of charge on the Internet or other places, and anyone may improve and redistribute the software." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "The use of patent rights is mutually licensed among companies in the specified fields of technology or products." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "To ensure that a company’s patent rights are not violated, the right to stop a counterpart’s manufacturing is exercised." } ] }
+  ]
+}

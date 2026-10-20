@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q56",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an example of Green IT?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Development of a powerful in-house data center"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Development of efficient in-house software"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Using a desktop PC instead of a thin client laptop"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Using web conferencing instead of traveling to meetings"
+        }
+      ]
+    }
+  ]
+}

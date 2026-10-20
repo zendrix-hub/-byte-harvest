@@ -1,0 +1,68 @@
+{
+  "id": "2025A_B_Q09",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the description. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "The procedure `traverse` traces through a vertex of the graph in Figure 1, and outputs all vertex numbers in the graph. One of the vertex numbers of the graph is specified with the argument `k`. The global 2-dimensional array `graph` represents the graph in Figure 1. Each element `graph[i,j]` is equal to 1 if there is an edge between vertices `i` and `j`, and 0 otherwise. The array `visited` stores boolean values, where `visited[i]` indicates whether vertex `i` of the graph has been visited or not during the procedure. When the procedure is called as `traverse(1)`, the output is in the order [[ ]]."
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"0 0 400 170\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\"><g stroke=\"#222\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"100\" y1=\"35\" x2=\"220\" y2=\"35\"/><line x1=\"100\" y1=\"35\" x2=\"100\" y2=\"135\"/><line x1=\"220\" y1=\"35\" x2=\"220\" y2=\"135\"/><line x1=\"100\" y1=\"135\" x2=\"220\" y2=\"135\"/><line x1=\"220\" y1=\"35\" x2=\"330\" y2=\"88\"/></g><g stroke=\"#222\" stroke-width=\"1.5\" fill=\"#fff\"><circle cx=\"100\" cy=\"35\" r=\"17\"/><circle cx=\"220\" cy=\"35\" r=\"17\"/><circle cx=\"330\" cy=\"88\" r=\"17\"/><circle cx=\"100\" cy=\"135\" r=\"17\"/><circle cx=\"220\" cy=\"135\" r=\"17\"/></g><g fill=\"#222\" font-size=\"14\" text-anchor=\"middle\"><text x=\"100\" y=\"40\">1</text><text x=\"220\" y=\"40\">2</text><text x=\"330\" y=\"93\">3</text><text x=\"100\" y=\"140\">4</text><text x=\"220\" y=\"140\">5</text></g></svg>",
+      "alt": "Undirected graph with five vertices numbered 1 to 5. Vertices 1 and 2 are on the top row, 4 and 5 on the bottom row, forming a square with edges 1–2, 1–4, 2–5 and 4–5. Vertex 3 is to the right, connected only to vertex 2 by edge 2–3."
+    },
+    {
+      "t": "p",
+      "x": "Figure 1  Graph that is handled by the program"
+    },
+    {
+      "t": "p",
+      "x": "Here, the procedure `traverse` uses a queue represented by the class `Queue`. Figure 2 provides an explanation of the class `Queue`."
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        ["Constructor", "Description"],
+        ["`Queue()`", "Creates an empty queue."]
+      ]
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        ["Method", "Return value", "Description"],
+        ["`enqueue(integer: elm)`", "None", "Adds the integer `elm` as an element to the queue."],
+        ["`dequeue()`", "`integer`", "Extracts the element from the queue and returns it."],
+        ["`isEmpty()`", "`boolean`", "Returns `true` if the queue is empty; otherwise, returns `false`."]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "Figure 2  Explanation of the class `Queue`"
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "  global: integer [,]: graph ← {{0, 1, 0, 1, 0},\n                                {1, 0, 1, 0, 1},\n                                {0, 1, 0, 0, 0},\n                                {1, 0, 0, 0, 1},\n                                {0, 1, 0, 1, 0}}\n\n○ traverse(integer: k)\n  Queue: queue ← Queue()\n  boolean []: visited ← {false, false, false, false, false}\n  integer: v, i\n  queue.enqueue(k)\n  visited[k] ← true\n  while (not queue.isEmpty())\n    v ← queue.dequeue()\n    output v\n    for (increase i from 1 to 5 by 1)\n      if (graph[v,i] = 1 and visited[i] = false)\n        queue.enqueue(i)\n        visited[i] ← true\n      endif\n    endfor\n  endwhile"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "“1”, “2”, “3”, “4”, “5”" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "“1”, “2”, “3”, “5”, “4”" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "“1”, “2”, “4”, “3”, “5”" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "“1”, “2”, “4”, “5”, “3”" } ] },
+    { "k": "e", "b": [ { "t": "p", "x": "“1”, “2”, “5”, “4”, “3”" } ] },
+    { "k": "f", "b": [ { "t": "p", "x": "“1”, “4”, “5”, “2”, “3”" } ] }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q50",
+  "stem": [
+    {
+      "t": "p",
+      "x": "A company expands into new markets by allowing independent business owners to operate under its brand name and quality standards including store management obligations. These local business owners pay royalties for using the brand name and getting business support from the company while investing in and managing their own stores. From a marketing strategy perspective, which of the following describes this arrangement?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Direct distribution"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Franchising"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Licensing"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Wholesaling"
+        }
+      ]
+    }
+  ]
+}

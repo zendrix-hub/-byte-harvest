@@ -1,0 +1,36 @@
+{
+  "id": "2025A_B_Q12",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "The function `containsSubstring` receives two-character arrays `str` and `seq` as arguments, and returns a boolean value indicating whether the character array `str` contains the sequence `seq` as a substring. The character array `str` contains `seq` as a substring if every sequence of consecutive characters in `seq` exists somewhere in the sequence of characters in `str`, in the same order. For example, `containsSubstring({\"a\", \"p\", \"p\", \"l\", \"e\"}, {\"p\", \"l\", \"e\"})` returns `true`, and `containsSubstring({\"a\", \"p\", \"p\", \"l\", \"e\"}, {\"a\", \"e\"})` returns `false`. Assume that the number of elements in `str` and `seq` is one or more."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ boolean: containsSubstring(character []: str, character []: seq)\n  integer: strlen, seqlen, len, i, j\n  strlen ← the number of elements in str\n  seqlen ← the number of elements in seq\n  if (seqlen > strlen)\n    return false\n  endif\n  len ← strlen − seqlen + 1\n  for (increase i from 1 to len by 1)\n    j ← 1\n    while (j ≤ seqlen)\n      if ([[A]] ≠ seq[j])\n        exit the while block\n      endif\n      j ← j + 1\n    endwhile\n    if ([[B]])\n      return true\n    endif\n  endfor\n  return false"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["`str[i + j]`", "`j = seqlen`"] },
+      { "k": "b", "c": ["`str[i + j]`", "`j = seqlen + 1`"] },
+      { "k": "c", "c": ["`str[i + j]`", "`j = seqlen − 1`"] },
+      { "k": "d", "c": ["`str[i + j − 1]`", "`j = seqlen`"] },
+      { "k": "e", "c": ["`str[i + j − 1]`", "`j = seqlen + 1`"] },
+      { "k": "f", "c": ["`str[i + j − 1]`", "`j = seqlen − 1`"] }
+    ]
+  }
+}

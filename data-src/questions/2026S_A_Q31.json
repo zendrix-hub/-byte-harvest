@@ -1,0 +1,47 @@
+{
+ "id": "2026S_A_Q31",
+ "stem": [
+  {
+   "t": "p",
+   "x": "Which of the following is an example of ransomware?"
+  }
+ ],
+ "opts": [
+  {
+   "k": "a",
+   "b": [
+    {
+     "t": "p",
+     "x": "A range of different types of software including adware, spyware, and freeware"
+    }
+   ]
+  },
+  {
+   "k": "b",
+   "b": [
+    {
+     "t": "p",
+     "x": "Malicious software blocking access to a victimized computer and demanding money to unblock it"
+    }
+   ]
+  },
+  {
+   "k": "c",
+   "b": [
+    {
+     "t": "p",
+     "x": "Software that assigns randomized MAC addresses to PCs to ensure user privacy on the Internet"
+    }
+   ]
+  },
+  {
+   "k": "d",
+   "b": [
+    {
+     "t": "p",
+     "x": "Software that generates the random numbers required by computer security application software"
+    }
+   ]
+  }
+ ]
+}

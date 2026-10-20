@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q25",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Between LAN systems that are different from the transport layer upward in the OSI basic reference model, which of the following is a device that performs protocol conversion?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Bridge"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Gateway"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Repeater"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Router"
+        }
+      ]
+    }
+  ]
+}

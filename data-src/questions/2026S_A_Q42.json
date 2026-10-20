@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q42",
+  "stem": [
+    { "t": "p", "x": "The functional size of a new system was estimated to be 500 function points (FPs). Apart from development, the project requires 10 person-months in total for installation of the system and education of developers. Additionally project management requires 10% of the total person-months of development, installation, and education. How many person-months are required in total for this project? Here, the productivity in development is 10 FPs per person-month." }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "51" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "60" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "65" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "66" } ] }
+  ]
+}

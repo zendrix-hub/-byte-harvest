@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q01",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the prefix notation for the infix expression ((a−b)/(c+d))^e . Here, the symbols “+,” “−,” “/,” and “^” represent addition, subtraction, division, and exponentiation operators, respectively."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "^e/+dc−ba"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "^−ab/+cde"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "^/−ab+cde"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "^e/−ab+cd"
+        }
+      ]
+    }
+  ]
+}

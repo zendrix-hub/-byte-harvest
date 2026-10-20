@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q26",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an Internet standard that extends the format of email header fields to handle not only text messages but also audio and image files?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "HTML"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "MHS"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "MIME"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "SMTP"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q38",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate category of system maintenance performed for the purpose of modifying the system to cope with changes in the software environment (e.g. DBMS, Operating system)?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Adaptive maintenance"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Corrective maintenance"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Perfective maintenance"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Preventive maintenance"
+        }
+      ]
+    }
+  ]
+}

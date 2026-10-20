@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q04",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In regular expressions (regex), which of the following is the string that correctly matches the pattern `^\\d{2,4}-\\d+-\\d{3,4}$` ? Here, “`\\d`” represents a decimal digit 0-9, the “+” symbol indicates one or more repetitions, and the “`$`” symbol denotes the line's end."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "123-456-12"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "1-234-5678"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "123-456-7890"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "12345-678-910"
+        }
+      ]
+    }
+  ]
+}

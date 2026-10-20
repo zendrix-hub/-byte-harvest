@@ -1,0 +1,19 @@
+{
+  "id": "2025A_A_Q38",
+  "stem": [
+    { "t": "p", "x": "What is the expected value in dollars for the correction cost of an application program in the first year under the conditions shown below?" },
+    { "t": "p", "x": "[Conditions]" },
+    { "t": "p", "x": "(1) Program size: 2,000 k steps" },
+    { "t": "p", "x": "(2) Potential defective rate of program: 0.04 defects / k steps" },
+    { "t": "p", "x": "(3) Annual discovery rate of potential defects: 20% / year" },
+    { "t": "p", "x": "(4) Classification of discovered defects:\n–Major impact: 20%\n–Minor impact: 80%" },
+    { "t": "p", "x": "(5) Correction cost per defect\nDefects with major impact: 20,000 dollars\nDefects with minor impact: 5,000 dollars" },
+    { "t": "p", "x": "(6) In the first year, only defects with major impact are corrected" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "64,000" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "128,000" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "160,000" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "640,000" } ] }
+  ]
+}

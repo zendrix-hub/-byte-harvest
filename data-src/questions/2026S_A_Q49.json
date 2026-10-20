@@ -1,0 +1,59 @@
+{
+  "id": "2026S_A_Q49",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Company A (a software company) acquires Company B (a data analytics company). After the acquisition, the resulting company implements the following:"
+    },
+    {
+      "t": "list",
+      "items": [
+        "Cross-sells Company A’s software tools to company B’s customers to boost revenue.",
+        "Integrates Company B’s algorithms into Company A’s products to enhance functionality.",
+        "Cuts redundant office leases to save $3 million annually."
+      ]
+    },
+    {
+      "t": "p",
+      "x": "Which of the following is the phenomenon that creates greater value than the sum of what each company could have achieved independently?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Horizontal integration"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Market penetration"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Synergy effect"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Vertical integration"
+        }
+      ]
+    }
+  ]
+}

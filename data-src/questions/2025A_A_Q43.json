@@ -1,0 +1,51 @@
+{
+  "id": "2025A_A_Q43",
+  "stem": [
+    {
+      "t": "p",
+      "x": "IT services are provided under the conditions in the SLA shown below. What is the maximum number of hours of downtime in a month that can satisfy the SLA?"
+    },
+    {
+      "t": "p",
+      "x": "[Conditions in the SLA]\n‐ Number of business days per month: 30\n‐ Service hours: 7 AM to 11 PM on business days\n‐ Agreed availability: 99% or more\n‐ Maintenance time can be ignored."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "1.2"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "3.0"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "4.8"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "7.2"
+        }
+      ]
+    }
+  ]
+}

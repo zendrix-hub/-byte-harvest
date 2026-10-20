@@ -3,7 +3,7 @@
   "stem": [
     { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] in the description and [[B]] in the program. Here, the array index starts at 0." },
     { "t": "p", "x": "The procedure `sort` receives an integer array `arr` and prints all the integers in `arr` in ascending order, separated by commas. The number of elements in `arr` is ≥ `1.` The values of all array elements are in the range of 0–10." },
-    { "t": "p", "x": "If `arr` is `{9, 3, 2, 0, 9, 3, 0, 1, 5, 3, 8}`, at the end of the procedure, it outputs `\"0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9, `\" and the values of the elements of array `s` will be {[[A]]}" },
+    { "t": "p", "x": "If `arr` is `{9, 3, 2, 0, 9, 3, 0, 1, 5, 3, 8}`, at the end of the procedure, it outputs `\"0, 0, 1, 2, 3, 3, 3, 5, 8, 9, 9, \"` and the values of the elements of array `s` will be {[[A]]}" },
     { "t": "p", "x": "[Program]" },
     { "t": "code", "x": "○ sort(integer []: arr) // prints all the elements in arr in ascending order\n  integer []: s ← {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}\n  integer: i, j\n  for (increase i from 0 to (the number of elements in arr) - 1 by 1)\n    s[arr[i]] ← s[arr[i]] + 1\n  endfor\n  for (increase i from 0 to 10 by 1)\n    if (s[i] > 0)\n      for (increase j from 0 to s[i] - 1 by 1)\n        output [[B]] and \", \"\n      endfor\n    endif\n  endfor\n  return" },
     { "t": "p", "x": "Answer group" }

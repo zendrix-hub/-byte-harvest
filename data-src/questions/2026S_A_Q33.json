@@ -1,0 +1,47 @@
+{
+ "id": "2026S_A_Q33",
+ "stem": [
+  {
+   "t": "p",
+   "x": "Which of the following is an appropriate explanation of CSIRT?"
+  }
+ ],
+ "opts": [
+  {
+   "k": "a",
+   "b": [
+    {
+     "t": "p",
+     "x": "A generic term for an organization that is established within a company, organization, or government agency, receiving reports on information security incidents for investigation and response"
+    }
+   ]
+  },
+  {
+   "k": "b",
+   "b": [
+    {
+     "t": "p",
+     "x": "A generic term for people or an organization whose aim is to achieve a religious or political goal by utilizing IT"
+    }
+   ]
+  },
+  {
+   "k": "c",
+   "b": [
+    {
+     "t": "p",
+     "x": "An organization that creates technical documents concerning the Internet and investigates standardization issues"
+    }
+   ]
+  },
+  {
+   "k": "d",
+   "b": [
+    {
+     "t": "p",
+     "x": "An organization that defines the IP-address allocation policy, operating and monitoring DNS root servers and coordinating DNS management on a global scale"
+    }
+   ]
+  }
+ ]
+}

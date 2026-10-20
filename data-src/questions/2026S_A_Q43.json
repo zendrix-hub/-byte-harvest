@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q43",
+  "stem": [
+    { "t": "p", "x": "Which of the following is an appropriate meaning of a mission-critical system?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "As with an operating system, it is an indispensable system necessary for operating a business system." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "It is a system that has a significant impact on corporate activities and society when a failure occurs." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "It is a system that is first installed on a trial basis, and if successful, a full-scale installation is implemented." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "It is a system with operating performance close to the limit." } ] }
+  ]
+}

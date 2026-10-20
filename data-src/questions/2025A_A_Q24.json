@@ -1,0 +1,52 @@
+{
+  "id": "2025A_A_Q24",
+  "stem": [
+    {
+      "t": "p",
+      "x": "PC5 has been newly added to the network. It wants to send data to PC4 using SSH protocol. It must resolve the MAC address of PC4 from its IP address before sending the data. Which of the following is the destination MAC address that PC5 will use in ARP request?"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"60 5 700 290\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"15\" fill=\"#222\"><g stroke=\"#222\" stroke-width=\"3\" stroke-linecap=\"round\"><line x1=\"340\" y1=\"85\" x2=\"290\" y2=\"115\"/><line x1=\"375\" y1=\"85\" x2=\"290\" y2=\"200\"/><line x1=\"435\" y1=\"85\" x2=\"520\" y2=\"200\"/><line x1=\"470\" y1=\"85\" x2=\"520\" y2=\"115\"/><line x1=\"405\" y1=\"88\" x2=\"405\" y2=\"195\" stroke-dasharray=\"12 9\" stroke-linecap=\"butt\"/></g><rect x=\"330\" y=\"15\" width=\"150\" height=\"70\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"4\"/><text x=\"405\" y=\"44\" text-anchor=\"middle\" font-size=\"16\">Network</text><text x=\"405\" y=\"66\" text-anchor=\"middle\" font-size=\"16\">Switch</text><rect x=\"230\" y=\"100\" width=\"60\" height=\"30\" rx=\"5\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"260\" y=\"121\" text-anchor=\"middle\" font-size=\"16\">PC1</text><polygon points=\"236,133 284,133 292,139 228,139\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.2\"/><rect x=\"230\" y=\"185\" width=\"60\" height=\"30\" rx=\"5\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"260\" y=\"206\" text-anchor=\"middle\" font-size=\"16\">PC2</text><polygon points=\"236,218 284,218 292,224 228,224\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.2\"/><rect x=\"520\" y=\"100\" width=\"60\" height=\"30\" rx=\"5\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"550\" y=\"121\" text-anchor=\"middle\" font-size=\"16\">PC3</text><polygon points=\"526,133 574,133 582,139 518,139\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.2\"/><rect x=\"520\" y=\"185\" width=\"60\" height=\"30\" rx=\"5\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"550\" y=\"206\" text-anchor=\"middle\" font-size=\"16\">PC4</text><polygon points=\"526,218 574,218 582,224 518,224\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.2\"/><rect x=\"375\" y=\"195\" width=\"60\" height=\"30\" rx=\"5\" fill=\"#d9d9d9\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"405\" y=\"216\" text-anchor=\"middle\" font-size=\"16\">PC5</text><polygon points=\"381,228 429,228 437,234 373,234\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.2\"/><text x=\"224\" y=\"120\" text-anchor=\"end\">192.168.1.2</text><text x=\"222\" y=\"145\" text-anchor=\"end\">78:E1:00:3C:A1:5D</text><text x=\"224\" y=\"205\" text-anchor=\"end\">192.168.1.5</text><text x=\"222\" y=\"230\" text-anchor=\"end\">78:E1:00:3C:A1:6E</text><text x=\"586\" y=\"120\" text-anchor=\"start\">192.168.1.7</text><text x=\"590\" y=\"145\" text-anchor=\"start\">78:E1:00:3C:A1:7A</text><text x=\"586\" y=\"205\" text-anchor=\"start\">192.168.1.10</text><text x=\"590\" y=\"230\" text-anchor=\"start\">78:E1:00:3C:A1:8B</text><text x=\"405\" y=\"260\" text-anchor=\"middle\">192.168.1.11</text><text x=\"405\" y=\"282\" text-anchor=\"middle\">78:E1:00:3C:A1:9F</text></svg>",
+      "alt": "Network diagram: a Network Switch at the top with solid lines to PC1 (192.168.1.2, 78:E1:00:3C:A1:5D), PC2 (192.168.1.5, 78:E1:00:3C:A1:6E), PC3 (192.168.1.7, 78:E1:00:3C:A1:7A) and PC4 (192.168.1.10, 78:E1:00:3C:A1:8B), and a dashed line to the newly added, shaded PC5 (192.168.1.11, 78:E1:00:3C:A1:9F) directly below the switch."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "00:00:00:00:00:00"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "78:E1:00:3C:A1:8B"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "78:E1:00:3C:A1:9F"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "FF:FF:FF:FF:FF:FF"
+        }
+      ]
+    }
+  ]
+}

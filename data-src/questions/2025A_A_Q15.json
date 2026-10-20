@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q15",
+  "stem": [
+    {
+      "t": "p",
+      "x": "The page capacity of main memory is three pages, and the pages are referenced in the order {1, 2, 3, 2, 1, 4, 5}. Which of the following is the page that will be replaced from main memory for the last page reference if LRU is used as the page replacement technique?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "1"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "2"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "3"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "4"
+        }
+      ]
+    }
+  ]
+}

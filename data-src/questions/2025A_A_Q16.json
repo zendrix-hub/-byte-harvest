@@ -1,0 +1,52 @@
+{
+  "id": "2025A_A_Q16",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is equivalent to the logical circuit shown below?"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"50 35 450 230\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"18\" font-style=\"italic\" fill=\"none\" stroke=\"#222\" stroke-width=\"2\">\n<text x=\"78\" y=\"84\" fill=\"#222\" stroke=\"none\">A</text>\n<text x=\"78\" y=\"124\" fill=\"#222\" stroke=\"none\">B</text>\n<polyline points=\"95,78 155,78\"/>\n<polyline points=\"95,118 232,118\"/>\n<polyline points=\"112,78 112,226 241,226\"/>\n<polyline points=\"125,118 125,189 241,189\"/>\n<circle cx=\"112\" cy=\"78\" r=\"3\" fill=\"#222\" stroke=\"none\"/>\n<circle cx=\"125\" cy=\"118\" r=\"3\" fill=\"#222\" stroke=\"none\"/>\n<polygon points=\"155,58 155,98 185,78\" fill=\"#fff\"/>\n<circle cx=\"189\" cy=\"78\" r=\"4\" fill=\"#fff\"/>\n<polyline points=\"193,78 232,78\"/>\n<path d=\"M232,64 H267 A35,35 0 0 1 267,134 H232 Z\" fill=\"#fff\"/>\n<circle cx=\"306\" cy=\"99\" r=\"4\" fill=\"#fff\"/>\n<polyline points=\"310,99 340,99 340,128 365,128\"/>\n<path d=\"M235,172 Q275,172 305,209 Q275,246 235,246 Q250,209 235,172 Z\" fill=\"#fff\"/>\n<circle cx=\"309\" cy=\"209\" r=\"4\" fill=\"#fff\"/>\n<polyline points=\"313,209 340,209 340,167 365,167\"/>\n<path d=\"M360,110 Q400,110 430,147.5 Q400,185 360,185 Q375,147.5 360,110 Z\" fill=\"#fff\"/>\n<circle cx=\"434\" cy=\"147.5\" r=\"4\" fill=\"#fff\"/>\n<polyline points=\"438,147.5 462,147.5\"/>\n<text x=\"470\" y=\"154\" fill=\"#222\" stroke=\"none\">Y</text>\n</svg>",
+      "alt": "Logic circuit with inputs A and B and output Y. Input A goes through a NOT gate into the first input of a NAND gate; input B goes to the second input of the same NAND gate. Branches of A and B also feed a NOR gate (B to its upper input, A to its lower input). The outputs of the NAND gate and the NOR gate are the two inputs of a final NOR gate, whose output is Y."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "A · B"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "~{A} · B"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "A · ~{B}"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "~{A} · ~{B}"
+        }
+      ]
+    }
+  ]
+}

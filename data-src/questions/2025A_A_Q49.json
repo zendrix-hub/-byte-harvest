@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q49",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an explanation of benchmarking that is used for corporate management?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It refers to a qualitative and quantitative understanding of a company’s own products, services, and operations through comparison with those of competitors or advanced companies."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "It refers to drastically reforming the quality and structure of a company by redesigning its business processes from a customer viewpoint and by taking full advantage of information technology."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "It refers to the ability to plan and manage the allocation of company-wide management resources in an effective and integrated manner in order to improve management efficiency."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "It refers to the concentration of management resources on the unique skills and technologies of a company that can generate profit and that are superior to those of other companies."
+        }
+      ]
+    }
+  ]
+}

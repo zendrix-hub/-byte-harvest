@@ -1,0 +1,27 @@
+{
+  "id": "2025A_A_Q05",
+  "stem": [
+    { "t": "p", "x": "The table below shows the data in a list structure that has bidirectional pointers. In this table, a new Employee G is to be inserted between Employee A and Employee K. Which of the following contains only the pointers (among a through f) whose values change after the insertion?" },
+    { "t": "p", "x": "Table" },
+    { "t": "table", "head": 1, "rows": [
+      ["Address", "EmployeeName", "NextPointer", "PreviousPointer"],
+      ["100", "Employee A", "300", "0"],
+      ["200", "Employee T", "0", "300"],
+      ["300", "Employee K", "200", "100"]
+    ] },
+    { "t": "p", "x": "Table after the addition" },
+    { "t": "table", "head": 1, "rows": [
+      ["Address", "EmployeeName", "NextPointer", "PreviousPointer"],
+      ["100", "Employee A", "a", "b"],
+      ["200", "Employee T", "c", "d"],
+      ["300", "Employee K", "e", "f"],
+      ["400", "Employee G", "x", "y"]
+    ] }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "a, b, e, f" }] },
+    { "k": "b", "b": [{ "t": "p", "x": "a, e, f" }] },
+    { "k": "c", "b": [{ "t": "p", "x": "a, f" }] },
+    { "k": "d", "b": [{ "t": "p", "x": "b, e" }] }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "2025A_A_Q36",
+  "stem": [
+    { "t": "p", "x": "Which of the following is an appropriate description concerning a state transition test in a system integration test?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "A method for black box tests that does not focus on a system’s internal state." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "A method that checks whether a system behaves according to the designed combinations of events and internal states." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "A method that is suitable for tests of calculations and processing systems whose internal state does not change depending on the occurrence of an event." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "A method that uses a data flow diagram and a decision table to analyze the internal state of a system." } ] }
+  ]
+}

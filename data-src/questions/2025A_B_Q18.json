@@ -1,0 +1,79 @@
+{
+  "id": "2025A_B_Q18",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the most appropriate combination of answers to be inserted into [[A]] and [[B]] in the description."
+    },
+    {
+      "t": "p",
+      "x": "Company Q is a mid-sized online retailer selling a wide range of daily necessities to a large number of general consumers. Customers are required to create an account and log in to the company’s e-commerce website to make purchases. The e-commerce website is constructed using an open-source content management system (CMS) with various plugins. It is hosted on the company’s on-premise web servers located in the Demilitarized Zone (DMZ). Customer data is stored in the database installed on the web server as well. Since the e-commerce site received orders from many customers, availability of the e-commerce website is critical, and the maximum tolerable downtime (MTD) is limited to one hour per week."
+    },
+    {
+      "t": "p",
+      "x": "The server is protected by a packet filtering firewall that permits access only through ports 80 and 443. Mr. K is an administrator responsible for both the operations and security of the company’s e-commerce website. He maintains the configuration of the firewall and other security measures as well as patch management. For patching the company’s e-commerce website, compatibility testing is important to maintain website stability. It takes at least three days to complete compatibility testing for one component. Due to limited human resource, it is unrealistic to perform compatibility tests in parallel and finish them quickly. Therefore, the patch management rule is to apply patches for the web server’s OS and the core CMS components within a week of their release, while updates for other components including plugins are scheduled to be applied within six months. Patches for the web server’s OS and the core CMS components are released on a monthly basis, while updates for other components including plugins are released each month as well."
+    },
+    {
+      "t": "p",
+      "x": "One day, Company Q’s e-commerce website was compromised and the database on the webserver was accessed by an unauthorized third party. The investigation revealed that this was caused by an unpatched vulnerability in a plugin enabled on the CMS. This plug-in was critical to the functioning of the e-commerce website. The latest version of the plugin, which includes a fix for this vulnerability, was released by the vendor three months ago. The exploitation of this vulnerability has been reported publicly since last month. Company Q was still conducting compatibility testing, and the update to the latest version was scheduled for a later time."
+    },
+    {
+      "t": "p",
+      "x": "To prevent similar incidents from occurring, Mr. K is required to revise the patch management rules for Q’s e-commerce website. In consideration of the workload associated with compatibility testing, Mr. K proposed updating the patch management rule for the e-commerce website to [[A]]. Furthermore, as a protective measure to prevent the servers from exploitation during the interim period before patches are applied, Mr. K proposed [[B]]."
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "apply patches to all components including plugins within three days of their release",
+          "disabling the affected components until the patches can be applied"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "apply patches to all components including plugins within three days of their release",
+          "implementing web application firewall (WAF) on the webserver"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "prioritize applying patches for vulnerabilities for which exploitation methods have been identified, within one week from the date such methods are publicly confirmed",
+          "disabling the affected components until the patches can be applied"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "prioritize applying patches for vulnerabilities for which exploitation methods have been identified, within one week from the date such methods are publicly confirmed",
+          "implementing web application firewall (WAF) on the webserver"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "run a vulnerability scanner to verify that no vulnerabilities with confirmed exploits are detected after applying patches",
+          "disabling the affected components until the patches can be applied"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "run a vulnerability scanner to verify that no vulnerabilities with confirmed exploits are detected after applying patches",
+          "implementing web application firewall (WAF) on the webserver"
+        ]
+      }
+    ]
+  }
+}

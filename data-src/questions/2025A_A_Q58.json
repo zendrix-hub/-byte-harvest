@@ -1,0 +1,55 @@
+{
+  "id": "2025A_A_Q58",
+  "stem": [
+    {
+      "t": "p",
+      "x": "The horizontal and vertical axes of an Operating Characteristic (OC) curve in quality management generally represent the percent defective of a lot and the success rate of a lot, respectively. Samples of size n are extracted from a lot of size N. When the number of defective samples is less than or equal to the pass quantity C, the lot is considered to have passed; otherwise, it is considered to have failed."
+    },
+    {
+      "t": "p",
+      "x": "Which of the following is a diagram that shows the trend of change in the OC curve when N and n are fixed and C takes the values 0, 1, and 2?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "svg",
+          "svg": "<svg viewBox=\"0 0 270 235\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"15\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"><path d=\"M40,20 L40,200 L250,200\"/><path d=\"M40,30 C110,32 130,100 155,145 S 200,198 230,200\"/><path d=\"M40,30 C80,34 95,90 115,135 S 150,198 190,200\"/><path d=\"M40,30 C52,70 62,120 85,160 S 118,198 150,200\"/><text x=\"152\" y=\"100\" transform=\"rotate(65 152 100)\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">C=0</text><text x=\"122\" y=\"118\" transform=\"rotate(65 122 118)\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">C=1</text><text x=\"92\" y=\"140\" transform=\"rotate(65 92 140)\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">C=2</text><text x=\"40\" y=\"222\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">0</text></svg>",
+          "alt": "Graph with origin 0 and three decreasing curves that all start at the same point at the top of the vertical axis and do not cross afterwards. The outermost (highest, falling latest) curve is labelled C=0, the middle curve C=1, and the innermost (lowest, falling fastest) curve C=2."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "svg",
+          "svg": "<svg viewBox=\"0 0 270 235\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"15\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"><path d=\"M40,20 L40,200 L250,200\"/><path d=\"M40,30 C110,32 130,100 155,145 S 200,198 230,200\"/><path d=\"M40,30 C80,34 95,90 115,135 S 150,198 190,200\"/><path d=\"M40,30 C52,70 62,120 85,160 S 118,198 150,200\"/><text x=\"152\" y=\"100\" transform=\"rotate(65 152 100)\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">C=2</text><text x=\"122\" y=\"118\" transform=\"rotate(65 122 118)\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">C=1</text><text x=\"92\" y=\"140\" transform=\"rotate(65 92 140)\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">C=0</text><text x=\"40\" y=\"222\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">0</text></svg>",
+          "alt": "Graph with origin 0 and three decreasing curves that all start at the same point at the top of the vertical axis and do not cross afterwards. The outermost (highest, falling latest) curve is labelled C=2, the middle curve C=1, and the innermost (lowest, falling fastest) curve C=0."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "svg",
+          "svg": "<svg viewBox=\"0 0 270 235\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"15\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"><path d=\"M40,20 L40,200 L250,200\"/><path d=\"M40,26 C47,40 55,52 62,62 C110,120 170,185 245,199\"/><path d=\"M40,26 C52,32 58,46 62,62 C85,115 115,178 180,199\"/><path d=\"M40,26 C58,24 62,40 62,62 C68,115 82,178 122,199\"/><text x=\"154.4\" y=\"152.0\" transform=\"rotate(37.8 154.4 152.0)\" text-anchor=\"middle\" font-size=\"13\" stroke=\"none\" fill=\"#222\">C=2</text><text x=\"119.2\" y=\"155.0\" transform=\"rotate(48.1 119.2 155.0)\" text-anchor=\"middle\" font-size=\"13\" stroke=\"none\" fill=\"#222\">C=1</text><text x=\"89.4\" y=\"158.4\" transform=\"rotate(63.3 89.4 158.4)\" text-anchor=\"middle\" font-size=\"13\" stroke=\"none\" fill=\"#222\">C=0</text><text x=\"40\" y=\"222\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">0</text></svg>",
+          "alt": "Graph with origin 0 and three decreasing curves that start at the same point at the top of the vertical axis, form a small lens shape near the top, and all cross at one point a short way down, then spread apart. Below the crossing point, the outermost (highest) curve is labelled C=2, the middle C=1, and the innermost (lowest) C=0; above the crossing point their order is reversed."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "svg",
+          "svg": "<svg viewBox=\"0 0 270 235\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"15\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"><path d=\"M40,20 L40,200 L250,200\"/><path d=\"M40,26 C47,40 55,52 62,62 C110,120 170,185 245,199\"/><path d=\"M40,26 C52,32 58,46 62,62 C85,115 115,178 180,199\"/><path d=\"M40,26 C58,24 62,40 62,62 C68,115 82,178 122,199\"/><text x=\"154.4\" y=\"152.0\" transform=\"rotate(37.8 154.4 152.0)\" text-anchor=\"middle\" font-size=\"13\" stroke=\"none\" fill=\"#222\">C=0</text><text x=\"119.2\" y=\"155.0\" transform=\"rotate(48.1 119.2 155.0)\" text-anchor=\"middle\" font-size=\"13\" stroke=\"none\" fill=\"#222\">C=1</text><text x=\"89.4\" y=\"158.4\" transform=\"rotate(63.3 89.4 158.4)\" text-anchor=\"middle\" font-size=\"13\" stroke=\"none\" fill=\"#222\">C=2</text><text x=\"40\" y=\"222\" text-anchor=\"middle\" stroke=\"none\" fill=\"#222\">0</text></svg>",
+          "alt": "Graph with origin 0 and three decreasing curves that start at the same point at the top of the vertical axis, form a small lens shape near the top, and all cross at one point a short way down, then spread apart. Below the crossing point, the outermost (highest) curve is labelled C=0, the middle C=1, and the innermost (lowest) C=2; above the crossing point their order is reversed."
+        }
+      ]
+    }
+  ]
+}

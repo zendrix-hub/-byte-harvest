@@ -1,0 +1,51 @@
+{
+  "id": "2026S_B_Q10",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] through [[C]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "The function `mergeTwoSortedList` concatenates two linear sorted linked lists in a sorted order and returns one linear linked list of sorted order. Each element of the linear linked lists is represented by the class `ListElement`. The table lists the description of the class `ListElement`. `ListElement`-type variable holds a reference to an instance of the class `ListElement`. Here, `head1` and `head2` represent the headers of the two sorted linked lists, respectively and are of type `ListElement`. After concatenation of two existing linear linked lists, the function returns a linear linked list headed with `result`, which is of type `ListElement`. Both the input linked lists and returned linked list are sorted in ascending order of the member variable `val`."
+    },
+    {
+      "t": "p",
+      "x": "Table  Explanation of the member variables of the class `ListElement`"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        ["Member variable", "Type", "Description"],
+        ["`val`", "`integer`", "The value of an element."],
+        ["`next`", "`ListElement`", "Reference to the instance that holds the next element in the list. If no next element exists, the status is undefined."]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ ListElement: mergeTwoSortedList(ListElement: head1,\n                                  ListElement: head2)\n  ListElement: result\n  if (head1 is undefined)\n    return head2\n  elseif (head2 is undefined)\n    return head1\n  endif\n  if ([[A]])\n    result ← head1\n    result.next ← mergeTwoSortedList([[B]], head2)\n  else\n    result ← head2\n    result.next ← mergeTwoSortedList(head1, [[C]])\n  endif\n  return result"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": ["A", "B", "C"],
+    "rows": [
+      { "k": "a", "c": ["`head1.next is undefined`", "`head1.next`", "`head2.next`"] },
+      { "k": "b", "c": ["`head1.next is undefined`", "`head2.next`", "`head1.next`"] },
+      { "k": "c", "c": ["`head1.val ≤ head2.val`", "`head1.next`", "`head2.next`"] },
+      { "k": "d", "c": ["`head1.val ≤ head2.val`", "`head2.next`", "`head1.next`"] },
+      { "k": "e", "c": ["`head1.val = head2.val`", "`head1.next`", "`head2.next`"] },
+      { "k": "f", "c": ["`head1.val = head2.val`", "`head2.next`", "`head1.next`"] },
+      { "k": "g", "c": ["`head1.val ≥ head2.val`", "`head1.next`", "`head2.next`"] },
+      { "k": "h", "c": ["`head1.val ≥ head2.val`", "`head2.next`", "`head1.next`"] }
+    ]
+  }
+}

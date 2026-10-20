@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q45",
+  "stem": [
+    { "t": "p", "x": "In an information security audit, which of the following is a check item for confirming availability?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "Appropriate performance of error checking for data entry" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "Database encryption" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "Managing and maintaining the level of SLA that defines downtime" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Prohibiting the removal of external storage media from the company without permission" } ] }
+  ]
+}

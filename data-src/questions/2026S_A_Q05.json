@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q05",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the postfix notation for the expression a+(b×c)+(d×e)?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "a+bc×de+×"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "abc×+de+×"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "abc×+de×+"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "abc+×de×+"
+        }
+      ]
+    }
+  ]
+}

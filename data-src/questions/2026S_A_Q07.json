@@ -1,0 +1,56 @@
+{
+  "id": "2026S_A_Q07",
+  "stem": [
+    {
+      "t": "p",
+      "x": "For integers x and y (x > y ≥ 0), a function F(x, y) is defined as below:"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"0 0 520 110\" xmlns=\"http://www.w3.org/2000/svg\"><g font-family=\"serif\" font-size=\"20\" fill=\"#222\"><text x=\"20\" y=\"62\"><tspan font-style=\"italic\">F</tspan>(<tspan font-style=\"italic\">x</tspan>, <tspan font-style=\"italic\">y</tspan>) =</text><text x=\"170\" y=\"40\"><tspan font-style=\"italic\">x</tspan></text><text x=\"170\" y=\"86\"><tspan font-style=\"italic\">F</tspan>(<tspan font-style=\"italic\">y</tspan>, <tspan font-style=\"italic\">x</tspan> mod <tspan font-style=\"italic\">y</tspan>)</text><text x=\"350\" y=\"40\">(when <tspan font-style=\"italic\">y</tspan> = 0)</text><text x=\"350\" y=\"86\">(when <tspan font-style=\"italic\">y</tspan> &gt; 0)</text></g><path d=\"M162,14 Q150,14 150,26 L150,46 Q150,56 140,56 Q150,56 150,66 L150,86 Q150,98 162,98\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.6\"/></svg>",
+      "alt": "Piecewise definition: F(x, y) = x (when y = 0); F(x, y) = F(y, x mod y) (when y > 0)."
+    },
+    {
+      "t": "p",
+      "x": "What is the value F(231, 15)? Here, “x mod y” represents the remainder after division of x by y."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "2"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "3"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "5"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "7"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q11",
+  "stem": [
+    { "t": "p", "x": "What is the theoretical maximum data transfer rate in MB/s for the external bus of a 64-bit microprocessor that uses a 64-bit external data bus driven by a 64 MHz input clock? Here, it takes 4 input clock cycles to complete 1 bus cycle." }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "12.8" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "128" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "512" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "1280" } ] }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "2026S_B_Q09",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "The function `isPerfectBinaryTree` checks whether the binary tree with a given root node is perfect. In a perfect binary tree, all the internal nodes have exactly two children, and all leaf nodes are at the same level. The function returns `true` if the tree is perfect, or `false` otherwise."
+    },
+    {
+      "t": "p",
+      "x": "The class `Node` models a node of a binary tree as described in Table 1. A `Node`-type variable holds a reference to an instance of the class `Node`."
+    },
+    {
+      "t": "p",
+      "x": "Table 1  Class `Node`"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        ["Member variable", "Type", "Description"],
+        ["`Key`", "`integer`", "Integer value stored in a node of a binary tree."],
+        ["`Left`", "`Node`", "A reference to the left child of the node. If the left child does not exist, it is set to `undefined`."],
+        ["`Right`", "`Node`", "A reference to the right child of the node. If the right child does not exist, it is set to `undefined`."]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "Table 2 describes the functions used in the program."
+    },
+    {
+      "t": "p",
+      "x": "Table 2  Functions"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        ["Function", "Return value", "Description"],
+        ["`pow(integer a,`\n`integer b)`", "`integer`", "Returns the result of raising `a` to the power of `b` (i.e., a^{b} )."],
+        ["`max(integer a,`\n`integer b)`", "`integer`", "Returns the maximum of the two integers `a` and `b`."]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ boolean: isPerfectBinaryTree(Node: root)\n           // The argument root holds a reference to the root node\n           // of a binary tree.\n  integer: height, size\n  height ← getHeight(root)\n  size ← getSize(root)\n  return [[A]]\n\n○ integer: getHeight(Node: root)\n  integer: leftHeight, rightHeight\n  if (root is undefined)\n    return 0\n  endif\n  leftHeight ← getHeight(root.left)\n\n  rightHeight ← getHeight(root.right)\n  return 1 + max(leftHeight, rightHeight)\n\n○ integer: getSize(Node: root)\n  if (root is undefined)\n    return 0\n  endif\n  return [[B]]"
+    },
+    {
+      "t": "p",
+      "x": "Answer Group"
+    }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["`size + 1 = pow(2, height)`", "`getSize(root.left) + getSize(root.right)`"] },
+      { "k": "b", "c": ["`size + 1 = pow(2, height)`", "`getSize(root.left) + getSize(root.right) + 1`"] },
+      { "k": "c", "c": ["`size + 1 = pow(2, height)`", "`getSize(root.left) + getSize(root.right) − 1`"] },
+      { "k": "d", "c": ["`size = pow(2, height − 1)`", "`getSize(root.left) + getSize(root.right)`"] },
+      { "k": "e", "c": ["`size = pow(2, height − 1)`", "`getSize(root.left) + getSize(root.right) + 1`"] },
+      { "k": "f", "c": ["`size = pow(2, height − 1)`", "`getSize(root.left) + getSize(root.right) − 1`"] },
+      { "k": "g", "c": ["`size = pow(2, height)`", "`getSize(root.left) + getSize(root.right)`"] },
+      { "k": "h", "c": ["`size = pow(2, height)`", "`getSize(root.left) + getSize(root.right) + 1`"] },
+      { "k": "i", "c": ["`size = pow(2, height)`", "`getSize(root.left) + getSize(root.right) − 1`"] }
+    ]
+  }
+}

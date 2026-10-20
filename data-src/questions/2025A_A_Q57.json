@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q57",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is a major role of a CIO?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "The CIO creates a plan to optimize the effect of investment on information resources across the company to support business strategy when a computerization strategy is established."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "The CIO gives advice to the information system department by auditing whether the information system functions properly in corporate activities."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "The CIO receives queries about the information system, reports on the problems, and gives specific instructions to the department in charge to ensure optimal management of the company-wide information system."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "The CIO understands the status of information system development and operation and provides specific instructions on improvements to ensure that the company-wide information system functions optimally."
+        }
+      ]
+    }
+  ]
+}

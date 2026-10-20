@@ -1,0 +1,12 @@
+{
+  "id": "2025A_A_Q03",
+  "stem": [
+    { "t": "p", "x": "Three friends and 4 other people are randomly seated in 7 seats arranged in a row. What is the probability that the 3 friends sit next to one another?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "1/168" }] },
+    { "k": "b", "b": [{ "t": "p", "x": "1/42" }] },
+    { "k": "c", "b": [{ "t": "p", "x": "1/35" }] },
+    { "k": "d", "b": [{ "t": "p", "x": "1/7" }] }
+  ]
+}

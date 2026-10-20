@@ -1,0 +1,96 @@
+{
+  "id": "2025A_B_Q17",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the most appropriate combination of answers to be inserted into [[A]] and [[B]] in the description."
+    },
+    {
+      "t": "p",
+      "x": "Company P is a small business that recently formed a data analytics team to perform business data analytics using internal business data. This data is stored on a database system configured with a synchronous (real-time) mirror. The database is backed up regularly. The database servers and IT infrastructure are maintained by a third-party IT support provider."
+    },
+    {
+      "t": "p",
+      "x": "A junior data analyst was mistakenly granted database superuser privileges to the production database. This decision was made due to a lack of security understanding in the company. The data analyst, unfamiliar with the sensitivity of their access level, was tasked with executing a series of routine database queries and migrations. However, due to an error in a script, the data analyst accidentally ran a command that dropped critical tables, resulting in a significant loss of data. This caused the company’s internal applications to stop working."
+    },
+    {
+      "t": "p",
+      "x": "The company engaged their IT support provider, and the database system was quickly put back in service by [[A]]. To prevent this incident from happening again, their IT support provider recommended that the company implement [[B]]."
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "restarting the database server",
+          "database encryption"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "restarting the database server",
+          "multi-factor authentication"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "restarting the database server",
+          "principle of least privilege"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "restoring from backups",
+          "database encryption"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "restoring from backups",
+          "multi-factor authentication"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "restoring from backups",
+          "principle of least privilege"
+        ]
+      },
+      {
+        "k": "g",
+        "c": [
+          "switching to the database mirror",
+          "database encryption"
+        ]
+      },
+      {
+        "k": "h",
+        "c": [
+          "switching to the database mirror",
+          "multi-factor authentication"
+        ]
+      },
+      {
+        "k": "i",
+        "c": [
+          "switching to the database mirror",
+          "principle of least privilege"
+        ]
+      }
+    ]
+  }
+}

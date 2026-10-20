@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q28",
+  "stem": [
+    {
+      "t": "p",
+      "x": "When X receives a message with a digital signature that uses public key cryptography from Y, which of the following is the key that X uses to verify that the message truly came from Y?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "X’s private key"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "X’s public key"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Y’s private key"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Y’s public key"
+        }
+      ]
+    }
+  ]
+}

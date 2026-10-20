@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q42",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Based on the requirements gathered, the cost of a software project under normal conditions is estimated at $70,000. In case of smooth project implementation, some activities are not required and the estimated cost is reduced to $50,000; however, in the worst-case scenario, additional tasks are required and the cost increases to $120,000. What is the expected cost of the project (in dollars) that is calculated by using the three-point estimate in the beta distribution, also known as PERT?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "70,000"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "75,000"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "80,000"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "85,000"
+        }
+      ]
+    }
+  ]
+}

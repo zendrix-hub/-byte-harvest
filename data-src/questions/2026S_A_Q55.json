@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q55",
+  "stem": [
+    { "t": "p", "x": "Which of the following is a case using deep learning in order to improve the performance of an in-car device?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "An accelerometer detects the vehicle colliding against a wall and causes the air bag to inflate, thus protecting the passenger from injury." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "By acquiring and processing numerous images, the driver assistance system can more reliably distinguish between a pedestrian and a vehicle." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "By installing equipment that automatically performs idling stops, the fuel efficiency improves compared to that of a vehicle operated by a very experienced driver." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "The navigation system updates the software via a mobile phone line and refreshes the map." } ] }
+  ]
+}

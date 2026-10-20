@@ -1,0 +1,21 @@
+{
+  "id": "2026S_B_Q04",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] through [[C]] in the program." },
+    { "t": "p", "x": "The function `isHarshad` checks whether the given integer `n` is a Harshad number. The function returns `true` if the given number is a Harshad number, or `false` otherwise. A Harshad number, also known as a Niven number, is a positive integer that is divisible by the sum of its digits. For instance, 156 is a Harshad number because the sum of its digits (1 + 5 + 6 = 12) divides it evenly without a remainder (156 ÷ 12 = 13)." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ boolean: isHarshad(integer: n)\n  integer: num ← n\n  integer: sum ← 0\n  if (num < 1)\n    return false\n  endif\n  while (num > 0)\n    sum ← sum + ([[A]])\n    num ← ([[B]])\n  endwhile\n  return ([[C]])  // Return true if n is a Harshad number,\n                  // or false otherwise." },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": {
+    "head": ["A", "B", "C"],
+    "rows": [
+      { "k": "a", "c": ["`integer part of (num ÷ 10)`", "`num mod 10`", "`sum = n`"] },
+      { "k": "b", "c": ["`integer part of (num ÷ 10)`", "`num mod 10`", "`num mod sum = 0`"] },
+      { "k": "c", "c": ["`integer part of (num ÷ 10)`", "`num mod 10`", "`n mod sum = 0`"] },
+      { "k": "d", "c": ["`num mod 10`", "`integer part of (num ÷ 10)`", "`sum = n`"] },
+      { "k": "e", "c": ["`num mod 10`", "`integer part of (num ÷ 10)`", "`num mod sum = 0`"] },
+      { "k": "f", "c": ["`num mod 10`", "`integer part of (num ÷ 10)`", "`n mod sum = 0`"] }
+    ]
+  }
+}

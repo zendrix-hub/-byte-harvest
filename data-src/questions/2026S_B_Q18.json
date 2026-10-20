@@ -1,0 +1,137 @@
+{
+  "id": "2026S_B_Q18",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the most appropriate combination of answers to be inserted into [[A]] and [[B]] in the description."
+    },
+    {
+      "t": "p",
+      "x": "A research laboratory at University Q plans to introduce a cloud-based database to centrally store and manage data for one of its research projects. This database will be used by professors, researchers, students, and administrative staff participating in the project. Table 1 summarizes the data types, descriptions, and the roles and permitted operations for each user group."
+    },
+    {
+      "t": "p",
+      "x": "Table 1 Data Types and User Requirements (Excerpt)"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Data Type",
+          "Description",
+          "User Roles"
+        ],
+        [
+          "Research Proposals",
+          "Detailed research plans and objectives",
+          "- Professors and Researchers create and edit project proposals.\n- Students can view the proposals to understand the project objectives.\n- Administrative staff are not permitted to access this data."
+        ],
+        [
+          "Experimental Data",
+          "Raw and processed experimental results",
+          "- To maintain data integrity, only Researchers are allowed to create and modify data.\n- Professors and Students review the data to understand experiment results and research progress.\n- Administrative staff are not permitted to access this data."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "The system administrator at University Q, who is responsible for introducing the database, reviewed the data types and user roles with the information security officer of the university. According to the information security policy of University Q, users must be granted only the permissions necessary for their roles to minimize potential damage in the event of account compromise. Based on this policy, the system administrator created user groups and configured access permissions for each content type. Table 2 lists the resulting access right assignments for the database."
+    },
+    {
+      "t": "p",
+      "x": "Table 2  Access Right Assignments (Excerpt)"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"0 0 640 180\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" font-size=\"15\" fill=\"#222\"><rect x=\"4\" y=\"10\" width=\"632\" height=\"60\" fill=\"#f3f3f3\" stroke=\"none\"/><rect x=\"4\" y=\"10\" width=\"632\" height=\"160\" fill=\"none\" stroke=\"#222\" stroke-width=\"1\"/><line x1=\"172\" y1=\"10\" x2=\"172\" y2=\"170\" stroke=\"#222\"/><line x1=\"284\" y1=\"10\" x2=\"284\" y2=\"170\" stroke=\"#222\"/><line x1=\"396\" y1=\"10\" x2=\"396\" y2=\"170\" stroke=\"#222\"/><line x1=\"508\" y1=\"10\" x2=\"508\" y2=\"170\" stroke=\"#222\"/><line x1=\"4\" y1=\"70\" x2=\"636\" y2=\"70\" stroke=\"#222\"/><line x1=\"4\" y1=\"120\" x2=\"636\" y2=\"120\" stroke=\"#222\"/><text x=\"88\" y=\"45\" text-anchor=\"middle\">Data Type</text><text x=\"228\" y=\"45\" text-anchor=\"middle\">Professors</text><text x=\"340\" y=\"45\" text-anchor=\"middle\">Researchers</text><text x=\"452\" y=\"45\" text-anchor=\"middle\">Students</text><text x=\"572\" y=\"35\" text-anchor=\"middle\">Administrative</text><text x=\"572\" y=\"56\" text-anchor=\"middle\">Staff</text><text x=\"88\" y=\"100\" text-anchor=\"middle\">Research Proposals</text><rect x=\"178\" y=\"77\" width=\"324\" height=\"36\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"2.5\"/><text x=\"340\" y=\"100\" text-anchor=\"middle\">A</text><text x=\"572\" y=\"100\" text-anchor=\"middle\">(-)</text><text x=\"88\" y=\"150\" text-anchor=\"middle\">Experimental Data</text><rect x=\"178\" y=\"127\" width=\"324\" height=\"36\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"2.5\"/><text x=\"340\" y=\"150\" text-anchor=\"middle\">B</text><text x=\"572\" y=\"150\" text-anchor=\"middle\">(-)</text></svg>",
+      "alt": "Table 2 Access Right Assignments (Excerpt). Columns: Data Type, Professors, Researchers, Students, Administrative Staff. Row \"Research Proposals\": a single blank box A spans the Professors, Researchers and Students columns; Administrative Staff is (-). Row \"Experimental Data\": a single blank box B spans the Professors, Researchers and Students columns; Administrative Staff is (-)."
+    },
+    {
+      "t": "p",
+      "x": "**Note:**\nR: Read-only (viewing allowed)\nRW: Read and Write (includes creating and modifying)\n(-): Not allowed (no access)"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A\nProfessors",
+      "A\nResearchers",
+      "A\nStudents",
+      "B\nProfessors",
+      "B\nResearchers",
+      "B\nStudents"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "R",
+          "RW",
+          "R",
+          "R",
+          "RW",
+          "R"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "R",
+          "RW",
+          "R",
+          "RW",
+          "RW",
+          "(-)"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "RW",
+          "RW",
+          "R",
+          "R",
+          "RW",
+          "R"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "RW",
+          "RW",
+          "R",
+          "RW",
+          "RW",
+          "(-)"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "RW",
+          "RW",
+          "(-)",
+          "R",
+          "RW",
+          "R"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "RW",
+          "RW",
+          "(-)",
+          "RW",
+          "RW",
+          "(-)"
+        ]
+      }
+    ]
+  }
+}

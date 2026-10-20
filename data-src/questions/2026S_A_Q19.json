@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q19",
+  "stem": [
+    { "t": "p", "x": "Which of the following is an appropriate description of the mapping between a relational model and relational database in implementation?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "A domain is mapped to a character type or a character string type." }] },
+    { "k": "b", "b": [{ "t": "p", "x": "A relation is mapped to a table." }] },
+    { "k": "c", "b": [{ "t": "p", "x": "Attributes and columns are ordered from left to right." }] },
+    { "k": "d", "b": [{ "t": "p", "x": "Neither tuples nor rows have duplicates." }] }
+  ]
+}

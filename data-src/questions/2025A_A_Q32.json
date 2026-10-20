@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q32",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate description concerning the timing and purpose of port scanning when an attacker intrudes into a system?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is conducted at the post-processing stage in order to look for any evidence of attack that may remain in the system log."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is conducted at the preliminary investigation stage in order to look for any service that can be attacked."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is conducted at the privilege escalation stage in order to look for any account whose privileges can be obtained."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is conducted at the unauthorized action stage in order to look for any user information that may be beneficial to the attacker."
+        }
+      ]
+    }
+  ]
+}

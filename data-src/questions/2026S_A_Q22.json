@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q22",
+  "stem": [
+    { "t": "p", "x": "A student’s ID, name, and class ID are recorded in the Student table. Which of the following is the SQL statement that returns records of all students whose names start with A?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "`SELECT * FROM Student WHERE name LIKE ’%A’;`" }] },
+    { "k": "b", "b": [{ "t": "p", "x": "`SELECT * FROM Student WHERE name LIKE ‘%A_’;`" }] },
+    { "k": "c", "b": [{ "t": "p", "x": "`SELECT * FROM Student WHERE name LIKE ‘A_’;`" }] },
+    { "k": "d", "b": [{ "t": "p", "x": "`SELECT * FROM Student WHERE name LIKE ‘A%’;`" }] }
+  ]
+}

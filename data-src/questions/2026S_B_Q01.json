@@ -1,0 +1,18 @@
+{
+  "id": "2026S_B_Q01",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the description. Here, the array index starts at 1." },
+    { "t": "p", "x": "When the program is executed, the output is “[[ ]]”." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "integer: x ← 1\ninteger: y ← 2\ninteger: z ← 3\ninteger []: ar ← {0, 0}\ny ← x\nar[x] ← y\nz ← y\nx ← z\nar[2] ← z + ar[1]\noutput ar[1], ar[2]    // the values are separated by \", \"" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "`1, 0`" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "`1, 1`" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "`1, 2`" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "`2, 1`" } ] },
+    { "k": "e", "b": [ { "t": "p", "x": "`2, 2`" } ] },
+    { "k": "f", "b": [ { "t": "p", "x": "`2, 3`" } ] }
+  ]
+}

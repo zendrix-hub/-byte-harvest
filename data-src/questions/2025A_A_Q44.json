@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q44",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate description of the relationship between a record of an incident and a record of a problem in IT service management?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "A cross-reference to the incident that triggered the problem is included in the record of the problem."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "If known errors have been identified at the time of ending the record of the problem, the record of the incident that triggered the record of the problem is deleted."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "One (1) problem record is always associated with one (1) incident record."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Problems are classified and recorded by a different criterion from the classification of incidents."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q18",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the appropriate explanation of attributes in the relational model?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is possible to define attributes that have no name."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "The domains of definition for attributes within a relation must not overlap."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "The same name can be given to two (2) or more attributes in a relation."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "There is no meaning in the order of attributes within a relation, and the relation remains unchanged even if the order is changed."
+        }
+      ]
+    }
+  ]
+}

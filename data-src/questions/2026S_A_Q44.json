@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q44",
+  "stem": [
+    { "t": "p", "x": "As for the activities in capacity management to estimate a service’s capacity, capability, and performance, which of the following is trend analysis?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "Creating a model that accurately reflects the current performance, as the first phase of modeling" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "Generating simulated transactions and predicting the response time and throughput of a service" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "Understanding the chronological usage of a specific resource and predicting usage changes in the future" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Using mathematical techniques, such as queueing theory, and predicting the response time and throughput of a service" } ] }
+  ]
+}

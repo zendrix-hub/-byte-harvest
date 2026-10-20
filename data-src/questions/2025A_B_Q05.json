@@ -1,0 +1,16 @@
+{
+  "id": "2025A_B_Q05",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program." },
+    { "t": "p", "x": "Prime numbers are the positive integers that are only divisible by the number itself and 1. Procedure `printPrime` receives the integer `N` (`N ≥ 1`) as an argument and prints the first `N` prime numbers. For example, `printPrime(6)` will print “`2 3 5 7 11 13`”." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ printPrime(integer: N)\n  integer: count, number, i\n  boolean: isPrime\n  count ← 1\n  number ← 2\n  while (count ≤ N)\n    isPrime ← true\n    for (increase i from 2 to integer part of the square root of number by 1)\n      if (number mod i = 0)\n        [[A]]\n        exit the for block\n      endif\n    endfor\n    if (isPrime = true)\n      output \" \", number\n      [[B]]\n    endif\n    number ← number + 1\n  endwhile" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": { "head": ["A", "B"], "rows": [
+    { "k": "a", "c": ["`count ← count + 1`", "`isPrime ← false`"] },
+    { "k": "b", "c": ["`count ← count + i`", "`isPrime ← false`"] },
+    { "k": "c", "c": ["`isPrime ← false`", "`count ← count + 1`"] },
+    { "k": "d", "c": ["`isPrime ← false`", "`count ← count + i`"] }
+  ] }
+}

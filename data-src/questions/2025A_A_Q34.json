@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q34",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate description of a UML use case diagram?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It shows the behavior during the object’s life cycle using finite state transitions."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "It shows the exchange of messages among objects and objects’ lifelines in a time series."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "It shows the flow from one activity to another activity in a system or business process."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "It shows the scenarios for how actors, i.e., external users or machines, interact with a system."
+        }
+      ]
+    }
+  ]
+}

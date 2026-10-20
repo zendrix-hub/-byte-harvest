@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q20",
+  "stem": [
+    { "t": "p", "x": "In database normalization, which of the following is the most appropriate description of a table in the third normal form? Here, 2NF stands for the second normal form and 3NF stands for the third normal form." }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "A table is in the 3NF if it is in the 2NF and no candidate key exists in the table." }] },
+    { "k": "b", "b": [{ "t": "p", "x": "A table is in the 3NF if it is in the 2NF and no partial dependency exists in the table." }] },
+    { "k": "c", "b": [{ "t": "p", "x": "A table is in the 3NF if it is in the 2NF and no repeating group exists in the table" }] },
+    { "k": "d", "b": [{ "t": "p", "x": "A table is in the 3NF if it is in the 2NF and no transitive dependency exists in the table." }] }
+  ]
+}

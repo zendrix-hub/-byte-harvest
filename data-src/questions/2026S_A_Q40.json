@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q40",
+  "stem": [
+    {
+      "t": "p",
+      "x": "According to the Capability Maturity Model Integration, which is the final stage and has the highest level of maturity?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Defined"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Managed"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Optimizing"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Quantitatively managed"
+        }
+      ]
+    }
+  ]
+}

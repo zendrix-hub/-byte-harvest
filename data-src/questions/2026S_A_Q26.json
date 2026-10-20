@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q26",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is a role played by a DNS in a TCP/IP network?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It assigns an unused IP address from the pool of addresses in response to a request from a PC or a printer."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "It associates domain or host names with IP addresses."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "It converts private IP addresses used within a company into global IP addresses and enables access to the Internet."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "It enables a program in a server to be called only by its name without being aware of the IP address of the server."
+        }
+      ]
+    }
+  ]
+}

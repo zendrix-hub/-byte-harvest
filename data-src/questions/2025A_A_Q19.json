@@ -1,0 +1,55 @@
+{
+  "id": "2025A_A_Q19",
+  "stem": [
+    {
+      "t": "p",
+      "x": "When the functional dependencies shown below are satisfied, which of the following is the transitive functional dependency that holds? Here, “A→B” indicates that B is functionally dependent on A, and “A→{B, C}” indicates that “A→B” and “A→C” both hold."
+    },
+    {
+      "t": "p",
+      "x": "[Functional dependencies]"
+    },
+    {
+      "t": "p",
+      "x": "{OrderCode, ProductCode} → {CustomerOrderQuantity, OrderAmount}\nOrderCode → {OrderDate, CustomerCode, OrderManagerCode}\nProductCode → {ProductName, SupplierCode, ProductSalePrice}\nSupplierCode → {SupplierName, SupplierAddress, SupplierManagerCode}\nCustomerCode → {CustomerName, CustomerAddress}"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "OrderCode → CustomerCode → CustomerAddress"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "OrderCode → ProductCode → CustomerOrderQuantity"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "ProductCode → SupplierCode → ProductSalePrice"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "SupplierCode → SupplierManagerCode → SupplierAddress"
+        }
+      ]
+    }
+  ]
+}

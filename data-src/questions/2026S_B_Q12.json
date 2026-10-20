@@ -1,0 +1,61 @@
+{
+  "id": "2026S_B_Q12",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array indexes start at 1."
+    },
+    {
+      "t": "p",
+      "x": "The function `isIsomorphic` compares the two character arrays `s1` and `s2` that are given as arguments. Both `s1` and `s2` have one or more elements."
+    },
+    {
+      "t": "p",
+      "x": "Two character arrays are considered isomorphic if the characters in `s1` can be consistently replaced to obtain `s2` without changing the order of characters. Each character in `s1` must map to exactly one character in `s2`, and no two characters in `s1` may map to the same character in `s2`. A character may map to itself."
+    },
+    {
+      "t": "p",
+      "x": "If `s1` and `s2` do not have the same number of elements, the function returns `false`. Otherwise, it returns `true` if `s1` and `s2` are isomorphic and `false` if they are not."
+    },
+    {
+      "t": "p",
+      "x": "The table lists examples of `s1` and `s2` given to the function `isIsomorphic` and the return values."
+    },
+    {
+      "t": "p",
+      "x": "Table  Examples of `s1` and `s2` given to the function `isIsomorphic` and the return values"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        ["`s1`", "`s2`", "Return Value"],
+        ["`{\"e\", \"g\", \"g\"}`", "`{\"a\", \"d\", \"d\"}`", "`true`"],
+        ["`{\"f\", \"o\", \"o\"}`", "`{\"b\", \"a\", \"r\"}`", "`false`"],
+        ["`{\"p\", \"a\", \"p\", \"e\", \"r\"}`", "`{\"t\", \"i\", \"t\", \"l\", \"e\"}`", "`true`"],
+        ["`{\"a\", \"b\"}`", "`{\"c\", \"c\"}`", "`false`"]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ boolean: isIsomorphic(character []: s1, character []: s2)\n  integer: len, i, j\n  len ← number of elements in s1\n  if (number of elements in s2 ≠ len)\n    return false\n  endif\n  for (increase i from 1 to (len − 1) by 1)\n    for (increase j from (i + 1) to len by 1)\n      if ((s1[i] = s1[j] and [[A]])\n          or (s1[i] ≠ s1[j] and [[B]]))\n        return false\n      endif\n    endfor\n  endfor\n  return true"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["`s1[i] = s2[j]`", "`s1[i] ≠ s2[j]`"] },
+      { "k": "b", "c": ["`s1[i] ≠ s2[j]`", "`s1[i] = s2[j]`"] },
+      { "k": "c", "c": ["`s2[i] = s2[j]`", "`s2[i] ≠ s2[j]`"] },
+      { "k": "d", "c": ["`s2[i] ≠ s2[j]`", "`s2[i] = s2[j]`"] }
+    ]
+  }
+}

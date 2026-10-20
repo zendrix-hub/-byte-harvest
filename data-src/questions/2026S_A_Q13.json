@@ -1,0 +1,17 @@
+{
+  "id": "2026S_A_Q13",
+  "stem": [
+    { "t": "p", "x": "The operating status of a system is being continuously monitored. When a new task is applied to the system after several years of operation, which of the following is an appropriate sequence of work items in capacity planning?" },
+    { "t": "p", "x": "[Work items in capacity planning]" },
+    { "t": "p", "x": "(i) Evaluate the proposed system configuration, assess its appropriateness, and conduct a review if necessary." },
+    { "t": "p", "x": "(ii) Consider a proposal for the necessary system configuration based on system characteristics, including factors such as the number of servers and whether parallel distributed processing can be performed." },
+    { "t": "p", "x": "(iii) Understand the performance information of the hardware or environment inherent to the system based on the operating status of the system." },
+    { "t": "p", "x": "(iv) Conduct a meeting with users to gather information about the new task, understand requirements such as the estimated number of processes, and determine the time required by the processes." }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "(iii), (ii), (iv), (i)" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "(iii), (iv), (ii), (i)" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "(iv), (ii), (i), (iii)" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "(iv), (iii), (i), (ii)" } ] }
+  ]
+}

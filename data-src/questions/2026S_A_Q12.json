@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q12",
+  "stem": [
+    { "t": "p", "x": "Which of the following is the RAID level that can maximize reliability and fault tolerance for a NAS device equipped with two hard disk drives of identical capacity?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "RAID 0" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "RAID 1" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "RAID 5" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "RAID 6" } ] }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "2025A_A_Q01",
+  "stem": [
+    { "t": "p", "x": "In the single precision format of the “IEEE Standard for Binary Floating-Point Arithmetic” (IEEE 754), a 32-bit floating point number is represented as below:" },
+    { "t": "table", "rows": [["S: Sign (1 bit)", "E: Exponent (8 bits)", "F: Fraction (23 bits)"]], "head": 0 },
+    { "t": "p", "x": "If `0 < E < 255`, then the value of the number is `(−1)`^{S} × 2^{(E−127)} × `(1+F)`\nwhere **F** represents the fractional part of the number, stored as a 23-bit binary sequence. This **F** is the sum of its weighted binary components:    F=b_{1}×2^{−1}+b_{2}×2^{−2}+⋯+b_{23}×2^{−23} , where **b**_{**1**}**,** **b**_{**2**}**, …, b**_{**23**} are the binary digits of **F**." },
+    { "t": "p", "x": "According to the IEEE-754 standard, which of the following is the decimal equivalent of the 32-bit floating point number given below?" },
+    { "t": "code", "x": "01000001011000000000000000000000" }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "0.1875" }] },
+    { "k": "b", "b": [{ "t": "p", "x": "0.4375" }] },
+    { "k": "c", "b": [{ "t": "p", "x": "6.0" }] },
+    { "k": "d", "b": [{ "t": "p", "x": "14.0" }] }
+  ]
+}

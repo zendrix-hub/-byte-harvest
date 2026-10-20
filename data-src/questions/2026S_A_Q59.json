@@ -1,0 +1,85 @@
+{
+  "id": "2026S_A_Q59",
+  "stem": [
+    {
+      "t": "p",
+      "x": "When a company wants to earn a profit of $42,000, which of following is the number of units that the company must sell under the conditions shown in the table below?"
+    },
+    {
+      "t": "note",
+      "x": "Unit: dollar"
+    },
+    {
+      "t": "table",
+      "head": 0,
+      "rows": [
+        [
+          "Selling price per unit",
+          "17"
+        ],
+        [
+          "Fixed costs",
+          ""
+        ],
+        [
+          "  General and administrative expense",
+          "130,000"
+        ],
+        [
+          "  Interest expense",
+          "10,000"
+        ],
+        [
+          "Variable costs per unit",
+          ""
+        ],
+        [
+          "  General and administrative expense",
+          "3"
+        ],
+        [
+          "  Selling expense",
+          "4"
+        ]
+      ]
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "14,000"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "18,200"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "26,000"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "26,200"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "2026S_B_Q06",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program." },
+    { "t": "p", "x": "The quadratic equation a_{1}x^{2} + b_{1}x + c_{1} = 0 can be formulated as x^{2} − 2(−b_{1}/2a_{1}) + (c_{1}/a_{1}) = 0 , where a_{1} ≠ 0 . If we replace (−b_{1}/2a_{1}) and (c_{1}/a_{1}) by b and c respectively, it can be further formulated as x^{2} − 2bx + c = 0, and the roots are as follows:\nCase 1: if b^{2} − c = 0, double root b,\nCase 2: if b^{2} − c > 0, two real roots b ± √~{b^{2} − c},\nCase 3: if b^{2} − c < 0, two imaginary roots b ± i√~{c − b^{2}}, where i = √~{−1}." },
+    { "t": "p", "x": "The procedure `quadEquation` takes the coefficients of a quadratic equation in arguments `a1`, `b1`, and `c1` and uses the above formula to determine and output the roots. Here, `a1` is not 0 and function `sqrt` returns the principal square root of its non-negative argument." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ quadEquation(real: a1, real: b1, real: c1)\n  real: b ← −b1 ÷ (2 × a1)\n  real: c ← c1 ÷ a1\n  real: val ← b × b − c\n  real: tmp\n  if (val = 0)\n    output \"root1=root2=\", [[A]]\n  elseif (val > 0)\n    tmp ← sqrt(val)\n    output \"root1=\", b + tmp\n    output \"root2=\", b − tmp\n  else\n    tmp ← [[B]]\n    output \"root1=\", b, \"+\", tmp, \"i\"\n    output \"root2=\", b, \"−\", tmp, \"i\"\n  endif" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": { "head": ["A", "B"], "rows": [
+    { "k": "a", "c": ["`−b`", "`−sqrt(val)`"] },
+    { "k": "b", "c": ["`−b`", "`sqrt(−val)`"] },
+    { "k": "c", "c": ["`b`", "`−sqrt(val)`"] },
+    { "k": "d", "c": ["`b`", "`sqrt(−val)`"] }
+  ] }
+}

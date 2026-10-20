@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q17",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is a method used to improve the appearance of a jagged edge of a slanted line so that it appears smooth on a screen, such as that of an LCD?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Anti-aliasing"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Bump mapping"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Shading"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Texture mapping"
+        }
+      ]
+    }
+  ]
+}

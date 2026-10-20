@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q54",
+  "stem": [
+    { "t": "p", "x": "Which of the following is an appropriate example of utilizing machine learning at a production site?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "Causes of defect occurrence in a factory are decomposed and arranged in a tree shape for analysts to statistically investigate the cause and solution." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "Instead of programming the working method for the production robot in the factory, the robot itself learns, thus improving work efficiency." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "Production equipment in a factory is connected through high-speed communication so that the host computer can be controlled in real time." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "Productivity of employees in the factory improves each time the cumulative production volume doubles, and the unit cost reduces at a fixed percentage." } ] }
+  ]
+}

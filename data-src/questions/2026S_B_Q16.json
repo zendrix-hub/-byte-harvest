@@ -1,0 +1,89 @@
+{
+  "id": "2026S_B_Q16",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the program. The same answer goes into both blanks [[ ]]. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "The program converts the code point of a Unicode character to a 2-byte UTF-8 encoding. In this question, “(16)” after a numerical value indicates a hexadecimal value. Each Unicode character is given an integer value that is known as a code point. A character with a code point that ranges from 80_{(16)} to 7FF_{(16)} is encoded to a 2-byte value as below."
+    },
+    {
+      "t": "p",
+      "x": "Let the bit pattern with a 2-byte length be: 110x̲x̲x̲x̲x̲  10x̲x̲x̲x̲x̲x̲. The underlined 11 “x̲” positions in the bit pattern store the 11-bit code point. The code point is justified to the right, and `0` is stored in any leftover “x̲” positions. This 2-byte value is the encoded result. For instance, when the code point AE_{(16)} for Registered Sign character “®” is represented in binary, it is `10101110`. When this is stored right-justified in the “x̲” positions in the bit pattern above, it is 110x̲x̲x̲1̲0̲  101̲0̲1̲1̲1̲0̲. When `0` is stored in the three leftover “x̲” positions, the UTF-8 encoding for Registered Sign character “®” `11000010 10101110` is obtained. In decimal form, this corresponds to `{194, 174}`."
+    },
+    {
+      "t": "p",
+      "x": "The function `encode` converts a Unicode code point that is passed as an argument to UTF-8 encoding, and returns an integer array that stores it one byte per element from the start of the array. It is assumed that only an integer value that ranges from 80_{(16)} to 7FF_{(16)} is passed to `encode` as an argument."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ integer []: encode(integer: codePoint)\n  /* the initial value of utf8Bytes is the value when “x”s in the bit pattern are replaced\n     with 0, divided into two 8-bit blocks, and each deemed to be binary */\n  integer []: utf8Bytes ← {192, 128}\n  utf8Bytes[2] ← utf8Bytes[2] + (codePoint mod [[ ]])\n  utf8Bytes[1] ← utf8Bytes[1] + integer part of (codePoint ÷ [[ ]])\n  return utf8Bytes"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "`2`"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "`32`"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "`64`"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "`256`"
+        }
+      ]
+    },
+    {
+      "k": "e",
+      "b": [
+        {
+          "t": "p",
+          "x": "`utf8Bytes[1]`"
+        }
+      ]
+    },
+    {
+      "k": "f",
+      "b": [
+        {
+          "t": "p",
+          "x": "`utf8Bytes[2]`"
+        }
+      ]
+    }
+  ]
+}

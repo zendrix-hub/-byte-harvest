@@ -1,0 +1,12 @@
+{
+  "id": "2025A_A_Q37",
+  "stem": [
+    { "t": "p", "x": "Which of the following is an appropriate description of an acceptance test?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "It is conducted by developers to verify response time and other performance items." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "It is conducted by testers to ensure that the interfaces and linkages between different software parts work properly." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "It is conducted by the project manager to verify whether users’ functional requirements are met or not." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "It is conducted by users to confirm that the software is complete and meets the business needs that prompted the software to be developed." } ] }
+  ]
+}

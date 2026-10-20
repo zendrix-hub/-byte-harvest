@@ -1,0 +1,105 @@
+{
+  "id": "2025A_B_Q03",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "Given an array of positive integers and a target sum, the problem is to find the subarray whose sum is equal to the target sum. A subarray is a part of the given array composed of contiguous elements. For example, when the target sum is 14, the shaded subarray in the figure satisfies the given condition."
+    },
+    {
+      "t": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 800 90\"><rect x=\"160\" y=\"10\" width=\"60\" height=\"40\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"190\" y=\"36\" font-size=\"16\" text-anchor=\"middle\" font-family=\"serif\" fill=\"#222\">6</text><rect x=\"220\" y=\"10\" width=\"60\" height=\"40\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"250\" y=\"36\" font-size=\"16\" text-anchor=\"middle\" font-family=\"serif\" fill=\"#222\">3</text><rect x=\"280\" y=\"10\" width=\"60\" height=\"40\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"310\" y=\"36\" font-size=\"16\" text-anchor=\"middle\" font-family=\"serif\" fill=\"#222\">2</text><rect x=\"340\" y=\"10\" width=\"60\" height=\"40\" fill=\"#c8c8c8\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"370\" y=\"36\" font-size=\"16\" text-anchor=\"middle\" font-family=\"serif\" fill=\"#222\">5</text><rect x=\"400\" y=\"10\" width=\"60\" height=\"40\" fill=\"#c8c8c8\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"430\" y=\"36\" font-size=\"16\" text-anchor=\"middle\" font-family=\"serif\" fill=\"#222\">1</text><rect x=\"460\" y=\"10\" width=\"60\" height=\"40\" fill=\"#c8c8c8\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"490\" y=\"36\" font-size=\"16\" text-anchor=\"middle\" font-family=\"serif\" fill=\"#222\">1</text><rect x=\"520\" y=\"10\" width=\"60\" height=\"40\" fill=\"#c8c8c8\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"550\" y=\"36\" font-size=\"16\" text-anchor=\"middle\" font-family=\"serif\" fill=\"#222\">7</text><rect x=\"580\" y=\"10\" width=\"60\" height=\"40\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"610\" y=\"36\" font-size=\"16\" text-anchor=\"middle\" font-family=\"serif\" fill=\"#222\">3</text><text x=\"400\" y=\"78\" font-size=\"15\" text-anchor=\"middle\" font-family=\"sans-serif\" fill=\"#222\">Figure  Example of an array</text></svg>",
+      "alt": "An array of eight cells containing 6, 3, 2, 5, 1, 1, 7, 3 from left to right. The four cells 5, 1, 1, 7 (4th to 7th elements) are shaded. Caption: Figure Example of an array."
+    },
+    {
+      "t": "p",
+      "x": "The procedure `subArraySum` receives an integer array `arr` and an integer value `targetSum` as arguments and finds the subarray whose sum is equal to the target sum. If a subarray that satisfies this condition is found, it prints their starting and ending indices, and finishes the task. Otherwise, it prints the message “No subarray found”."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ subArraySum(integer []: arr, integer: targetSum)\n  integer: sum, start, end\n  integer: N ← the number of elements in arr\n  for (increase start from 1 to N by 1)\n    sum ← 0\n    for (increase end from start to [[A]] by 1)    // α\n      sum ← [[B]]\n      if (sum = targetSum)\n        output start, end\n        return\n      elseif (sum > targetSum)\n        exit the for block marked α\n      endif\n    endfor\n  endfor\n  output \"No subarray found\""
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`N`",
+          "`arr[end]`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`N`",
+          "`sum + arr[end]`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`N`",
+          "`sum + arr[start]`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`N - 1`",
+          "`arr[end]`"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "`N - 1`",
+          "`sum + arr[end]`"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "`N - 1`",
+          "`sum + arr[start]`"
+        ]
+      },
+      {
+        "k": "g",
+        "c": [
+          "`targetSum`",
+          "`arr[start]`"
+        ]
+      },
+      {
+        "k": "h",
+        "c": [
+          "`targetSum`",
+          "`sum + arr[end]`"
+        ]
+      },
+      {
+        "k": "i",
+        "c": [
+          "`targetSum`",
+          "`sum + arr[start]`"
+        ]
+      }
+    ]
+  }
+}

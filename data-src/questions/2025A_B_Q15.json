@@ -1,0 +1,139 @@
+{
+  "id": "2025A_B_Q15",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "Inverse document frequency (IDF) is a metric used to evaluate the importance of a word in a document relative to a document collection. The function `calcIDF` receives a string `term` and an array of strings `corpus` as arguments, and calculates and returns the IDF score for the term based on the given corpus. The corpus of documents `corpus` is given as a string array. An example of `corpus` that indicates 3 documents is as follows:"
+    },
+    {
+      "t": "code",
+      "x": "{\"ITPEC includes members from 6 countries\",\n \"many students prepare for the exam\",\n \"The ITPEC exam is essential for IT professionals\"}"
+    },
+    {
+      "t": "p",
+      "x": "The table shows the description of the functions used in the program."
+    },
+    {
+      "t": "p",
+      "x": "Table  Functions"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Function",
+          "Return value",
+          "Description"
+        ],
+        [
+          "`split(string: str)`",
+          "`string []`",
+          "Returns words separated by a space in the text `str`."
+        ],
+        [
+          "`log(real: x)`",
+          "`real`",
+          "Returns natural logarithm (base e) of the value `x`."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "Traditionally, IDF is computed using the following formula:"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 70\" font-family=\"serif\" font-size=\"18\" fill=\"#222\"><text x=\"196\" y=\"42\" text-anchor=\"end\"><tspan font-style=\"italic\">IDF</tspan>(<tspan font-style=\"italic\">t</tspan>) = log (</text><text x=\"252\" y=\"27\" font-style=\"italic\" text-anchor=\"middle\">N</text><line x1=\"206\" y1=\"35\" x2=\"298\" y2=\"35\" stroke=\"#222\" stroke-width=\"1.2\"/><text x=\"252\" y=\"56\" text-anchor=\"middle\">1 + <tspan font-style=\"italic\">df</tspan>(<tspan font-style=\"italic\">t</tspan>)</text><text x=\"306\" y=\"42\">)</text></svg>",
+      "alt": "IDF(t) = log( N / (1 + df(t)) ): the logarithm of N divided by (1 + df(t)), written as a fraction with N on top and 1 + df(t) below."
+    },
+    {
+      "t": "p",
+      "x": "Where N is the total number of documents, t refers to a specific term or word in a document, and df(t) is the number of documents containing the term t."
+    },
+    {
+      "t": "p",
+      "x": "For example, the return value of `calcIDF(\"ITPEC\", corpus)` is log(3 ÷ (1 + 2)) = 0 when array corpus is assigned as shown in the above example.  Because the total number of documents is 3, and the total number of documents that include the word “ITPEC” is 2."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ real: calcIDF(string: term, string []: corpus)\n  integer: i, j, numDocs, numWords, termCount\n  boolean: isContainsTerm\n  real: idf\n  string []: words\n  termCount ← 0\n  numDocs ← the number of elements in corpus\n  for (increase i from 1 to numDocs by 1)\n\n    isContainsTerm ← false\n    words ← split(corpus[i])\n    numWords ← the number of elements in words\n    for (increase j from 1 to numWords by 1)  // α\n      if ([[A]])\n        isContainsTerm ← true\n        exit the for block marked α\n      endif\n    endfor\n    if ([[B]])\n      termCount ← termCount + 1\n    endif\n  endfor\n  idf ← log(numDocs ÷ (1 + termCount)) /* Division is performed\n                                          in data type real */\n\n  return idf"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`corpus[j] = term`",
+          "`isContainsTerm = false`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`corpus[j] = term`",
+          "`isContainsTerm = true`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`corpus[j] ≠ term`",
+          "`isContainsTerm = false`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`corpus[j] ≠ term`",
+          "`isContainsTerm = true`"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "`words[j] = term`",
+          "`isContainsTerm = false`"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "`words[j] = term`",
+          "`isContainsTerm = true`"
+        ]
+      },
+      {
+        "k": "g",
+        "c": [
+          "`words[j] ≠ term`",
+          "`isContainsTerm = false`"
+        ]
+      },
+      {
+        "k": "h",
+        "c": [
+          "`words[j] ≠ term`",
+          "`isContainsTerm = true`"
+        ]
+      }
+    ]
+  }
+}

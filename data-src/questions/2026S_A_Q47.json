@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q47",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is a method of training in which trainees handle multiple simulated tasks within a set time limit, such as editing a piece of written correspondence, creating purchase orders, and completing travel expense reports?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Case study"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Debate"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "In-basket"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Role-playing"
+        }
+      ]
+    }
+  ]
+}

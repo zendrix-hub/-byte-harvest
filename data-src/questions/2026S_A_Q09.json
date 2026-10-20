@@ -1,0 +1,52 @@
+{
+  "id": "2026S_A_Q09",
+  "stem": [
+    {
+      "t": "p",
+      "x": "The figure shows the storage sequence of instructions fetched by a processor. Which of the following corresponds to a?"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"0 0 640 140\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"8\" markerHeight=\"8\" orient=\"auto\"><path d=\"M0,1 L9,5 L0,9\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"/></marker></defs><g fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"><rect x=\"180\" y=\"10\" width=\"450\" height=\"120\"/><rect x=\"20\" y=\"45\" width=\"140\" height=\"50\"/><rect x=\"230\" y=\"45\" width=\"140\" height=\"50\"/><rect x=\"470\" y=\"45\" width=\"130\" height=\"50\"/></g><g stroke=\"#222\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"160\" y1=\"70\" x2=\"230\" y2=\"70\" marker-end=\"url(#ah)\"/><line x1=\"370\" y1=\"70\" x2=\"470\" y2=\"70\" marker-end=\"url(#ah)\"/></g><g font-family=\"serif\" font-size=\"17\" fill=\"#222\" text-anchor=\"middle\"><text x=\"405\" y=\"36\">Processor</text><text x=\"90\" y=\"66\">Main</text><text x=\"90\" y=\"86\">memory</text><text x=\"300\" y=\"76\" font-style=\"italic\">a</text><text x=\"535\" y=\"66\">Instruction</text><text x=\"535\" y=\"86\">decoder</text></g></svg>",
+      "alt": "Block diagram: a box \"Main memory\" outside a large box labelled \"Processor\". An arrow goes from Main memory to a box labelled a inside the Processor, and an arrow goes from box a to a box \"Instruction decoder\", also inside the Processor."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Accumulator"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Data cache"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Instruction register"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Program register (program counter)"
+        }
+      ]
+    }
+  ]
+}

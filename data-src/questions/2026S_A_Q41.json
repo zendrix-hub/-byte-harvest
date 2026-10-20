@@ -1,0 +1,55 @@
+{
+  "id": "2026S_A_Q41",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In project management, which of the following is the subject group with Purpose 1 and Purpose 2?"
+    },
+    {
+      "t": "p",
+      "x": "Purpose 1:  To clarify the objectives, deliverables, requirements, and boundaries of the project"
+    },
+    {
+      "t": "p",
+      "x": "Purpose 2:  To maximize positive impact and minimize negative impact to the project occurring as a result of the changes in project objectives and deliverables"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Communication"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Procurement"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Risk"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Scope"
+        }
+      ]
+    }
+  ]
+}

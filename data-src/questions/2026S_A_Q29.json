@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q29",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In the context of information security defined by ISO/IEC 27000, which of the following is the property of accuracy and completeness of information assets?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Authentication"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Availability"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Confidentiality"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Integrity"
+        }
+      ]
+    }
+  ]
+}

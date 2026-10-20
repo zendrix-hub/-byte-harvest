@@ -1,0 +1,56 @@
+{
+  "id": "2025A_B_Q07",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "A singly linked list can be reversed using the following recursive procedure."
+    },
+    {
+      "t": "p",
+      "x": "Let `head` be the first element of the list, and let `elm` be undefined.\n(a) Reverse the order of the elements in the list starting from `head`, and set the next element of the last element in the reversed list—that is, the next element of `head`—to `elm`.\nTo “reverse the order of the elements in the list starting from `head`,” reverse the list starting from the next element of `head`, and then connect `head` to the end of the reversed list. In other words, execute (a) by setting `head` as `elm`, and the next element of `head` as `head`."
+    },
+    {
+      "t": "p",
+      "x": "The recursive function `reverseList` reverses a singly linked list and returns the head of the reversed list. Initially, the function `reverseList` is called as `reverseList(head, undefined)`. Here, `head` is the head of the singly linked list before reversal and is of type `ListElement`. The table provides an explanation of the member variables of the class `ListElement`. `ListElement`-type variables store references to instances of the class `ListElement`."
+    },
+    {
+      "t": "p",
+      "x": "Table  Explanation of the member variables of the class `ListElement`"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        ["Member variable", "Type", "Description"],
+        ["`val`", "`integer`", "The value of the element."],
+        ["`next`", "`ListElement`", "Reference to the next element, if there is no next element, the status is undefined."]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ ListElement: reverseList(ListElement: head, ListElement: elm)\n  ListElement: listHead\n  if (head.next is not undefined)\n    listHead ← reverseList([[A]], head)\n  else\n    listHead ← head\n  endif\n  head.next ← [[B]]\n  return listHead"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["`head.next`", "`elm`"] },
+      { "k": "b", "c": ["`head.next`", "`elm.next`"] },
+      { "k": "c", "c": ["`elm.next`", "`head.next.next`"] },
+      { "k": "d", "c": ["`elm.next`", "`elm`"] },
+      { "k": "e", "c": ["`elm.next`", "`elm.next`"] }
+    ]
+  }
+}

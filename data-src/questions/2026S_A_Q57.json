@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q57",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following can secure employment and create employment opportunities across an entire society by shortening work hours per employee?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Cafeteria plan"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Free-agent system"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Work sharing"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Work-life balance"
+        }
+      ]
+    }
+  ]
+}

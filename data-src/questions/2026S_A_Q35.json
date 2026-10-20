@@ -1,0 +1,47 @@
+{
+ "id": "2026S_A_Q35",
+ "stem": [
+  {
+   "t": "p",
+   "x": "Among UML 2.x diagrams (including 2.0 and later versions), which of the following is the most appropriate diagram for providing a graphic overview of the actors involved in a system, the different functions those actors need to perform and how these different functions interact?"
+  }
+ ],
+ "opts": [
+  {
+   "k": "a",
+   "b": [
+    {
+     "t": "p",
+     "x": "Activity diagram"
+    }
+   ]
+  },
+  {
+   "k": "b",
+   "b": [
+    {
+     "t": "p",
+     "x": "Communication diagram"
+    }
+   ]
+  },
+  {
+   "k": "c",
+   "b": [
+    {
+     "t": "p",
+     "x": "Interaction overview diagram"
+    }
+   ]
+  },
+  {
+   "k": "d",
+   "b": [
+    {
+     "t": "p",
+     "x": "Use case diagram"
+    }
+   ]
+  }
+ ]
+}

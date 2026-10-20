@@ -1,0 +1,52 @@
+{
+  "id": "2025A_A_Q06",
+  "stem": [
+    {
+      "t": "p",
+      "x": "The flowchart shown below expresses an algorithm that determines the greatest common divisor between two integers a and b. How many times is A passed?"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"0 0 520 460\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,1 L9,5 L0,9\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.5\"/></marker></defs><g fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"><rect x=\"270\" y=\"10\" width=\"140\" height=\"30\" rx=\"15\"/><rect x=\"285\" y=\"58\" width=\"110\" height=\"52\"/><rect x=\"272\" y=\"140\" width=\"136\" height=\"32\"/><rect x=\"285\" y=\"192\" width=\"110\" height=\"52\"/><polygon points=\"340,264 405,286 340,308 275,286\"/><rect x=\"276\" y=\"334\" width=\"128\" height=\"32\"/><rect x=\"270\" y=\"388\" width=\"140\" height=\"30\" rx=\"15\"/></g><g stroke=\"#222\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"340\" y1=\"40\" x2=\"340\" y2=\"58\" marker-end=\"url(#ah)\"/><line x1=\"340\" y1=\"110\" x2=\"340\" y2=\"140\" marker-end=\"url(#ah)\"/><line x1=\"340\" y1=\"172\" x2=\"340\" y2=\"192\" marker-end=\"url(#ah)\"/><line x1=\"340\" y1=\"244\" x2=\"340\" y2=\"264\" marker-end=\"url(#ah)\"/><line x1=\"340\" y1=\"308\" x2=\"340\" y2=\"334\" marker-end=\"url(#ah)\"/><line x1=\"340\" y1=\"366\" x2=\"340\" y2=\"388\" marker-end=\"url(#ah)\"/><polyline points=\"275,286 228,286 228,124 340,124\"/><line x1=\"330\" y1=\"124\" x2=\"340\" y2=\"124\" marker-end=\"url(#ah)\"/><circle cx=\"205\" cy=\"200\" r=\"12\" fill=\"#fff\"/></g><g font-family=\"serif\" font-size=\"18\" fill=\"#222\" text-anchor=\"middle\"><text x=\"340\" y=\"31\">Start</text><text x=\"340\" y=\"80\"><tspan font-style=\"italic\">a</tspan> ← 56</text><text x=\"340\" y=\"103\"><tspan font-style=\"italic\">b</tspan> ← 48</text><text x=\"340\" y=\"162\"><tspan font-style=\"italic\">r</tspan> ← <tspan font-style=\"italic\">a</tspan> mod <tspan font-style=\"italic\">b</tspan></text><text x=\"340\" y=\"214\"><tspan font-style=\"italic\">a</tspan> ← <tspan font-style=\"italic\">b</tspan></text><text x=\"340\" y=\"237\"><tspan font-style=\"italic\">b</tspan> ← <tspan font-style=\"italic\">r</tspan></text><text x=\"340\" y=\"292\"><tspan font-style=\"italic\">r</tspan> = <tspan font-style=\"italic\">0</tspan></text><text x=\"262\" y=\"278\">No</text><text x=\"366\" y=\"326\">Yes</text><text x=\"340\" y=\"356\">print <tspan font-style=\"italic\">a</tspan></text><text x=\"340\" y=\"409\">End</text></g><text x=\"205\" y=\"206\" font-family=\"sans-serif\" font-size=\"15\" fill=\"#222\" text-anchor=\"middle\">A</text></svg>",
+      "alt": "Flowchart: Start → process box \"a ← 56, b ← 48\" → (merge point) → process box \"r ← a mod b\" → process box \"a ← b, b ← r\" → decision diamond \"r = 0\". The \"No\" branch leaves the left of the diamond and goes up along a return line, labelled with circled A, back to the merge point just above \"r ← a mod b\". The \"Yes\" branch goes down → \"print a\" → End."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "1"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "2"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "4"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "8"
+        }
+      ]
+    }
+  ]
+}

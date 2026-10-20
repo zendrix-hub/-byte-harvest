@@ -1,0 +1,12 @@
+{
+  "id": "2025A_A_Q39",
+  "stem": [
+    { "t": "p", "x": "Which of the following is refactoring in software development activities?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "In order to improve the maintainability of a program, its internal structure is modified without any change to the external specifications." } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "In order to improve the quality of a program, two programmers cooperate to perform the coding of a single program." } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "In order to obtain feedback from users, the prototype of a program to be provided is created at an early stage." } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "In order to promptly develop a program to be operated, test cases are set in advance, and the program is then coded." } ] }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "id": "2025A_B_Q13",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] through [[C]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "Binary Search Trees (BST) are a fundamental data structure where each node has at most two children: a left child and a right child. The key property of a BST is that each value of all nodes in its left subtree are less than the value of the node, and each value of all nodes in its right subtree are greater than the value of the node. The table shows the member variables of the class `Node`. `Node`-type variable holds a reference to an instance of the class `Node`. Each node in a BST has a different value."
+    },
+    {
+      "t": "p",
+      "x": "Table  Member variables of class `Node`"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Member variable",
+          "Type",
+          "Description"
+        ],
+        [
+          "`key`",
+          "`integer`",
+          "Integer to be stored in the node."
+        ],
+        [
+          "`left`",
+          "Node",
+          "Reference to the instance that holds the left child of a binary tree. If no left child exists, it is `undefined`."
+        ],
+        [
+          "`right`",
+          "Node",
+          "Reference to the instance that holds the right child of a binary tree. If no right child exists, it is `undefined`."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "The function `remove` removes a node with the same `key` value as the argument `key` from the BST specified by the argument `node` and returns the resulting BST. The function searches for a node with the same `key` value, and if the found node (call it X here) does not have a right subtree, the function returns its left subtree. If X has a right subtree, the function locates the node (call it Y here) with the smallest key value in the right subtree, replaces the `key` value of X with that of Y, and then removes Y. If there is no node with the same `key` value in the BST, the function performs no operations. The procedure `test` demonstrates this behavior by removing 1 node from a BST containing 7 nodes. The figure shows the BST before and after node removal."
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"0 0 700 175\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"sans-serif\" fill=\"#222\"><defs><marker id=\"ah\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0,0 L10,5 L0,10 z\" fill=\"#222\"/></marker></defs><line x1=\"169.5\" y1=\"39.3\" x2=\"145.5\" y2=\"60.7\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"190.5\" y1=\"39.3\" x2=\"214.5\" y2=\"60.7\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"125.1\" y1=\"79.9\" x2=\"104.9\" y2=\"100.1\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"144.9\" y1=\"79.9\" x2=\"165.1\" y2=\"100.1\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"168.7\" y1=\"122.5\" x2=\"161.3\" y2=\"137.5\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"234.9\" y1=\"79.9\" x2=\"255.1\" y2=\"100.1\" stroke=\"#222\" stroke-width=\"1.5\"/><circle cx=\"180\" cy=\"30\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"180\" y=\"35\" font-size=\"14\" text-anchor=\"middle\">5</text><circle cx=\"135\" cy=\"70\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"135\" y=\"75\" font-size=\"14\" text-anchor=\"middle\">2</text><circle cx=\"225\" cy=\"70\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"225\" y=\"75\" font-size=\"14\" text-anchor=\"middle\">6</text><circle cx=\"95\" cy=\"110\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"95\" y=\"115\" font-size=\"14\" text-anchor=\"middle\">1</text><circle cx=\"175\" cy=\"110\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"175\" y=\"115\" font-size=\"14\" text-anchor=\"middle\">4</text><circle cx=\"155\" cy=\"150\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"155\" y=\"155\" font-size=\"14\" text-anchor=\"middle\">3</text><circle cx=\"265\" cy=\"110\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"265\" y=\"115\" font-size=\"14\" text-anchor=\"middle\">7</text><text x=\"350\" y=\"78\" font-size=\"14\" text-anchor=\"middle\">remove 2</text><line x1=\"310\" y1=\"92\" x2=\"388\" y2=\"92\" stroke=\"#222\" stroke-width=\"3\" marker-end=\"url(#ah)\"/><line x1=\"509.5\" y1=\"39.3\" x2=\"485.5\" y2=\"60.7\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"530.5\" y1=\"39.3\" x2=\"554.5\" y2=\"60.7\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"465.1\" y1=\"79.9\" x2=\"444.9\" y2=\"100.1\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"484.9\" y1=\"79.9\" x2=\"505.1\" y2=\"100.1\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"508.7\" y1=\"122.5\" x2=\"501.3\" y2=\"137.5\" stroke=\"#222\" stroke-width=\"1.5\"/><line x1=\"574.9\" y1=\"79.9\" x2=\"595.1\" y2=\"100.1\" stroke=\"#222\" stroke-width=\"1.5\"/><circle cx=\"520\" cy=\"30\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"520\" y=\"35\" font-size=\"14\" text-anchor=\"middle\">5</text><circle cx=\"475\" cy=\"70\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"475\" y=\"75\" font-size=\"14\" text-anchor=\"middle\">3</text><circle cx=\"565\" cy=\"70\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"565\" y=\"75\" font-size=\"14\" text-anchor=\"middle\">6</text><circle cx=\"435\" cy=\"110\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"435\" y=\"115\" font-size=\"14\" text-anchor=\"middle\">1</text><circle cx=\"515\" cy=\"110\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"515\" y=\"115\" font-size=\"14\" text-anchor=\"middle\">4</text><circle cx=\"495\" cy=\"150\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"495\" y=\"155\" font-size=\"14\" text-anchor=\"middle\">3</text><line x1=\"481\" y1=\"136\" x2=\"509\" y2=\"164\" stroke=\"#222\" stroke-width=\"2\"/><line x1=\"509\" y1=\"136\" x2=\"481\" y2=\"164\" stroke=\"#222\" stroke-width=\"2\"/><circle cx=\"605\" cy=\"110\" r=\"14\" fill=\"#fff\" stroke=\"#222\" stroke-width=\"1.5\"/><text x=\"605\" y=\"115\" font-size=\"14\" text-anchor=\"middle\">7</text></svg>",
+      "alt": "Left: BST before removal. Root 5 has left child 2 and right child 6. Node 2 has left child 1 and right child 4. Node 4 has left child 3. Node 6 has right child 7. An arrow labelled \"remove 2\" points to the right tree. Right: BST after removal. Root 5 has left child 3 and right child 6. Node 3 has left child 1 and right child 4. Below node 4, the left child 3 is drawn crossed out (removed). Node 6 has right child 7."
+    },
+    {
+      "t": "p",
+      "x": "Figure  BST before and after node removal"
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ Node: remove(Node: node, integer: key)\n  Node: node2\n  if (node is undefined)\n    return undefined\n  elseif (key < node.key)\n    node.left ← remove(node.left, key)\n  elseif (key > node.key)\n    node.right ← remove(node.right, key)\n  elseif (node.right is undefined)\n    return node.left\n  else\n    node2 ← [[A]]\n    while ([[B]])\n      node2 ← node2.left\n    endwhile\n    node.key ← node2.key\n    node.right ← remove(node.right, [[C]])\n  endif\n  return node\n\n○ test()\n  Node: root ← the root node of BST on the left side of the figure\n  root ← remove(root, 2)"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B",
+      "C"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`node.left`",
+          "`node2.key < key`",
+          "`key`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`node.left`",
+          "`node2.key < key`",
+          "`node2.key`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`node.left`",
+          "`node2.left` is not `undefined`",
+          "`key`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`node.left`",
+          "`node2.left` is not `undefined`",
+          "`node2.key`"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "`node.right`",
+          "`node2.key < key`",
+          "`key`"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "`node.right`",
+          "`node2.key < key`",
+          "`node2.key`"
+        ]
+      },
+      {
+        "k": "g",
+        "c": [
+          "`node.right`",
+          "`node2.left` is not `undefined`",
+          "`key`"
+        ]
+      },
+      {
+        "k": "h",
+        "c": [
+          "`node.right`",
+          "`node2.left` is not `undefined`",
+          "`node2.key`"
+        ]
+      }
+    ]
+  }
+}

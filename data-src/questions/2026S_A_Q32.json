@@ -1,0 +1,47 @@
+{
+ "id": "2026S_A_Q32",
+ "stem": [
+  {
+   "t": "p",
+   "x": "Company A, a mobile game developer, is developing a new version of its game with a social media plugin that allows users to post their achievements on social media platforms. However, during beta testing, some users point out that posts from the game can bypass their privacy settings, making them visible to the public. Company A understands the risk and decides not to include the social media plugin in their new version of the game. Which of the following is the risk management strategy that Company A is choosing?"
+  }
+ ],
+ "opts": [
+  {
+   "k": "a",
+   "b": [
+    {
+     "t": "p",
+     "x": "Risk acceptance"
+    }
+   ]
+  },
+  {
+   "k": "b",
+   "b": [
+    {
+     "t": "p",
+     "x": "Risk avoidance"
+    }
+   ]
+  },
+  {
+   "k": "c",
+   "b": [
+    {
+     "t": "p",
+     "x": "Risk mitigation"
+    }
+   ]
+  },
+  {
+   "k": "d",
+   "b": [
+    {
+     "t": "p",
+     "x": "Risk sharing"
+    }
+   ]
+  }
+ ]
+}

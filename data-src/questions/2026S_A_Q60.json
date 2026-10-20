@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q60",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In developing new products that are expected to be employed by government agencies of WTO member countries, which of the following are the appropriate standards to be applied?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "ANSI standards"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "BSI standards"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "FCC standards"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "ISO standards"
+        }
+      ]
+    }
+  ]
+}

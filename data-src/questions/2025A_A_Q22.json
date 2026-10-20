@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q22",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In the context of transaction management, which of the following is a condition that the Isolation property ensures?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Data is written permanently after a transaction."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Only valid data is written to the database."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Transactions are either fully completed or revoked."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Transactions are executed without affecting each other."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "id": "2026S_B_Q17",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the most appropriate combination of answers to be inserted into [[A]] and [[B]] in the description."
+    },
+    {
+      "t": "p",
+      "x": "Company P conducts training sessions for junior security analysts within its security team. As part of this training activity, the team reviews simulated authentication log data and discusses how different password attack techniques may manifest in real-world systems. The purpose of this exercise is to help analysts accurately identify attack patterns, understand attacker behavior, and evaluate the defensive controls that are effective against each type of attack."
+    },
+    {
+      "t": "p",
+      "x": "During the exercise, the team focuses on three major password attack techniques, understanding that their visibility in authentication logs varies as summarized in Table 1."
+    },
+    {
+      "t": "p",
+      "x": "Table 1 Major password attack techniques"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Type",
+          "Characteristics"
+        ],
+        [
+          "brute force attack",
+          "Repeatedly attempting numerous different passwords against a single user account. It typically generates several failed authentication attempts for the same username within a short period of time."
+        ],
+        [
+          "credential stuffing attack",
+          "Attempting to log in using previously compromised username-password pairs. This often results in authentication attempts against numerous different user accounts, with some attempts succeeding."
+        ],
+        [
+          "offline password cracking",
+          "Attempting to recover passwords by cracking stolen password hashes offline, without interacting with the authentication system. This attack does not generate authentication logs at an authentication server."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "As part of the training, the security team reviews multiple sample authentication logs recorded at an authentication server, as summarized in Tables 2 and 3. The participants analyze the authentication patterns observed in both tables and determine the correspondence of each pattern corresponds to the password attack techniques listed in Table 1."
+    },
+    {
+      "t": "p",
+      "x": "Table 2 Sample authentication logs (Pattern A)"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Timestamp",
+          "Source IP",
+          "Username",
+          "Event",
+          "Result / Reason"
+        ],
+        [
+          "2025-03-12 11:30:00",
+          "203.0.113.30",
+          "admin",
+          "auth_fail",
+          "InvalidPassword"
+        ],
+        [
+          "2025-03-12 11:32:00",
+          "203.0.113.30",
+          "admin",
+          "auth_fail",
+          "InvalidPassword"
+        ],
+        [
+          "2025-03-12 11:34:00",
+          "203.0.113.30",
+          "admin",
+          "auth_fail",
+          "InvalidPassword"
+        ],
+        [
+          "2025-03-12 11:36:00",
+          "203.0.113.30",
+          "admin",
+          "auth_fail",
+          "InvalidPassword"
+        ],
+        [
+          "2025-03-12 11:38:00",
+          "203.0.113.30",
+          "admin",
+          "auth_fail",
+          "InvalidPassword"
+        ],
+        [
+          "2025-03-12 11:40:00",
+          "203.0.113.30",
+          "admin",
+          "auth_fail",
+          "InvalidPassword"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "Table 3 Sample authentication logs (Pattern B)"
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        [
+          "Timestamp",
+          "Source IP",
+          "Username",
+          "Event",
+          "Result / Reason"
+        ],
+        [
+          "2025-03-12 11:05:00",
+          "198.51.100.45",
+          "john.smith",
+          "auth_fail",
+          "InvalidPassword"
+        ],
+        [
+          "2025-03-12 11:07:30",
+          "198.51.100.45",
+          "emma.jones",
+          "auth_success",
+          "Authenticated"
+        ],
+        [
+          "2025-03-12 11:10:00",
+          "198.51.100.45",
+          "michael.brown",
+          "auth_fail",
+          "InvalidPassword"
+        ],
+        [
+          "2025-03-12 11:12:40",
+          "198.51.100.45",
+          "sarah.miller",
+          "auth_fail",
+          "InvalidPassword"
+        ],
+        [
+          "2025-03-12 11:15:10",
+          "198.51.100.45",
+          "kevin.wilson",
+          "auth_fail",
+          "InvalidPassword"
+        ],
+        [
+          "2025-03-12 11:17:50",
+          "198.51.100.45",
+          "olivia.davis",
+          "auth_success",
+          "Authenticated"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "Based on this analysis, they conclude that the pattern observed in Table 2 is categorized as [[A]], and that observed in Table 3 is categorized as [[B]], as summarized in Table 1."
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "brute force attack",
+          "credential stuffing attack"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "brute force attack",
+          "offline password cracking"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "credential stuffing attack",
+          "brute force attack"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "credential stuffing attack",
+          "offline password cracking"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "offline password cracking",
+          "brute force attack"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "offline password cracking",
+          "credential stuffing attack"
+        ]
+      }
+    ]
+  }
+}

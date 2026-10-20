@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q35",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In the development process, which of the following is an activity that should be performed in software architecture design?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Analyzing the requirements in incremental steps by arranging them in the form of a chart"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Describing the specifications so that the program is clarified on a line-by-line basis"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Obtaining the opinion of the customer and deciding on the specifications"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Transforming the requirements for the software items into a design that describes its top-level structure and identifies the software components"
+        }
+      ]
+    }
+  ]
+}

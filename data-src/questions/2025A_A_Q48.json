@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q48",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In a business scenario where marketing managers analyze customer interests and sales patterns, design promotional campaigns, and then send targeted emails to customers, which of the following is a modeling technique used to represent how information flows between internal processes, data stores, and external entities?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Class Diagram"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Data Flow Diagram (DFD)"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Entity-Relationship Diagram (ERD)"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Use Case Diagram"
+        }
+      ]
+    }
+  ]
+}

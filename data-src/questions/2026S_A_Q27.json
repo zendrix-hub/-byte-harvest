@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q27",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In telecommunication, which of the following is a standard for wireless broadband communication for mobile devices and data terminals?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "IEEE 802.11"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "LTE"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "NFC"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "UWB"
+        }
+      ]
+    }
+  ]
+}

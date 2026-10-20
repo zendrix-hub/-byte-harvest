@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q37",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate explanation of encapsulation in object orientation?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Abstraction and grouping of several objects that have common properties"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Bundling of data and procedures operating on the data as a single object and concealing their implementation inside the object"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Creation of a base class by extracting the properties that are common among classes"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Inheritance of the properties of a base class by a subclass"
+        }
+      ]
+    }
+  ]
+}

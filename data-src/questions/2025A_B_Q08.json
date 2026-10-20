@@ -1,0 +1,38 @@
+{
+  "id": "2025A_B_Q08",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "Stack stores data using first-in, last-out ordering. Here, the items stored in the stack are integer values, and the stack is controlled by the procedure `push` and the function `pop`. The procedure `push` adds an item given as an argument to the top of the stack, and the function `pop` removes the top item from the stack and returns it. The global variable `stck` is an array of 10 integers that stores the stack items, and the global variable `tos` is the pointer that points to the topmost item of the stack."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "global: integer []: stck ← {10 undefined}\nglobal: integer: tos ← 0\n\n○ push(integer: item)\n  if (tos = 10)\n    output \"Stack is Full\"\n  else\n    [[A]]\n    stck[tos] ← item\n  endif\n\n○ integer: pop()\n  integer: item\n  if (tos < 1)\n    output \"Stack is Empty\"\n    return undefined\n  else\n    [[B]]\n  endif\n  return item"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["`tos ← tos + 1`", "`item ← stck[tos]`\n`tos ← tos + 1`"] },
+      { "k": "b", "c": ["`tos ← tos + 1`", "`item ← stck[tos]`\n`tos ← tos − 1`"] },
+      { "k": "c", "c": ["`tos ← tos + 1`", "`tos ← tos + 1`\n`item ← stck[tos]`"] },
+      { "k": "d", "c": ["`tos ← tos + 1`", "`tos ← tos − 1`\n`item ← stck[tos]`"] },
+      { "k": "e", "c": ["`tos ← tos − 1`", "`item ← stck[tos]`\n`tos ← tos + 1`"] },
+      { "k": "f", "c": ["`tos ← tos − 1`", "`item ← stck[tos]`\n`tos ← tos − 1`"] },
+      { "k": "g", "c": ["`tos ← tos − 1`", "`tos ← tos + 1`\n`item ← stck[tos]`"] },
+      { "k": "h", "c": ["`tos ← tos − 1`", "`tos ← tos − 1`\n`item ← stck[tos]`"] }
+    ]
+  }
+}

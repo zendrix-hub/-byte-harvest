@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q45",
+  "stem": [
+    {
+      "t": "p",
+      "x": "In the system design phase, when an audit is performed on the control to reduce the risk of user requirements not being met, which of the following is a point to be checked?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Whether programming is performed in accordance with the specified conventions and standards"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Whether the program specifications are created on the basis of the system design documents"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Whether the test plan is created on the basis of the system test requirements, and the manager’s approval of the system operations department is obtained"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Whether the user department participates in the review of the system design documents"
+        }
+      ]
+    }
+  ]
+}

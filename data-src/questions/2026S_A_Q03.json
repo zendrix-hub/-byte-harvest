@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q03",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the ratio of the mean arrival rate to the mean service rate in queuing theory?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Utilization"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Average inter-arrival time"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Average service time"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Average retention number"
+        }
+      ]
+    }
+  ]
+}

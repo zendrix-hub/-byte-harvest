@@ -1,0 +1,106 @@
+{
+  "id": "2025A_B_Q04",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] through [[C]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "The procedure `reverse_digits` receives one positive integer argument named `num` and outputs both the original integer and the integer with its digits reversed. Assume that the ones digit of `num` is not 0."
+    },
+    {
+      "t": "p",
+      "x": "Example:"
+    },
+    {
+      "t": "code",
+      "x": "Number is 456, output 654\nNumber is 23407, output 70432"
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ reverse_digits(integer: num)\n  integer: rev ← 0\n  integer: rm ← 0\n  integer: temp ← num\n  while ([[A]])\n    rm ← temp mod 10\n    rev ← [[B]]\n    temp ← [[C]]\n  endwhile\n  output \"Number is \", num, \", output \", rev"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B",
+      "C"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`num > 0`",
+          "`rm × 10 + rev`",
+          "integer part of `(temp ÷ 10)`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`num > 0`",
+          "`rm × 10 + rev`",
+          "`temp − rm`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`num > 0`",
+          "`rev × 10 + rm`",
+          "integer part of `(temp ÷ 10)`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`num > 0`",
+          "`rev × 10 + rm`",
+          "`temp − rm`"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "`temp > 0`",
+          "`rm × 10 + rev`",
+          "integer part of `(temp ÷ 10)`"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "`temp > 0`",
+          "`rm × 10 + rev`",
+          "`temp − rm`"
+        ]
+      },
+      {
+        "k": "g",
+        "c": [
+          "`temp > 0`",
+          "`rev × 10 + rm`",
+          "integer part of `(temp ÷ 10)`"
+        ]
+      },
+      {
+        "k": "h",
+        "c": [
+          "`temp > 0`",
+          "`rev × 10 + rm`",
+          "`temp − rm`"
+        ]
+      }
+    ]
+  }
+}

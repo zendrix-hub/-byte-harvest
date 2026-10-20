@@ -1,0 +1,21 @@
+{
+  "id": "2026S_B_Q02",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] through [[C]] in the description." },
+    { "t": "p", "x": "Function `f` receives an integer value as argument `argval` and returns the grade character. The return value of `f(92)`, `f(72)`, and `f(-10)` are “[[A]],” “[[B]],” and “[[C]],” respectively. Note that the function has a specification bug." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ character: f(integer: argval)\n  character: retvar ← \"w\"\n  if (argval > 90)\n    retvar ← \"a\"\n  endif\n  if (argval > 70)\n    retvar ← \"b\"\n  elseif (argval > 60)\n    retvar ← \"c\"\n  elseif (argval ≤ 60)\n    retvar ← \"d\"\n  endif\n  return retvar" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": {
+    "head": ["A", "B", "C"],
+    "rows": [
+      { "k": "a", "c": ["`a`", "`b`", "`d`"] },
+      { "k": "b", "c": ["`a`", "`c`", "`d`"] },
+      { "k": "c", "c": ["`a`", "`c`", "`w`"] },
+      { "k": "d", "c": ["`b`", "`b`", "`d`"] },
+      { "k": "e", "c": ["`b`", "`c`", "`d`"] },
+      { "k": "f", "c": ["`b`", "`c`", "`w`"] }
+    ]
+  }
+}

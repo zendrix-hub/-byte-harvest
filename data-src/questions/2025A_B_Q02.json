@@ -1,0 +1,89 @@
+{
+  "id": "2025A_B_Q02",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array index starts at 1."
+    },
+    {
+      "t": "p",
+      "x": "In statistics, the mode is the value that occurs most frequently in a dataset. For example, the mode of the integer array {2, 1, 1, 9, 6, 6, 2, 5, 6} is 6, as it occurs most often. The function `findMode` receives an integer array `arr` as a dataset and returns the mode for it."
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "○ integer: findMode(integer []: arr)\n  integer: n ← the number of elements in arr\n  integer: m ← arr[1]   /* Current mode value */\n  integer: m_c ← 1      /* Frequency count of mode */\n  integer: c, i, j\n  for (increase i from 1 to n - 1 by 1)\n    c ← 1\n    for (increase j from i + 1 to n by 1)\n      if ([[A]])\n        c ← c + 1\n      endif\n    endfor\n    if ([[B]])\n      m_c ← c\n      m ← arr[i]\n    endif\n  endfor\n  return m"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": [
+      "A",
+      "B"
+    ],
+    "rows": [
+      {
+        "k": "a",
+        "c": [
+          "`arr[i] = arr[j]`",
+          "`m < arr[i]`"
+        ]
+      },
+      {
+        "k": "b",
+        "c": [
+          "`arr[i] = arr[j]`",
+          "`m ≠ arr[i]`"
+        ]
+      },
+      {
+        "k": "c",
+        "c": [
+          "`arr[i] = arr[j]`",
+          "`m_c < c`"
+        ]
+      },
+      {
+        "k": "d",
+        "c": [
+          "`arr[i] = arr[j]`",
+          "`m_c > c`"
+        ]
+      },
+      {
+        "k": "e",
+        "c": [
+          "`m = arr[j]`",
+          "`m < arr[i]`"
+        ]
+      },
+      {
+        "k": "f",
+        "c": [
+          "`m = arr[j]`",
+          "`m ≠ arr[i]`"
+        ]
+      },
+      {
+        "k": "g",
+        "c": [
+          "`m = arr[j]`",
+          "`m_c < c`"
+        ]
+      },
+      {
+        "k": "h",
+        "c": [
+          "`m = arr[j]`",
+          "`m_c > c`"
+        ]
+      }
+    ]
+  }
+}

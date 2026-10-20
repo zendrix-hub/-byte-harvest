@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q29",
+  "stem": [
+    {
+      "t": "p",
+      "x": "The IP address of server X that is owned by an attacker, is recorded on Company B’s DNS cache server as the IP address corresponding to the FQDN of Company A’s web server. As a result, which of the following are the users that unintentionally connect to server X? Here, the employees of Company A and Company B use their own company’s DNS cache server for name resolution."
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Company A employees who try to connect to Company A’s web server"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Company A employees who try to connect to Company B’s web server"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Company B employees who try to connect to Company A’s web server"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Company B employees who try to connect to Company B’s web server"
+        }
+      ]
+    }
+  ]
+}

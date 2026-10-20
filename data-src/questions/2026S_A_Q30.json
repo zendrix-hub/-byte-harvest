@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q30",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate description of a Trojan horse?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "A brute force attack software tool"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "A malicious computer program that presents itself as legitimate"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "A malicious user that steals private information from a system"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "A software tool to decrypt an encrypted password"
+        }
+      ]
+    }
+  ]
+}

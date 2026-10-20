@@ -1,0 +1,18 @@
+{
+  "id": "2025A_B_Q20",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the most appropriate combination of answers to be inserted into [[A]] and [[B]] in the description." },
+    { "t": "p", "x": "Company S is a software company that develops web applications. Some of web applications that Company S develops are open-sourced. The web application code is made publicly available in a repository accessible to anyone. These open-source web applications include features that interact with external services using API keys." },
+    { "t": "p", "x": "One day, an external security researcher reported to Company S’s security team that the code published in the company’s repository contained an API key. Company S immediately made the repository private and deactivated the API key. Upon further investigation, it was found that a developer on the web application development team accidentally hard-coded the API key when testing a new feature, and committed the code to the source code repository. As a result, this allowed unauthorized users to access external services using the API key." },
+    { "t": "p", "x": "To prevent a recurrence of such an incident, the security team has proposed adding a coding rule that instead of hard-coding the secrets including the API, use environment variables that allow the application code to be accessed dynamically. Additionally, the team suggested [[A]] to detect any secrets that might have been missed by this rule before committing code to a publicly accessible repository. Furthermore, to minimize damage in case any secrets still evade detection, he proposed [[B]]." },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "optTable": { "head": ["A", "B"], "rows": [
+    { "k": "a", "c": ["checking logs of APIs used by the development team to see if there is any unauthorized use", "adding a rule that mandates regular rotation of secrets"] },
+    { "k": "b", "c": ["checking logs of APIs used by the development team to see if there is any unauthorized use", "requiring web application developers to use multi-factor-authentication to log in to the repository"] },
+    { "k": "c", "c": ["integrating automated secret scanning tools", "adding a rule that mandates regular rotation of secrets"] },
+    { "k": "d", "c": ["integrating automated secret scanning tools", "requiring the web application developers to use multi-factor-authentication to log in to the repository"] },
+    { "k": "e", "c": ["running antivirus full scans on developers’ PCs", "adding a rule that mandates regular rotation of secrets"] },
+    { "k": "f", "c": ["running antivirus full scans on developers’ PCs", "requiring web application developers to use multi-factor-authentication to log in to the repository"] }
+  ] }
+}

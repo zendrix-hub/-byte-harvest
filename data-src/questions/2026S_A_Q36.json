@@ -1,0 +1,47 @@
+{
+  "id": "2026S_A_Q36",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is a structural design pattern that allows classes with incompatible interfaces to work together?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Adapter"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Factory"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Iterator"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Singleton"
+        }
+      ]
+    }
+  ]
+}

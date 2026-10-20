@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q59",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is a financial statement that represents the assets, liabilities, and net assets of a company at a certain point in time and indicates the financial situation of the company?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Balance sheet"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Income statement"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Statement of Cash Flows"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Statement of Changes in Equity"
+        }
+      ]
+    }
+  ]
+}

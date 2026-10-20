@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q31",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is a function of an IDS?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It checks whether software products that are installed on a PC are the latest version."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "It collects the status of information security measures, such as the status of operations management for an information system, and also obtains company information, then performs a self-diagnosis on the status of activities for information security in an organization."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "It monitors a server or a network and notifies the administrator when it has detected an intrusion or infringement."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "It sends test data to a product that it examines and detects any vulnerability from the response or behavior of the product."
+        }
+      ]
+    }
+  ]
+}

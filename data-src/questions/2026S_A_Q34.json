@@ -1,0 +1,51 @@
+{
+ "id": "2026S_A_Q34",
+ "stem": [
+  {
+   "t": "p",
+   "x": "An SQL injection attack caused the SQL statement below to be executed. Which of the following does the SQL statement do? Here, the accounts table contains user account information in each row."
+  },
+  {
+   "t": "code",
+   "x": "SELECT * FROM accounts WHERE username='1' or '1'='1'; DROP TABLE accounts;"
+  }
+ ],
+ "opts": [
+  {
+   "k": "a",
+   "b": [
+    {
+     "t": "p",
+     "x": "It creates a new user ‘1’."
+    }
+   ]
+  },
+  {
+   "k": "b",
+   "b": [
+    {
+     "t": "p",
+     "x": "It creates a pop-up box that shows the first username in the “accounts” table."
+    }
+   ]
+  },
+  {
+   "k": "c",
+   "b": [
+    {
+     "t": "p",
+     "x": "It selects all the records in the “accounts” table and deletes the “accounts” table from the database."
+    }
+   ]
+  },
+  {
+   "k": "d",
+   "b": [
+    {
+     "t": "p",
+     "x": "It selects one record from the “accounts” table and drops the rest of the records in the table."
+    }
+   ]
+  }
+ ]
+}

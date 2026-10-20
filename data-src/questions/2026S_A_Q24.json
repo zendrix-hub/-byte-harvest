@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q24",
+  "stem": [
+    { "t": "p", "x": "In IPv4, which of the following is a description concerning the NAT function of a router that connects some computers to the Internet?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "It caches the Internet access to speed up the connections when revisiting the same websites." }] },
+    { "k": "b", "b": [{ "t": "p", "x": "It converts between private and global IP addresses." }] },
+    { "k": "c", "b": [{ "t": "p", "x": "It inspects the IP packets during transmission to detect possible attacks and intrusions from the Internet." }] },
+    { "k": "d", "b": [{ "t": "p", "x": "It only passes the IP packets intended for specific terminals." }] }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q51",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an explanation of ERP?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is a method or concept by which wholesalers and manufacturers expand their business transactions with retail stores by supporting the business activities of retail stores."
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is a method or concept for performing business transactions with consumers or between companies through the use of electronic networks such as the Internet."
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is a method or concept that aims to drastically increase sales, profit, and customer satisfaction by improving the efficiency and quality of sales through the use of IT in sales activities."
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "It is a method or concept that aims to improve management efficiency by planning and controlling the management resources of an entire company in an effective and comprehensive manner."
+        }
+      ]
+    }
+  ]
+}

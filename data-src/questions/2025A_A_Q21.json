@@ -1,0 +1,60 @@
+{
+  "id": "2025A_A_Q21",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the clause that is inserted into blank [[A]] of the SQL statement in order to display the names of employees who work in the same department as any employee located in \"New York\"?"
+    },
+    {
+      "t": "svg",
+      "svg": "<svg viewBox=\"0 0 600 64\" xmlns=\"http://www.w3.org/2000/svg\" font-family=\"monospace\" font-size=\"16\" fill=\"#222\"><text x=\"4\" y=\"22\" xml:space=\"preserve\">Employees (employee_id, employee_name, salary, department_id)</text><line x1=\"109.6\" y1=\"26\" x2=\"215.2\" y2=\"26\" stroke=\"#222\" stroke-width=\"1.2\"/><text x=\"4\" y=\"52\" xml:space=\"preserve\">Departments (department_id, department_name, location)</text><line x1=\"128.8\" y1=\"56\" x2=\"253.6\" y2=\"56\" stroke=\"#222\" stroke-width=\"1.2\"/></svg>",
+      "alt": "Table definitions: Employees (employee_id, employee_name, salary, department_id) with employee_id underlined; Departments (department_id, department_name, location) with department_id underlined."
+    },
+    {
+      "t": "p",
+      "x": "[SQL command]"
+    },
+    {
+      "t": "code",
+      "x": "SELECT employee_name FROM Employees WHERE [[A]]"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "code",
+          "x": "department_id IN (SELECT department_id FROM Departments WHERE location = 'New York');"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "code",
+          "x": "department_id NOT IN (SELECT department_id FROM Departments WHERE location = 'New York');"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "code",
+          "x": "department_id IN (SELECT department_id FROM Employees WHERE location = 'New York');"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "code",
+          "x": "department_id = ALL (SELECT department_id FROM Employees WHERE location = 'New York');"
+        }
+      ]
+    }
+  ]
+}

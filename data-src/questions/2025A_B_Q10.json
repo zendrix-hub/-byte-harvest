@@ -1,0 +1,65 @@
+{
+  "id": "2025A_B_Q10",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program."
+    },
+    {
+      "t": "p",
+      "x": "The procedure `insertAfter` inserts an element into a singly linked list at the position after an existing element with a specific data value. The argument `targetData` is a string type data that represents the value of the existing element in the list, after which a new element is to be inserted. If no corresponding element exists, no action is taken. The argument `newData` is also a string type data represents the value of the new element to be inserted."
+    },
+    {
+      "t": "p",
+      "x": "The class `Element` represents each element of the linked list. The figure explains the constructor and the member variables of the class `Element`. `Element`-type variables store references to instances of the class `Element`. A reference to the first element in the list is pre-stored in the global variable `head`."
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        ["Constructor", "Description"],
+        ["`Element(string: data)`", "Initialize the element with the data passed as an argument, which stored in the member variable `data`, with the member variable `next` set to undefined."]
+      ]
+    },
+    {
+      "t": "table",
+      "head": 1,
+      "rows": [
+        ["Member variable", "Type", "Description"],
+        ["`data`", "`string`", "Data associated with the element."],
+        ["`next`", "`Element`", "This attribute represents the reference to the next element."]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "Figure  Class `Element`"
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "  global: Element: head    // stores first element in the list\n  ○ insertAfter(string: targetData, string: newData)\n    Element: x, y\n    x ← head\n    while(x is [[A]])\n      if (x.data = targetData)\n        y ← Element(newData)\n        y.next ← [[B]]\n        x.next ← y\n        exit the while block\n      else\n        x ← x.next\n      endif\n    endwhile"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["`not undefined`", "`head`"] },
+      { "k": "b", "c": ["`not undefined`", "`x`"] },
+      { "k": "c", "c": ["`not undefined`", "`x.data`"] },
+      { "k": "d", "c": ["`not undefined`", "`x.next`"] },
+      { "k": "e", "c": ["`not undefined`", "`x.next.next`"] },
+      { "k": "f", "c": ["`undefined`", "`head`"] },
+      { "k": "g", "c": ["`undefined`", "`x`"] },
+      { "k": "h", "c": ["`undefined`", "`x.data`"] },
+      { "k": "i", "c": ["`undefined`", "`x.next`"] },
+      { "k": "j", "c": ["`undefined`", "`x.next.next`"] }
+    ]
+  }
+}

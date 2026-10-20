@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q11",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the most appropriate explanation of edge computing?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Increasing the operability and expressiveness of web application software by performing screen creation and data processing on the client side"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Increasing the real-time nature of processing by performing primary processing of data on a server or other such computer in a location close to the origin of data, such as a sensor that is attached to a user or a device"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Increasing throughput with parallel processing by virtualizing and integrating several servers and PCs and creating a single high-performance computer"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Starting up the required server only when data comes in, and freeing up resources by stopping the server as soon as the processing is finished"
+        }
+      ]
+    }
+  ]
+}

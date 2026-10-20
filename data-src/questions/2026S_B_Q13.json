@@ -1,0 +1,97 @@
+{
+ "id": "2026S_B_Q13",
+ "stem": [
+  {
+   "t": "p",
+   "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the program. Here, the array indexes start at 1."
+  },
+  {
+   "t": "p",
+   "x": "The function `extractEmails` receives text as an argument, extracts email addresses from the text, and returns all collected email addresses. Here, a string in the format “name@domain” is considered to be an email address, where “name” and “domain” comprise only alphanumeric characters and the characters “.” (dot), “_” (underscore), and “-” (hyphen-minus). The table shows the description of the functions used in the function `extractEmails`."
+  },
+  {
+   "t": "p",
+   "x": "Table  Functions used in the function `extractEmails`"
+  },
+  {
+   "t": "table",
+   "head": 1,
+   "rows": [
+    [
+     "Function",
+     "Return value",
+     "Description"
+    ],
+    [
+     "`findSubstring(`\n`  string: str,`\n`  string: substr,`\n`  integer: start)`",
+     "`integer`",
+     "Returns the position of the first occurrence of the substring `substr` in the string `str`, starting from the position `start`. If the substring is not found, it returns `0`."
+    ],
+    [
+     "`getChar(string: str,`\n`  integer: index)`",
+     "`character`",
+     "Returns the character at the position specified by `index` in the string `str`."
+    ],
+    [
+     "`length(string: str)`",
+     "`integer`",
+     "Returns the length of the string `str`."
+    ]
+   ]
+  },
+  {
+   "t": "p",
+   "x": "`extractEmails(\"Contact us at john.doe@example.com or jane_smith@test.org for support.\")` returns {`\"john.doe@example.com\"`, `\"jane_smith@test.org\"`}. In addition, `extractEmails(\"a@b@c\")` returns {`\"a@b\"`, `\"b@c\"`}."
+  },
+  {
+   "t": "p",
+   "x": "[Program]"
+  },
+  {
+   "t": "code",
+   "x": "○ string []: extractEmails(string: txt)\n  character []: validChars ← {alphanumeric characters, \".\", \"_\", \"-\"}\n  string []: results ← {}\n  integer: index ← 1\n  integer: atIndex, i, count\n  string: candidate\n  while (true)\n    atIndex ← findSubstring(txt, \"@\", index)\n    if (atIndex = 0)\n      exit the while block\n    endif\n    candidate ← \"\"\n    for ([[ ]] by 1)\n      if (getChar(txt, i) exists in validChars)\n        prepend getChar(txt, i) to candidate\n      else\n        exit the for block\n      endif\n    endfor\n    count ← 0\n    if (length(candidate) > 0)\n      append \"@\" to candidate\n      for (increase i from atIndex + 1 to length(txt) by 1)\n        if (getChar(txt, i) exists in validChars)\n          append getChar(txt, i) to candidate\n          count ← count + 1\n        else\n          exit the for block\n        endif\n      endfor\n      if (count > 0)\n        append the value of candidate at the end of results\n      endif\n    endif\n    index ← atIndex + 1\n  endwhile\n  return results"
+  },
+  {
+   "t": "p",
+   "x": "Answer group"
+  }
+ ],
+ "opts": [
+  {
+   "k": "a",
+   "b": [
+    {
+     "t": "p",
+     "x": "decrease `i` from `atIndex - 1` to `index`"
+    }
+   ]
+  },
+  {
+   "k": "b",
+   "b": [
+    {
+     "t": "p",
+     "x": "decrease `i` from `atIndex` to `index`"
+    }
+   ]
+  },
+  {
+   "k": "c",
+   "b": [
+    {
+     "t": "p",
+     "x": "increase `i` from `index` to `atIndex`"
+    }
+   ]
+  },
+  {
+   "k": "d",
+   "b": [
+    {
+     "t": "p",
+     "x": "increase `i` from `index` to `atIndex - 1`"
+    }
+   ]
+  }
+ ]
+}

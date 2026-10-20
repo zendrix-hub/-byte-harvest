@@ -1,0 +1,16 @@
+{
+  "id": "2026S_B_Q03",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the program. Here, the array indexes start at 1." },
+    { "t": "p", "x": "The function `distance` receives integer arrays `S` and `T` of size `n` as arguments and returns the Manhattan distance of the two vectors that can be computed as Σ_{i=1}^{n} |S_{i} − T_{i}|. Function `abs`, which is used by the function `distance`, returns the absolute value of an integer. Assume that `n` is 1 or greater." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ integer: distance(integer []: S, integer []: T, integer: n)\n  integer: p ← 0\n  integer: i\n  for (increase i from 1 to n by 1)\n    [[ ]]\n  endfor\n  return p" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "`p ← p + abs(S[i] + T[i])`" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "`p ← p + abs(S[i] - T[i])`" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "`p ← p - abs(S[i] + T[i])`" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "`p ← p - abs(S[i] - T[i])`" } ] }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q52",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is the appropriate description of process innovation?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Development of an innovative new product on the basis of an original and high technology"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Development of innovative manufacturing procedures that improve the quality of a product"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Outsourcing manufacturing to another company that has a semiconductor manufacturing process"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Wide adoption after passing the competition, resulting in the establishment of a de facto standard"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "2026S_B_Q08",
+  "stem": [
+    {
+      "t": "p",
+      "x": "From the answer group below, select the correct combination of answers to be inserted into [[A]] and [[B]] in the program. Here, the array index starts at 0."
+    },
+    {
+      "t": "p",
+      "x": "The program implements a queue that has a fixed capacity and only accepts integers. If the queue is not full, the function `enqueue` appends the specified value to its end and returns `true`. Otherwise, it returns `false`. If the queue is not empty, the function `dequeue` removes an element from the queue and returns its value. Otherwise, it returns `undefined`. The figure illustrates the working of a queue with capacity to hold up to seven integers. Initially, the queue contains five integers, with `front`, `rear`, and `count` set to 3, 1, and 5, respectively. Then, `enqueue(51)` and `dequeue()` are called in that order."
+    },
+    {
+      "t": "table",
+      "head": 0,
+      "rows": [
+        ["index", "0", "1", "2", "3", "4", "5", "6"],
+        ["item", "`34`", "`undefined`", "`undefined`", "`17`", "`13`", "`27`", "`19`"]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "`enqueue(51)` is called."
+    },
+    {
+      "t": "table",
+      "head": 0,
+      "rows": [
+        ["index", "0", "1", "2", "3", "4", "5", "6"],
+        ["item", "`34`", "`51`", "`undefined`", "`17`", "`13`", "`27`", "`19`"]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "`dequeue()` is called."
+    },
+    {
+      "t": "table",
+      "head": 0,
+      "rows": [
+        ["index", "0", "1", "2", "3", "4", "5", "6"],
+        ["item", "`34`", "`51`", "`undefined`", "`undefined`", "`13`", "`27`", "`19`"]
+      ]
+    },
+    {
+      "t": "p",
+      "x": "Figure  Queue with capacity of seven"
+    },
+    {
+      "t": "p",
+      "x": "[Program]"
+    },
+    {
+      "t": "code",
+      "x": "global: integer: capacity ← 7  /* Capacity of the queue */\nglobal: integer []: item ← {7 undefined}\nglobal: integer: count ← 0      /* Number of elements in the queue */\nglobal: integer: front ← 0      /* Index of the front element */\nglobal: integer: rear ← 0       /* Index of the element next to the rear */\n\n○ boolean: enqueue(integer: val)\n  if (count [[A]])\n    item[rear] ← val\n    count ← count + 1\n    rear ← (rear + 1) mod capacity\n    return true\n  else\n    return false\n  endif\n\n○ integer: dequeue()\n  integer val\n  if (count > 0)\n    val ← item[front]\n    item[front] ← undefined\n    count ← count − 1\n    front ← [[B]]\n    return val\n  else\n    return undefined\n  endif"
+    },
+    {
+      "t": "p",
+      "x": "Answer group"
+    }
+  ],
+  "optTable": {
+    "head": ["A", "B"],
+    "rows": [
+      { "k": "a", "c": ["`< 0`", "`(front + 1) mod capacity`"] },
+      { "k": "b", "c": ["`< 0`", "`(front − 1) mod capacity`"] },
+      { "k": "c", "c": ["`> 0`", "`(front + 1) mod capacity`"] },
+      { "k": "d", "c": ["`> 0`", "`(front − 1) mod capacity`"] },
+      { "k": "e", "c": ["`< capacity`", "`(front + 1) mod capacity`"] },
+      { "k": "f", "c": ["`< capacity`", "`(front − 1) mod capacity`"] },
+      { "k": "g", "c": ["`> capacity`", "`(front + 1) mod capacity`"] },
+      { "k": "h", "c": ["`> capacity`", "`(front − 1) mod capacity`"] }
+    ]
+  }
+}

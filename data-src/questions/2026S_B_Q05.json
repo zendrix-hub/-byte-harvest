@@ -1,0 +1,20 @@
+{
+  "id": "2026S_B_Q05",
+  "stem": [
+    { "t": "p", "x": "From the answer group below, select the correct answer to be inserted into [[ ]] in the description." },
+    { "t": "p", "x": "When the procedure `proc1` is called, the output is “[[ ]]” in turn." },
+    { "t": "p", "x": "[Program]" },
+    { "t": "code", "x": "○ proc1()\n  proc2()\n  proc3()\n  output \"A, \"\n\n○ proc2()\n  output \"B, \"\n  proc3()\n\n○ proc3()\n  output \"C, \"" },
+    { "t": "p", "x": "Answer group" }
+  ],
+  "opts": [
+    { "k": "a", "b": [ { "t": "p", "x": "`A, B, B, C,`" } ] },
+    { "k": "b", "b": [ { "t": "p", "x": "`A, B, C, C,`" } ] },
+    { "k": "c", "b": [ { "t": "p", "x": "`B, A, C, C,`" } ] },
+    { "k": "d", "b": [ { "t": "p", "x": "`B, C, B, A,`" } ] },
+    { "k": "e", "b": [ { "t": "p", "x": "`B, C, C, A,`" } ] },
+    { "k": "f", "b": [ { "t": "p", "x": "`C, B, A, C,`" } ] },
+    { "k": "g", "b": [ { "t": "p", "x": "`C, B, B, A,`" } ] },
+    { "k": "h", "b": [ { "t": "p", "x": "`C, B, C, A,`" } ] }
+  ]
+}

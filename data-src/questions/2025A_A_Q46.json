@@ -1,0 +1,47 @@
+{
+  "id": "2025A_A_Q46",
+  "stem": [
+    {
+      "t": "p",
+      "x": "Which of the following is an appropriate feasibility evaluation when checking whether the lifetime benefits of the proposed information system are greater than its lifetime costs?"
+    }
+  ],
+  "opts": [
+    {
+      "k": "a",
+      "b": [
+        {
+          "t": "p",
+          "x": "Economic feasibility"
+        }
+      ]
+    },
+    {
+      "k": "b",
+      "b": [
+        {
+          "t": "p",
+          "x": "Operational feasibility"
+        }
+      ]
+    },
+    {
+      "k": "c",
+      "b": [
+        {
+          "t": "p",
+          "x": "Scheduling feasibility"
+        }
+      ]
+    },
+    {
+      "k": "d",
+      "b": [
+        {
+          "t": "p",
+          "x": "Technical feasibility"
+        }
+      ]
+    }
+  ]
+}

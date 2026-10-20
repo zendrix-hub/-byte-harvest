@@ -1,0 +1,12 @@
+{
+  "id": "2025A_A_Q02",
+  "stem": [
+    { "t": "p", "x": "Let n be a binary integer represented in two’s complement. Which of the following is the operation that results in the value 9 × n using only bit shifting and an addition or subtraction?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "Shift n 2 bits to the left, then add n to the result." }] },
+    { "k": "b", "b": [{ "t": "p", "x": "Shift n 2 bits to the left, then subtract n from the result." }] },
+    { "k": "c", "b": [{ "t": "p", "x": "Shift n 3 bits to the left, then add n to the result." }] },
+    { "k": "d", "b": [{ "t": "p", "x": "Shift n 3 bits to the left, then subtract n from the result." }] }
+  ]
+}

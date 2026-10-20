@@ -1,0 +1,12 @@
+{
+  "id": "2026S_A_Q25",
+  "stem": [
+    { "t": "p", "x": "Which of the following is a data link layer function that enables a receiver to control the amount of data a sender transmits?" }
+  ],
+  "opts": [
+    { "k": "a", "b": [{ "t": "p", "x": "Congestion control" }] },
+    { "k": "b", "b": [{ "t": "p", "x": "Error control" }] },
+    { "k": "c", "b": [{ "t": "p", "x": "Flow control" }] },
+    { "k": "d", "b": [{ "t": "p", "x": "Media access control" }] }
+  ]
+}
