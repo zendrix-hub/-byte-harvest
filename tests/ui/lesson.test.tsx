@@ -22,6 +22,19 @@ describe('CheckView: mcq', () => {
     const order2 = screen.getAllByRole('button').map((b) => b.textContent);
     expect(order1).toEqual(order2);
   });
+
+  it('new check of same type starts empty and reports null', () => {
+    const onChange = vi.fn();
+    const checkA: Check = { t: 'mcq', q: 'Pick one', opts: ['Alpha', 'Beta', 'Gamma'], a: 0, why: 'because' };
+    const checkB: Check = { t: 'mcq', q: 'Pick one', opts: ['Alpha', 'Beta', 'Gamma'], a: 0, why: 'because' };
+    const { rerender } = render(<CheckView check={checkA} seed={1} locked={false} onChange={onChange} />);
+    fireEvent.click(screen.getByText('Gamma'));
+    expect(onChange).toHaveBeenLastCalledWith(2);
+
+    rerender(<CheckView check={checkB} seed={1} locked={false} onChange={onChange} />);
+    expect(onChange).toHaveBeenLastCalledWith(null);
+    expect(document.querySelector('.sel')).toBeNull();
+  });
 });
 
 describe('CheckView: match', () => {
@@ -78,6 +91,8 @@ describe('CheckView: numeric', () => {
     fireEvent.input(input, { target: { value: '1,200.5' } });
     expect(onChange).toHaveBeenLastCalledWith(1200.5);
     fireEvent.input(input, { target: { value: '' } });
+    expect(onChange).toHaveBeenLastCalledWith(null);
+    fireEvent.input(input, { target: { value: ',' } });
     expect(onChange).toHaveBeenLastCalledWith(null);
   });
 });

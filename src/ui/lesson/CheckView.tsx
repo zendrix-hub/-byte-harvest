@@ -16,6 +16,35 @@ function range(n: number): number[] {
   return Array.from({ length: n }, (_, i) => i);
 }
 
+// Gives every distinct Check object a stable identity so it can be used as a Preact `key`:
+// when the caller swaps in a new check (even same `t`), the sub-component remounts instead
+// of reusing stale answer state from the previous check.
+let nextCheckId = 0;
+const checkIds = new WeakMap<Check, number>();
+function idFor(check: Check): number {
+  let id = checkIds.get(check);
+  if (id === undefined) {
+    id = nextCheckId++;
+    checkIds.set(check, id);
+  }
+  return id;
+}
+
+/** Strips the inline markup tokens (`code`, **bold**, ^{sup}, _{sub}, ~{overline}, [[blank]]) to plain text for aria-labels. */
+function plainText(s: string): string {
+  let out = s;
+  let prev: string;
+  do {
+    prev = out;
+    out = out
+      .replace(/`([^`]*)`/g, '$1')
+      .replace(/\*\*([^*]*)\*\*/g, '$1')
+      .replace(/[\^_~]\{([^{}]*)\}/g, '$1')
+      .replace(/\[\[([^\]]*)\]\]/g, '$1');
+  } while (out !== prev);
+  return out.replace(/\n/g, ' ');
+}
+
 /** Lazily computes a value from `seed`, recomputing only when `seed` changes (stable across other rerenders). */
 function useSeeded<T>(seed: number, build: (rng: () => number) => T): T {
   const ref = useRef<{ seed: number; value: T } | null>(null);
@@ -74,7 +103,7 @@ function MatchCheck({ check, seed, locked, onChange }: Props & { check: Extract<
       <p class="chk-q">{parseInline(check.q)}</p>
       <div class="chk-match-rows">
         {leftOrder.map((leftIdx) => (
-          <div class="chk-match-row" role="group" aria-label={check.pairs[leftIdx][0]} key={leftIdx}>
+          <div class="chk-match-row" role="group" aria-label={plainText(check.pairs[leftIdx][0])} key={leftIdx}>
             <div class="chk-match-left">{parseInline(check.pairs[leftIdx][0])}</div>
             <div class="chk-chips">
               {rightOrder.map((rightIdx) => (
@@ -113,7 +142,7 @@ function BucketCheck({ check, seed, locked, onChange }: Props & { check: Extract
       <p class="chk-q">{parseInline(check.q)}</p>
       <div class="chk-bucket-rows">
         {itemOrder.map((idx) => (
-          <div class="chk-bucket-row" role="group" aria-label={check.items[idx][0]} key={idx}>
+          <div class="chk-bucket-row" role="group" aria-label={plainText(check.items[idx][0])} key={idx}>
             <div class="chk-bucket-item">{parseInline(check.items[idx][0])}</div>
             <div class="chk-seg">
               {check.buckets.map((label, bIdx) => (
@@ -181,7 +210,9 @@ function OrderCheck({ check, seed, locked, onChange }: Props & { check: Extract<
 function parseDecimal(s: string): number | null {
   const trimmed = s.trim();
   if (!trimmed) return null;
-  const n = Number(trimmed.replace(/,/g, ''));
+  const stripped = trimmed.replace(/,/g, '');
+  if (!stripped) return null;
+  const n = Number(stripped);
   return Number.isFinite(n) ? n : null;
 }
 
@@ -214,16 +245,20 @@ function NumericCheck({ check, locked, onChange }: Props & { check: Extract<Chec
 
 /** Collects an answer for one Check; does not grade, reveal `why`, or handle confidence (that's the Lesson panel). */
 export function CheckView({ check, seed, locked, onChange }: Props) {
+  // Keying by the check's own identity (+ seed) forces Preact to unmount/remount the
+  // sub-component whenever the caller swaps in a different check, even one of the same
+  // `t` and shape, instead of reusing stale per-check answer state.
+  const key = `${idFor(check)}:${seed}`;
   switch (check.t) {
     case 'mcq':
-      return <McqCheck check={check} seed={seed} locked={locked} onChange={onChange} />;
+      return <McqCheck key={key} check={check} seed={seed} locked={locked} onChange={onChange} />;
     case 'match':
-      return <MatchCheck check={check} seed={seed} locked={locked} onChange={onChange} />;
+      return <MatchCheck key={key} check={check} seed={seed} locked={locked} onChange={onChange} />;
     case 'bucket':
-      return <BucketCheck check={check} seed={seed} locked={locked} onChange={onChange} />;
+      return <BucketCheck key={key} check={check} seed={seed} locked={locked} onChange={onChange} />;
     case 'order':
-      return <OrderCheck check={check} seed={seed} locked={locked} onChange={onChange} />;
+      return <OrderCheck key={key} check={check} seed={seed} locked={locked} onChange={onChange} />;
     case 'numeric':
-      return <NumericCheck check={check} seed={seed} locked={locked} onChange={onChange} />;
+      return <NumericCheck key={key} check={check} seed={seed} locked={locked} onChange={onChange} />;
   }
 }
