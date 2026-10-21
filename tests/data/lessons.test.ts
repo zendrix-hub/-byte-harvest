@@ -5,11 +5,40 @@ import type { Check, Packet } from '../../src/data/lessons/types';
 
 const packets = strategyPackets as unknown as Packet[];
 
-// Controller ruling: widened to allow any Vol.1 section (not just chapter 7), 2- or
-// 3-level section numbers, and single-page or page-range citations, since real packets
-// cite sections like §3.1.4, §6.2.1 and the past papers go beyond Subject-A alone.
-const SRC_RE = /^FE Prep Book Vol\.1 §\d+\.\d+(\.\d+)? pp?\.\d{1,3}(–\d{1,3})?$|^\(20(25|26)[SA], FE, Subject-[AB], Q\d{1,2}\)$/;
+// Controller ruling (fix round 1): tightened to the forms actually used — every book
+// citation is a 3-level Vol.1 section (chapter.section.subsection) with a single 3-digit
+// page; no `pp.` range ever appears in the authored content, so that alternative is dropped.
+const SRC_RE = /^FE Prep Book Vol\.1 §\d+\.\d+\.\d+ p\.\d{3}$|^\(20(25|26)[SA], FE, Subject-[AB], Q\d{1,2}\)$/;
 const ID_RE = /^(bs|ss|sm|pm|al)-[a-z0-9-]+$/;
+
+/** Every rendered (parseInline) string on a packet: title/hook/trap/model/example + per-check text. */
+function proseStrings(p: Packet): string[] {
+  const out: string[] = [p.title, p.hook];
+  if (p.trap) out.push(p.trap);
+  out.push(...p.model, p.example.q, ...p.example.steps);
+  for (const c of p.checks as Check[]) {
+    out.push(c.q, c.why);
+    switch (c.t) {
+      case 'mcq':
+        out.push(...c.opts);
+        break;
+      case 'match':
+        for (const [l, r] of c.pairs) out.push(l, r);
+        break;
+      case 'bucket':
+        out.push(...c.buckets);
+        for (const [label] of c.items) out.push(label);
+        break;
+      case 'order':
+        out.push(...c.steps);
+        break;
+      case 'numeric':
+        if (c.unit) out.push(c.unit);
+        break;
+    }
+  }
+  return out;
+}
 
 const strategyBank = BANK.filter((q) => topicInfo(q.topic).field === 'strategy');
 
@@ -72,6 +101,23 @@ describe('lesson packets (strategy & management)', () => {
         .map((q) => q.id)
         .sort();
       expect(p.qids, p.id).toEqual(expected);
+    }
+  });
+
+  it('lesson text uses only supported markup', () => {
+    // parseInline (src/ui/paper/QuestionBody.tsx) only understands `code`, **bold**,
+    // ^{sup}, _{sub}, ~{overline} and \n — a bare *x* or lone _ renders literally.
+    for (const p of packets) {
+      for (const s of proseStrings(p)) {
+        const withoutBold = s.replace(/\*\*.*?\*\*/g, '');
+        // allow `*` only as multiplication, surrounded by spaces/digits (e.g. "3 * 4")
+        const withoutMul = withoutBold.replace(/(?<=[\d ])\*(?=[\d ])/g, '');
+        expect(withoutMul, `${p.id}: ${s}`).not.toContain('*');
+
+        for (const m of s.matchAll(/_/g)) {
+          expect(s[m.index! + 1], `${p.id}: ${s}`).toBe('{');
+        }
+      }
     }
   });
 });

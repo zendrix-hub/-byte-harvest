@@ -474,7 +474,7 @@
       "green procurement"
     ],
     "title": "Green Procurement",
-    "hook": "A quick definition question: spot the option about *buying* eco-friendly goods, not certificates or labels.",
+    "hook": "A quick definition question: spot the option about **buying** eco-friendly goods, not certificates or labels.",
     "model": [
       "**Green procurement** (green purchasing): when buying, consider **environmental burden** on top of quality and price.",
       "Prefer products and services with a lower environmental impact, from **suppliers** that work to reduce their own impact.",
@@ -500,7 +500,7 @@
           "Raising investor funds for tree planting"
         ],
         "a": 0,
-        "why": "Green procurement is about what the organization *buys*. Labels, power certificates and fundraising are other environmental schemes."
+        "why": "Green procurement is about what the organization **buys**. Labels, power certificates and fundraising are other environmental schemes."
       },
       {
         "t": "bucket",
@@ -745,8 +745,8 @@
     "model": [
       "**MOT** (management of technology): running the business with technology as a core strategic resource.",
       "**Product innovation**: creating new products, or products clearly differentiated from competitors'.",
-      "**Process innovation**: radically improving *how* work is done (production, logistics, business processes).",
-      "Quick test: changes *what you sell* = product; changes *how you make/deliver it* = process."
+      "**Process innovation**: radically improving **how** work is done (production, logistics, business processes).",
+      "Quick test: changes **what you sell** = product; changes **how you make/deliver it** = process."
     ],
     "example": {
       "q": "A phone maker releases the first foldable-screen model, then automates its assembly line to halve build time. Classify each.",
@@ -1032,7 +1032,7 @@
             1
           ]
         ],
-        "why": "Changing *how* goods are made or handled is process innovation. A new item for sale is product innovation."
+        "why": "Changing **how** goods are made or handled is process innovation. A new item for sale is product innovation."
       },
       {
         "t": "mcq",
@@ -2663,7 +2663,7 @@
     "title": "COCOMO Cost Model",
     "hook": "The exam checks that you know which way COCOMO works: software size goes in, effort and duration come out.",
     "model": [
-      "**COCOMO** (Constructive Cost Model) is a *cost model* that uses a statistical formula.",
+      "**COCOMO** (Constructive Cost Model) is a **cost model** that uses a statistical formula.",
       "Input: estimated software **size** (thousands of lines of code, KLOC).",
       "Output: **effort** (person-months), then the project **duration** (months).",
       "Three levels: **basic**, **intermediate**, **detailed**.",
@@ -2716,7 +2716,7 @@
     "title": "Critical Path (Arrow Diagram)",
     "hook": "Arrow-diagram questions ask for the critical path or the minimum project length; one missed dummy arrow gives the wrong answer.",
     "model": [
-      "The **critical path** is the *longest* path from start to end; its length is the minimum project duration.",
+      "The **critical path** is the **longest** path from start to end; its length is the minimum project duration.",
       "Activities on it have **no slack**: any delay delays the whole project.",
       "Forward pass: at a merge node, take the **largest** earliest time.",
       "A **dummy** (dashed arrow) takes 0 days but still forces the waiting activity to start later.",
@@ -2773,7 +2773,7 @@
       "The **FP (function point) method** measures size by counting inputs, outputs, inquiries, logical files and interfaces, with weights.",
       "Development effort = FP ÷ productivity (FP per person-month).",
       "Add the other fixed work (e.g. installation, training).",
-      "When an overhead is a percentage of *all* the other work (as project management usually is in these questions), apply it to the **sum**, so add it last."
+      "When an overhead is a percentage of **all** the other work (as project management usually is in these questions), apply it to the **sum**, so add it last."
     ],
     "example": {
       "q": "300 FP, productivity 15 FP per person-month, 5 person-months for installation, plus 20% for project management. Total effort?",
@@ -2820,9 +2820,9 @@
     "title": "Earned Value Management (EVM)",
     "hook": "EVM questions either ask you to define PV, EV or AC, or give you the three figures and ask if the project is over budget, behind schedule, or both.",
     "model": [
-      "**PV** (Planned Value): budget for the work *scheduled* to be done by now.",
-      "**EV** (Earned Value): budget for the work *actually completed* so far.",
-      "**AC** (Actual Cost): money *really spent* on the completed work.",
+      "**PV** (Planned Value): budget for the work **scheduled** to be done by now.",
+      "**EV** (Earned Value): budget for the work **actually completed** so far.",
+      "**AC** (Actual Cost): money **really spent** on the completed work.",
       "**CV** = `EV − AC` (cost) and **SV** = `EV − PV` (schedule). Negative = over budget / behind schedule.",
       "**CPI** = `EV ÷ AC` and **SPI** = `EV ÷ PV`. Below 1 is bad, above 1 is good."
     ],
@@ -2863,7 +2863,7 @@
         "why": "CPI = EV ÷ AC = 60,000 ÷ 75,000 = **0.8**. Each $1 spent earned only $0.80 of value, so the project is over budget."
       }
     ],
-    "trap": "Mixing up the three values: the budget for *planned* work is PV and the *real cost* is AC; only the budget for *completed* work is EV.",
+    "trap": "Mixing up the three values: the budget for **planned** work is PV and the **real cost** is AC; only the budget for **completed** work is EV.",
     "src": [
       "(2025S, FE, Subject-A, Q41)"
     ],
