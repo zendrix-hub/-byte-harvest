@@ -6,4 +6,5 @@ export type PanelState =
   | { kind: 'session'; ids: string[]; mode: AttemptMode; title: string }
   | { kind: 'field'; field: FieldId }
   | { kind: 'practice'; subject: Subject; area?: string }
-  | { kind: 'house' };
+  | { kind: 'house' }
+  | { kind: 'lesson'; id: string; mode: 'learn' | 'water' };

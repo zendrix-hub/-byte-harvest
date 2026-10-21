@@ -3,6 +3,7 @@ import { PracticePanel } from '../ui/activities/PracticePanel';
 import { AlmanacPanel } from '../ui/Almanac';
 import { HousePanel } from '../ui/house/HousePanel';
 import { Panel } from '../ui/kit';
+import { LessonPanel } from '../ui/lesson/LessonPanel';
 import { Session } from '../ui/paper/Session';
 import type { PanelState } from './panel-types';
 import { closePanel } from './store';
@@ -23,6 +24,8 @@ function renderPanel(p: PanelState) {
       return <FieldPanel field={p.field} />;
     case 'house':
       return <HousePanel />;
+    case 'lesson':
+      return <LessonPanel key={`${p.id}:${p.mode}`} id={p.id} mode={p.mode} />;
     default:
       return (
         <Panel title="Coming soon" onClose={closePanel}>
