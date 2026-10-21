@@ -1,6 +1,6 @@
 import { byId } from '../data/bank';
 import { LAST_REVIEW_DAY } from './dates';
-import { cloneSave, type Attempt, type Crop, type MockRecord, type SaveData, type Settings } from './state';
+import { cloneSave, type Attempt, type Crop, type LessonLog, type LessonRun, type MockRecord, type SaveData, type Settings } from './state';
 
 export const SAVE_KEY = 'byteHarvest_v1';
 export const CORRUPT_KEY = 'byteHarvest_v1_corrupt';
@@ -11,6 +11,7 @@ export function defaultSave(): SaveData {
     farmer: 'Farmer',
     att: {},
     crops: {},
+    lessons: {},
     harvested: {},
     gold: 0,
     days: {},
@@ -55,6 +56,26 @@ function cleanCrop(x: unknown): Crop | null {
   };
 }
 
+function cleanLessonRun(x: unknown): LessonRun | null {
+  if (!isObj(x) || !isDate(x.d) || typeof x.right !== 'number' || typeof x.n !== 'number') return null;
+  const run: LessonRun = {
+    d: x.d,
+    right: Math.floor(num(x.right)),
+    n: Math.floor(num(x.n)),
+    solid: x.solid === true,
+    sbw: x.sbw === true,
+    mode: x.mode === 'water' ? 'water' : 'learn',
+  };
+  if (typeof x.ts === 'number') run.ts = x.ts;
+  return run;
+}
+
+function cleanLessonLog(x: unknown): LessonLog | null {
+  if (!isObj(x) || !isDate(x.first) || !Array.isArray(x.runs)) return null;
+  const runs = x.runs.map(cleanLessonRun).filter((r): r is LessonRun => r !== null);
+  return { first: x.first, runs, mastered: x.mastered === true };
+}
+
 function cleanMock(x: unknown): MockRecord | null {
   if (!isObj(x) || !isDate(x.d) || typeof x.name !== 'string') return null;
   if (x.paper !== '2025S' && x.paper !== '2025A' && x.paper !== '2026S') return null;
@@ -80,6 +101,12 @@ export function normalizeSave(raw: unknown): SaveData {
       if (crop && crop.id === id) s.crops[id] = crop;
     }
   }
+  if (isObj(raw.lessons)) {
+    for (const [id, log] of Object.entries(raw.lessons)) {
+      const clean = cleanLessonLog(log);
+      if (clean) s.lessons[id] = clean;
+    }
+  }
   if (isObj(raw.harvested)) {
     for (const [topic, n] of Object.entries(raw.harvested)) if (num(n) > 0) s.harvested[topic] = Math.floor(num(n));
   }
@@ -90,6 +117,7 @@ export function normalizeSave(raw: unknown): SaveData {
       s.days[d] = {
         answered: num(log.answered), correct: num(log.correct), planted: num(log.planted),
         harvested: num(log.harvested), goldEarned: num(log.goldEarned), focusMin: num(log.focusMin),
+        lessons: num(log.lessons),
       };
     }
   }

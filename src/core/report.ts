@@ -61,14 +61,18 @@ export function diaryReport(s: SaveData, today: string): string {
   const miss = td.filter((r) => !r.ok);
   const crops = Object.values(s.crops);
   const day = s.days[today];
-  return [
+  const thirsty = dueCrops(s, today);
+  const conceptThirsty = thirsty.filter((c) => c.kind === 'concept').length;
+  const lines = [
     `Byte Harvest diary · ${today} · D-${daysToExam(today)}`,
     `Today: ${frac(td)} (A ${frac(td.filter((r) => subjectOf(r.id) === 'A'))}, B ${frac(td.filter((r) => subjectOf(r.id) === 'B'))}) · first half ${pct(td.slice(0, half))} · second half ${pct(td.slice(half))}`,
     `Sure but wrong: ${miss.filter((r) => r.c === 'S').map(line).join('; ') || 'none'}`,
     `Other misses: ${miss.filter((r) => r.c !== 'S').map(line).join('; ') || 'none'}`,
     `Lucky guesses: ${td.filter((r) => r.ok && r.c === 'G').map((r) => sourceLabel(r.id)).join(', ') || 'none'}`,
     `Weak topics (all time): ${weakTopics(s).join(', ') || 'none yet'}`,
-    `Farm: ${crops.length} crops (${dueCrops(s, today).length} thirsty, ${crops.filter((c) => c.stage === 3).length} ready) · harvested today ${day?.harvested ?? 0} · gold ${s.gold} · focus ${day?.focusMin ?? 0} min`,
+    `Farm: ${crops.length} crops (${thirsty.length} thirsty, ${conceptThirsty} concept, ${crops.filter((c) => c.stage === 3).length} ready) · harvested today ${day?.harvested ?? 0} · gold ${s.gold} · focus ${day?.focusMin ?? 0} min`,
     `Mocks: ${s.mocks.map((m) => `${m.name} ${m.pct}%`).join(', ') || 'none'}`,
-  ].join('\n');
+  ];
+  if (day?.lessons) lines.push(`Lessons: ${day.lessons} new`);
+  return lines.join('\n');
 }

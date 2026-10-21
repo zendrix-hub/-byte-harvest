@@ -60,6 +60,45 @@ describe('loading saves', () => {
     expect(s.settings).toEqual({ sound: false, haptics: true, batterySaver: false });
   });
 
+  it('normalizes missing or bad lesson logs', () => {
+    expect(loadSave(memoryStorage())).toMatchObject({ lessons: {} });
+
+    const st = memoryStorage();
+    st.setItem(
+      SAVE_KEY,
+      JSON.stringify({
+        lessons: {
+          x: 5, // not an object at all → dropped
+          good: {
+            first: '2026-10-16',
+            mastered: true,
+            runs: [
+              { d: '2026-10-16', right: 1, n: 2, solid: false, sbw: true, mode: 'learn', ts: 10 },
+              { d: 'not-a-date', right: 1, n: 1, solid: true, sbw: false, mode: 'water' }, // dropped
+              { d: '2026-10-17', right: 'two', n: 2, solid: true, sbw: false, mode: 'water' }, // dropped
+            ],
+          },
+        },
+      }),
+    );
+    const s = loadSave(st);
+    expect(s.lessons.x).toBeUndefined();
+    expect(s.lessons.good).toEqual({
+      first: '2026-10-16',
+      mastered: true,
+      runs: [{ d: '2026-10-16', right: 1, n: 2, solid: false, sbw: true, mode: 'learn', ts: 10 }],
+    });
+
+    const dayNoLessons = loadSave(
+      (() => {
+        const m = memoryStorage();
+        m.setItem(SAVE_KEY, JSON.stringify({ days: { '2026-10-16': { answered: 1 } } }));
+        return m;
+      })(),
+    );
+    expect(dayNoLessons.days['2026-10-16'].lessons).toBe(0);
+  });
+
   it('returns defaults when storage is blocked', () => {
     expect(loadSave(memoryStorage({ throwOnGet: true }))).toEqual(defaultSave());
   });

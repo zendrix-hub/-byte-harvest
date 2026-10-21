@@ -37,6 +37,23 @@ export interface DayLog {
   harvested: number;
   goldEarned: number;
   focusMin: number;
+  lessons: number;
+}
+
+export interface LessonRun {
+  d: string;
+  right: number;
+  n: number;
+  solid: boolean;
+  sbw: boolean;
+  mode: 'learn' | 'water';
+  ts?: number;
+}
+
+export interface LessonLog {
+  first: string;
+  runs: LessonRun[];
+  mastered: boolean;
 }
 
 export interface MockRecord {
@@ -61,6 +78,7 @@ export interface SaveData {
   farmer: string;
   att: Record<string, Attempt[]>;
   crops: Record<string, Crop>;
+  lessons: Record<string, LessonLog>;
   harvested: Record<string, number>;
   gold: number;
   days: Record<string, DayLog>;
@@ -70,7 +88,7 @@ export interface SaveData {
   seenAlmanac: string;
 }
 
-export const emptyDay = (): DayLog => ({ answered: 0, correct: 0, planted: 0, harvested: 0, goldEarned: 0, focusMin: 0 });
+export const emptyDay = (): DayLog => ({ answered: 0, correct: 0, planted: 0, harvested: 0, goldEarned: 0, focusMin: 0, lessons: 0 });
 
 export const ensureDay = (s: SaveData, date: string): DayLog => (s.days[date] ??= emptyDay());
 

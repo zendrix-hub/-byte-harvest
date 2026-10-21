@@ -1,6 +1,6 @@
 import { recordPaperAnswer, tagMiss } from '../../src/core/record';
 import { diaryReport, masteryOf, topicMastery, weakTopics } from '../../src/core/report';
-import type { SaveData } from '../../src/core/state';
+import { emptyDay, type SaveData } from '../../src/core/state';
 import type { Confidence } from '../../src/data/types';
 import { makeSave } from '../helpers';
 
@@ -22,8 +22,28 @@ describe('diary report', () => {
     expect(lines[2]).toBe('Sure but wrong: (2025S, FE, Subject-A, Q1) Number & logic/bit masking picked c key a sure 1:05 [K]');
     expect(lines[3]).toContain('(2025S, FE, Subject-B, Q2)');
     expect(lines[4]).toBe('Lucky guesses: (2025S, FE, Subject-A, Q2)');
-    expect(lines[6]).toBe('Farm: 3 crops (0 thirsty, 0 ready) · harvested today 0 · gold 6 · focus 0 min');
+    expect(lines[6]).toBe('Farm: 3 crops (0 thirsty, 0 concept, 0 ready) · harvested today 0 · gold 6 · focus 0 min');
     expect(lines[7]).toBe('Mocks: none');
+    expect(lines).toHaveLength(8); // no Lessons line: nothing was learned today
+  });
+
+  it('shows a Lessons line only when the day logged new learn runs', () => {
+    const s = makeSave({ days: { [T]: { ...emptyDay(), lessons: 2 } } });
+    const lines = diaryReport(s, T).split('\n');
+    expect(lines[lines.length - 1]).toBe('Lessons: 2 new');
+  });
+
+  it('counts concept crops among thirsty crops on the Farm line', () => {
+    const s = makeSave({
+      crops: {
+        'concept:bs-1': {
+          id: 'concept:bs-1', kind: 'concept', ref: 'bs-1', topic: 'Number & logic',
+          stage: 1, due: T, last: '2026-10-15', plantedOn: '2026-10-15', sbw: false, pest: null,
+        },
+      },
+    });
+    const lines = diaryReport(s, T).split('\n');
+    expect(lines[6]).toBe('Farm: 1 crops (1 thirsty, 1 concept, 0 ready) · harvested today 0 · gold 0 · focus 0 min');
   });
 });
 
