@@ -1,0 +1,109 @@
+[
+  {
+    "id": "bs-balanced-scorecard",
+    "topic": "Business strategy",
+    "subs": ["balanced scorecard"],
+    "title": "Balanced Scorecard",
+    "hook": "The exam loves to hand you a target (\"cut defects\", \"grow repeat sales\") and ask which of the 4 BSC perspectives it belongs to.",
+    "model": [
+      "A **Balanced Scorecard (BSC)** translates strategy into 4 linked perspectives: **Financial**, **Customer**, **Internal business process**, **Learning & growth**.",
+      "Each perspective pairs a *strategic target* with a *KPI* (key performance indicator) that measures progress toward it.",
+      "**Financial**: targets like profitability/growth \\n KPI examples: ROI, revenue growth.",
+      "**Customer**: targets like satisfaction/retention \\n KPI examples: repeat-purchase rate, complaint count.",
+      "**Internal business process**: targets like efficiency/quality inside operations \\n KPI examples: defect rate, manufacturing lead time.",
+      "**Learning & growth**: targets like employee capability/innovation \\n KPI examples: training hours, skill certification rate."
+    ],
+    "example": {
+      "q": "A factory wants to cut the number of days it takes to manufacture a unit. Which perspective and KPI fit?",
+      "steps": [
+        "Ask what the target describes: doing the work faster/better _{inside operations}_, not selling or external relations.",
+        "That points to the **internal business process** perspective.",
+        "A matching KPI: reduction in **manufacturing lead time** (days from start to finished unit).",
+        "Check it isn't customer-facing (no complaints/satisfaction mentioned) or financial (no cost/revenue figure) — confirms internal business process."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each BSC perspective to an example strategic target/KPI pair.",
+        "pairs": [
+          ["Financial", "Increase return on investment (ROI)"],
+          ["Customer", "Reduce customer complaint rate"],
+          ["Internal business process", "Cut manufacturing defect rate"],
+          ["Learning & growth", "Raise employee certification rate"]
+        ],
+        "why": "Each KPI is defined by what it measures: ROI measures money (financial), complaint rate measures how customers feel (customer), defect rate measures how the operation runs (internal process), and certification rate measures staff capability (learning & growth)."
+      },
+      {
+        "t": "order",
+        "q": "Arrange the four BSC perspectives in the order they're usually drawn, top to bottom.",
+        "steps": ["Financial", "Customer", "Internal business process", "Learning & growth"],
+        "why": "The classic Kaplan & Norton diagram stacks Financial on top (the ultimate goal), then Customer, then Internal business process, then Learning & growth at the base (the capability that enables everything above it)."
+      },
+      {
+        "t": "mcq",
+        "q": "A hospital shortens the average time a patient waits between check-in and seeing a doctor. Which perspective does this target belong to?",
+        "opts": ["Financial", "Customer", "Internal business process", "Learning & growth"],
+        "a": 2,
+        "why": "Wait time between steps of a workflow is an operational-efficiency measure — it's about how the process runs, not a cost/revenue figure (financial) or a training measure (learning & growth)."
+      }
+    ],
+    "trap": "Don't confuse a customer-facing *outcome* (e.g., a satisfaction score) with an internal *process* metric (e.g., cycle time) just because the process serves the customer — the perspective is defined by what is measured, not by who ultimately benefits.",
+    "src": ["(2026S, FE, Subject-A, Q51)"],
+    "qids": ["2026S_A_Q51"]
+  },
+  {
+    "id": "pm-evm",
+    "topic": "Project management",
+    "subs": ["EVM"],
+    "title": "Earned Value Management (EVM)",
+    "hook": "EVM questions give you three dollar figures and ask whether the project is over budget, behind schedule, or both — you just need the right formula.",
+    "model": [
+      "**PV** (Planned Value): the budgeted cost of the work that was *scheduled* to be done by now.",
+      "**EV** (Earned Value): the budgeted cost of the work *actually completed* so far.",
+      "**AC** (Actual Cost): the real money *spent* on the work done so far.",
+      "**CV** (Cost Variance) = `EV − AC`. Positive means under budget; negative means over budget.",
+      "**SV** (Schedule Variance) = `EV − PV`. Positive means ahead of schedule; negative means behind schedule.",
+      "**CPI** = `EV / AC` and **SPI** = `EV / PV`. Values above 1 are good (efficient); below 1 are bad."
+    ],
+    "example": {
+      "q": "A project's PV to date is `$100,000`, EV is `$90,000`, and AC is `$120,000`. How is the project doing?",
+      "steps": [
+        "CV = EV − AC = 90,000 − 120,000 = **−$30,000** (over budget).",
+        "SV = EV − PV = 90,000 − 100,000 = **−$10,000** (behind schedule).",
+        "CPI = EV / AC = 90,000 / 120,000 = **0.75** (every $1 spent earns only $0.75 of planned value).",
+        "SPI = EV / PV = 90,000 / 100,000 = **0.9** (progressing at 90% of the planned pace).",
+        "Both variances are negative and both indices are below 1: the project is over budget _and_ behind schedule."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each EVM term to its definition.",
+        "pairs": [
+          ["PV", "Budgeted cost of the work scheduled to be done by now"],
+          ["EV", "Budgeted cost of the work actually completed so far"],
+          ["AC", "Actual cost spent on the work completed so far"]
+        ],
+        "why": "PV is the plan, EV is the budget value of what's actually done, and AC is the real money spent getting it done — three separate measurements taken at the same point in time."
+      },
+      {
+        "t": "numeric",
+        "q": "A task has PV = `$50,000` and EV = `$42,000`. What is the schedule variance (SV), in dollars? (negative if behind schedule)",
+        "a": -8000,
+        "unit": "$",
+        "why": "SV = EV − PV = 42,000 − 50,000 = **−$8,000**. A negative SV means the work completed so far is worth less than what was scheduled — the project is behind schedule."
+      },
+      {
+        "t": "mcq",
+        "q": "A project has AC = `$80,000` and EV = `$80,000`. Which measure tells you directly whether the project is on schedule — not just on budget?",
+        "opts": ["CPI (EV/AC)", "SPI (EV/PV)", "CV (EV−AC)", "AC alone"],
+        "a": 1,
+        "why": "SPI = EV/PV compares earned value to *planned* value, which is a schedule measure. CPI and CV both compare EV to AC, which measures cost performance, not schedule."
+      }
+    ],
+    "trap": "Don't mix up CV and SV: both use EV as the baseline, but CV compares it to AC (cost) while SV compares it to PV (schedule). A negative SV does **not** mean over budget — it means behind schedule; check CV separately for budget status.",
+    "src": ["(2025S, FE, Subject-A, Q41)"],
+    "qids": ["2025S_A_Q41"]
+  }
+]
