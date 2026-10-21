@@ -1,109 +1,3376 @@
 [
   {
-    "id": "bs-balanced-scorecard",
+    "id": "bs-affiliate-marketing",
     "topic": "Business strategy",
-    "subs": ["balanced scorecard"],
-    "title": "Balanced Scorecard",
-    "hook": "The exam loves to hand you a target (\"cut defects\", \"grow repeat sales\") and ask which of the 4 BSC perspectives it belongs to.",
+    "subs": [
+      "affiliate marketing"
+    ],
+    "title": "Affiliate Marketing",
+    "hook": "FE shows an affiliate-program flow and asks which arrow is which step. Learn the sequence.",
     "model": [
-      "A **Balanced Scorecard (BSC)** translates strategy into 4 linked perspectives: **Financial**, **Customer**, **Internal business process**, **Learning & growth**.",
-      "Each perspective pairs a strategic target with a KPI (key performance indicator) that measures progress toward it.",
-      "**Financial**: targets like profitability/growth \n KPI examples: ROI, revenue growth.",
-      "**Customer**: targets like satisfaction/retention \n KPI examples: repeat-purchase rate, complaint count.",
-      "**Internal business process**: targets like efficiency/quality inside operations \n KPI examples: defect rate, manufacturing lead time.",
-      "**Learning & growth**: targets like employee capability/innovation \n KPI examples: training hours, skill certification rate."
+      "In **affiliate marketing**, a site owner (affiliate) posts an advertiser's ad or link.",
+      "The advertiser pays the affiliate a **success fee** (commission) only when a referred visitor buys (or completes an action).",
+      "It is pay-for-results: no sale, no fee.",
+      "Money flows **advertiser → affiliate**; the purchase goes **viewer → advertiser**."
     ],
     "example": {
-      "q": "A factory wants to cut the number of days it takes to manufacture a unit. Which perspective and KPI fit?",
+      "q": "A blogger joins a bookstore's affiliate program. Trace one sale.",
       "steps": [
-        "Ask what the target describes: doing the work faster/better inside operations, not selling or external relations.",
-        "That points to the **internal business process** perspective.",
-        "A matching KPI: reduction in **manufacturing lead time** (days from start to finished unit).",
-        "Check it isn't customer-facing (no complaints/satisfaction mentioned) or financial (no cost/revenue figure) — confirms internal business process."
+        "Blogger joins and puts the bookstore's ad on the blog.",
+        "A reader clicks the ad and lands on the bookstore's product page.",
+        "The reader buys the book from the bookstore.",
+        "The bookstore pays the blogger a commission based on that sale."
+      ]
+    },
+    "checks": [
+      {
+        "t": "order",
+        "q": "Order the steps of an affiliate program.",
+        "steps": [
+          "Site owner joins the advertiser's affiliate program",
+          "Visitor clicks the ad on the site",
+          "Visitor is taken to the advertiser's sales page",
+          "Visitor buys the product",
+          "Advertiser pays the site owner a success fee"
+        ],
+        "why": "Join → click → link → buy → commission. The fee comes last because it depends on the sale."
+      },
+      {
+        "t": "mcq",
+        "q": "In an affiliate program, who pays whom the success fee?",
+        "opts": [
+          "The visitor pays the site owner",
+          "The advertiser (EC site) pays the site owner",
+          "The site owner pays the advertiser",
+          "The visitor pays the advertiser"
+        ],
+        "a": 1,
+        "why": "The advertiser rewards the affiliate site for the sale it referred. The visitor pays only for the product itself."
+      }
+    ],
+    "trap": "Mixing up the purchase (viewer → EC site) with the success fee (EC site → site owner).",
+    "src": [
+      "(2025S, FE, Subject-A, Q55)"
+    ],
+    "qids": [
+      "2025S_A_Q55"
+    ]
+  },
+  {
+    "id": "bs-balanced-scorecard",
+    "topic": "Business strategy",
+    "subs": [
+      "balanced scorecard"
+    ],
+    "title": "Balanced Scorecard",
+    "hook": "FE gives a target + KPI and asks which of the 4 BSC perspectives it belongs to.",
+    "model": [
+      "A **BSC** turns strategy into targets and **KPIs** across 4 perspectives.",
+      "**Financial**: profit, sales growth, ROI.",
+      "**Customer**: satisfaction, retention, complaints.",
+      "**Internal business process**: efficiency and quality inside operations (lead time, defect rate).",
+      "**Learning & growth**: people and capability (training, skills)."
+    ],
+    "example": {
+      "q": "Target: faster production. KPI: fewer days to manufacture. Which perspective?",
+      "steps": [
+        "It measures how operations run inside the firm.",
+        "Not money, not customers, not training → **internal business process**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "bucket",
+        "q": "Put each KPI in its BSC perspective.",
+        "buckets": [
+          "Financial",
+          "Customer",
+          "Internal process",
+          "Learning & growth"
+        ],
+        "items": [
+          [
+            "Operating profit margin",
+            0
+          ],
+          [
+            "Repeat-customer rate",
+            1
+          ],
+          [
+            "Defect rate on the line",
+            2
+          ],
+          [
+            "Hours of staff skills training",
+            3
+          ]
+        ],
+        "why": "Classify by what is measured: money, customers, operations, or staff capability."
+      },
+      {
+        "t": "mcq",
+        "q": "Target: shorten order-to-shipment time. KPI: average processing days. Which perspective?",
+        "opts": [
+          "Financial",
+          "Customer",
+          "Internal business process",
+          "Learning & growth"
+        ],
+        "a": 2,
+        "why": "Processing time measures how efficiently internal operations run."
+      }
+    ],
+    "trap": "Calling training for development capability \"internal process\"; training staff is learning & growth.",
+    "src": [
+      "(2026S, FE, Subject-A, Q51)"
+    ],
+    "qids": [
+      "2026S_A_Q51"
+    ]
+  },
+  {
+    "id": "bs-benchmarking",
+    "topic": "Business strategy",
+    "subs": [
+      "benchmarking"
+    ],
+    "title": "Benchmarking",
+    "hook": "Benchmarking appears alongside BPR, ERP and core competence. The word to look for is **comparison**.",
+    "model": [
+      "**Benchmarking**: compare your own products, services and processes with **competitors or best-practice (advanced) companies**.",
+      "The comparison is both qualitative and quantitative. You find the gap, then copy or adapt the better practice.",
+      "**BPR** is something else: a radical redesign of business processes, using IT, from the customer's view.",
+      "**Core competence**: putting resources into your unique, hard-to-copy skills."
+    ],
+    "example": {
+      "q": "A bank finds its loan approval takes 10 days while the best rival takes 2. It studies the rival's process. What is this?",
+      "steps": [
+        "It measures its own process against a top performer.",
+        "It finds the gap (10 vs 2 days) and learns from the better practice.",
+        "This is **benchmarking**."
       ]
     },
     "checks": [
       {
         "t": "match",
-        "q": "Match each BSC perspective to an example strategic target/KPI pair.",
+        "q": "Match each term to its meaning.",
         "pairs": [
-          ["Financial", "Increase return on investment (ROI)"],
-          ["Customer", "Reduce customer complaint rate"],
-          ["Internal business process", "Cut manufacturing defect rate"],
-          ["Learning & growth", "Raise employee certification rate"]
+          [
+            "Benchmarking",
+            "Compare yourself with leading firms to find gaps"
+          ],
+          [
+            "BPR",
+            "Radically redesign business processes using IT"
+          ],
+          [
+            "Core competence",
+            "Focus on unique skills rivals can't easily copy"
+          ],
+          [
+            "ERP",
+            "Integrated planning of company-wide resources"
+          ]
         ],
-        "why": "Each KPI is defined by what it measures: ROI measures money (financial), complaint rate measures how customers feel (customer), defect rate measures how the operation runs (internal process), and certification rate measures staff capability (learning & growth)."
-      },
-      {
-        "t": "order",
-        "q": "Arrange the four BSC perspectives in the order they're usually drawn, top to bottom.",
-        "steps": ["Financial", "Customer", "Internal business process", "Learning & growth"],
-        "why": "The classic Kaplan & Norton diagram stacks Financial on top (the ultimate goal), then Customer, then Internal business process, then Learning & growth at the base (the capability that enables everything above it)."
+        "why": "Only benchmarking is built on comparison with others. The other three are about redesign, focus and integration."
       },
       {
         "t": "mcq",
-        "q": "A hospital shortens the average time a patient waits between check-in and seeing a doctor. Which perspective does this target belong to?",
-        "opts": ["Financial", "Customer", "Internal business process", "Learning & growth"],
-        "a": 2,
-        "why": "Wait time between steps of a workflow is an operational-efficiency measure — it's about how the process runs, not a cost/revenue figure (financial) or a training measure (learning & growth)."
+        "q": "A hotel measures its check-in time and guest ratings against the top chain in the region. What is this?",
+        "opts": [
+          "BPR",
+          "Benchmarking",
+          "Core competence",
+          "Outsourcing"
+        ],
+        "a": 1,
+        "why": "Measuring against a best-in-class company is benchmarking."
       }
     ],
-    "trap": "Don't confuse a customer-facing outcome (e.g., a satisfaction score) with an internal process metric (e.g., cycle time) just because the process serves the customer — the perspective is defined by what is measured, not by who ultimately benefits.",
-    "src": ["(2026S, FE, Subject-A, Q51)"],
-    "qids": ["2026S_A_Q51"]
+    "trap": "The BPR option (redesigning processes from the customer's view with IT) sounds like improvement, but it involves no comparison.",
+    "src": [
+      "(2025A, FE, Subject-A, Q49)"
+    ],
+    "qids": [
+      "2025A_A_Q49"
+    ]
+  },
+  {
+    "id": "bs-cio-role",
+    "topic": "Business strategy",
+    "subs": [
+      "CIO role"
+    ],
+    "title": "Role of the CIO",
+    "hook": "FE often asks what the CIO does. The answer is always strategy-level, company-wide IT planning.",
+    "model": [
+      "The **CIO** (chief information officer) is the top executive responsible for information systems.",
+      "Main job: build **information/IT strategy** aligned with business strategy and optimize IT investment across the whole company.",
+      "Not a day-to-day manager of the IT department, and not the **system auditor**, who must be independent.",
+      "Needs both IT knowledge and business/industry knowledge."
+    ],
+    "example": {
+      "q": "Which is the CIO's task: (1) fix a server outage, (2) audit system controls, (3) plan company-wide IT investment for a new business strategy?",
+      "steps": [
+        "(1) is operations work for IT staff.",
+        "(2) is done by an independent auditor.",
+        "(3) is strategic and company-wide → **CIO**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "Which is a major responsibility of the CIO?",
+        "opts": [
+          "Auditing whether systems work properly and advising the IT department",
+          "Creating a company-wide plan to get the most from IT investment in support of business strategy",
+          "Answering user queries about the system and assigning fixes",
+          "Running daily backups for the data center"
+        ],
+        "a": 1,
+        "why": "The CIO's role is strategic: aligning IT investment with business strategy. Auditing and daily operations belong to others."
+      },
+      {
+        "t": "match",
+        "q": "Match each role to its main concern.",
+        "pairs": [
+          [
+            "CIO",
+            "Company-wide IT strategy and investment"
+          ],
+          [
+            "System auditor",
+            "Independent check of system controls"
+          ],
+          [
+            "IT operations manager",
+            "Keeping systems running day to day"
+          ]
+        ],
+        "why": "Strategy belongs to the CIO, independent assurance to the auditor, and running systems to operations."
+      }
+    ],
+    "trap": "Choosing the option about giving detailed improvement instructions; that is operational management, not the CIO's strategic role.",
+    "src": [
+      "FE Prep Book Vol.1 §7.1.1 p.263",
+      "(2025A, FE, Subject-A, Q57)"
+    ],
+    "qids": [
+      "2025A_A_Q57"
+    ]
+  },
+  {
+    "id": "bs-facilitator",
+    "topic": "Business strategy",
+    "subs": [
+      "facilitator"
+    ],
+    "title": "Facilitator",
+    "hook": "The exam asks for the facilitator's role. The key word is **neutral**.",
+    "model": [
+      "A **facilitator** runs the meeting process from a **neutral, impartial** position.",
+      "Gets **everyone to speak**, draws out opinions, and organizes the flow of discussion toward agreement.",
+      "Does **not** push a conclusion (not even management's).",
+      "Is not the clerk (schedule, materials, minutes) and not a subject expert giving advice."
+    ],
+    "example": {
+      "q": "In a requirements workshop, the sales head talks over everyone. What should the facilitator do?",
+      "steps": [
+        "Stay neutral and don't take sides.",
+        "Invite quieter members to share their views.",
+        "Summarize the points so far and guide the group to the next topic."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "Which behavior fits a facilitator?",
+        "opts": [
+          "Steering the group to the answer the boss wants",
+          "Asking silent members for their views and summarizing the discussion without taking sides",
+          "Booking the room and writing the minutes",
+          "Giving legal advice only"
+        ],
+        "a": 1,
+        "why": "Facilitators stay impartial and help everyone take part. The other options are a biased chair, an admin role and an expert role."
+      },
+      {
+        "t": "bucket",
+        "q": "Is it the facilitator's job?",
+        "buckets": [
+          "Facilitator's job",
+          "Not the facilitator's job"
+        ],
+        "items": [
+          [
+            "Encourage all participants to speak",
+            0
+          ],
+          [
+            "Organize the flow of discussion",
+            0
+          ],
+          [
+            "Lead the group to management's preferred decision",
+            1
+          ],
+          [
+            "Prepare handouts and take minutes",
+            1
+          ]
+        ],
+        "why": "The facilitator handles the discussion process neutrally. Pushing a decision breaks neutrality, and admin work belongs to a secretary."
+      }
+    ],
+    "trap": "\"Acting as chair and controlling the talk to reach management's conclusion\" sounds like leadership, but it breaks neutrality.",
+    "src": [
+      "(2025S, FE, Subject-A, Q57)"
+    ],
+    "qids": [
+      "2025S_A_Q57"
+    ]
+  },
+  {
+    "id": "bs-fishbone-diagram",
+    "topic": "Business strategy",
+    "subs": [
+      "fishbone diagram"
+    ],
+    "title": "Cause and Effect (Fishbone) Diagram",
+    "hook": "You may be shown part of the diagram and asked how two boxes are related. A bone that points into a line is a **cause** of it.",
+    "model": [
+      "One of the **seven QC tools**. Also called the Ishikawa or **fishbone** diagram.",
+      "The **effect** (problem) sits at the head. The spine points to it.",
+      "Big bones are main cause groups. Smaller bones are sub-causes that point into the bigger ones.",
+      "Common cause groups are the **4M**: Man, Machine, Method, Material.",
+      "Different from a logic tree (purpose → means) and a Pareto chart (ranks items by size)."
+    ],
+    "example": {
+      "q": "Head: \"Late deliveries\". A bone \"Truck breakdowns\" points into the spine, and \"No maintenance schedule\" points into the \"Truck breakdowns\" bone. Relationships?",
+      "steps": [
+        "Truck breakdowns point into the spine, so they are a cause of late deliveries.",
+        "No maintenance schedule points into the breakdown bone, so it is a cause of the breakdowns.",
+        "It is a chain of causes ending at the effect."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "In a fishbone diagram, a small bone X points into a larger bone Y. What is X to Y?",
+        "opts": [
+          "A cause of Y",
+          "The purpose of Y",
+          "A means of achieving Y",
+          "An attribute of Y"
+        ],
+        "a": 0,
+        "why": "Every bone shows a cause, pointing toward the effect it contributes to."
+      },
+      {
+        "t": "match",
+        "q": "Match each QC tool to what it shows.",
+        "pairs": [
+          [
+            "Cause and effect diagram",
+            "Causes branching toward one problem"
+          ],
+          [
+            "Pareto chart",
+            "Items sorted by size with a cumulative line"
+          ],
+          [
+            "Scatter diagram",
+            "Correlation between two variables"
+          ]
+        ],
+        "why": "The fishbone organizes causes. The Pareto chart ranks how big each item is. The scatter diagram shows correlation."
+      }
+    ],
+    "trap": "\"B is the means of A\" describes a logic/tree diagram. In a fishbone diagram, a bone is always a cause.",
+    "src": [
+      "FE Prep Book Vol.1 §7.3.1 p.275",
+      "(2025S, FE, Subject-A, Q58)"
+    ],
+    "qids": [
+      "2025S_A_Q58"
+    ]
+  },
+  {
+    "id": "bs-franchising",
+    "topic": "Business strategy",
+    "subs": [
+      "franchising"
+    ],
+    "title": "Franchising vs Licensing",
+    "hook": "Both involve royalties. The difference is whether the partner **runs a store under your rules with your support**.",
+    "model": [
+      "**Franchising**: independent owners (franchisees) invest in and run their own stores under the franchisor's **brand and standards**.",
+      "The franchisee pays **royalties** for the brand **and** business support (training, know-how, supply).",
+      "**Licensing**: the right to use IP (a trademark, patent or technology) for a royalty, with no store-operation rules or support package.",
+      "**Direct distribution**: the maker sells straight to consumers. **Wholesaling**: selling in bulk to retailers or businesses."
+    ],
+    "example": {
+      "q": "A milk-tea brand lets an entrepreneur open a shop with her own money. She follows the brand's recipes and store rules, gets training, and pays a monthly royalty. What is this?",
+      "steps": [
+        "She is an independent owner who invests her own money.",
+        "She uses the brand under its standards and gets support.",
+        "She pays royalties, so this is **franchising**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "A toy maker pays a film studio a royalty to print a movie character on its own products. The studio sets no store rules and gives no business support. What is this?",
+        "opts": [
+          "Franchising",
+          "Licensing",
+          "Direct distribution",
+          "Wholesaling"
+        ],
+        "a": 1,
+        "why": "Paying only for the right to use IP, with no operating rules or support, is licensing."
+      },
+      {
+        "t": "bucket",
+        "q": "Which arrangement does each feature point to?",
+        "buckets": [
+          "Franchising",
+          "Licensing"
+        ],
+        "items": [
+          [
+            "Owner must follow store management rules",
+            0
+          ],
+          [
+            "Franchisor provides training and support",
+            0
+          ],
+          [
+            "Royalty only for using a patent",
+            1
+          ],
+          [
+            "Use of a trademark on your own product line",
+            1
+          ]
+        ],
+        "why": "Operating rules plus support mean franchising. Using IP alone means licensing."
+      }
+    ],
+    "trap": "Licensing also involves royalties, but it covers only the use of IP or a brand, without store-operation duties or support.",
+    "src": [
+      "(2026S, FE, Subject-A, Q50)"
+    ],
+    "qids": [
+      "2026S_A_Q50"
+    ]
+  },
+  {
+    "id": "bs-green-procurement",
+    "topic": "Business strategy",
+    "subs": [
+      "green procurement"
+    ],
+    "title": "Green Procurement",
+    "hook": "A quick definition question: spot the option about *buying* eco-friendly goods, not certificates or labels.",
+    "model": [
+      "**Green procurement** (green purchasing): when buying, consider **environmental burden** on top of quality and price.",
+      "Prefer products and services with a lower environmental impact, from **suppliers** that work to reduce their own impact.",
+      "It is a **purchasing** decision by the buyer (company or government).",
+      "Not the same as **eco-labels** (third-party certified product labels) or tradable **green power certificates**."
+    ],
+    "example": {
+      "q": "A city office is buying printers. Two models match on price and quality, but one uses less power and its maker runs an emissions-cut program. What does green procurement say?",
+      "steps": [
+        "Quality and price are tied, so look at environmental burden.",
+        "Model 2 has lower impact and a greener supplier.",
+        "Buy model 2. That choice is green procurement."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "Which activity is green procurement?",
+        "opts": [
+          "Buying recycled paper from a vendor with an environmental program, when quality and price are acceptable",
+          "Getting a third-party eco-label for your own product",
+          "Selling wind-power certificates",
+          "Raising investor funds for tree planting"
+        ],
+        "a": 0,
+        "why": "Green procurement is about what the organization *buys*. Labels, power certificates and fundraising are other environmental schemes."
+      },
+      {
+        "t": "bucket",
+        "q": "Sort each item.",
+        "buckets": [
+          "Green procurement",
+          "Something else"
+        ],
+        "items": [
+          [
+            "Choosing low-energy servers when quality and price are similar",
+            0
+          ],
+          [
+            "Preferring suppliers that cut their CO_{2} emissions",
+            0
+          ],
+          [
+            "An eco-label standard certified by a third party",
+            1
+          ],
+          [
+            "Trading green power certificates",
+            1
+          ]
+        ],
+        "why": "Only purchase decisions belong to green procurement. Labels and certificates are separate tools."
+      }
+    ],
+    "trap": "An option about third-party environmental labels (ISO 14020 family) sounds green, but it describes eco-labels, not procurement.",
+    "src": [
+      "(2025S, FE, Subject-A, Q49)"
+    ],
+    "qids": [
+      "2025S_A_Q49"
+    ]
+  },
+  {
+    "id": "bs-hr-systems",
+    "topic": "Business strategy",
+    "subs": [
+      "HR systems"
+    ],
+    "title": "HR Systems: Work Sharing and Friends",
+    "hook": "FE describes an HR scheme in one line and asks you to name it.",
+    "model": [
+      "**Work sharing**: shorten each employee's hours so the work is spread across more people, protecting or creating jobs.",
+      "**Cafeteria plan**: employees pick the benefits they want from a menu, within a set budget or points.",
+      "**Free-agent system**: employees apply to move to the department or job they want.",
+      "**Work-life balance**: harmony between work and personal life (family, health, growth)."
+    ],
+    "example": {
+      "q": "A factory facing a slump cuts everyone's hours by 20% instead of laying off 20% of staff. Which system?",
+      "steps": [
+        "Total work is split among more people by reducing hours per person.",
+        "Jobs are kept → **work sharing**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each HR system to its description.",
+        "pairs": [
+          [
+            "Work sharing",
+            "Fewer hours per worker to keep or create jobs"
+          ],
+          [
+            "Cafeteria plan",
+            "Choose your own benefits from a menu"
+          ],
+          [
+            "Free-agent system",
+            "Apply yourself to transfer to a desired post"
+          ],
+          [
+            "Work-life balance",
+            "Harmony between job and private life"
+          ]
+        ],
+        "why": "Each name describes its mechanism: share hours, pick benefits like a cafeteria, act as a free agent, balance life."
+      },
+      {
+        "t": "mcq",
+        "q": "Which aims to keep employment across society by cutting working hours per person?",
+        "opts": [
+          "Cafeteria plan",
+          "Work-life balance",
+          "Work sharing",
+          "Free-agent system"
+        ],
+        "a": 2,
+        "why": "Work sharing spreads the available work over more workers. Work-life balance is about personal well-being, not spreading jobs."
+      }
+    ],
+    "trap": "Choosing work-life balance because it mentions hours; its goal is personal harmony, not spreading jobs.",
+    "src": [
+      "(2026S, FE, Subject-A, Q57)"
+    ],
+    "qids": [
+      "2026S_A_Q57"
+    ]
+  },
+  {
+    "id": "bs-iot-elements",
+    "topic": "Business strategy",
+    "subs": [
+      "IoT elements"
+    ],
+    "title": "IoT System Elements",
+    "hook": "FE gives an IoT table (collection, transmission, analysis, utilization) and asks which device fits which stage.",
+    "model": [
+      "**Data collection**: sensors on things (temperature, vibration, cameras).",
+      "**Data transmission**: networks that carry data (wireless LAN, LPWA, gateways).",
+      "**Data analysis**: software/cloud/AI that judges the data (e.g., detects abnormal values).",
+      "**Data utilization**: acting on results (dashboards, alerts, instructions to workers, actuators)."
+    ],
+    "example": {
+      "q": "A smart farm: soil-moisture probe → Wi-Fi → cloud model decides it's too dry → sprinkler turns on. Label each.",
+      "steps": [
+        "Probe = collection.",
+        "Wi-Fi = transmission.",
+        "Cloud model = analysis.",
+        "Sprinkler action = utilization."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each IoT stage to an example in a smart building.",
+        "pairs": [
+          [
+            "Data collection",
+            "Occupancy sensor in each room"
+          ],
+          [
+            "Data transmission",
+            "Building wireless network"
+          ],
+          [
+            "Data analysis",
+            "Software that flags unusual power use"
+          ],
+          [
+            "Data utilization",
+            "Screen telling staff which room to check"
+          ]
+        ],
+        "why": "Sensors gather, the network carries, software judges, and the display/action uses the result."
+      },
+      {
+        "t": "mcq",
+        "q": "In an IoT setup for equipment maintenance, which item belongs to data collection?",
+        "opts": [
+          "Wireless network inside the plant",
+          "Vibration sensor mounted on a motor",
+          "Tool that judges abnormal readings",
+          "Tablet showing repair instructions"
+        ],
+        "a": 1,
+        "why": "Collection is done by sensors at the equipment. The others are transmission, analysis, and utilization."
+      }
+    ],
+    "trap": "Choosing the wireless link for collection; it only transmits data, it doesn't sense it.",
+    "src": [
+      "(2025A, FE, Subject-A, Q53)"
+    ],
+    "qids": [
+      "2025A_A_Q53"
+    ]
+  },
+  {
+    "id": "bs-ma-synergy",
+    "topic": "Business strategy",
+    "subs": [
+      "M&A synergy"
+    ],
+    "title": "M&A and the Synergy Effect",
+    "hook": "FE describes what a merged company does and asks you to name the effect. Combined value > sum of parts = synergy.",
+    "model": [
+      "**Synergy effect**: 1 + 1 > 2. The combined firm creates more value than both could alone.",
+      "Sources: cross-selling (revenue), shared technology, and cutting duplicate costs (offices, systems).",
+      "**Horizontal integration**: merging with a firm at the same stage (e.g., a competitor).",
+      "**Vertical integration**: merging along the supply chain (a supplier or distributor)."
+    ],
+    "example": {
+      "q": "Bakery chain A buys rival bakery chain B, sells A's cakes in B's shops, and closes one of two head offices.",
+      "steps": [
+        "Same business, same stage → the deal type is **horizontal integration**.",
+        "Extra sales plus saved head-office cost = value beyond the two alone → **synergy effect**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each term to its description.",
+        "pairs": [
+          [
+            "Synergy effect",
+            "Combined firm earns more than the two separately"
+          ],
+          [
+            "Horizontal integration",
+            "Acquiring a competitor at the same stage"
+          ],
+          [
+            "Vertical integration",
+            "Acquiring your supplier or distributor"
+          ]
+        ],
+        "why": "Synergy is the value effect; horizontal and vertical integration describe the deal's direction."
+      },
+      {
+        "t": "mcq",
+        "q": "After a merger, the new firm shares R&D results and merges duplicate IT systems, earning more than both firms did alone. What is this called?",
+        "opts": [
+          "Vertical integration",
+          "Synergy effect",
+          "Market penetration",
+          "Horizontal integration"
+        ],
+        "a": 1,
+        "why": "The question asks for the value-creating phenomenon, not the type of merger."
+      }
+    ],
+    "trap": "Choosing horizontal/vertical integration. These name the merger type, not the extra value it creates.",
+    "src": [
+      "(2026S, FE, Subject-A, Q49)"
+    ],
+    "qids": [
+      "2026S_A_Q49"
+    ]
+  },
+  {
+    "id": "bs-mot-innovation",
+    "topic": "Business strategy",
+    "subs": [
+      "MOT innovation"
+    ],
+    "title": "MOT: Product vs Process Innovation",
+    "hook": "FE asks you to tell product innovation from process innovation, and both from MOT itself.",
+    "model": [
+      "**MOT** (management of technology): running the business with technology as a core strategic resource.",
+      "**Product innovation**: creating new products, or products clearly differentiated from competitors'.",
+      "**Process innovation**: radically improving *how* work is done (production, logistics, business processes).",
+      "Quick test: changes *what you sell* = product; changes *how you make/deliver it* = process."
+    ],
+    "example": {
+      "q": "A phone maker releases the first foldable-screen model, then automates its assembly line to halve build time. Classify each.",
+      "steps": [
+        "Foldable model = a new, differentiated thing to sell → **product innovation**.",
+        "Automated line = same product, better way of making it → **process innovation**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "bucket",
+        "q": "Sort each change into the right type of innovation.",
+        "buckets": [
+          "Product innovation",
+          "Process innovation"
+        ],
+        "items": [
+          [
+            "Launching an EV with a new battery design",
+            0
+          ],
+          [
+            "A bank adding a never-before-offered savings app",
+            0
+          ],
+          [
+            "Switching a warehouse to robot picking",
+            1
+          ],
+          [
+            "Redesigning order processing to cut lead time",
+            1
+          ]
+        ],
+        "why": "New or differentiated offerings are product innovation; better ways of producing or operating are process innovation."
+      },
+      {
+        "t": "mcq",
+        "q": "A firm treats its patents and R&D as the center of corporate strategy and manages them strategically. This describes:",
+        "opts": [
+          "Product innovation",
+          "Process innovation",
+          "MOT (management of technology)",
+          "Business process outsourcing"
+        ],
+        "a": 2,
+        "why": "Managing the business with technology as its core is the definition of MOT itself, not one kind of innovation."
+      }
+    ],
+    "trap": "Picking \"innovative reform of business processes\" for product innovation; that is process innovation.",
+    "src": [
+      "(2025S, FE, Subject-A, Q53)"
+    ],
+    "qids": [
+      "2025S_A_Q53"
+    ]
+  },
+  {
+    "id": "bs-mrp",
+    "topic": "Business strategy",
+    "subs": [
+      "MRP"
+    ],
+    "title": "MRP: Material Requirements Planning",
+    "hook": "FE expects you to know MRP computes how many parts to order from the production plan, and not to confuse it with build-to-order.",
+    "model": [
+      "**MRP** works out the quantity and timing of components/materials needed.",
+      "Inputs: the **master production schedule** (what to build, when), the **bill of materials** (parts per product), and **inventory** data.",
+      "**Net requirement** = gross requirement − stock on hand (− parts already on order).",
+      "It is plan-driven: production follows the schedule, not individual customer orders."
+    ],
+    "example": {
+      "q": "Plan: 200 tables. Each table needs 4 legs. 300 legs are in stock. How many legs to order?",
+      "steps": [
+        "Gross requirement = 200 × 4 = 800 legs.",
+        "Net requirement = 800 − 300 = **500 legs**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "The plan calls for 150 chairs. Each chair needs 3 casters. 120 casters are in stock and none are on order. How many casters must be ordered?",
+        "a": 330,
+        "unit": "casters",
+        "why": "Gross = 150 × 3 = 450; net = 450 − 120 = 330."
+      },
+      {
+        "t": "mcq",
+        "q": "Which statement best describes MRP?",
+        "opts": [
+          "Production starts only after a customer order arrives",
+          "Component quantities are calculated from the production plan and the bill of materials",
+          "Design and production preparation run in parallel to shorten development",
+          "Work and transport instructions travel on a card attached to parts"
+        ],
+        "a": 1,
+        "why": "MRP explodes the production plan through the BOM. The others are build-to-order, concurrent engineering, and kanban."
+      },
+      {
+        "t": "order",
+        "q": "Put the MRP calculation in order.",
+        "steps": [
+          "Take the master production schedule",
+          "Explode it with the bill of materials into gross requirements",
+          "Subtract inventory to get net requirements",
+          "Issue orders for the net quantity"
+        ],
+        "why": "MRP goes plan → gross parts → net of stock → orders."
+      }
+    ],
+    "trap": "\"Production starts after the customer order\" is build-to-order, not MRP.",
+    "src": [
+      "(2025S, FE, Subject-A, Q54)"
+    ],
+    "qids": [
+      "2025S_A_Q54"
+    ]
+  },
+  {
+    "id": "bs-oc-curve",
+    "topic": "Business strategy",
+    "subs": [
+      "OC curve"
+    ],
+    "title": "OC Curve (Sampling Inspection)",
+    "hook": "FE asks how an OC curve shifts when the acceptance number C or the sample size n changes.",
+    "model": [
+      "An **OC curve** plots lot **percent defective** (x-axis) against the **probability the lot is accepted** (y-axis).",
+      "Take n samples; accept the lot if the number of defectives is ≤ **C** (acceptance number).",
+      "Larger C is more lenient: the curve sits higher and falls later. **C = 0 is the strictest** (lowest curve).",
+      "With C fixed, a larger n makes the curve steeper (sharper discrimination)."
+    ],
+    "example": {
+      "q": "n = 2, C = 0, lot is 20% defective. P(accept)?",
+      "steps": [
+        "Accept only if both samples are good.",
+        "P(good) = 1 − 0.2 = 0.8.",
+        "P(accept) = 0.8 × 0.8 = **0.64**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "Sample n = 2 items, accept if 0 defectives (C = 0). Lot is 10% defective. Probability the lot is accepted? (decimal)",
+        "a": 0.81,
+        "tol": 0.005,
+        "why": "Each item is good with p = 0.9, so P = 0.9 × 0.9 = 0.81."
+      },
+      {
+        "t": "mcq",
+        "q": "Three sampling plans use the same sample size but acceptance numbers C = 1, 3, 5. Whose OC curve is highest (accepts most easily)?",
+        "opts": [
+          "C = 1",
+          "C = 3",
+          "C = 5",
+          "All three are identical"
+        ],
+        "a": 2,
+        "why": "Allowing more defectives makes acceptance easier at any defect rate, so C = 5 is the outermost curve and C = 1 the innermost."
+      },
+      {
+        "t": "numeric",
+        "q": "n = 2, C = 1, lot 10% defective. P(accept)? (decimal)",
+        "a": 0.99,
+        "tol": 0.005,
+        "why": "Reject only if both are defective: 0.1 × 0.1 = 0.01. So P(accept) = 1 − 0.01 = 0.99."
+      }
+    ],
+    "trap": "Thinking C = 0 is the most lenient and drawing it outermost; it is the strictest, so it is the lowest curve.",
+    "src": [
+      "(2025A, FE, Subject-A, Q58)"
+    ],
+    "qids": [
+      "2025A_A_Q58"
+    ]
+  },
+  {
+    "id": "bs-pricing-methods",
+    "topic": "Business strategy",
+    "subs": [
+      "pricing methods"
+    ],
+    "title": "Pricing Methods",
+    "hook": "Each pricing method starts from a different anchor: cost, competitors, a profit target, or the customer. Find the anchor and you have the answer.",
+    "model": [
+      "**Cost-plus pricing**: price = cost (manufacturing or purchase) + a set margin.",
+      "**Competition-based (going-rate) pricing**: follow the industry average or rivals' prices.",
+      "**Target-return pricing**: set the price so a target profit is earned at a planned sales volume.",
+      "**Perceived-value (customer-based) pricing**: price at what customers accept for the quality, found by research."
+    ],
+    "example": {
+      "q": "A shop buys a bag for ₱800 and adds a 25% margin on cost. What is the cost-plus price?",
+      "steps": [
+        "Margin = 800 × 0.25 = 200.",
+        "Price = 800 + 200 = **₱1,000**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "A unit costs ₱1,200 to make. With cost-plus pricing at a 15% margin on cost, what is the price?",
+        "a": 1380,
+        "unit": "₱",
+        "why": "1,200 × 0.15 = 180, and 1,200 + 180 = 1,380."
+      },
+      {
+        "t": "match",
+        "q": "Match each method to its anchor.",
+        "pairs": [
+          [
+            "Cost-plus",
+            "Own cost + fixed margin"
+          ],
+          [
+            "Going-rate",
+            "Rivals' and industry prices"
+          ],
+          [
+            "Target-return",
+            "Target profit at a planned volume"
+          ],
+          [
+            "Perceived-value",
+            "What customers will accept"
+          ]
+        ],
+        "why": "Name the starting point of the price and you name the method."
+      }
+    ],
+    "trap": "Target-return pricing also covers costs, but it is built around a planned sales volume and profit goal, not a simple margin on cost.",
+    "src": [
+      "(2025S, FE, Subject-A, Q51)"
+    ],
+    "qids": [
+      "2025S_A_Q51"
+    ]
+  },
+  {
+    "id": "bs-process-innovation",
+    "topic": "Business strategy",
+    "subs": [
+      "process innovation"
+    ],
+    "title": "Process vs Product Innovation",
+    "hook": "Ask yourself: is the new thing **what** is made, or **how** it is made?",
+    "model": [
+      "**Process innovation**: a new or much better **way of making or delivering** something (new procedures, automation), often for higher quality or lower cost.",
+      "**Product innovation**: a new or much better **product or service** itself.",
+      "Outsourcing production to another company is not innovation in itself.",
+      "Becoming a **de facto standard** is market adoption, not a type of innovation."
+    ],
+    "example": {
+      "q": "A bakery keeps the same bread but adds a new oven control method that cuts burnt loaves from 8% to 1%. What kind of innovation is this?",
+      "steps": [
+        "The product (the bread) is unchanged.",
+        "The production procedure is new and improves quality.",
+        "This is **process innovation**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "bucket",
+        "q": "Sort each item.",
+        "buckets": [
+          "Process innovation",
+          "Product innovation"
+        ],
+        "items": [
+          [
+            "A new assembly method that cuts defects",
+            0
+          ],
+          [
+            "Robots that speed up packing in the warehouse",
+            0
+          ],
+          [
+            "Launching a foldable smartphone",
+            1
+          ],
+          [
+            "A new flavor of instant noodles",
+            1
+          ]
+        ],
+        "why": "Changing *how* goods are made or handled is process innovation. A new item for sale is product innovation."
+      },
+      {
+        "t": "mcq",
+        "q": "Which is process innovation?",
+        "opts": [
+          "Inventing a brand-new drug using original technology",
+          "Introducing a new production procedure that raises product quality",
+          "Hiring another firm to do the manufacturing",
+          "Your format winning the market and becoming a de facto standard"
+        ],
+        "a": 1,
+        "why": "Only the new production procedure changes how the product is made."
+      }
+    ],
+    "trap": "\"An innovative new product based on high technology\" is product innovation, not process innovation.",
+    "src": [
+      "(2025A, FE, Subject-A, Q52)"
+    ],
+    "qids": [
+      "2025A_A_Q52"
+    ]
+  },
+  {
+    "id": "bs-product-life-cycle",
+    "topic": "Business strategy",
+    "subs": [
+      "product life cycle"
+    ],
+    "title": "Product Life Cycle",
+    "hook": "You get a description of a market and must name the stage. Growth and maturity are the usual mix-up.",
+    "model": [
+      "4 stages: **Introduction → Growth → Maturity → Decline**.",
+      "**Introduction**: few buyers, demand must be created, high promotion cost, little or no profit.",
+      "**Growth**: the market starts to see the value, **sales rise fast**, competitors enter, invest to widen **product lines and channels**.",
+      "**Maturity**: demand **peaks**, competition is hardest, differentiation, segmentation, cost cutting.",
+      "**Decline**: demand falls, some firms exit, decide to stay, harvest or move to another market."
+    ],
+    "example": {
+      "q": "Smartwatch sales doubled this year. More brands are joining and the maker is opening new store channels. Which stage?",
+      "steps": [
+        "Sales rising fast, so not introduction (small) and not maturity (flat peak).",
+        "New competitors are joining and the firm is investing in channels.",
+        "Answer: **growth** stage."
+      ]
+    },
+    "checks": [
+      {
+        "t": "order",
+        "q": "Put the product life cycle stages in order.",
+        "steps": [
+          "Introduction",
+          "Growth",
+          "Maturity",
+          "Decline"
+        ],
+        "why": "A product is launched, gains acceptance, peaks, then fades."
+      },
+      {
+        "t": "match",
+        "q": "Match each stage to its typical situation.",
+        "pairs": [
+          [
+            "Introduction",
+            "Must create demand; few buyers"
+          ],
+          [
+            "Growth",
+            "Sales climb; expand lines and channels"
+          ],
+          [
+            "Maturity",
+            "Demand peaks; fierce competition and cost cutting"
+          ],
+          [
+            "Decline",
+            "Demand drops; some firms withdraw"
+          ]
+        ],
+        "why": "Each stage is defined by where demand is heading and how many competitors are in the market."
+      }
+    ],
+    "trap": "Peak demand with fierce competition is maturity, not growth. Growth means sales are still climbing.",
+    "src": [
+      "(2025S, FE, Subject-A, Q50)"
+    ],
+    "qids": [
+      "2025S_A_Q50"
+    ]
+  },
+  {
+    "id": "bs-relationship-marketing",
+    "topic": "Business strategy",
+    "subs": [
+      "relationship marketing"
+    ],
+    "title": "Relationship Marketing",
+    "hook": "Keywords: a **long-term** relationship with each customer, giving stable sales over time.",
+    "model": [
+      "**Relationship marketing**: build and keep good long-term relationships with each customer.",
+      "The goal is stable, repeated sales from the same customer over time (retention).",
+      "Typical tools: loyalty programs, after-sales follow-up, CRM data.",
+      "Not the same as one-off tactics like flash sales, location-based ads, or a **media mix** (using TV, print and other media together)."
+    ],
+    "example": {
+      "q": "A coffee chain gives app members a free drink every 10th visit and a birthday greeting, and tracks their favorite orders. Which approach?",
+      "steps": [
+        "The aim is to keep the same customers coming back for years.",
+        "It strengthens each customer relationship.",
+        "This is **relationship marketing**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "Which is relationship marketing?",
+        "opts": [
+          "A 3-hour online flash sale",
+          "Ads sent to phones near a store via GPS",
+          "Keeping in touch with each customer to win repeat sales for years",
+          "Running the same campaign on TV, radio and newspapers"
+        ],
+        "a": 2,
+        "why": "Relationship marketing aims for long-term repeat sales per customer. The others are short-term or channel tactics."
+      },
+      {
+        "t": "bucket",
+        "q": "Sort each tactic.",
+        "buckets": [
+          "Relationship marketing",
+          "Other marketing"
+        ],
+        "items": [
+          [
+            "Loyalty points program",
+            0
+          ],
+          [
+            "Personal after-sales follow-up calls",
+            0
+          ],
+          [
+            "Using several media at once",
+            1
+          ],
+          [
+            "Time-limited flash sale",
+            1
+          ]
+        ],
+        "why": "Long-term retention tools are relationship marketing. Media mix and flash sales aim at reach or quick sales."
+      }
+    ],
+    "trap": "\"Reaching consumers through TV, newspapers and magazines\" is a media mix, not relationship marketing.",
+    "src": [
+      "(2025A, FE, Subject-A, Q50)"
+    ],
+    "qids": [
+      "2025A_A_Q50"
+    ]
+  },
+  {
+    "id": "bs-rfid",
+    "topic": "Business strategy",
+    "subs": [
+      "RFID"
+    ],
+    "title": "RFID (IC Tags)",
+    "hook": "FE asks for RFID's key traits: contactless radio reading, readable through packaging, and resistant to dirt.",
+    "model": [
+      "An **RFID / IC tag** is a small IC chip plus antenna, read and written by **radio waves** without contact.",
+      "No line of sight needed: tags can be read through boxes or packaging, and several at once.",
+      "Resistant to dirt and stains, unlike barcodes, which must be visible and clean.",
+      "Passive tags get their power from the reader's radio waves, so they need no battery."
+    ],
+    "example": {
+      "q": "A warehouse must count 50 sealed cartons on a pallet. Barcode or RFID?",
+      "steps": [
+        "Barcodes need each label visible and scanned one by one.",
+        "RFID tags are read by radio through the cartons, many at once → **RFID**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "bucket",
+        "q": "Which technology has each trait?",
+        "buckets": [
+          "RFID tag",
+          "Barcode",
+          "Magnetic stripe card"
+        ],
+        "items": [
+          [
+            "Read by radio waves without contact",
+            0
+          ],
+          [
+            "Can be read through packaging",
+            0
+          ],
+          [
+            "Must be in the scanner's line of sight",
+            1
+          ],
+          [
+            "Swiped or inserted into a magnetic reader",
+            2
+          ]
+        ],
+        "why": "Contactless radio reading is RFID. Barcodes are optical, so they need line of sight. Magnetic stripes need physical contact with a reader."
+      },
+      {
+        "t": "mcq",
+        "q": "Which is a characteristic of RFID tags?",
+        "opts": [
+          "They must be inserted into a dedicated magnetic reader",
+          "They locate themselves using GPS",
+          "Their data can be read without contact, even through the package",
+          "They store their data on an external hard disk"
+        ],
+        "a": 2,
+        "why": "RFID is read wirelessly by radio, so contact and visibility aren't needed."
+      }
+    ],
+    "trap": "Picking \"insert into a magnetic reader\"; that describes magnetic-stripe cards.",
+    "src": [
+      "(2025A, FE, Subject-A, Q54)"
+    ],
+    "qids": [
+      "2025A_A_Q54"
+    ]
+  },
+  {
+    "id": "bs-sharing-economy",
+    "topic": "Business strategy",
+    "subs": [
+      "sharing economy"
+    ],
+    "title": "Sharing Economy",
+    "hook": "Look for **individuals** sharing **unused assets** through an online platform.",
+    "model": [
+      "**Sharing economy**: mostly between individuals, people **share, lend or rent out idle assets** (rooms, cars, tools, skills).",
+      "An online platform or social media matches the people and builds trust (ratings, reviews).",
+      "Examples: room sharing (Airbnb-type), car and ride sharing.",
+      "Not a **smart city** (IT running energy and city infrastructure) and not **omnichannel** (joining in-store and online sales)."
+    ],
+    "example": {
+      "q": "Ana rents out her spare room and her rarely used car to strangers through an app with reviews. What model is this?",
+      "steps": [
+        "The assets belong to an individual and would otherwise sit unused.",
+        "A platform connects her with other individuals.",
+        "This is the **sharing economy**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each concept to its description.",
+        "pairs": [
+          [
+            "Sharing economy",
+            "Individuals lend unused assets through a platform"
+          ],
+          [
+            "Smart city",
+            "IT manages energy and urban infrastructure"
+          ],
+          [
+            "Omnichannel",
+            "Store and online sales combined into one experience"
+          ]
+        ],
+        "why": "Only the sharing economy is about individuals putting idle assets to use."
+      },
+      {
+        "t": "mcq",
+        "q": "Which is an example of the sharing economy?",
+        "opts": [
+          "A city using sensors to control streetlights",
+          "A retailer letting you buy online and pick up in store",
+          "Neighbors renting out idle power tools through an app",
+          "A factory adding robots"
+        ],
+        "a": 2,
+        "why": "Individuals lending idle assets to each other through a platform is the sharing economy."
+      }
+    ],
+    "trap": "The smart-city option (IT for renewable energy and urban infrastructure) sounds modern and sustainable, but nothing is being shared.",
+    "src": [
+      "(2025A, FE, Subject-A, Q55)"
+    ],
+    "qids": [
+      "2025A_A_Q55"
+    ]
+  },
+  {
+    "id": "bs-tqm",
+    "topic": "Business strategy",
+    "subs": [
+      "TQM"
+    ],
+    "title": "Total Quality Management (TQM)",
+    "hook": "FE asks which statement is part of TQM. Look for the customer focus and company-wide involvement.",
+    "model": [
+      "**TQM**: company-wide quality management in which every department and employee takes part.",
+      "Goal: **customer satisfaction**, i.e., products/services that meet or exceed customer expectations.",
+      "Continuous improvement (PDCA) and decisions based on data.",
+      "Favors employee **empowerment** and cross-department cooperation, not top-down control or departments competing."
+    ],
+    "example": {
+      "q": "A firm says: \"Each department optimizes its own quality targets, competing with the others.\" Is this TQM?",
+      "steps": [
+        "TQM is company-wide and cooperative.",
+        "Departments competing independently goes against that → **not TQM**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "bucket",
+        "q": "Does each practice fit TQM?",
+        "buckets": [
+          "Fits TQM",
+          "Does not fit TQM"
+        ],
+        "items": [
+          [
+            "Designing services around customer expectations",
+            0
+          ],
+          [
+            "All employees joining improvement activities",
+            0
+          ],
+          [
+            "Only top management may make quality decisions",
+            1
+          ],
+          [
+            "Departments compete instead of cooperating",
+            1
+          ]
+        ],
+        "why": "TQM is customer-focused, company-wide, and empowering. Central control and silos go against it."
+      },
+      {
+        "t": "mcq",
+        "q": "Which is part of TQM?",
+        "opts": [
+          "Hiring only staff with long experience in similar firms",
+          "Products and services that meet or exceed customer expectations",
+          "Centralizing every quality decision at headquarters",
+          "Letting each department pursue its own goals independently"
+        ],
+        "a": 1,
+        "why": "TQM starts and ends with the customer."
+      }
+    ],
+    "trap": "Picking centralized decision-making because it \"ensures quality\"; TQM relies on empowered employees.",
+    "src": [
+      "(2026S, FE, Subject-A, Q56)"
+    ],
+    "qids": [
+      "2026S_A_Q56"
+    ]
+  },
+  {
+    "id": "bs-training-methods",
+    "topic": "Business strategy",
+    "subs": [
+      "training methods"
+    ],
+    "title": "Training Methods",
+    "hook": "You get a description of a training activity and must name it. Learn the key picture for each method.",
+    "model": [
+      "**In-basket**: work through a pile of simulated tasks (memos, orders, expense forms) **within a time limit**.",
+      "**Role-playing**: act out a role (e.g., interviewer and customer) and practice interpersonal skills.",
+      "**Case study**: analyze a real or realistic business case and discuss solutions.",
+      "**OJT**: a supervisor teaches skills during actual daily work. **Off-JT**: classroom-style training away from the job."
+    ],
+    "example": {
+      "q": "Trainees get 60 minutes to clear an inbox of 15 items: reply to a complaint, approve a purchase order, and file a travel claim. Which method?",
+      "steps": [
+        "Many simulated tasks to handle.",
+        "A fixed time limit.",
+        "Pile of paperwork plus a timer means **in-basket**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each method to its description.",
+        "pairs": [
+          [
+            "In-basket",
+            "Process many simulated tasks within a time limit"
+          ],
+          [
+            "Role-playing",
+            "Act out a part, such as interviewer or customer"
+          ],
+          [
+            "Case study",
+            "Analyze a business case and discuss solutions"
+          ],
+          [
+            "OJT",
+            "Learn from a supervisor during real work"
+          ]
+        ],
+        "why": "Each method has one signature feature: a timed task pile, acting, case analysis, or learning on the real job."
+      },
+      {
+        "t": "mcq",
+        "q": "New staff pair up. One acts as an angry customer and the other practices calming them down. Which method?",
+        "opts": [
+          "In-basket",
+          "Role-playing",
+          "Case study",
+          "Off-JT lecture"
+        ],
+        "a": 1,
+        "why": "Acting out interpersonal roles is role-playing. In-basket is about handling a pile of tasks."
+      }
+    ],
+    "trap": "Role-playing also simulates work, but it means acting out people roles. A timed pile of tasks is in-basket.",
+    "src": [
+      "FE Prep Book Vol.1 §7.1.1 p.264",
+      "(2026S, FE, Subject-A, Q47)"
+    ],
+    "qids": [
+      "2026S_A_Q47"
+    ]
+  },
+  {
+    "id": "ss-bpr",
+    "topic": "System strategy",
+    "subs": [
+      "BPR"
+    ],
+    "title": "Business Process Reengineering (BPR)",
+    "hook": "BPR = **rebuild** the process from scratch for dramatic gains. It is not just automating what already exists.",
+    "model": [
+      "**BPR**: fundamentally redesign business processes (and the organization if needed) for dramatic gains in productivity, cost, service and quality.",
+      "It starts from analyzing the business content and flow, then redesigns toward targets such as profit or customer satisfaction.",
+      "Compare **kaizen**: small, continuous improvements, not radical change.",
+      "Compare **BPM**: an ongoing cycle of managing and improving processes. **SFA**: automates sales activities.",
+      "Simply putting today's process onto a computer is automation, not BPR."
+    ],
+    "example": {
+      "q": "A bank's loan approval passes through 6 departments and takes 3 weeks. What would BPR do?",
+      "steps": [
+        "Question why 6 hand-offs are needed at all.",
+        "Redesign: one case team, backed by a shared system, handles the whole application.",
+        "Approval drops to 2 days. This is radical redesign, so it's **BPR**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "Which is BPR?",
+        "opts": [
+          "Scanning the same paper forms so they're stored digitally",
+          "Scrapping a 5-step approval chain and redesigning the whole process around one team",
+          "Holding monthly kaizen meetings for small fixes",
+          "Installing an SFA tool for sales reps"
+        ],
+        "a": 1,
+        "why": "BPR rethinks and restructures the process itself for dramatic results. The others digitize, tweak or support existing work."
+      },
+      {
+        "t": "bucket",
+        "q": "Radical or incremental?",
+        "buckets": [
+          "BPR (radical redesign)",
+          "Not BPR"
+        ],
+        "items": [
+          [
+            "Merging departments and redesigning order fulfilment end to end",
+            0
+          ],
+          [
+            "Automating an existing form without changing steps",
+            1
+          ],
+          [
+            "Continuous small improvements by workers",
+            1
+          ],
+          [
+            "Rebuilding the claims process so one person handles a case start to finish",
+            0
+          ]
+        ],
+        "why": "BPR changes the process structure fundamentally. Automation of the old process and kaizen do not."
+      }
+    ],
+    "trap": "Automating key processes to save time sounds like BPR, but without redesigning the process it is just automation.",
+    "src": [
+      "FE Prep Book Vol.1 §7.1.2 p.265",
+      "(2026S, FE, Subject-A, Q46)"
+    ],
+    "qids": [
+      "2026S_A_Q46"
+    ]
+  },
+  {
+    "id": "ss-business-modeling",
+    "topic": "System strategy",
+    "subs": [
+      "DFD",
+      "UML in business modeling"
+    ],
+    "title": "DFD, E-R & UML for Business Modeling",
+    "hook": "FE describes a diagram style and asks which modeling technique it is. Learn the signature of each.",
+    "model": [
+      "**DFD**: shows how **data flows** between processes, data stores and external entities (sources/sinks). It shows data only, not goods or money.",
+      "In a DFD every process has both an input and an output data flow.",
+      "**E-R diagram**: data-oriented. It shows entities, their attributes and the relationships between them. Structure, not flow.",
+      "**UML**: a set of standard object-modeling notations with several purpose-specific diagrams (e.g. use case, activity, class, sequence) that show a process from **multiple viewpoints**."
+    ],
+    "example": {
+      "q": "An order clerk receives an order from a customer, checks stock in the inventory file, and sends shipping info to the warehouse. Which diagram shows this information movement?",
+      "steps": [
+        "Customer and warehouse are external entities (source/sink).",
+        "\"Check stock\" is a process, and the inventory file is a data store.",
+        "Arrows carry order and shipping data, so this is a **DFD**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match the DFD symbol to its meaning.",
+        "pairs": [
+          [
+            "External entity",
+            "Source or destination of data outside the system"
+          ],
+          [
+            "Process",
+            "Transforms input data into output data"
+          ],
+          [
+            "Data store",
+            "Where data is kept, like a file"
+          ],
+          [
+            "Data flow",
+            "Arrow showing data moving"
+          ]
+        ],
+        "why": "These four symbols are all a DFD uses, and exam questions often test their meanings."
+      },
+      {
+        "t": "mcq",
+        "q": "A team models a business with a use case diagram, an activity diagram and a class diagram, all in standard object notation. What are they using?",
+        "opts": [
+          "DFD",
+          "E-R diagram",
+          "UML",
+          "Decision table"
+        ],
+        "a": 2,
+        "why": "Several purpose-specific diagrams in standardized object-modeling notation is the signature of UML."
+      }
+    ],
+    "trap": "DFD = data **moving** between processes. E-R = data **structure** (entities and relationships). Don't swap them.",
+    "src": [
+      "FE Prep Book Vol.1 §3.1.6 p.149",
+      "(2025A, FE, Subject-A, Q48)",
+      "(2025S, FE, Subject-A, Q47)"
+    ],
+    "qids": [
+      "2025A_A_Q48",
+      "2025S_A_Q47"
+    ]
+  },
+  {
+    "id": "ss-cloud-services",
+    "topic": "System strategy",
+    "subs": [
+      "SaaS",
+      "hybrid cloud"
+    ],
+    "title": "SaaS & Hybrid Cloud",
+    "hook": "Know what each service model takes off your hands, what it does **not**, and what makes a cloud \"hybrid\".",
+    "model": [
+      "**SaaS**: the provider builds and runs the application, and you just use it over the network. No app development for you.",
+      "**PaaS**: the provider gives a platform (OS, middleware, runtime), and you build your own apps on it. **IaaS**: the provider gives servers, storage and network, and you manage the rest.",
+      "Even with SaaS, the user still owns access management (IDs, passwords), security rules, and procedures for failures and data backup.",
+      "**Private cloud**: for one company's exclusive use. **Public cloud**: general-purpose, shared by many customers.",
+      "**Hybrid cloud**: private and public clouds are **linked** so data and apps work across both."
+    ],
+    "example": {
+      "q": "A company uses a cloud email service it did not build. What service model is it, and what must it still do?",
+      "steps": [
+        "The provider supplies and runs the finished application, so it is **SaaS**.",
+        "The company skips development and server/log design.",
+        "It must still manage user accounts and passwords, set security rules, and plan what to do during an outage."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each model to what the provider supplies.",
+        "pairs": [
+          [
+            "SaaS",
+            "A ready-to-use application"
+          ],
+          [
+            "PaaS",
+            "A platform to run your own apps"
+          ],
+          [
+            "IaaS",
+            "Virtual servers, storage, network"
+          ]
+        ],
+        "why": "Going from IaaS to PaaS to SaaS, the provider takes on more layers, and SaaS covers everything up to the application."
+      },
+      {
+        "t": "mcq",
+        "q": "Which setup is a hybrid cloud?",
+        "opts": [
+          "A public cloud split into free and paid plans",
+          "A company's private cloud linked with a public cloud so apps share data",
+          "Customizing a SaaS screen for one company",
+          "One cloud service sold to both consumers and businesses"
+        ],
+        "a": 1,
+        "why": "Hybrid means combining and linking an exclusive (private) cloud with a general-purpose (public) cloud."
+      }
+    ],
+    "trap": "Don't assume SaaS removes **all** duties. Access control, security rules and failure/backup procedures stay with the user.",
+    "src": [
+      "(2025S, FE, Subject-A, Q29)",
+      "(2025S, FE, Subject-A, Q48)"
+    ],
+    "qids": [
+      "2025S_A_Q29",
+      "2025S_A_Q48"
+    ]
+  },
+  {
+    "id": "ss-feasibility-study",
+    "topic": "System strategy",
+    "subs": [
+      "feasibility study"
+    ],
+    "title": "Feasibility Study",
+    "hook": "Know what each feasibility type asks. The exam names a concern and asks which type it belongs to.",
+    "model": [
+      "**Economic feasibility**: do lifetime **benefits exceed lifetime costs**? (cost-benefit analysis)",
+      "**Technical feasibility**: can it be built with available technology and skills?",
+      "**Operational feasibility**: will users and the organization actually be able to run and accept it?",
+      "**Schedule feasibility**: can it be finished within the required time?"
+    ],
+    "example": {
+      "q": "A new system costs ₱5M over 5 years and is expected to save ₱7M. Which feasibility is being checked?",
+      "steps": [
+        "We are comparing money in vs money out over the system's life.",
+        "₱7M benefit > ₱5M cost, so it passes.",
+        "That is **economic feasibility**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match the concern to the feasibility type.",
+        "pairs": [
+          [
+            "Savings over 5 years outweigh total costs",
+            "Economic"
+          ],
+          [
+            "Our servers can handle the required load",
+            "Technical"
+          ],
+          [
+            "Branch staff can use it without major retraining",
+            "Operational"
+          ],
+          [
+            "Can go live before the new tax law takes effect",
+            "Schedule"
+          ]
+        ],
+        "why": "Money = economic, technology = technical, people and work fit = operational, deadline = schedule."
+      },
+      {
+        "t": "mcq",
+        "q": "Staff may resist a new system because it changes their daily routine. Which feasibility covers this?",
+        "opts": [
+          "Economic",
+          "Technical",
+          "Operational",
+          "Schedule"
+        ],
+        "a": 2,
+        "why": "Whether users will accept and run the system in daily work is operational feasibility."
+      }
+    ],
+    "trap": "Operational feasibility is about people using the system, not costs vs benefits.",
+    "src": [
+      "(2025A, FE, Subject-A, Q46)"
+    ],
+    "qids": [
+      "2025A_A_Q46"
+    ]
+  },
+  {
+    "id": "ss-green-it",
+    "topic": "System strategy",
+    "subs": [
+      "Green IT"
+    ],
+    "title": "Green IT",
+    "hook": "Pick the option that clearly **cuts energy use or CO_{2}**, not one that just sounds efficient or powerful.",
+    "model": [
+      "**Green IT** reduces the environmental impact of IT and uses IT to reduce society's impact.",
+      "**Green of IT**: make IT itself save energy, e.g. energy-efficient servers, virtualization to cut machine count, thin clients.",
+      "**Green by IT**: use IT to save resources elsewhere, e.g. web conferencing instead of travel, telework, paperless workflows."
+    ],
+    "example": {
+      "q": "Which is Green IT: buying more powerful servers, or merging 20 servers into 4 via virtualization?",
+      "steps": [
+        "More powerful servers do not necessarily lower energy use.",
+        "Consolidating to 4 physical machines cuts power and cooling needs.",
+        "Virtualization consolidation is **Green IT**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "Which is the best example of Green IT?",
+        "opts": [
+          "Building a larger in-house data center",
+          "Replacing thin clients with desktop PCs",
+          "Holding online meetings instead of flying staff to meetings",
+          "Writing faster in-house software"
+        ],
+        "a": 2,
+        "why": "Online meetings avoid travel emissions. That is a direct environmental benefit through IT."
+      },
+      {
+        "t": "bucket",
+        "q": "Sort into Green-of-IT (greener IT itself) and Green-by-IT (IT greens other activities).",
+        "buckets": [
+          "Green of IT",
+          "Green by IT"
+        ],
+        "items": [
+          [
+            "Server virtualization",
+            0
+          ],
+          [
+            "Telework",
+            1
+          ],
+          [
+            "Paperless e-approval workflow",
+            1
+          ],
+          [
+            "Low-power data center cooling",
+            0
+          ]
+        ],
+        "why": "Making IT equipment use less energy is green of IT. Using IT to replace travel or paper is green by IT."
+      }
+    ],
+    "trap": "\"Efficient software\" sounds green, but the exam wants a clear energy/CO_{2} reduction such as cutting travel.",
+    "src": [
+      "(2025A, FE, Subject-A, Q56)"
+    ],
+    "qids": [
+      "2025A_A_Q56"
+    ]
+  },
+  {
+    "id": "ss-it-portfolio",
+    "topic": "System strategy",
+    "subs": [
+      "IT portfolio"
+    ],
+    "title": "IT Portfolio",
+    "hook": "When a question says \"classify IT investments by risk and value, then allocate resources optimally\", the answer is **IT portfolio**.",
+    "model": [
+      "**IT portfolio**: group IT investments into categories with similar **risk** and **investment value**, then allocate money and people to get the best overall mix, like an investment portfolio.",
+      "**Enterprise architecture (EA)**: models the whole organization (business, data, applications, technology) to guide overall optimization.",
+      "**Benchmarking**: compare your practices with the best performers to find improvements.",
+      "**3C analysis**: look at Customer, Competitor and Company to plan strategy."
+    ],
+    "example": {
+      "q": "A CIO has 10 proposed IT projects and a fixed budget. How does IT portfolio help?",
+      "steps": [
+        "Sort projects into categories, e.g. low-risk efficiency upgrades vs high-risk new-business systems.",
+        "Judge expected value and risk for each category.",
+        "Split the budget across categories so total value is high and risk stays balanced."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each technique to its purpose.",
+        "pairs": [
+          [
+            "IT portfolio",
+            "Allocate IT investment across risk/value categories"
+          ],
+          [
+            "Enterprise architecture",
+            "Model the whole organization's business and systems"
+          ],
+          [
+            "Benchmarking",
+            "Compare with best-in-class practices"
+          ],
+          [
+            "3C analysis",
+            "Analyze customer, competitor, own company"
+          ]
+        ],
+        "why": "Only IT portfolio is about categorizing investments by risk and value to decide resource allocation."
+      },
+      {
+        "t": "mcq",
+        "q": "A bank sorts its planned IT spending into \"keep the lights on\", \"improve\" and \"experimental\" groups by risk, then sets a budget for each. This is:",
+        "opts": [
+          "Enterprise architecture",
+          "IT portfolio management",
+          "Benchmarking",
+          "SWOT analysis"
+        ],
+        "a": 1,
+        "why": "Grouping investments by risk/value and setting budgets for each group is IT portfolio management."
+      }
+    ],
+    "trap": "Enterprise architecture also sounds strategic, but it models the organization's structure. It does not allocate investment by risk.",
+    "src": [
+      "(2025S, FE, Subject-A, Q46)"
+    ],
+    "qids": [
+      "2025S_A_Q46"
+    ]
+  },
+  {
+    "id": "ss-machine-learning",
+    "topic": "System strategy",
+    "subs": [
+      "deep learning",
+      "machine learning"
+    ],
+    "title": "Machine Learning & Deep Learning",
+    "hook": "FE asks you to spot which scenario really uses ML or DL. The key test: does the system **learn from data**, or was it simply programmed or told the rules?",
+    "model": [
+      "**Machine learning (ML)**: the computer finds patterns in data and improves by itself, without step-by-step programming of the rules.",
+      "**Deep learning (DL)**: a type of ML using **multi-layer neural networks**. It needs lots of data (e.g. many images) and is strong at image and speech recognition.",
+      "**Expert system**: humans enter expert knowledge as rules, and the computer infers from them. Nothing is learned from data, so it is **not** ML.",
+      "Not ML: a fixed sensor trigger, a cause-tree analysis done by people, or the experience curve (costs drop as cumulative output grows)."
+    ],
+    "example": {
+      "q": "A warehouse robot gets faster at picking items. Is this ML?",
+      "steps": [
+        "If engineers rewrote its program each week, that is ordinary programming, not ML.",
+        "If the robot improves from its own trial data with no new program, it is learning from data, so it is **ML**.",
+        "If that learning used a deep neural network trained on thousands of camera images, it is also **DL**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "Which is an example of deep learning?",
+        "opts": [
+          "A thermostat turns on the fan above 30°C",
+          "A camera app trained on millions of photos gets better at recognizing faces",
+          "Experts write if-then rules for diagnosing engine faults",
+          "Workers get faster as total output doubles"
+        ],
+        "a": 1,
+        "why": "Training a neural network on a huge set of images to improve recognition is classic DL. A, C and D involve no learning from data."
+      },
+      {
+        "t": "bucket",
+        "q": "Does the system learn from data?",
+        "buckets": [
+          "Learns from data (ML)",
+          "Not ML"
+        ],
+        "items": [
+          [
+            "Spam filter improves from emails users mark as spam",
+            0
+          ],
+          [
+            "Expert system using rules entered by doctors",
+            1
+          ],
+          [
+            "Airbag fires when the accelerometer passes a threshold",
+            1
+          ],
+          [
+            "Shop recommends items based on past purchase patterns",
+            0
+          ]
+        ],
+        "why": "ML improves from data. Fixed rules and fixed thresholds stay the same no matter how much data passes through."
+      }
+    ],
+    "trap": "An expert system sounds intelligent, but its knowledge is entered by humans, not learned from data.",
+    "src": [
+      "(2025S, FE, Subject-A, Q3)",
+      "(2026S, FE, Subject-A, Q54)",
+      "(2026S, FE, Subject-A, Q55)"
+    ],
+    "qids": [
+      "2025S_A_Q03",
+      "2026S_A_Q54",
+      "2026S_A_Q55"
+    ]
+  },
+  {
+    "id": "ss-process-mining",
+    "topic": "System strategy",
+    "subs": [
+      "process mining"
+    ],
+    "title": "Process Mining",
+    "hook": "FE contrasts process mining with data mining. The giveaway word is **event logs**.",
+    "model": [
+      "**Process mining**: pulls knowledge from IT systems' **event logs** (who did which step, and when) to discover, check and improve real business processes.",
+      "It can rebuild the actual process flow, compare it with the intended one, and find bottlenecks.",
+      "**Data mining**: uses statistics or AI on large data sets to find unknown patterns or relationships, not process flows.",
+      "**BPR**: a radical redesign of processes. It is a management approach, not a log-analysis technique."
+    ],
+    "example": {
+      "q": "An insurer's claims system logs every step with a timestamp. Managers want to see how claims really move and where they wait. What technique?",
+      "steps": [
+        "The input is event logs: case ID, activity and time.",
+        "Analyzing those logs rebuilds the real flow and shows waiting times between steps.",
+        "That is **process mining**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "A hospital analyzes timestamped system logs to find that patients wait longest between lab tests and doctor review. This is:",
+        "opts": [
+          "Data mining",
+          "Process mining",
+          "BPR",
+          "Benchmarking"
+        ],
+        "a": 1,
+        "why": "Rebuilding and analyzing a business process from system event logs is process mining."
+      },
+      {
+        "t": "bucket",
+        "q": "Process mining or data mining?",
+        "buckets": [
+          "Process mining",
+          "Data mining"
+        ],
+        "items": [
+          [
+            "Finds that shoppers who buy diapers often buy beer",
+            1
+          ],
+          [
+            "Rebuilds the real order-to-delivery flow from ERP logs",
+            0
+          ],
+          [
+            "Checks if staff skipped an approval step",
+            0
+          ],
+          [
+            "Groups customers into segments by spending",
+            1
+          ]
+        ],
+        "why": "Process mining works on the steps of a process taken from event logs. Data mining finds patterns in the data itself."
+      }
+    ],
+    "trap": "\"Finding unsuspected relationships in data sets\" describes data mining, not process mining.",
+    "src": [
+      "(2025S, FE, Subject-A, Q59)"
+    ],
+    "qids": [
+      "2025S_A_Q59"
+    ]
+  },
+  {
+    "id": "ss-procurement-steps",
+    "topic": "System strategy",
+    "subs": [
+      "procurement steps"
+    ],
+    "title": "System Procurement Steps (RFI → RFP)",
+    "hook": "FE shows the procurement flow with a blank. Remember **I before P**: get information first, then ask for proposals.",
+    "model": [
+      "**RFI (Request for Information)**: the orderer shares its goals and business details and asks vendors for information about available technology and solutions.",
+      "**RFP (Request for Proposal)**: the orderer states the target system and procurement conditions and asks vendors to submit **proposals**.",
+      "**Select the vendor**: evaluate the proposals and vendor capabilities, then choose the procurement source.",
+      "**Conclude a contract**: both sides confirm roles and responsibilities in writing."
+    ],
+    "example": {
+      "q": "A city government wants a new permit system. Put its actions in order.",
+      "steps": [
+        "Ask vendors what solutions exist (**RFI**).",
+        "Send the requirements and terms and ask for proposals (**RFP**).",
+        "Compare proposals and pick a vendor.",
+        "Sign a contract stating each side's responsibilities."
+      ]
+    },
+    "checks": [
+      {
+        "t": "order",
+        "q": "Put the procurement steps in order.",
+        "steps": [
+          "Request for information (RFI)",
+          "Request for proposal (RFP)",
+          "Evaluate proposals and select a vendor",
+          "Conclude a contract"
+        ],
+        "why": "You need information to write good requirements. You need proposals to choose a vendor, and the contract comes last."
+      },
+      {
+        "t": "mcq",
+        "q": "An orderer gives vendors the target system's requirements and conditions and asks each to submit a proposal document. This step is:",
+        "opts": [
+          "RFI",
+          "RFP",
+          "Vendor selection",
+          "Contract conclusion"
+        ],
+        "a": 1,
+        "why": "Asking for a proposal against stated requirements is the RFP. An RFI only asks for information."
+      }
+    ],
+    "trap": "RFI is the earlier step (asking for information). A request for a **proposal** is the RFP.",
+    "src": [
+      "(2026S, FE, Subject-A, Q48)"
+    ],
+    "qids": [
+      "2026S_A_Q48"
+    ]
+  },
+  {
+    "id": "ss-scm-erp",
+    "topic": "System strategy",
+    "subs": [
+      "ERP",
+      "SCM"
+    ],
+    "title": "SCM & ERP",
+    "hook": "These two, plus CRM, SFA and knowledge management, show up as a matching game. Each one has a clear keyword.",
+    "model": [
+      "**SCM (Supply Chain Management)**: looks at the whole chain (purchasing, production, distribution, sales) **across companies** for total optimization, cutting lead time and inventory.",
+      "**ERP (Enterprise Resource Planning)**: plans and controls a company's management resources (people, goods, money, information) company-wide. An **ERP package** puts core tasks (production, accounting, sales, HR, payroll) on **one integrated database**.",
+      "**CRM**: combines customer data from many channels to build long-term customer relationships.",
+      "**SFA**: uses IT to make sales activities more efficient.",
+      "**Knowledge management**: shares individuals' know-how across the organization."
+    ],
+    "example": {
+      "q": "A maker, its parts suppliers and its retailers share sales and stock data so every party orders just enough. Which concept?",
+      "steps": [
+        "Several companies are involved, from suppliers through to retailers.",
+        "The goal is less inventory and shorter delivery time for the chain as a whole.",
+        "That is **SCM**. ERP would cover resources inside a single company."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each concept to its focus.",
+        "pairs": [
+          [
+            "SCM",
+            "Optimize purchasing-to-delivery across companies"
+          ],
+          [
+            "ERP",
+            "Integrate company-wide resources in one system"
+          ],
+          [
+            "CRM",
+            "Build long-term customer relationships"
+          ],
+          [
+            "SFA",
+            "Make sales staff's work more efficient with IT"
+          ]
+        ],
+        "why": "Keywords: chain/across companies = SCM, whole company's resources = ERP, customers = CRM, sales activities = SFA."
+      },
+      {
+        "t": "mcq",
+        "q": "A firm replaces separate accounting, payroll and production systems with one package sharing a single database. This is:",
+        "opts": [
+          "SCM",
+          "ERP",
+          "CRM",
+          "Knowledge management"
+        ],
+        "a": 1,
+        "why": "Bringing core business functions together in one integrated database for company-wide resource planning is ERP."
+      }
+    ],
+    "trap": "If the question stresses **between companies** and inventory/lead time, it's SCM. **Company-wide** resource integration is ERP.",
+    "src": [
+      "FE Prep Book Vol.1 §3.1.4 p.146",
+      "(2025S, FE, Subject-A, Q52)",
+      "(2025A, FE, Subject-A, Q51)"
+    ],
+    "qids": [
+      "2025A_A_Q51",
+      "2025S_A_Q52"
+    ]
+  },
+  {
+    "id": "ss-smart-grid",
+    "topic": "System strategy",
+    "subs": [
+      "smart grid",
+      "smart meter"
+    ],
+    "title": "Smart Meter & Smart Grid",
+    "hook": "Easy marks if you remember that \"grid\" means the electricity network and a smart meter measures and communicates. It does not store power.",
+    "model": [
+      "**Smart meter**: a digital electricity meter with **communication** and device-control functions.",
+      "Smart meter uses: **automatic meter reading**, showing (visualizing) power usage to encourage saving, and **demand response**, which cuts peak demand by controlling usage.",
+      "A smart meter is **not** a battery or backup power source.",
+      "**Smart grid**: an electricity network that uses ICT to control **generation and consumption together**. This helps bring in renewable energy, keeps supply stable and balances demand."
+    ],
+    "example": {
+      "q": "During a heat wave, a utility signals homes to delay running water heaters, and home meters respond. What is happening?",
+      "steps": [
+        "The utility lowers peak demand by controlling consumption. That is **demand response**.",
+        "Home **smart meters** receive the signal and report the usage.",
+        "The network that coordinates generation and consumption this way is a **smart grid**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "Which is NOT a purpose of a smart meter?",
+        "opts": [
+          "Remote, automatic meter reading",
+          "Showing households their real-time power use",
+          "Supplying power to the home during an outage",
+          "Helping reduce peak demand"
+        ],
+        "a": 2,
+        "why": "A smart meter measures, communicates and controls. It has no energy storage, so it cannot act as backup power."
+      },
+      {
+        "t": "bucket",
+        "q": "Device or network?",
+        "buckets": [
+          "Smart meter",
+          "Smart grid"
+        ],
+        "items": [
+          [
+            "Installed at each home to measure and send usage data",
+            0
+          ],
+          [
+            "Integrates control of power plants and consumers with ICT",
+            1
+          ],
+          [
+            "Lets the utility read meters without visiting",
+            0
+          ],
+          [
+            "Helps absorb variable solar and wind generation",
+            1
+          ]
+        ],
+        "why": "The meter is the endpoint at each customer. The grid is the whole ICT-controlled power network."
+      }
+    ],
+    "trap": "Demand response sounds too advanced to be a meter feature, but it is a real smart-meter purpose. Backup power is the one that's false.",
+    "src": [
+      "(2025S, FE, Subject-A, Q56)",
+      "(2026S, FE, Subject-A, Q53)"
+    ],
+    "qids": [
+      "2025S_A_Q56",
+      "2026S_A_Q53"
+    ]
+  },
+  {
+    "id": "sm-audit-checkpoints",
+    "topic": "Service mgmt & audit",
+    "subs": [
+      "CIA audit",
+      "system audit"
+    ],
+    "title": "Audit Checkpoints & CIA",
+    "hook": "Audit questions give a risk and ask for the matching checkpoint; first classify the risk.",
+    "model": [
+      "A **system audit** is an independent check of controls over information systems, with advice for improvement.",
+      "A checkpoint must address the **exact risk** stated.",
+      "**Confidentiality** (only authorized access): encryption, access control, banning media removal.",
+      "**Integrity** (accurate, complete): input error checks, change control.",
+      "**Availability** (usable when needed): redundancy, backups, SLA on downtime.",
+      "Risk 'user requirements not met' in design → **user department reviews** design documents."
+    ],
+    "example": {
+      "q": "Risk: system documents leak or are misused. Checkpoint?",
+      "steps": [
+        "Leakage/misuse = unauthorized access.",
+        "That is a **confidentiality** risk.",
+        "Checkpoint: measures that keep the documents confidential."
+      ]
+    },
+    "checks": [
+      {
+        "t": "bucket",
+        "q": "Which CIA element does each control mainly protect?",
+        "buckets": [
+          "Confidentiality",
+          "Integrity",
+          "Availability"
+        ],
+        "items": [
+          [
+            "Encrypting the customer database",
+            0
+          ],
+          [
+            "Validation checks on input forms",
+            1
+          ],
+          [
+            "Clustered servers with failover",
+            2
+          ],
+          [
+            "Login access rights per role",
+            0
+          ],
+          [
+            "Monitoring downtime against the SLA",
+            2
+          ]
+        ],
+        "why": "Secrecy = C, correctness = I, uptime = A."
+      },
+      {
+        "t": "mcq",
+        "q": "Risk: programs do not match the system design. Which checkpoint fits?",
+        "opts": [
+          "Program specs are prepared based on the design documents",
+          "Users join the requirements interviews",
+          "Backups are stored offsite"
+        ],
+        "a": 0,
+        "why": "Design-to-program consistency is checked by tracing specs to design; user review targets unmet requirements."
+      }
+    ],
+    "trap": "Input error checking sounds like security, but it protects integrity, not availability.",
+    "src": [
+      "(2026S, FE, Subject-A, Q45)",
+      "(2025S, FE, Subject-A, Q45)",
+      "(2025A, FE, Subject-A, Q45)"
+    ],
+    "qids": [
+      "2025A_A_Q45",
+      "2025S_A_Q45",
+      "2026S_A_Q45"
+    ]
+  },
+  {
+    "id": "sm-capacity-management",
+    "topic": "Service mgmt & audit",
+    "subs": [
+      "capacity management"
+    ],
+    "title": "Capacity Management Techniques",
+    "hook": "Expect a question that describes a technique and asks its name: trend analysis, analytical modeling, simulation, or baselining.",
+    "model": [
+      "Capacity management makes sure capacity and performance meet current and future agreed needs at justified cost.",
+      "**Trend analysis**: track a resource's usage over time and extrapolate future usage.",
+      "**Analytical modeling**: math such as **queueing theory** to predict response time/throughput.",
+      "**Simulation modeling**: run simulated (synthetic) transactions to predict performance.",
+      "**Baseline model**: first build a model that matches current performance."
+    ],
+    "example": {
+      "q": "CPU use rose 5% a month for a year. When does it hit 90%?",
+      "steps": [
+        "Data is a time series of one resource.",
+        "Extending the line into the future = **trend analysis**.",
+        "Use the forecast to plan an upgrade before 90%."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match the technique to its description.",
+        "pairs": [
+          [
+            "Trend analysis",
+            "Extrapolate past usage over time"
+          ],
+          [
+            "Analytical modeling",
+            "Apply queueing formulas"
+          ],
+          [
+            "Simulation modeling",
+            "Run generated, simulated transactions"
+          ],
+          [
+            "Baselining",
+            "Model current performance first"
+          ]
+        ],
+        "why": "Trend = history over time; analytical = math; simulation = synthetic load; baseline = today's reference model."
+      },
+      {
+        "t": "mcq",
+        "q": "A team feeds made-up transactions to a model of the system to estimate throughput. This is:",
+        "opts": [
+          "Simulation modeling",
+          "Trend analysis",
+          "Analytical modeling",
+          "Demand management"
+        ],
+        "a": 0,
+        "why": "Generating simulated transactions is simulation; trend analysis uses real usage history."
+      }
+    ],
+    "trap": "Simulation also predicts the future, but trend analysis is the one built on chronological usage data.",
+    "src": [
+      "(2026S, FE, Subject-A, Q44)"
+    ],
+    "qids": [
+      "2026S_A_Q44"
+    ]
+  },
+  {
+    "id": "sm-outsourcing-sla",
+    "topic": "Service mgmt & audit",
+    "subs": [
+      "outsourcing / SLA"
+    ],
+    "title": "Outsourcing Risks & Measures",
+    "hook": "Outsourcing questions name a risk and ask which measure targets it; match the measure to that exact risk.",
+    "model": [
+      "Quality decline → agree a target **service level (SLA)** and track quality indicators to drive improvement.",
+      "Unclear or high cost → state the fee structure per service; keep in-house staff who can judge costs.",
+      "Information leakage → confidentiality clauses, access control, audits of the vendor.",
+      "Loss of in-house know-how / vendor lock-in → keep key skills and documentation in-house."
+    ],
+    "example": {
+      "q": "After outsourcing operations, response times are slipping. Best measure?",
+      "steps": [
+        "Risk named: decline in service **quality**.",
+        "Measure that controls quality: agreed service levels + KPIs reviewed regularly.",
+        "Fee details or training plans don't directly fix quality."
+      ]
+    },
+    "checks": [
+      {
+        "t": "bucket",
+        "q": "Which risk does each measure address?",
+        "buckets": [
+          "Quality decline",
+          "Cost risk",
+          "Info leakage"
+        ],
+        "items": [
+          [
+            "Agree service levels and monitor KPIs",
+            0
+          ],
+          [
+            "Itemize fees per service in the contract",
+            1
+          ],
+          [
+            "Add a nondisclosure clause",
+            2
+          ],
+          [
+            "Keep staff able to judge cost validity",
+            1
+          ]
+        ],
+        "why": "Each measure only controls the risk it targets."
+      },
+      {
+        "t": "mcq",
+        "q": "Which SLA element best lets the client check service quality?",
+        "opts": [
+          "Measurable service level targets, e.g. response time",
+          "The vendor's office address",
+          "The vendor's hiring plan"
+        ],
+        "a": 0,
+        "why": "Quality is controlled through measurable, agreed targets."
+      }
+    ],
+    "trap": "Picking a reasonable long-term measure (like an HR plan) that doesn't target the risk asked.",
+    "src": [
+      "(2025A, FE, Subject-A, Q47)"
+    ],
+    "qids": [
+      "2025A_A_Q47"
+    ]
+  },
+  {
+    "id": "sm-problem-management",
+    "topic": "Service mgmt & audit",
+    "subs": [
+      "problem management"
+    ],
+    "title": "Incident vs Problem Management",
+    "hook": "FE asks how incidents and problems relate: who restores service, who finds the root cause, and how the records link.",
+    "model": [
+      "**Incident management**: restore normal service ASAP (a workaround is fine).",
+      "**Problem management**: find the **root cause** of one or more incidents and prevent recurrence.",
+      "A problem record **cross-references** its incidents; one problem can link to **many** incidents.",
+      "**Known error**: a problem whose root cause (and workaround) has been identified and documented.",
+      "Incident records are kept, not deleted, when the problem is closed."
+    ],
+    "example": {
+      "q": "Ten users report the same app crash this week. What happens?",
+      "steps": [
+        "Service desk logs 10 incidents and gives a restart workaround.",
+        "Problem management opens **one** problem record linked to all 10.",
+        "Root cause found (memory leak) → recorded as a known error.",
+        "A change request applies the permanent fix."
+      ]
+    },
+    "checks": [
+      {
+        "t": "bucket",
+        "q": "Incident or problem management?",
+        "buckets": [
+          "Incident mgmt",
+          "Problem mgmt"
+        ],
+        "items": [
+          [
+            "Give the user a workaround so work continues",
+            0
+          ],
+          [
+            "Analyze why the same crash keeps happening",
+            1
+          ],
+          [
+            "Restore service within the SLA target time",
+            0
+          ],
+          [
+            "Record a known error",
+            1
+          ]
+        ],
+        "why": "Incident = fast restoration; problem = root cause and prevention."
+      },
+      {
+        "t": "mcq",
+        "q": "Which is true of problem records?",
+        "opts": [
+          "They hold links to the incidents that triggered them",
+          "Each one is tied to exactly one incident",
+          "Linked incidents are deleted once the cause is known"
+        ],
+        "a": 0,
+        "why": "The cross-reference ties the processes together; one problem may cover many incidents, and records are retained."
+      }
+    ],
+    "trap": "Thinking one problem = one incident; a single root cause often explains many incidents.",
+    "src": [
+      "(2025A, FE, Subject-A, Q44)"
+    ],
+    "qids": [
+      "2025A_A_Q44"
+    ]
+  },
+  {
+    "id": "sm-rto-rpo-mtd",
+    "topic": "Service mgmt & audit",
+    "subs": [
+      "RTO / MTD"
+    ],
+    "title": "RTO, RPO and MTD",
+    "hook": "Disaster-recovery questions test which objective measures what, and how they must relate: recovery has to finish before the business can no longer survive.",
+    "model": [
+      "**RPO** (Recovery Point Objective): the point in time data is restored to = how much data loss is acceptable. Backup interval must not exceed it.",
+      "**RTO** (Recovery Time Objective): target time to restore the service after the disruption.",
+      "**MTD** (Maximum Tolerable Downtime): the longest outage the business can survive.",
+      "Rule: **RTO < MTD**; otherwise the business fails before recovery ends."
+    ],
+    "example": {
+      "q": "MTD is 24 h. Recovery: 3 h to declare a disaster, 5 h to set up the backup site, 8 h to restore data. Is the plan OK?",
+      "steps": [
+        "RTO = 3 + 5 + 8 = 16 h.",
+        "Compare: 16 h < 24 h MTD.",
+        "Plan is OK with 24 − 16 = **8 h** of margin."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each term to what it limits.",
+        "pairs": [
+          [
+            "RPO",
+            "How much recent data may be lost"
+          ],
+          [
+            "RTO",
+            "How long restoring the service may take"
+          ],
+          [
+            "MTD",
+            "How long the business can survive an outage"
+          ]
+        ],
+        "why": "RPO looks back from the incident (data), RTO looks forward (recovery time), MTD is the business survival limit."
+      },
+      {
+        "t": "numeric",
+        "q": "MTD is 36 h. Steps: 4 h detect and decide, 10 h switch to the standby site, 6 h verify data. Hours of margin left before MTD?",
+        "a": 16,
+        "unit": "h",
+        "why": "RTO = 4 + 10 + 6 = 20 h; 36 − 20 = 16 h."
+      },
+      {
+        "t": "mcq",
+        "q": "Backups run every 4 hours. Which objective does this interval mainly support?",
+        "opts": [
+          "RPO of 4 hours",
+          "RTO of 4 hours",
+          "MTD of 4 hours"
+        ],
+        "a": 0,
+        "why": "The backup interval sets the worst-case data loss, which is the RPO."
+      }
+    ],
+    "trap": "RPO is about lost data, not recovery time, so 'RPO < MTD' is not the required relation.",
+    "src": [
+      "(2025S, FE, Subject-A, Q44)"
+    ],
+    "qids": [
+      "2025S_A_Q44"
+    ]
+  },
+  {
+    "id": "sm-sla-availability",
+    "topic": "Service mgmt & audit",
+    "subs": [
+      "SLA availability"
+    ],
+    "title": "SLA Availability & Allowed Downtime",
+    "hook": "A favorite calculation: given the service hours and an SLA availability %, find the maximum downtime per month.",
+    "model": [
+      "**Availability** = (agreed service time − downtime) ÷ agreed service time.",
+      "Agreed service time counts **only the service window** × business days, not 24 h.",
+      "Max downtime = (1 − availability) × agreed service time.",
+      "Agreed planned maintenance is usually excluded from service time."
+    ],
+    "example": {
+      "q": "Service runs 9:00 AM–9:00 PM, 25 business days, SLA 99.8%. Max downtime?",
+      "steps": [
+        "Window = 12 h/day.",
+        "Service time = 12 × 25 = 300 h.",
+        "Allowed = 1 − 0.998 = 0.2%.",
+        "0.002 × 300 = **0.6 h** (36 min)."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "Service hours 6:00 AM–6:00 PM, 20 business days a month, SLA availability 99%. Max downtime per month in hours?",
+        "a": 2.4,
+        "tol": 0.01,
+        "unit": "h",
+        "why": "12 h × 20 = 240 h of service; 1% of 240 = 2.4 h."
+      },
+      {
+        "t": "numeric",
+        "q": "A service had 400 agreed hours last month and was down 2 h. Availability in %?",
+        "a": 99.5,
+        "tol": 0.01,
+        "unit": "%",
+        "why": "(400 − 2) ÷ 400 = 0.995 = 99.5%."
+      },
+      {
+        "t": "mcq",
+        "q": "Which figure should you multiply by (1 − availability) to get the allowed downtime?",
+        "opts": [
+          "Agreed service hours in the period",
+          "24 h × days in the month",
+          "Number of incidents in the month",
+          "Mean time to repair"
+        ],
+        "a": 0,
+        "why": "The SLA promises availability only during the agreed window, so only those hours count."
+      }
+    ],
+    "trap": "Using 24 h/day instead of the service window gives a downtime that is too big.",
+    "src": [
+      "(2025S, FE, Subject-A, Q43)",
+      "(2025A, FE, Subject-A, Q43)"
+    ],
+    "qids": [
+      "2025A_A_Q43",
+      "2025S_A_Q43"
+    ]
+  },
+  {
+    "id": "pm-cocomo",
+    "topic": "Project management",
+    "subs": [
+      "COCOMO"
+    ],
+    "title": "COCOMO Cost Model",
+    "hook": "The exam checks that you know which way COCOMO works: software size goes in, effort and duration come out.",
+    "model": [
+      "**COCOMO** (Constructive Cost Model) is a *cost model* that uses a statistical formula.",
+      "Input: estimated software **size** (thousands of lines of code, KLOC).",
+      "Output: **effort** (person-months), then the project **duration** (months).",
+      "Three levels: **basic**, **intermediate**, **detailed**.",
+      "Average staff = effort ÷ duration."
+    ],
+    "example": {
+      "q": "A system is sized at 40 KLOC. Using COCOMO, the formula gives 120 person-months and a duration of 12 months. What is the average team size?",
+      "steps": [
+        "Size (40 KLOC) is the input to the formula.",
+        "The formula outputs effort = 120 person-months and duration = 12 months.",
+        "Average staff = 120 ÷ 12 = **10 people**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "mcq",
+        "q": "A team knows only the estimated KLOC of a new system. What does COCOMO let them work out?",
+        "opts": [
+          "Effort, then duration",
+          "The KLOC, from the effort",
+          "Effort, from the planned end date",
+          "Size, from the team headcount"
+        ],
+        "a": 0,
+        "why": "Size is the known starting point; effort and duration are what the model calculates."
+      },
+      {
+        "t": "numeric",
+        "q": "COCOMO estimates 48 person-months of effort and a duration of 8 months. What is the average number of staff?",
+        "a": 6,
+        "unit": "people",
+        "why": "Average staff = effort ÷ duration = 48 ÷ 8 = **6**."
+      }
+    ],
+    "trap": "Reversing the direction: COCOMO never derives size from effort; size is the input.",
+    "src": [
+      "FE Prep Book Vol.1 §3.1.5 p.148",
+      "(2025S, FE, Subject-A, Q42)"
+    ],
+    "qids": [
+      "2025S_A_Q42"
+    ]
+  },
+  {
+    "id": "pm-critical-path",
+    "topic": "Project management",
+    "subs": [
+      "critical path"
+    ],
+    "title": "Critical Path (Arrow Diagram)",
+    "hook": "Arrow-diagram questions ask for the critical path or the minimum project length; one missed dummy arrow gives the wrong answer.",
+    "model": [
+      "The **critical path** is the *longest* path from start to end; its length is the minimum project duration.",
+      "Activities on it have **no slack**: any delay delays the whole project.",
+      "Forward pass: at a merge node, take the **largest** earliest time.",
+      "A **dummy** (dashed arrow) takes 0 days but still forces the waiting activity to start later.",
+      "Shortening a non-critical activity does not shorten the project."
+    ],
+    "example": {
+      "q": "A (3 days) starts the project. B (4) and C (7) follow A. D (2) follows B. E (1) needs both C and D finished. Find the critical path.",
+      "steps": [
+        "A-B-D-E = 3 + 4 + 2 + 1 = **10 days**.",
+        "A-C-E = 3 + 7 + 1 = **11 days**.",
+        "E can start only at max(3+7, 3+4+2) = max(10, 9) = 10.",
+        "Longest path = **A-C-E, 11 days**; path B-D has 1 day of slack."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "P (5 days) starts the project. Q (8) and R (3) follow P. S (4) follows R. T (2) needs both Q and S finished. What is the minimum project duration?",
+        "a": 15,
+        "unit": "days",
+        "why": "P-Q-T = 5 + 8 + 2 = 15; P-R-S-T = 5 + 3 + 4 + 2 = 14. The longest path decides: **15 days**."
+      },
+      {
+        "t": "mcq",
+        "q": "In that same project, R is shortened by 1 day. What is the new project duration?",
+        "opts": [
+          "13 days",
+          "14 days",
+          "15 days",
+          "16 days"
+        ],
+        "a": 2,
+        "why": "R is not on the critical path (P-Q-T), so cutting it only adds slack. The project still takes 15 days."
+      }
+    ],
+    "trap": "Ignoring a dummy arrow, which hides a dependency and makes a shorter path look critical.",
+    "src": [
+      "FE Prep Book Vol.1 §7.3.2 p.281",
+      "(2025A, FE, Subject-A, Q41)"
+    ],
+    "qids": [
+      "2025A_A_Q41"
+    ]
+  },
+  {
+    "id": "pm-effort-estimation",
+    "topic": "Project management",
+    "subs": [
+      "effort estimation"
+    ],
+    "title": "Effort Estimation from Function Points",
+    "hook": "Effort questions chain a few small steps; most wrong answers come from skipping the overhead added at the end.",
+    "model": [
+      "The **FP (function point) method** measures size by counting inputs, outputs, inquiries, logical files and interfaces, with weights.",
+      "Development effort = FP ÷ productivity (FP per person-month).",
+      "Add the other fixed work (e.g. installation, training).",
+      "When an overhead is a percentage of *all* the other work (as project management usually is in these questions), apply it to the **sum**, so add it last."
+    ],
+    "example": {
+      "q": "300 FP, productivity 15 FP per person-month, 5 person-months for installation, plus 20% for project management. Total effort?",
+      "steps": [
+        "Development = 300 ÷ 15 = 20 person-months.",
+        "Add installation: 20 + 5 = 25.",
+        "Add 20% PM: 25 × 1.2 = **30 person-months**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "800 FP, productivity 20 FP per person-month, 8 person-months for testing and training, and project management adds 25% of all that work. Total person-months?",
+        "a": 60,
+        "unit": "person-months",
+        "why": "800 ÷ 20 = 40; 40 + 8 = 48; 48 × 1.25 = **60**. Stopping at 48 forgets the PM overhead."
+      },
+      {
+        "t": "order",
+        "q": "Put the calculation steps in order.",
+        "steps": [
+          "Divide FP by productivity",
+          "Add fixed work such as installation",
+          "Apply the percentage overhead to the total"
+        ],
+        "why": "The overhead is a percentage of all the other work, so it must come after everything else is added."
+      }
+    ],
+    "trap": "Forgetting to add the percentage overhead, or applying it to development effort only when the question says it covers all the work.",
+    "src": [
+      "FE Prep Book Vol.1 §3.1.5 p.148",
+      "(2026S, FE, Subject-A, Q42)"
+    ],
+    "qids": [
+      "2026S_A_Q42"
+    ]
   },
   {
     "id": "pm-evm",
     "topic": "Project management",
-    "subs": ["EVM"],
+    "subs": [
+      "EVM"
+    ],
     "title": "Earned Value Management (EVM)",
-    "hook": "EVM questions give you three dollar figures and ask whether the project is over budget, behind schedule, or both — you just need the right formula.",
+    "hook": "EVM questions either ask you to define PV, EV or AC, or give you the three figures and ask if the project is over budget, behind schedule, or both.",
     "model": [
-      "**PV** (Planned Value): the budgeted cost of the work that was scheduled to be done by now.",
-      "**EV** (Earned Value): the budgeted cost of the work actually completed so far.",
-      "**AC** (Actual Cost): the real money spent on the work done so far.",
-      "**CV** (Cost Variance) = `EV − AC`. Positive means under budget; negative means over budget.",
-      "**SV** (Schedule Variance) = `EV − PV`. Positive means ahead of schedule; negative means behind schedule.",
-      "**CPI** = `EV / AC` and **SPI** = `EV / PV`. Values above 1 are good (efficient); below 1 are bad."
+      "**PV** (Planned Value): budget for the work *scheduled* to be done by now.",
+      "**EV** (Earned Value): budget for the work *actually completed* so far.",
+      "**AC** (Actual Cost): money *really spent* on the completed work.",
+      "**CV** = `EV − AC` (cost) and **SV** = `EV − PV` (schedule). Negative = over budget / behind schedule.",
+      "**CPI** = `EV ÷ AC` and **SPI** = `EV ÷ PV`. Below 1 is bad, above 1 is good."
     ],
     "example": {
-      "q": "A project's PV to date is `$100,000`, EV is `$90,000`, and AC is `$120,000`. How is the project doing?",
+      "q": "PV = `$100,000`, EV = `$90,000`, AC = `$120,000`. How is the project doing?",
       "steps": [
-        "CV = EV − AC = 90,000 − 120,000 = **−$30,000** (over budget).",
-        "SV = EV − PV = 90,000 − 100,000 = **−$10,000** (behind schedule).",
-        "CPI = EV / AC = 90,000 / 120,000 = **0.75** (every $1 spent earns only $0.75 of planned value).",
-        "SPI = EV / PV = 90,000 / 100,000 = **0.9** (progressing at 90% of the planned pace).",
-        "Both variances are negative and both indices are below 1: the project is over budget _and_ behind schedule."
+        "CV = 90,000 − 120,000 = **−30,000** → over budget.",
+        "SV = 90,000 − 100,000 = **−10,000** → behind schedule.",
+        "CPI = 90,000 ÷ 120,000 = **0.75**; SPI = 90,000 ÷ 100,000 = **0.9**.",
+        "Both indices < 1: over budget **and** behind schedule."
       ]
     },
     "checks": [
       {
         "t": "match",
-        "q": "Match each EVM term to its definition.",
+        "q": "Match each EVM term to its meaning.",
         "pairs": [
-          ["PV", "Budgeted cost of the work scheduled to be done by now"],
-          ["EV", "Budgeted cost of the work actually completed so far"],
-          ["AC", "Actual cost spent on the work completed so far"]
+          [
+            "PV",
+            "Budget for the work planned to be done by now"
+          ],
+          [
+            "EV",
+            "Budget value of the work actually finished"
+          ],
+          [
+            "AC",
+            "Real cost spent on the work finished"
+          ]
         ],
-        "why": "PV is the plan, EV is the budget value of what's actually done, and AC is the real money spent getting it done — three separate measurements taken at the same point in time."
+        "why": "PV is the plan, EV is what the finished work is worth in budget terms, and AC is the money really spent."
       },
       {
         "t": "numeric",
-        "q": "A task has PV = `$50,000` and EV = `$42,000`. What is the schedule variance (SV), in dollars? (negative if behind schedule)",
-        "a": -8000,
-        "unit": "$",
-        "why": "SV = EV − PV = 42,000 − 50,000 = **−$8,000**. A negative SV means the work completed so far is worth less than what was scheduled — the project is behind schedule."
+        "q": "EV = `$60,000` and AC = `$75,000`. What is the CPI?",
+        "a": 0.8,
+        "tol": 0.001,
+        "why": "CPI = EV ÷ AC = 60,000 ÷ 75,000 = **0.8**. Each $1 spent earned only $0.80 of value, so the project is over budget."
+      }
+    ],
+    "trap": "Mixing up the three values: the budget for *planned* work is PV and the *real cost* is AC; only the budget for *completed* work is EV.",
+    "src": [
+      "(2025S, FE, Subject-A, Q41)"
+    ],
+    "qids": [
+      "2025S_A_Q41"
+    ]
+  },
+  {
+    "id": "pm-pert-estimate",
+    "topic": "Project management",
+    "subs": [
+      "PERT estimate"
+    ],
+    "title": "PERT Three-Point Estimate",
+    "hook": "You get an optimistic, most likely and pessimistic figure and must apply the weighted PERT formula, not a plain average.",
+    "model": [
+      "Three estimates: **O** (optimistic, best case), **M** (most likely, normal case), **P** (pessimistic, worst case).",
+      "PERT (beta distribution) expected value = `(O + 4M + P) ÷ 6`.",
+      "M is weighted **4 times**; the total weight is 1 + 4 + 1 = 6.",
+      "Works for time or cost."
+    ],
+    "example": {
+      "q": "A task costs `$20,000` at best, `$30,000` normally and `$58,000` at worst. Expected cost?",
+      "steps": [
+        "4M = 4 × 30,000 = 120,000.",
+        "O + 4M + P = 20,000 + 120,000 + 58,000 = 198,000.",
+        "198,000 ÷ 6 = **$33,000**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "A task takes 4 days at best, 7 days normally and 16 days at worst. What is the PERT expected duration?",
+        "a": 8,
+        "unit": "days",
+        "why": "(4 + 4×7 + 16) ÷ 6 = (4 + 28 + 16) ÷ 6 = 48 ÷ 6 = **8 days**. A plain average would give 9."
+      },
+      {
+        "t": "match",
+        "q": "Match each term to its role in the formula.",
+        "pairs": [
+          [
+            "Optimistic",
+            "Weight 1, best case"
+          ],
+          [
+            "Most likely",
+            "Weight 4, normal case"
+          ],
+          [
+            "Pessimistic",
+            "Weight 1, worst case"
+          ],
+          [
+            "Divisor",
+            "6, the sum of the weights"
+          ]
+        ],
+        "why": "Expected = (O + 4M + P) ÷ 6: the weights 1, 4, 1 add up to 6."
+      }
+    ],
+    "trap": "Taking the simple average (O + M + P) ÷ 3, which ignores the 4× weight on the most likely value.",
+    "src": [
+      "(2025A, FE, Subject-A, Q42)"
+    ],
+    "qids": [
+      "2025A_A_Q42"
+    ]
+  },
+  {
+    "id": "pm-scope-management",
+    "topic": "Project management",
+    "subs": [
+      "scope management"
+    ],
+    "title": "Scope Management",
+    "hook": "The exam describes a goal and asks which project management subject group it belongs to; scope is about what the project will and will not deliver.",
+    "model": [
+      "**Scope**: define objectives, deliverables, requirements and **boundaries** (what is in and out).",
+      "Scope also controls **changes** to the deliverables, so their effect on the project is managed.",
+      "The **WBS** (Work Breakdown Structure) breaks the deliverables into smaller work packages.",
+      "Compare: **Risk** = uncertain events; **Procurement** = buying from suppliers."
+    ],
+    "example": {
+      "q": "A client asks to add a mobile app halfway through a web project. Which subject group handles the request?",
+      "steps": [
+        "The request changes a project **deliverable**.",
+        "Deciding if it is in or out, and handling its impact, is change control on the boundaries.",
+        "So it is **scope** management."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match each subject group to its purpose.",
+        "pairs": [
+          [
+            "Scope",
+            "Set deliverables and boundaries; control changes to them"
+          ],
+          [
+            "Risk",
+            "Identify and respond to uncertain events"
+          ],
+          [
+            "Procurement",
+            "Obtain goods and services from suppliers"
+          ]
+        ],
+        "why": "Only scope is about what the project delivers and where its boundaries are."
       },
       {
         "t": "mcq",
-        "q": "A project has AC = `$80,000` and EV = `$80,000`. Which measure tells you directly whether the project is on schedule — not just on budget?",
-        "opts": ["CPI (EV/AC)", "SPI (EV/PV)", "CV (EV−AC)", "AC alone"],
+        "q": "A team lists which features are excluded from the project and reviews every request to change the deliverables. Which subject group is this?",
+        "opts": [
+          "Risk",
+          "Scope",
+          "Quality",
+          "Procurement"
+        ],
         "a": 1,
-        "why": "SPI = EV/PV compares earned value to planned value, which is a schedule measure. CPI and CV both compare EV to AC, which measures cost performance, not schedule."
+        "why": "Exclusions are boundaries and deliverable changes are scope control. Risk deals with uncertain events, not deliverable changes."
       }
     ],
-    "trap": "Don't mix up CV and SV: both use EV as the baseline, but CV compares it to AC (cost) while SV compares it to PV (schedule). A negative SV does **not** mean over budget — it means behind schedule; check CV separately for budget status.",
-    "src": ["(2025S, FE, Subject-A, Q41)"],
-    "qids": ["2025S_A_Q41"]
+    "trap": "Choosing Risk because the purpose mentions positive and negative impacts; when the impact comes from changes to deliverables, it is Scope.",
+    "src": [
+      "(2026S, FE, Subject-A, Q41)"
+    ],
+    "qids": [
+      "2026S_A_Q41"
+    ]
+  },
+  {
+    "id": "al-break-even-target-profit",
+    "topic": "Accounting & legal",
+    "subs": [
+      "break-even / target profit"
+    ],
+    "title": "Break-Even & Target Profit",
+    "hook": "Units to break even or to earn a target profit is a classic: add the target profit to fixed costs.",
+    "model": [
+      "**Break-even point**: sales = total cost (fixed + variable), so profit = 0.",
+      "Contribution per unit = price − variable cost per unit.",
+      "Break-even units = fixed cost ÷ contribution per unit.",
+      "Target-profit units = (fixed cost + target profit) ÷ contribution per unit.",
+      "Break-even sales = fixed cost ÷ (1 − variable cost ratio)."
+    ],
+    "example": {
+      "q": "Price $25, variable cost $15/unit, fixed cost $60,000. Units for $20,000 profit?",
+      "steps": [
+        "Contribution = 25 − 15 = $10.",
+        "Break-even = 60,000 ÷ 10 = 6,000 units.",
+        "Target = (60,000 + 20,000) ÷ 10 = **8,000 units**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "Price $50, variable cost $30/unit, fixed costs $100,000. Units needed for a $40,000 profit?",
+        "a": 7000,
+        "unit": "units",
+        "why": "(100,000 + 40,000) ÷ (50 − 30) = 140,000 ÷ 20 = 7,000."
+      },
+      {
+        "t": "numeric",
+        "q": "Fixed costs $300,000; variable cost ratio 0.4. Break-even sales ($)?",
+        "a": 500000,
+        "unit": "$",
+        "why": "300,000 ÷ (1 − 0.4) = 300,000 ÷ 0.6 = 500,000."
+      },
+      {
+        "t": "mcq",
+        "q": "Interest expense and admin salaries that don't change with volume are:",
+        "opts": [
+          "Fixed costs",
+          "Variable costs per unit",
+          "Target profit"
+        ],
+        "a": 0,
+        "why": "Costs that stay constant regardless of units sold are fixed; add them all up first."
+      }
+    ],
+    "trap": "Stopping at break-even (fixed ÷ contribution) and forgetting to add the target profit.",
+    "src": [
+      "FE Prep Book Vol.1 §7.2.2 p.270",
+      "FE Prep Book Vol.1 §7.2.2 p.271",
+      "(2026S, FE, Subject-A, Q59)"
+    ],
+    "qids": [
+      "2026S_A_Q59"
+    ]
+  },
+  {
+    "id": "al-cost-comparison",
+    "topic": "Accounting & legal",
+    "subs": [
+      "cost comparison"
+    ],
+    "title": "Development Cost Comparison",
+    "hook": "You compare options (buy, outsource, build) by totaling every cost item; the cheapest-looking single number is often a trap.",
+    "model": [
+      "Total cost = purchase + outsourcing + labor.",
+      "Labor per process = persons × months × cost per person-month.",
+      "Use each process's own duration and rate.",
+      "Compute **every** option fully before choosing."
+    ],
+    "example": {
+      "q": "A: buy $50,000 + 2 persons × 3 months × $8,000. B: outsource $120,000. Cheaper?",
+      "steps": [
+        "A labor = 2 × 3 × 8,000 = 48,000.",
+        "A total = 50,000 + 48,000 = $98,000.",
+        "B = $120,000 → **A** is cheaper."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "X: buy $30,000 + 3 persons × 2 months × $7,000. Y: outsource $80,000. Z: build 5 persons × 3 months × $4,000, then test 1 person × 2 months × $7,000. Lowest total cost ($)?",
+        "a": 72000,
+        "unit": "$",
+        "why": "X = 30,000 + 42,000 = 72,000; Y = 80,000; Z = 60,000 + 14,000 = 74,000."
+      },
+      {
+        "t": "order",
+        "q": "Order the steps to compare options.",
+        "steps": [
+          "List each option's cost items",
+          "Compute labor = persons × months × rate per process",
+          "Add purchase, outsourcing and labor",
+          "Pick the lowest total"
+        ],
+        "why": "Only after full totals are known can you compare fairly."
+      }
+    ],
+    "trap": "Choosing the single lump-sum option without adding up the in-house labor of the others.",
+    "src": [
+      "(2026S, FE, Subject-A, Q52)"
+    ],
+    "qids": [
+      "2026S_A_Q52"
+    ]
+  },
+  {
+    "id": "al-financial-statements",
+    "topic": "Accounting & legal",
+    "subs": [
+      "financial statements"
+    ],
+    "title": "Financial Statements",
+    "hook": "Know which statement shows a snapshot vs a period, and how the profit levels are derived.",
+    "model": [
+      "**Balance sheet (B/S)**: assets, liabilities, net assets (capital) at **one point in time**.",
+      "**Income statement (P/L)**: revenues, expenses and profit over **a period**.",
+      "**Cash flow statement**: cash in/out over a period (operating, investing, financing).",
+      "**Statement of changes in equity**: how net assets changed during the period.",
+      "Gross profit = sales − cost of sales; operating income = gross profit − SG&A; ordinary profit = operating income + non-operating income − non-operating expenses."
+    ],
+    "example": {
+      "q": "Sales 1,000; cost of sales 600; SG&A 250; non-op income 20; non-op expense 30. Ordinary profit?",
+      "steps": [
+        "Gross = 1,000 − 600 = 400.",
+        "Operating = 400 − 250 = 150.",
+        "Ordinary = 150 + 20 − 30 = **140**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match the statement to what it shows.",
+        "pairs": [
+          [
+            "Balance sheet",
+            "Financial position on a given date"
+          ],
+          [
+            "Income statement",
+            "Profit or loss for the period"
+          ],
+          [
+            "Cash flow statement",
+            "Cash movements for the period"
+          ]
+        ],
+        "why": "Only the B/S is a point-in-time snapshot; the others cover a period."
+      },
+      {
+        "t": "numeric",
+        "q": "Sales 800; cost of sales 500; SG&A 180. Operating income?",
+        "a": 120,
+        "why": "Gross = 300; 300 − 180 = 120."
+      }
+    ],
+    "trap": "The income statement also reports results, but over a period, not as a snapshot of assets and liabilities.",
+    "src": [
+      "FE Prep Book Vol.1 §7.2.1 p.268",
+      "FE Prep Book Vol.1 §7.2.1 p.269",
+      "(2025A, FE, Subject-A, Q59)"
+    ],
+    "qids": [
+      "2025A_A_Q59"
+    ]
+  },
+  {
+    "id": "al-licenses-patents",
+    "topic": "Accounting & legal",
+    "subs": [
+      "shrink-wrap license",
+      "cross-licensing"
+    ],
+    "title": "Software Licenses & Patent Cross-Licensing",
+    "hook": "Short definition items: when a license contract is formed, and what kind of arrangement shares patents.",
+    "model": [
+      "**Shrink-wrap license**: terms are shown on the package; opening (breaking the wrap) = accepting.",
+      "**Click-wrap license**: accepted by clicking 'I agree' during install/download.",
+      "**Patent cross-licensing**: companies mutually license each other's patents in specified fields.",
+      "**Open source**: source code published; anyone may modify and redistribute under the license.",
+      "**Site license**: one contract lets an organization use the software on many machines."
+    ],
+    "example": {
+      "q": "A buyer receives a boxed DVD and tears off the wrap. When is the contract made?",
+      "steps": [
+        "The package states that opening it means agreement.",
+        "Payment or delivery isn't the trigger.",
+        "Contract concluded **when the package is opened**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "match",
+        "q": "Match the term to its meaning.",
+        "pairs": [
+          [
+            "Shrink-wrap",
+            "Opening the package = agreeing"
+          ],
+          [
+            "Click-wrap",
+            "Clicking 'I agree' = agreeing"
+          ],
+          [
+            "Cross-licensing",
+            "Firms permit use of each other's patents"
+          ],
+          [
+            "Site license",
+            "Org-wide use under one contract"
+          ]
+        ],
+        "why": "Each is defined by how or between whom rights are granted."
+      },
+      {
+        "t": "mcq",
+        "q": "Two chip makers agree each may use the other's patents for memory products. This is:",
+        "opts": [
+          "Cross-licensing",
+          "Open source",
+          "A shrink-wrap license",
+          "Patent infringement action"
+        ],
+        "a": 0,
+        "why": "Mutual permission to use patents in a defined field is cross-licensing."
+      }
+    ],
+    "trap": "Shrink-wrap is not at installation; that is click-wrap.",
+    "src": [
+      "(2025A, FE, Subject-A, Q60)",
+      "(2025A, FE, Subject-A, Q40)"
+    ],
+    "qids": [
+      "2025A_A_Q40",
+      "2025A_A_Q60"
+    ]
+  },
+  {
+    "id": "al-standards-organizations",
+    "topic": "Accounting & legal",
+    "subs": [
+      "standards"
+    ],
+    "title": "Standards Organizations",
+    "hook": "Know which bodies set international vs national standards; WTO-related questions point to international ones.",
+    "model": [
+      "**ISO**: international standards in general, including IT (with IEC).",
+      "**IEC**: international, electrical/electronic; **ITU-T**: international, telecommunications.",
+      "**ANSI** (US) and **BSI** (UK) are **national** standards bodies.",
+      "**FCC** is a US government regulator for communications, not an international standard.",
+      "WTO's TBT agreement asks members to base technical rules on **international standards** (e.g. ISO)."
+    ],
+    "example": {
+      "q": "A product is for government buyers in many WTO countries. Which standards?",
+      "steps": [
+        "Many countries → national standards won't fit all.",
+        "WTO members base rules on international standards.",
+        "Choose **ISO**."
+      ]
+    },
+    "checks": [
+      {
+        "t": "bucket",
+        "q": "International or national body?",
+        "buckets": [
+          "International",
+          "National"
+        ],
+        "items": [
+          [
+            "ISO",
+            0
+          ],
+          [
+            "ANSI",
+            1
+          ],
+          [
+            "ITU-T",
+            0
+          ],
+          [
+            "BSI",
+            1
+          ],
+          [
+            "IEC",
+            0
+          ]
+        ],
+        "why": "ISO, IEC and ITU-T are international; ANSI (US) and BSI (UK) are national."
+      },
+      {
+        "t": "mcq",
+        "q": "Which body mainly standardizes telecommunications worldwide?",
+        "opts": [
+          "ITU-T",
+          "ANSI",
+          "FCC",
+          "BSI"
+        ],
+        "a": 0,
+        "why": "ITU-T is the telecom standardization sector of the ITU, an international organization."
+      }
+    ],
+    "trap": "ANSI is famous, but it is the US national body, not an international one.",
+    "src": [
+      "FE Prep Book Vol.1 §6.2.1 p.252",
+      "FE Prep Book Vol.1 §6.2.1 p.253",
+      "(2026S, FE, Subject-A, Q60)"
+    ],
+    "qids": [
+      "2026S_A_Q60"
+    ]
+  },
+  {
+    "id": "al-straight-line-depreciation",
+    "topic": "Accounting & legal",
+    "subs": [
+      "straight-line depreciation"
+    ],
+    "title": "Straight-Line Depreciation",
+    "hook": "A quick calculation item: subtract the residual value before dividing by the useful life.",
+    "model": [
+      "**Depreciation** spreads a fixed asset's cost over its useful life as an expense.",
+      "Straight-line: (acquisition cost − residual value) ÷ useful life, the same amount every year.",
+      "Book value after n years = cost − n × annual depreciation.",
+      "Declining-balance instead multiplies the book value by a fixed rate."
+    ],
+    "example": {
+      "q": "Machine costs $85,000, residual $5,000, life 8 years. Annual depreciation?",
+      "steps": [
+        "Depreciable amount = 85,000 − 5,000 = 80,000.",
+        "80,000 ÷ 8 = **$10,000** per year.",
+        "Book value after 3 years = 85,000 − 30,000 = $55,000."
+      ]
+    },
+    "checks": [
+      {
+        "t": "numeric",
+        "q": "Server bought for $48,000, residual value $3,000, useful life 5 years. Annual straight-line depreciation ($)?",
+        "a": 9000,
+        "unit": "$",
+        "why": "(48,000 − 3,000) ÷ 5 = 45,000 ÷ 5 = 9,000."
+      },
+      {
+        "t": "numeric",
+        "q": "Same server: book value ($) at the end of year 2?",
+        "a": 30000,
+        "unit": "$",
+        "why": "48,000 − 2 × 9,000 = 30,000."
+      },
+      {
+        "t": "mcq",
+        "q": "Which method charges the same depreciation every year?",
+        "opts": [
+          "Straight-line",
+          "Declining-balance",
+          "Both"
+        ],
+        "a": 0,
+        "why": "Declining-balance applies a rate to a shrinking book value, so its charge falls each year."
+      }
+    ],
+    "trap": "Dividing the full cost by the life (forgetting the residual value) gives a too-large figure.",
+    "src": [
+      "FE Prep Book Vol.1 §7.2.1 p.269",
+      "(2025S, FE, Subject-A, Q60)"
+    ],
+    "qids": [
+      "2025S_A_Q60"
+    ]
   }
 ]
