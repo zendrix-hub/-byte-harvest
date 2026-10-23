@@ -20,18 +20,25 @@ function rebuildIndex(): Map<string, Packet> {
   return index;
 }
 
-/** Loads every lesson-content file once and caches the merged packet list. */
+/** Loads every lesson-content file once and caches the merged packet list. On rejection (a flaky
+ * chunk fetch), clears the memoized promise so a later call tries the loader again instead of
+ * replaying the same failure forever. */
 export function loadPackets(): Promise<Packet[]> {
   if (!pending) {
     pending = Promise.all(
       Object.entries(loaders).map(async ([path, load]) => {
         cache.set(path, await load());
       }),
-    ).then(() => {
-      byId = rebuildIndex();
-      packetsVersion.value++;
-      return [...byId.values()];
-    });
+    )
+      .then(() => {
+        byId = rebuildIndex();
+        packetsVersion.value++;
+        return [...byId.values()];
+      })
+      .catch((err) => {
+        pending = null;
+        throw err;
+      });
   }
   return pending;
 }
