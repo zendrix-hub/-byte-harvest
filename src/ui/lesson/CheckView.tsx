@@ -16,12 +16,19 @@ function range(n: number): number[] {
   return Array.from({ length: n }, (_, i) => i);
 }
 
-/** Shuffles, then rotates by one if the shuffle landed back on the authored order — an order
- * check (or a match check's right-hand side) in authored order gives the answer away for free. */
-function shuffleAvoidIdentity(arr: number[], rng: Rng): number[] {
-  const s = shuffle(arr, rng);
-  if (s.length > 1 && s.every((v, i) => v === arr[i])) {
-    return [...s.slice(1), s[0]];
+/** Shuffles, rerolling from the same rng stream until the result matches neither the authored
+ * order nor `against` position-for-position. An order check (or a match check's right-hand side)
+ * landing on the authored order gives the answer away for free; landing on the same arrangement as
+ * `against` (the match check's independently-shuffled left column) does too, at the row level —
+ * row i's correct chip would sit in column i even though the two sides were shuffled separately.
+ * Bounded to 50 rerolls: empirically sufficient for n >= 3 (the smallest match/order check size
+ * this app ships), leaving a vanishingly rare residual collision as the fallback return. */
+function shuffleAvoidMatches(arr: number[], rng: Rng, against: number[] = arr): number[] {
+  let s = shuffle(arr, rng);
+  let guard = 0;
+  const bad = (cand: number[]) => cand.every((v, i) => v === arr[i]) || cand.some((v, i) => v === against[i]);
+  while (guard++ < 50 && bad(s)) {
+    s = shuffle(arr, rng);
   }
   return s;
 }
@@ -105,10 +112,11 @@ function MatchCheck({ check, seed, locked, onChange }: Props & { check: Extract<
   // Left and right sides are shuffled from independently derived seeds (not one shared rng stream):
   // sharing a stream can put every row's correct chip at that row's own display column — a free
   // "diagonal" solve that needs no reading at all.
-  const { leftOrder, rightOrder } = useSeeded(seed, () => ({
-    leftOrder: shuffle(range(n), mulberry32(seed * 2 + 1)),
-    rightOrder: shuffleAvoidIdentity(range(n), mulberry32(seed * 2 + 2)),
-  }));
+  const { leftOrder, rightOrder } = useSeeded(seed, () => {
+    const leftOrder = shuffle(range(n), mulberry32(seed * 2 + 1));
+    const rightOrder = shuffleAvoidMatches(range(n), mulberry32(seed * 2 + 2), leftOrder);
+    return { leftOrder, rightOrder };
+  });
   const [sel, setSel] = useState<Partial<Record<number, number>>>({});
 
   useEffect(() => {
@@ -211,7 +219,7 @@ function BucketCheck({ check, seed, locked, onChange }: Props & { check: Extract
 
 function OrderCheck({ check, seed, locked, onChange }: Props & { check: Extract<Check, { t: 'order' }> }) {
   const n = check.steps.length;
-  const poolOrder = useSeeded(seed, (rng) => shuffleAvoidIdentity(range(n), rng));
+  const poolOrder = useSeeded(seed, (rng) => shuffleAvoidMatches(range(n), rng));
   const [seq, setSeq] = useState<number[]>([]);
 
   useEffect(() => {

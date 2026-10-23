@@ -138,6 +138,40 @@ describe('CheckView: match right side never pre-solved', () => {
   });
 });
 
+describe('CheckView: match diagonal never pre-solved', () => {
+  function run(n: number) {
+    const check: Check = {
+      t: 'match',
+      q: 'Match them',
+      pairs: Array.from({ length: n }, (_, i) => [`L${i + 1}`, `R${i + 1}`]) as [string, string][],
+      why: 'because',
+    };
+    for (let seed = 0; seed <= 50; seed++) {
+      const { unmount } = render(<CheckView check={check} seed={seed} locked={false} onChange={() => {}} />);
+      const rows = screen.getAllByRole('group');
+      rows.forEach((row, i) => {
+        const leftLabel = row.getAttribute('aria-label')!; // e.g. "L2"
+        const correctRight = `R${leftLabel.slice(1)}`;
+        const chips = within(row).getAllByRole('button').map((b) => b.textContent);
+        const col = chips.indexOf(correctRight);
+        expect(col, `n=${n} seed ${seed} row ${i}`).not.toBe(i);
+      });
+      unmount();
+    }
+  }
+
+  // The right-hand column is shuffled independently of the left, but independence alone doesn't
+  // stop them from coinciding at a given row: if row i's left item (leftOrder[i]) also happens to
+  // be rightOrder[i], that row's correct chip sits in column i — no reading required to solve it.
+  it("a 3-pair match never lines up a row's correct chip with its own column, across seeds 0..50", () => {
+    run(3);
+  });
+
+  it("a 4-pair match never lines up a row's correct chip with its own column, across seeds 0..50", () => {
+    run(4);
+  });
+});
+
 describe('CheckView: numeric', () => {
   const check: Check = { t: 'numeric', q: 'How many?', a: 1200.5, unit: 'KB', why: 'because' };
 
