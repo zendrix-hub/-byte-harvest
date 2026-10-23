@@ -139,6 +139,27 @@ describe('LessonPanel: learn flow', () => {
     expect(save.value.lessons['bs-affiliate-marketing'].runs[0].n).toBe(2);
   });
 
+  it('uses the same day-based shuffle seed in learn mode as in water mode (not an eternally memorisable order)', () => {
+    const { unmount } = render(<LessonPanel id="bs-affiliate-marketing" mode="learn" />);
+    fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
+    while (screen.queryByRole('button', { name: 'Next step' })) {
+      fireEvent.click(screen.getByRole('button', { name: 'Next step' }));
+    }
+    fireEvent.click(screen.getByRole('button', { name: 'Start checks' }));
+    const learnOrder = within(screen.getByRole('group', { name: 'Steps' }))
+      .getAllByRole('button')
+      .map((b) => b.textContent);
+    unmount();
+
+    render(<LessonPanel id="bs-affiliate-marketing" mode="water" />);
+    const waterOrder = within(screen.getByRole('group', { name: 'Steps' }))
+      .getAllByRole('button')
+      .map((b) => b.textContent);
+
+    expect(learnOrder).toEqual(waterOrder);
+  });
+
   it('water mode skips straight to the checks', () => {
     render(<LessonPanel id="bs-affiliate-marketing" mode="water" />);
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { buzz, sfx } from '../../app/feedback';
-import { closePanel, openPanel, save, today, update } from '../../app/store';
+import { closePanel, openPanel, save, showToast, today, update } from '../../app/store';
 import { gradeCheck } from '../../core/checks';
 import { type CheckResult, finishLesson } from '../../core/lessons';
 import { isHeld } from '../../core/practice';
@@ -21,7 +21,8 @@ const CONFS: [Confidence, string][] = [
   ['G', 'Guess'],
 ];
 
-/** Small string hash so the water-mode shuffle seed is deterministic and changes with the day. */
+/** Small string hash so the shuffle seed is deterministic and changes with the day: used for both
+ * learn and water mode, so a learn-mode check order is never a fixed, memorisable sequence. */
 function hashSeed(s: string): number {
   let h = 5381;
   for (let i = 0; i < s.length; i++) h = (h * 33 + s.charCodeAt(i)) >>> 0;
@@ -128,7 +129,11 @@ function practiceIdsFor(p: Packet): string[] {
 export function LessonPanel({ id, mode }: { id: string; mode: 'learn' | 'water' }) {
   packetsVersion.value; // re-render once the lesson chunk loads
   useEffect(() => {
-    void loadPackets();
+    // A flaky/offline chunk fetch must not leave the panel stuck on "Loading lesson…" forever.
+    void loadPackets().catch(() => {
+      showToast("Couldn't load lessons — check your connection and try again.");
+      closePanel();
+    });
   }, []);
 
   const loaded = packetsVersion.value > 0;
@@ -155,7 +160,7 @@ export function LessonPanel({ id, mode }: { id: string; mode: 'learn' | 'water' 
     );
   }
 
-  const seedBase = mode === 'water' ? hashSeed(id + today.value) : hashSeed(id);
+  const seedBase = hashSeed(id + today.value);
 
   const body = (() => {
     if (phase === 'hook') {
