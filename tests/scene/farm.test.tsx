@@ -3,6 +3,7 @@ import { now, panel, save, toast } from '../../src/app/store';
 import { defaultSave } from '../../src/core/save';
 import type { Crop } from '../../src/core/state';
 import { Farm } from '../../src/scene/Farm';
+import { LANDMARKS } from '../../src/scene/layout';
 import { makeCrop } from '../helpers';
 
 const farmWith = (crops: Crop[]) => {
@@ -40,6 +41,29 @@ describe('farm scene', () => {
     farmWith(Array.from({ length: 10 }, (_, i) => makeCrop({ ref: `2025S_A_X${i}`, topic: 'Security' })));
     expect(screen.getByRole('button', { name: /^3 more crops in Thorn Hedge/ })).toBeInTheDocument();
     expect(document.querySelectorAll('[data-crop]')).toHaveLength(7);
+  });
+
+  it('ignores pointer events on the farmer sprite, so it never steals a tap from what it is standing on', () => {
+    farmWith([]);
+    const farmer = document.querySelector('g.farmer');
+    expect(farmer?.getAttribute('pointer-events')).toBe('none');
+  });
+
+  it("keeps the yellow Flowers decoration clear of the Town gate's hit-rect", () => {
+    farmWith([]);
+    const yellowGroup = Array.from(document.querySelectorAll('svg.farm-svg > g')).find((el) =>
+      el.querySelector('circle[fill="#ffd23f"]'),
+    ) as SVGGElement | undefined;
+    expect(yellowGroup).toBeTruthy();
+    const m = yellowGroup!.getAttribute('transform')!.match(/translate\(([-\d.]+) ([-\d.]+)\)/);
+    const [ox, oy] = [Number(m![1]), Number(m![2])];
+    // Flowers' spots span x -10..10 (+/- a 4-radius petal) and y -4..1 (+/- a 4-radius petal, plus
+    // an 8-unit stem hanging below each head) — see art.tsx's Flowers component.
+    const cluster = { x1: ox - 14, y1: oy - 8, x2: ox + 14, y2: oy + 9 };
+    const g = LANDMARKS.town;
+    const hit = { x1: g.x - 5, y1: g.y - 24, x2: g.x - 5 + 120, y2: g.y - 24 + 80 };
+    const overlaps = cluster.x1 < hit.x2 && hit.x1 < cluster.x2 && cluster.y1 < hit.y2 && hit.y1 < cluster.y2;
+    expect(overlaps).toBe(false);
   });
 
   it('opens the pond, mine, house and field panels', () => {

@@ -68,6 +68,20 @@ describe('farm layout', () => {
     }
   });
 
+  it("keeps the Town farmer-stand point clear of the gate's own hit-rect", () => {
+    // The farmer sprite ignores pointer events (see Farm.tsx), but it still visually sits on top of
+    // whatever it's standing on — parking it inside the gate's own hit-rect would cover the sign.
+    const g = LANDMARKS.town;
+    const hit = { x1: g.x - 5, y1: g.y - 24, x2: g.x - 5 + 120, y2: g.y - 24 + 80 };
+    const { x, y } = g.stand;
+    const inside = x > hit.x1 && x < hit.x2 && y > hit.y1 && y < hit.y2;
+    expect(inside).toBe(false);
+    expect(x).toBeGreaterThanOrEqual(0);
+    expect(x).toBeLessThanOrEqual(WORLD.w);
+    expect(y).toBeGreaterThanOrEqual(0);
+    expect(y).toBeLessThanOrEqual(WORLD.h);
+  });
+
   it('dims the farm at night but not at noon', () => {
     expect(nightLevel(12)).toBe(0);
     expect(nightLevel(22)).toBeCloseTo(0.38);

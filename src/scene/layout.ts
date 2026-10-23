@@ -37,8 +37,11 @@ export const LANDMARKS = {
   mine: { x: 392, y: 36, stand: { x: 492, y: 262 } },
   /** Open grass east of the pond, below the code field: the only spot with >= 74 world units
    *  (>= 44 CSS px at the project's 0.6 px/unit scale) clear in both directions for the hit-rect
-   *  (see TownGate in art.tsx and layout.test.ts). */
-  town: { x: 440, y: 1130, stand: { x: 495, y: 1172 } },
+   *  (see TownGate in art.tsx and layout.test.ts). The stand point sits clear of that hit-rect
+   *  itself (to the right of it, still on grass, inside the world) — parking the farmer inside the
+   *  gate's own tap target covers the sign and (before the farmer picked up pointer-events: none)
+   *  swallowed taps meant for the gate. */
+  town: { x: 440, y: 1130, stand: { x: 575, y: 1146 } },
   pond: { x: 20, y: 1100, stand: { x: 150, y: 1094 } },
 };
 

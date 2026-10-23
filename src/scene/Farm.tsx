@@ -207,10 +207,12 @@ export function Farm({ paused }: { paused: boolean }) {
           </g>
         </a>
         <g transform="translate(372 1150)"><Flowers color="#ff8fb1" /></g>
-        <g transform="translate(430 1176)"><Flowers color="#ffd23f" /></g>
+        {/* Clear of the Town gate's hit-rect corner (x 435-555, y 1106-1186 — see layout.ts/art.tsx):
+            the old spot (430,1176) clipped into it. */}
+        <g transform="translate(345 1176)"><Flowers color="#ffd23f" /></g>
         <g transform="translate(400 1190)"><Bush /></g>
 
-        <g ref={walker.ref} class="farmer" transform={walker.initial}>
+        <g ref={walker.ref} class="farmer" transform={walker.initial} pointer-events="none">
           <Farmer />
         </g>
 
