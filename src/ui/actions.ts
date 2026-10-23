@@ -8,20 +8,25 @@ import type { FieldId } from '../data/types';
 
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
-/** Opens a concept crop's lesson in water mode, once its packet is confirmed to still exist. */
-function openConceptCrop(c: Crop): void {
-  void loadPackets().then(() => {
-    if (!getPacket(c.ref)) {
-      showToast('That lesson is no longer available — harvest or leave it.');
-      return;
-    }
-    openPanel({ kind: 'lesson', id: c.ref, mode: 'water' });
-  });
+/** Opens the first of `cands` whose packet still exists (in the given order), skipping any that
+ * have been removed from the content instead of giving up on the whole batch. Shows the
+ * "no longer available" toast only once none of them exist. */
+function openFirstKnownConceptCrop(cands: Crop[]): void {
+  void loadPackets()
+    .then(() => {
+      const known = cands.find((c) => getPacket(c.ref));
+      if (!known) {
+        showToast('That lesson is no longer available — harvest or leave it.');
+        return;
+      }
+      openPanel({ kind: 'lesson', id: known.ref, mode: 'water' });
+    })
+    .catch(() => showToast("Couldn't load lessons — check your connection and try again."));
 }
 
 function openPaperSession(paper: Crop[], concept: Crop[]): void {
   openPanel({ kind: 'session', ids: paper.map((c) => c.ref), mode: 'review', title: 'Watering' });
-  if (concept.length) showToast(`${concept.length} lesson crops are thirsty too — see Town`);
+  if (concept.length) showToast(`${plural(concept.length, 'lesson crop')} ${concept.length === 1 ? 'is' : 'are'} thirsty too — see Town`);
 }
 
 export function waterCrop(c: Crop): void {
@@ -29,7 +34,7 @@ export function waterCrop(c: Crop): void {
     openPanel({ kind: 'session', ids: [c.ref], mode: 'review', title: 'Watering' });
     return;
   }
-  openConceptCrop(c);
+  openFirstKnownConceptCrop([c]);
 }
 
 export function waterAll(): void {
@@ -41,7 +46,7 @@ export function waterAll(): void {
     return;
   }
   if (concept.length) {
-    openConceptCrop(concept[0]);
+    openFirstKnownConceptCrop(concept);
     return;
   }
   showToast('No thirsty crops right now.');
@@ -81,7 +86,7 @@ export function waterField(field: FieldId): void {
     return;
   }
   if (concept.length) {
-    openConceptCrop(concept[0]);
+    openFirstKnownConceptCrop(concept);
     return;
   }
   showToast('Nothing thirsty in this field.');

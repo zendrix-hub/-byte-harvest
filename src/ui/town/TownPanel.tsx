@@ -16,10 +16,14 @@ type Status = 'NEW' | 'GROWING' | 'READY' | 'MASTERED';
 const STATUS_TONE: Partial<Record<Status, 'yel' | 'grn' | 'blue'>> = { GROWING: 'yel', READY: 'blue', MASTERED: 'grn' };
 
 function statusFor(s: SaveData, packetId: string): Status {
-  if (s.lessons[packetId]?.mastered) return 'MASTERED';
   const crop = s.crops[cropId('concept', packetId)];
+  // A packet can be `mastered` (the log flag, set the moment the concept crop first hits stage 3)
+  // while that crop is still sitting on the farm: show READY until it's harvested, only falling
+  // back to MASTERED once there's no live crop left.
+  if (crop && crop.stage === 3) return 'READY';
+  if (s.lessons[packetId]?.mastered) return 'MASTERED';
   if (!crop) return 'NEW';
-  return crop.stage === 3 ? 'READY' : 'GROWING';
+  return 'GROWING';
 }
 
 /** Auntie Rosa, the Market Garden stall keeper. Flat two-tone portrait, no filters. */
