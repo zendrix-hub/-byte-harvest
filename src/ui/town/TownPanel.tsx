@@ -1,5 +1,5 @@
 import { useEffect } from 'preact/hooks';
-import { closePanel, openPanel, save, today } from '../../app/store';
+import { closePanel, openPanel, save, showToast, today } from '../../app/store';
 import { heartsFor, learnedCount } from '../../core/lessons';
 import { cropId, dueCrops, isThirsty } from '../../core/srs';
 import type { SaveData } from '../../core/state';
@@ -66,7 +66,10 @@ function openPacketRow(s: SaveData, t: string, p: Packet): void {
 export function TownPanel() {
   packetsVersion.value; // re-render once the lesson chunk loads
   useEffect(() => {
-    void loadPackets();
+    // A flaky/offline chunk fetch must not leave an unhandled rejection with nothing shown.
+    void loadPackets().catch(() => {
+      showToast("Couldn't load lessons — check your connection and try again.");
+    });
   }, []);
 
   const s = save.value;
