@@ -28,6 +28,16 @@ describe('lesson chunk load failure', () => {
     await waitFor(() => expect(panel.value).toBeNull());
   });
 
+  it('does not close a different panel the player already navigated to before the chunk rejected', async () => {
+    panel.value = { kind: 'lesson', id: 'bs-affiliate-marketing', mode: 'learn' };
+    render(<LessonPanel id="bs-affiliate-marketing" mode="learn" />);
+    // The player backs out to the almanac while the chunk fetch is still in flight.
+    panel.value = { kind: 'almanac' };
+
+    await waitFor(() => expect(toast.value?.text).toBe("Couldn't load lessons — check your connection and try again."));
+    expect(panel.value).toEqual({ kind: 'almanac' });
+  });
+
   it('waterCrop (via openConceptCrop) shows the connection toast instead of leaving the panel unopened silently', async () => {
     waterCrop({
       id: 'concept:bs-affiliate-marketing',

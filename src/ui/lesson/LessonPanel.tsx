@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { buzz, sfx } from '../../app/feedback';
-import { closePanel, openPanel, save, showToast, today, update } from '../../app/store';
+import { closePanel, openPanel, panel, save, showToast, today, update } from '../../app/store';
 import { gradeCheck } from '../../core/checks';
 import { type CheckResult, finishLesson } from '../../core/lessons';
 import { isHeld } from '../../core/practice';
@@ -132,7 +132,11 @@ export function LessonPanel({ id, mode }: { id: string; mode: 'learn' | 'water' 
     // A flaky/offline chunk fetch must not leave the panel stuck on "Loading lesson…" forever.
     void loadPackets().catch(() => {
       showToast("Couldn't load lessons — check your connection and try again.");
-      closePanel();
+      // Only close this lesson's own panel: by the time the chunk fetch rejects, the player may
+      // already have navigated elsewhere, and closing unconditionally would dismiss whatever panel
+      // they're looking at now instead.
+      const p = panel.value;
+      if (p?.kind === 'lesson' && p.id === id && p.mode === mode) closePanel();
     });
   }, []);
 
