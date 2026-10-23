@@ -206,10 +206,8 @@ export function Farm({ paused }: { paused: boolean }) {
             <Pond />
           </g>
         </a>
-        <g transform="translate(548 1186)"><Tree s={0.85} autumn /></g>
         <g transform="translate(372 1150)"><Flowers color="#ff8fb1" /></g>
         <g transform="translate(430 1176)"><Flowers color="#ffd23f" /></g>
-        <g transform="translate(486 1132)"><Bush /></g>
         <g transform="translate(400 1190)"><Bush /></g>
 
         <g ref={walker.ref} class="farmer" transform={walker.initial}>

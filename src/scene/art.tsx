@@ -444,10 +444,13 @@ export function MineEntrance() {
   );
 }
 
-/** Two posts, an arch (the top beam) and a hanging "Town" sign. Sits low and flat (box ~110×32, see layout.ts) to fit the free sliver above the mine. 6 elements. */
+/** Two posts, an arch (the top beam) and a hanging "Town" sign, on open grass (see layout.ts). The
+ *  leading transparent rect is a CropSprite-style hit-rect: it pads the visible ~110x32 sign out to
+ *  120x80 world units so the tap target clears the >= 44 CSS px rule (see layout.test.ts). */
 export function TownGate() {
   return (
     <g>
+      <rect x="-5" y="-24" width="120" height="80" fill="transparent" />
       <rect x="2" y="0" width="106" height="8" rx="4" fill="#8a5a3b" />
       <rect x="6" y="8" width="10" height="18" rx="3" fill="url(#g-wood)" />
       <rect x="94" y="8" width="10" height="18" rx="3" fill="url(#g-wood)" />

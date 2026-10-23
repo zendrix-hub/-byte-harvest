@@ -35,8 +35,10 @@ export const LANDMARKS = {
   bin: { x: 226, y: 196, stand: { x: 256, y: 268 } },
   calendar: { x: 300, y: 182 },
   mine: { x: 392, y: 36, stand: { x: 492, y: 262 } },
-  /** Sits in the free sliver above the mine, so its box (see layout.test.ts) never reaches the landmark row at y 36+. */
-  town: { x: 460, y: 3, stand: { x: 520, y: 262 } },
+  /** Open grass east of the pond, below the code field: the only spot with >= 74 world units
+   *  (>= 44 CSS px at the project's 0.6 px/unit scale) clear in both directions for the hit-rect
+   *  (see TownGate in art.tsx and layout.test.ts). */
+  town: { x: 440, y: 1130, stand: { x: 495, y: 1172 } },
   pond: { x: 20, y: 1100, stand: { x: 150, y: 1094 } },
 };
 

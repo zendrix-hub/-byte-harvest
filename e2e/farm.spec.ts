@@ -47,6 +47,14 @@ test('no horizontal scrolling on a 360 px phone, even on a tall Subject B questi
   expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(0);
 });
 
+test('Town gate meets the 44 px touch-target minimum on mobile', async ({ page }, info) => {
+  test.skip(info.project.name !== 'mobile', 'phone-only check');
+  await freshFarm(page);
+  const box = await page.getByRole('button', { name: /^Town/ }).boundingBox();
+  expect(box!.width).toBeGreaterThanOrEqual(44);
+  expect(box!.height).toBeGreaterThanOrEqual(44);
+});
+
 test('keeps the farm visible beside panels on a PC', async ({ page }, info) => {
   test.skip(info.project.name !== 'desktop', 'desktop-only check');
   await freshFarm(page);
