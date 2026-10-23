@@ -5,6 +5,7 @@ import { HousePanel } from '../ui/house/HousePanel';
 import { Panel } from '../ui/kit';
 import { LessonPanel } from '../ui/lesson/LessonPanel';
 import { Session } from '../ui/paper/Session';
+import { TownPanel } from '../ui/town/TownPanel';
 import type { PanelState } from './panel-types';
 import { closePanel } from './store';
 
@@ -26,6 +27,8 @@ function renderPanel(p: PanelState) {
       return <HousePanel />;
     case 'lesson':
       return <LessonPanel key={`${p.id}:${p.mode}`} id={p.id} mode={p.mode} />;
+    case 'town':
+      return <TownPanel />;
     default:
       return (
         <Panel title="Coming soon" onClose={closePanel}>

@@ -2,25 +2,49 @@ import { buzz, sfx } from '../app/feedback';
 import { openPanel, save, showToast, today, update } from '../app/store';
 import { dueCrops, harvestCrop, readyCrops } from '../core/srs';
 import type { Crop } from '../core/state';
+import { getPacket, loadPackets } from '../data/lessons';
 import { topicInfo } from '../data/topics';
 import type { FieldId } from '../data/types';
 
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
+/** Opens a concept crop's lesson in water mode, once its packet is confirmed to still exist. */
+function openConceptCrop(c: Crop): void {
+  void loadPackets().then(() => {
+    if (!getPacket(c.ref)) {
+      showToast('That lesson is no longer available — harvest or leave it.');
+      return;
+    }
+    openPanel({ kind: 'lesson', id: c.ref, mode: 'water' });
+  });
+}
+
+function openPaperSession(paper: Crop[], concept: Crop[]): void {
+  openPanel({ kind: 'session', ids: paper.map((c) => c.ref), mode: 'review', title: 'Watering' });
+  if (concept.length) showToast(`${concept.length} lesson crops are thirsty too — see Town`);
+}
+
 export function waterCrop(c: Crop): void {
-  if (c.kind !== 'paper') return;
-  openPanel({ kind: 'session', ids: [c.ref], mode: 'review', title: 'Watering' });
+  if (c.kind === 'paper') {
+    openPanel({ kind: 'session', ids: [c.ref], mode: 'review', title: 'Watering' });
+    return;
+  }
+  openConceptCrop(c);
 }
 
 export function waterAll(): void {
-  const ids = dueCrops(save.value, today.value)
-    .filter((c) => c.kind === 'paper')
-    .map((c) => c.ref);
-  if (!ids.length) {
-    showToast('No thirsty crops right now.');
+  const due = dueCrops(save.value, today.value);
+  const paper = due.filter((c) => c.kind === 'paper');
+  const concept = due.filter((c) => c.kind === 'concept');
+  if (paper.length) {
+    openPaperSession(paper, concept);
     return;
   }
-  openPanel({ kind: 'session', ids, mode: 'review', title: 'Watering' });
+  if (concept.length) {
+    openConceptCrop(concept[0]);
+    return;
+  }
+  showToast('No thirsty crops right now.');
 }
 
 export function harvestOne(id: string): number {
@@ -49,12 +73,16 @@ export function shipAll(): number {
 }
 
 export function waterField(field: FieldId): void {
-  const ids = dueCrops(save.value, today.value)
-    .filter((c) => c.kind === 'paper' && topicInfo(c.topic).field === field)
-    .map((c) => c.ref);
-  if (!ids.length) {
-    showToast('Nothing thirsty in this field.');
+  const due = dueCrops(save.value, today.value).filter((c) => topicInfo(c.topic).field === field);
+  const paper = due.filter((c) => c.kind === 'paper');
+  const concept = due.filter((c) => c.kind === 'concept');
+  if (paper.length) {
+    openPaperSession(paper, concept);
     return;
   }
-  openPanel({ kind: 'session', ids, mode: 'review', title: 'Watering' });
+  if (concept.length) {
+    openConceptCrop(concept[0]);
+    return;
+  }
+  showToast('Nothing thirsty in this field.');
 }

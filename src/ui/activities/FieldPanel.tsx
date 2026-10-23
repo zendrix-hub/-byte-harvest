@@ -54,6 +54,11 @@ export function FieldPanel({ field }: { field: FieldId }) {
           Water this field ({thirsty})
         </Button>
         <PracticeButtons field={field} />
+        {field === 'strategy' && (
+          <Button variant="blue" onClick={() => openPanel({ kind: 'town' })}>
+            Lessons in Town
+          </Button>
+        )}
       </div>
       <ul class="topic-list">
         {topicsInField(field).map((topic) => {

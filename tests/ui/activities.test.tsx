@@ -61,4 +61,15 @@ describe('field panel', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Mine (Subject B)' }));
     expect(panel.value).toEqual({ kind: 'practice', subject: 'B', area: 'security' });
   });
+
+  it('links the strategy field to Town', () => {
+    render(<FieldPanel field="strategy" />);
+    fireEvent.click(screen.getByRole('button', { name: 'Lessons in Town' }));
+    expect(panel.value).toEqual({ kind: 'town' });
+  });
+
+  it('has no Lessons in Town button outside the strategy field', () => {
+    render(<FieldPanel field="tech" />);
+    expect(screen.queryByRole('button', { name: 'Lessons in Town' })).toBeNull();
+  });
 });

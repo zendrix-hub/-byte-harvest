@@ -7,4 +7,5 @@ export type PanelState =
   | { kind: 'field'; field: FieldId }
   | { kind: 'practice'; subject: Subject; area?: string }
   | { kind: 'house' }
-  | { kind: 'lesson'; id: string; mode: 'learn' | 'water' };
+  | { kind: 'lesson'; id: string; mode: 'learn' | 'water' }
+  | { kind: 'town' };
