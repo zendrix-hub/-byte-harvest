@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
-import { mulberry32, shuffle } from '../../core/rng';
+import { mulberry32, shuffle, type Rng } from '../../core/rng';
 import type { Check, CheckAnswer } from '../../data/lessons/types';
 import { Button } from '../kit';
 import { parseInline } from '../paper/QuestionBody';
@@ -14,6 +14,16 @@ interface Props {
 
 function range(n: number): number[] {
   return Array.from({ length: n }, (_, i) => i);
+}
+
+/** Shuffles, then rotates by one if the shuffle landed back on the authored order — an order
+ * check (or a match check's right-hand side) in authored order gives the answer away for free. */
+function shuffleAvoidIdentity(arr: number[], rng: Rng): number[] {
+  const s = shuffle(arr, rng);
+  if (s.length > 1 && s.every((v, i) => v === arr[i])) {
+    return [...s.slice(1), s[0]];
+  }
+  return s;
 }
 
 // Gives every distinct Check object a stable identity so it can be used as a Preact `key`:
@@ -67,18 +77,24 @@ function McqCheck({ check, seed, locked, onChange }: Props & { check: Extract<Ch
     <div class="chk chk-mcq">
       <p class="chk-q">{parseInline(check.q)}</p>
       <div class="chk-mcq-opts" role="group" aria-label="Options">
-        {order.map((authoredIdx) => (
-          <button
-            type="button"
-            key={authoredIdx}
-            class={`chk-mcq-opt${picked === authoredIdx ? ' sel' : ''}`}
-            aria-pressed={picked === authoredIdx}
-            disabled={locked}
-            onClick={() => setPicked(authoredIdx)}
-          >
-            {parseInline(check.opts[authoredIdx])}
-          </button>
-        ))}
+        {order.map((authoredIdx) => {
+          const isPicked = picked === authoredIdx;
+          const isCorrect = authoredIdx === check.a;
+          return (
+            <button
+              type="button"
+              key={authoredIdx}
+              class={`chk-mcq-opt${isPicked ? ' sel' : ''}${locked && isCorrect ? ' correct' : ''}${locked && isPicked && !isCorrect ? ' wrong' : ''}`}
+              aria-pressed={isPicked}
+              disabled={locked}
+              onClick={() => setPicked(authoredIdx)}
+            >
+              {parseInline(check.opts[authoredIdx])}
+              {locked && isCorrect && <span class="chk-mark"> ✓</span>}
+              {locked && isPicked && !isCorrect && <span class="chk-mark"> ✗</span>}
+            </button>
+          );
+        })}
       </div>
     </div>
   );
@@ -86,9 +102,12 @@ function McqCheck({ check, seed, locked, onChange }: Props & { check: Extract<Ch
 
 function MatchCheck({ check, seed, locked, onChange }: Props & { check: Extract<Check, { t: 'match' }> }) {
   const n = check.pairs.length;
-  const { leftOrder, rightOrder } = useSeeded(seed, (rng) => ({
-    leftOrder: shuffle(range(n), rng),
-    rightOrder: shuffle(range(n), rng),
+  // Left and right sides are shuffled from independently derived seeds (not one shared rng stream):
+  // sharing a stream can put every row's correct chip at that row's own display column — a free
+  // "diagonal" solve that needs no reading at all.
+  const { leftOrder, rightOrder } = useSeeded(seed, () => ({
+    leftOrder: shuffle(range(n), mulberry32(seed * 2 + 1)),
+    rightOrder: shuffleAvoidIdentity(range(n), mulberry32(seed * 2 + 2)),
   }));
   const [sel, setSel] = useState<Partial<Record<number, number>>>({});
 
@@ -102,25 +121,37 @@ function MatchCheck({ check, seed, locked, onChange }: Props & { check: Extract<
     <div class="chk chk-match">
       <p class="chk-q">{parseInline(check.q)}</p>
       <div class="chk-match-rows">
-        {leftOrder.map((leftIdx) => (
-          <div class="chk-match-row" role="group" aria-label={plainText(check.pairs[leftIdx][0])} key={leftIdx}>
-            <div class="chk-match-left">{parseInline(check.pairs[leftIdx][0])}</div>
-            <div class="chk-chips">
-              {rightOrder.map((rightIdx) => (
-                <button
-                  type="button"
-                  key={rightIdx}
-                  class={`chk-chip${sel[leftIdx] === rightIdx ? ' sel' : ''}`}
-                  aria-pressed={sel[leftIdx] === rightIdx}
-                  disabled={locked}
-                  onClick={() => setSel((prev) => ({ ...prev, [leftIdx]: rightIdx }))}
-                >
-                  {parseInline(check.pairs[rightIdx][1])}
-                </button>
-              ))}
+        {leftOrder.map((leftIdx) => {
+          const rowOk = sel[leftIdx] === leftIdx;
+          return (
+            <div
+              class={`chk-match-row${locked ? (rowOk ? ' correct' : ' wrong') : ''}`}
+              role="group"
+              aria-label={plainText(check.pairs[leftIdx][0])}
+              key={leftIdx}
+            >
+              <div class="chk-match-left">
+                {parseInline(check.pairs[leftIdx][0])}
+                {locked && <span class="chk-mark">{rowOk ? ' ✓' : ' ✗'}</span>}
+              </div>
+              <div class="chk-chips">
+                {rightOrder.map((rightIdx) => (
+                  <button
+                    type="button"
+                    key={rightIdx}
+                    class={`chk-chip${sel[leftIdx] === rightIdx ? ' sel' : ''}`}
+                    aria-pressed={sel[leftIdx] === rightIdx}
+                    disabled={locked}
+                    onClick={() => setSel((prev) => ({ ...prev, [leftIdx]: rightIdx }))}
+                  >
+                    {parseInline(check.pairs[rightIdx][1])}
+                  </button>
+                ))}
+              </div>
+              {locked && !rowOk && <div class="chk-key">Correct: {parseInline(check.pairs[leftIdx][1])}</div>}
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
@@ -141,25 +172,38 @@ function BucketCheck({ check, seed, locked, onChange }: Props & { check: Extract
     <div class="chk chk-bucket">
       <p class="chk-q">{parseInline(check.q)}</p>
       <div class="chk-bucket-rows">
-        {itemOrder.map((idx) => (
-          <div class="chk-bucket-row" role="group" aria-label={plainText(check.items[idx][0])} key={idx}>
-            <div class="chk-bucket-item">{parseInline(check.items[idx][0])}</div>
-            <div class="chk-seg">
-              {check.buckets.map((label, bIdx) => (
-                <button
-                  type="button"
-                  key={bIdx}
-                  class={`chk-seg-opt${picked[idx] === bIdx ? ' sel' : ''}`}
-                  aria-pressed={picked[idx] === bIdx}
-                  disabled={locked}
-                  onClick={() => setPicked((prev) => ({ ...prev, [idx]: bIdx }))}
-                >
-                  {parseInline(label)}
-                </button>
-              ))}
+        {itemOrder.map((idx) => {
+          const correctBucket = check.items[idx][1];
+          const rowOk = picked[idx] === correctBucket;
+          return (
+            <div
+              class={`chk-bucket-row${locked ? (rowOk ? ' correct' : ' wrong') : ''}`}
+              role="group"
+              aria-label={plainText(check.items[idx][0])}
+              key={idx}
+            >
+              <div class="chk-bucket-item">
+                {parseInline(check.items[idx][0])}
+                {locked && <span class="chk-mark">{rowOk ? ' ✓' : ' ✗'}</span>}
+              </div>
+              <div class="chk-seg">
+                {check.buckets.map((label, bIdx) => (
+                  <button
+                    type="button"
+                    key={bIdx}
+                    class={`chk-seg-opt${picked[idx] === bIdx ? ' sel' : ''}`}
+                    aria-pressed={picked[idx] === bIdx}
+                    disabled={locked}
+                    onClick={() => setPicked((prev) => ({ ...prev, [idx]: bIdx }))}
+                  >
+                    {parseInline(label)}
+                  </button>
+                ))}
+              </div>
+              {locked && !rowOk && <div class="chk-key">Correct: {parseInline(check.buckets[correctBucket])}</div>}
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
@@ -167,7 +211,7 @@ function BucketCheck({ check, seed, locked, onChange }: Props & { check: Extract
 
 function OrderCheck({ check, seed, locked, onChange }: Props & { check: Extract<Check, { t: 'order' }> }) {
   const n = check.steps.length;
-  const poolOrder = useSeeded(seed, (rng) => shuffle(range(n), rng));
+  const poolOrder = useSeeded(seed, (rng) => shuffleAvoidIdentity(range(n), rng));
   const [seq, setSeq] = useState<number[]>([]);
 
   useEffect(() => {
@@ -203,6 +247,16 @@ function OrderCheck({ check, seed, locked, onChange }: Props & { check: Extract<
       <Button variant="ghost" small onClick={() => setSeq((prev) => prev.slice(0, -1))} disabled={locked || seq.length === 0}>
         Undo
       </Button>
+      {locked && (
+        <div class="chk-key">
+          <div>Correct order:</div>
+          <ol class="chk-order-list">
+            {check.steps.map((s, i) => (
+              <li key={i}>{parseInline(s)}</li>
+            ))}
+          </ol>
+        </div>
+      )}
     </div>
   );
 }
@@ -210,7 +264,8 @@ function OrderCheck({ check, seed, locked, onChange }: Props & { check: Extract<
 function parseDecimal(s: string): number | null {
   const trimmed = s.trim();
   if (!trimmed) return null;
-  const stripped = trimmed.replace(/,/g, '');
+  // Lets an exam-style answer like "99.5%", "₱1,380" or "$500000" be typed as shown and still parse.
+  const stripped = trimmed.replace(/[%₱$,\s]/g, '');
   if (!stripped) return null;
   const n = Number(stripped);
   return Number.isFinite(n) ? n : null;
@@ -239,6 +294,12 @@ function NumericCheck({ check, locked, onChange }: Props & { check: Extract<Chec
         />
         {check.unit && <span class="chk-unit">{parseInline(check.unit)}</span>}
       </div>
+      {locked && (
+        <div class="chk-key">
+          Answer: {check.a}
+          {check.unit ? <> {parseInline(check.unit)}</> : null}
+        </div>
+      )}
     </div>
   );
 }
