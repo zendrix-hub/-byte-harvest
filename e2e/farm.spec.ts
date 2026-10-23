@@ -57,6 +57,75 @@ test('keeps the farm visible beside panels on a PC', async ({ page }, info) => {
   expect((await farm.boundingBox())!.width).toBeGreaterThan(300);
 });
 
+/** Answers whatever check type is on screen; correctness doesn't matter here, only completeness. */
+async function answerCheck(page: Page) {
+  if (await page.locator('.chk-mcq').count()) {
+    await page.locator('.chk-mcq-opt').first().click();
+  } else if (await page.locator('.chk-numeric').count()) {
+    await page.getByLabel('Answer', { exact: true }).fill('1');
+  } else if (await page.locator('.chk-match').count()) {
+    const rows = page.locator('.chk-match-row');
+    const n = await rows.count();
+    for (let i = 0; i < n; i++) await rows.nth(i).locator('.chk-chip').first().click();
+  } else if (await page.locator('.chk-bucket').count()) {
+    const rows = page.locator('.chk-bucket-row');
+    const n = await rows.count();
+    for (let i = 0; i < n; i++) await rows.nth(i).locator('.chk-seg-opt').first().click();
+  } else if (await page.locator('.chk-order').count()) {
+    const n = await page.locator('.chk-order-opt').count();
+    for (let i = 0; i < n; i++) await page.locator('.chk-order-opt').first().click();
+  }
+}
+
+/** Steps through hook → model → worked example → every check (answered Sure) → summary. */
+async function stepThroughLesson(page: Page) {
+  await page.getByRole('button', { name: 'Continue' }).click();
+  await page.getByRole('button', { name: 'Continue' }).click();
+  while (await page.getByRole('button', { name: 'Next step' }).isVisible()) {
+    await page.getByRole('button', { name: 'Next step' }).click();
+  }
+  await page.getByRole('button', { name: 'Start checks' }).click();
+  for (;;) {
+    await answerCheck(page);
+    await page.getByRole('button', { name: 'Sure', exact: true }).click();
+    await page.getByRole('button', { name: 'Check', exact: true }).click();
+    const seeSummary = page.getByRole('button', { name: 'See summary' });
+    if (await seeSummary.isVisible()) {
+      await seeSummary.click();
+      break;
+    }
+    await page.getByRole('button', { name: 'Next check' }).click();
+  }
+}
+
+test('learns a seed packet and plants a concept crop', async ({ page }) => {
+  await freshFarm(page);
+  await expect(page.getByRole('button', { name: /^Market Garden: 0 crops/ })).toBeVisible();
+  await page.getByRole('button', { name: /^Town/ }).click();
+  await expect(page.getByRole('dialog', { name: 'Town', exact: true })).toBeVisible();
+  await page.locator('.packet-row').first().click();
+  await stepThroughLesson(page);
+  await expect(page.locator('.summary-big')).toBeVisible();
+  await page.getByRole('button', { name: 'Back to the farm' }).click();
+  await expect(page.getByRole('button', { name: /^Market Garden: 1 crops/ })).toBeVisible();
+});
+
+test('lesson fits a 360 px phone', async ({ page }, info) => {
+  test.skip(info.project.name !== 'mobile', 'phone-only check');
+  await freshFarm(page);
+  await page.getByRole('button', { name: /^Town/ }).click();
+  await page.locator('.packet-row', { hasText: 'Benchmarking' }).click();
+  expect(await page.evaluate(() => document.scrollingElement!.scrollWidth)).toBeLessThanOrEqual(360);
+  await page.getByRole('button', { name: 'Continue' }).click();
+  await page.getByRole('button', { name: 'Continue' }).click();
+  while (await page.getByRole('button', { name: 'Next step' }).isVisible()) {
+    await page.getByRole('button', { name: 'Next step' }).click();
+  }
+  await page.getByRole('button', { name: 'Start checks' }).click();
+  await expect(page.locator('.chk-match')).toBeVisible();
+  expect(await page.evaluate(() => document.scrollingElement!.scrollWidth)).toBeLessThanOrEqual(360);
+});
+
 test('works offline after the first visit', async ({ page, context }) => {
   await freshFarm(page);
   await page.evaluate(async () => {

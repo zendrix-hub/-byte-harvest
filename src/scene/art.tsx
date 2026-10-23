@@ -444,6 +444,22 @@ export function MineEntrance() {
   );
 }
 
+/** Two posts, an arch (the top beam) and a hanging "Town" sign. Sits low and flat (box ~110×32, see layout.ts) to fit the free sliver above the mine. 6 elements. */
+export function TownGate() {
+  return (
+    <g>
+      <rect x="2" y="0" width="106" height="8" rx="4" fill="#8a5a3b" />
+      <rect x="6" y="8" width="10" height="18" rx="3" fill="url(#g-wood)" />
+      <rect x="94" y="8" width="10" height="18" rx="3" fill="url(#g-wood)" />
+      <rect x="34" y="10" width="42" height="14" rx="6" fill="#fffaf0" stroke="#8a5a3b" stroke-width="2" />
+      <text x="55" y="20.5" text-anchor="middle" font-size="10" font-weight="900" fill="#2b2620">
+        Town
+      </text>
+      <ellipse cx="55" cy="28" rx="46" ry="3" fill="#3b2412" opacity="0.15" />
+    </g>
+  );
+}
+
 export function Pond() {
   return (
     <g>

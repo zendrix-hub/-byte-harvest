@@ -7,7 +7,7 @@ import type { FieldId } from '../data/types';
 import { harvestOne, shipAll, waterCrop } from '../ui/actions';
 import {
   ArtDefs, Bush, CalendarBoard, DropBadge, Farmer, Flowers, House, MineEntrance,
-  PestDot, Pond, ShippingBin, Sign, Star, Tree, cropHref,
+  PestDot, Pond, ShippingBin, Sign, Star, Tree, TownGate, cropHref,
 } from './art';
 import { CELL, FARMER_HOME, FIELD_LAYOUT, LANDMARKS, TUFTS, WORLD, capacity, cellCenter, nightLevel } from './layout';
 import { useWalker } from './useWalker';
@@ -186,6 +186,12 @@ export function Farm({ paused }: { paused: boolean }) {
           onClick={pd(() => walkThen(LANDMARKS.mine.stand.x, LANDMARKS.mine.stand.y, () => openPanel({ kind: 'practice', subject: 'B' })))}>
           <g transform={`translate(${LANDMARKS.mine.x} ${LANDMARKS.mine.y})`}>
             <MineEntrance />
+          </g>
+        </a>
+        <a class="tap" href="#" role="button" aria-label="Town — Auntie Rosa's seed packets"
+          onClick={pd(() => walkThen(LANDMARKS.town.stand.x, LANDMARKS.town.stand.y, () => openPanel({ kind: 'town' })))}>
+          <g transform={`translate(${LANDMARKS.town.x} ${LANDMARKS.town.y})`}>
+            <TownGate />
           </g>
         </a>
 
