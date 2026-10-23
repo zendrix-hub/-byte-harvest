@@ -119,6 +119,26 @@ describe('LessonPanel: learn flow', () => {
     expect(save.value.crops).toEqual({});
   });
 
+  it('double-clicking Check on the last check records exactly one run (idempotent reveal)', () => {
+    render(<LessonPanel id="bs-affiliate-marketing" mode="water" />);
+
+    answerAffiliateOrder();
+    pickConfidence('Sure');
+    commitCheck();
+    fireEvent.click(screen.getByRole('button', { name: 'Next check' }));
+
+    fireEvent.click(screen.getByText(AFFILIATE_MCQ_RIGHT));
+    pickConfidence('Sure');
+    // Grab the Check button once and fire it twice (simulates a rapid double-tap landing on
+    // the same element before the reveal re-render swaps it out).
+    const checkBtn = screen.getByRole('button', { name: 'Check' });
+    fireEvent.click(checkBtn);
+    fireEvent.click(checkBtn);
+
+    expect(save.value.lessons['bs-affiliate-marketing'].runs).toHaveLength(1);
+    expect(save.value.lessons['bs-affiliate-marketing'].runs[0].n).toBe(2);
+  });
+
   it('water mode skips straight to the checks', () => {
     render(<LessonPanel id="bs-affiliate-marketing" mode="water" />);
 
@@ -164,6 +184,19 @@ describe('LessonPanel: practice button hold', () => {
 
   it('includes 2026S questions once hold is off', () => {
     save.value = { ...defaultSave(), hold: false };
+    finishMachineLearning();
+
+    fireEvent.click(screen.getByRole('button', { name: /Practice the past-paper question/ }));
+    const p = panel.value as Extract<typeof panel.value, { kind: 'session' }>;
+    expect(p?.ids).toEqual(['2025S_A_Q03', '2026S_A_Q54', '2026S_A_Q55']);
+  });
+
+  it('includes 2026S questions once the 2026S Subject-A mock is recorded, even with hold on (isHeld mock-done escape)', () => {
+    save.value = {
+      ...defaultSave(),
+      hold: true,
+      mocks: [{ d: '2026-10-20', name: 'Mock 1', paper: '2026S', subj: 'A', full: true, score: 18, n: 20, pct: 90 }],
+    };
     finishMachineLearning();
 
     fireEvent.click(screen.getByRole('button', { name: /Practice the past-paper question/ }));

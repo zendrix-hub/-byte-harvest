@@ -3,8 +3,9 @@ import { buzz, sfx } from '../../app/feedback';
 import { closePanel, openPanel, save, today, update } from '../../app/store';
 import { gradeCheck } from '../../core/checks';
 import { type CheckResult, finishLesson } from '../../core/lessons';
+import { isHeld } from '../../core/practice';
 import type { CropEvent } from '../../core/srs';
-import { HOLD_PAPER, paperOf } from '../../data/bank';
+import { byId } from '../../data/bank';
 import { getPacket, loadPackets, packetsVersion } from '../../data/lessons';
 import type { Check, CheckAnswer, Packet } from '../../data/lessons/types';
 import { CROP_NAMES, fieldInfo, topicInfo } from '../../data/topics';
@@ -67,9 +68,14 @@ function CheckStep({ check, seed, isLast, onReveal, onAdvance }: CheckStepProps)
   const [answer, setAnswer] = useState<CheckAnswer | null>(null);
   const [conf, setConf] = useState<Confidence | null>(null);
   const [revealed, setRevealed] = useState<{ ok: boolean } | null>(null);
+  // A ref (not state) so a second Check tap landing before the reveal re-render has applied is
+  // still caught: state updates are not guaranteed to be visible to doCheck's own closure yet.
+  const revealedRef = useRef(false);
 
   const doCheck = () => {
+    if (revealedRef.current) return;
     if (answer === null || !conf) return;
+    revealedRef.current = true;
     const ok = gradeCheck(check, answer);
     setRevealed({ ok });
     sfx(ok ? 'right' : 'wrong');
@@ -112,8 +118,11 @@ function CheckStep({ check, seed, isLast, onReveal, onAdvance }: CheckStepProps)
 }
 
 function practiceIdsFor(p: Packet): string[] {
-  const hold = save.value.hold;
-  return p.qids.filter((qid) => !(hold && paperOf(qid) === HOLD_PAPER));
+  const s = save.value;
+  return p.qids.filter((qid) => {
+    const q = byId[qid];
+    return !q || !isHeld(s, q);
+  });
 }
 
 export function LessonPanel({ id, mode }: { id: string; mode: 'learn' | 'water' }) {
